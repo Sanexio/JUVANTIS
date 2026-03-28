@@ -1,0 +1,1288 @@
+﻿Datum,Typ,Code,Beschreibung,Status,Nutzer
+08.05.2024,Anamnese,, Kurzes Telefonat mit Pat (nicht abrechnen): Labor ok - soll das Statin so weiter nehmen,Validiert,Siegbert Stracke
+06.05.2024,Befund,," CCB, 02.05.2024, HypercholesterinämiePDF",Validiert,Katrin Hartmann
+05.05.2024,Kommunikation,, Laborbefund per email gesendet ,Validiert,Katharina Tanz
+03.05.2024,Labordaten,," Laborarztpraxis,[2] Auftrag abgeschlossen,true  {\n                        for (parent = node.parentNode; parent; parent = parent.parentNode) {\n                            if (parent.classList.contains('fold-container')) {\n                                break;\n                            }\n                        }\n                        if ( parent ) {\n                            parent.classList.toggle('fold-show');\n                        } })(this)"">......PSAO 0.72 ng/mlPDF",Validiert,
+02.05.2024,Labordaten,," Laborgemeinschaft,[2] Auftrag abgeschlossen,true  {\n                        for (parent = node.parentNode; parent; parent = parent.parentNode) {\n                            if (parent.classList.contains('fold-container')) {\n                                break;\n                            }\n                        }\n                        if ( parent ) {\n                            parent.classList.toggle('fold-show');\n                        } })(this)"">......BILI 0.5 mg/dlGOT 26 U/lGPT 28 U/lGGT 15 U/lAP 82 U/lGLDH 2.6 U/lLDH 207 U/lCK 171 U/lCKMB 15 U/lLDL kA LDL 82 mg/dlPDF",Validiert,Siegbert Stracke
+02.05.2024,Leistung,3564H1, LDL-Cholesterin,Validiert,
+02.05.2024,Leistung,3591H1," Creatinkinase MB (CK-MB), Immuninhibitionsmethode",Validiert,
+02.05.2024,Leistung,3590H1, Creatinkinase (CK),Validiert,
+02.05.2024,Leistung,3597H1, Laktatdehydrogenase (LDH),Validiert,
+02.05.2024,Leistung,3593H1, Glutamatdehydrogenase (GLDH),Validiert,
+02.05.2024,Leistung,3587H1, Alkalische Phosphatase,Validiert,
+02.05.2024,Leistung,3592H1," Gamma-Glutamyltranspeptidase (Gamma-Glutamyltransferase, Gamma-GT)",Validiert,
+02.05.2024,Leistung,3595H1," Glutamatpyruvattransaminase (GPT, Alaninaminotransferase, ALAT, ALT)",Validiert,
+02.05.2024,Leistung,3594H1," Glutamatoxalazetattransaminase (GOT, Aspartataminotransferase, ASAT, AST)",Validiert,
+02.05.2024,Leistung,3581H1," Bilirubin, gesamt",Validiert,
+02.05.2024,Kommunikation,, bitte Werte per Mail schicken ,Validiert,Fjolla Statovci
+02.05.2024,Laborschein,, Labor-Auftrag (080177897),Validiert,Madina Sarwari
+02.05.2024,Befund,, BSG: 14/35,Validiert,Fjolla Statovci
+02.05.2024,Leistung,3501," Blutkörperschensenkungsgeschwindigkeit (BKS, BSG)",Validiert,Madina Sarwari
+02.05.2024,Privatrezept,," Privatrezept, (1) MetoHEXAL® Succ® 23,75mg 100 Retardtbl. N3 1-0-0-0&nbsp;&nbsp;(10.08.2024)PDF",Validiert,Madina Sarwari
+02.05.2024,Medikament,00850419 V," MetoHEXAL® Succ® 23,75mg 100 Retardtbl. N3",Validiert,Madina Sarwari
+02.05.2024,Kommunikation,, heute BE nach Statin Therapie + PSA ,Validiert,Madina Sarwari
+02.05.2024,Leistung,250," Blutentnahme mittels Spritze, Kanüle oder Katheter aus der Vene",Validiert,Fjolla Statovci
+02.05.2024,Diagnose,E78.1 G,DD Hypertriglyceridämie,Validiert,Fjolla Statovci
+02.05.2024,Diagnose,E78.0 G,DD Hypercholesterinämie,Validiert,Fjolla Statovci
+02.05.2024,Privatschein,, Privat Schein,Validiert,Fjolla Statovci
+29.04.2024,Kommunikation,," Hallo Praxisteam.Dr. Stracke möchte, dass ich 4 - 6 Wochen nach Beginn der Einnahme {\n                        for (parent = node.parentNode; parent; parent = parent.parentNode) {\n                            if (parent.classList.contains('fold-container')) {\n                                break;\n                            }\n                        }\n                        if ( parent ) {\n                            parent.classList.toggle('fold-show');\n                        } })(this)"">...... der Statine-Tabletten mein Blut checken lassen soll.Das würde ich gerne am Donnerstagvormittag machen gegen 11Uhr.Ist das ok und kann ich einfach vorbeikommen ?Viele GrüßeJoachim KilbRechtsanwalt",Validiert,Petra Böhne
+23.04.2024,PVS Abrechnung,, BG PKV SZ von&nbsp;&nbsp;01.01.2024 bis&nbsp;&nbsp;24.04.2024 Siegbert Stracke Sonja Saul GP Medical Center,Akzeptiert,Siegbert Stracke
+08.04.2024,Befund,, EKG - ExternPDF,Validiert,Fjolla Statovci
+25.03.2024,Überweisung,, Überweisungsschein_6_BFBPDF,Validiert,Siegbert Stracke
+25.03.2024,Leistung,5, Symptombezogene Untersuchung,Abgerechnet,Siegbert Stracke
+25.03.2024,Leistung,3," Eingehende, das gewöhnliche Maß übersteigende Beratung - auch mittels Fernsprecher",Abgerechnet,Siegbert Stracke
+25.03.2024,Diagnose,I25.19 G,"DD Atherosklerotische Herzkrankheit, nicht näher bezeichnet",Freigegeben,Siegbert Stracke
+25.03.2024,Cave,, Kontrastmittelallergie,Validiert,Siegbert Stracke
+25.03.2024,Privatrezept,," Privatrezept, (1) Rosuvastatin - 1 A Pharma 10 mg 100 Filmtabl. N3 0-0-0-1&nbsp;&nbsp;(03.07.2024)&nbsp;&nbsp;(2) ASS -1A Pharma Protect 100mg 100 mag.-res. Tbl. N3 1-0-0-0&nbsp;&nbsp;(03.07.2024)PDF",Validiert,Siegbert Stracke
+25.03.2024,Medikament,10409931 V, ASS -1A Pharma Protect 100mg 100 mag.-res. Tbl. N3,Validiert,Siegbert Stracke
+25.03.2024,Medikament,17412103 V, Rosuvastatin - 1 A Pharma 10 mg 100 Filmtabl. N3,Validiert,Siegbert Stracke
+25.03.2024,Anamnese,," Kardio-CT-Befund besprochen, aufgrund der Veränderungen jetzt ASS und Rosuvastatin 10",Validiert,Siegbert Stracke
+25.03.2024,Privatschein,, Privat Schein,Abgerechnet,Siegbert Stracke
+13.03.2024,Kommunikation,," mit dem Pat. abgesprochen, dass er sich bei uns im Verlauf wegen eines Termins zur {\n                        for (parent = node.parentNode; parent; parent = parent.parentNode) {\n                            if (parent.classList.contains('fold-container')) {\n                                break;\n                            }\n                        }\n                        if ( parent ) {\n                            parent.classList.toggle('fold-show');\n                        } })(this)"">...... Befundbesprechung des Kardio-CT meldet",Validiert,Siegbert Stracke
+29.02.2024,Befund,, Radiologie. CT Herz. 29.02.24PDF,Validiert,Petra Böhne
+22.01.2024,Kommunikation,," email Hallo Herr Doktor Stracke.Die DKD bietet kein Cardio CT mehr an. Wissen Sie {\n                        for (parent = node.parentNode; parent; parent = parent.parentNode) {\n                            if (parent.classList.contains('fold-container')) {\n                                break;\n                            }\n                        }\n                        if ( parent ) {\n                            parent.classList.toggle('fold-show');\n                        } })(this)"">...... ob JoHo dies anbietet ? Oder soll ich in Wiesbaden ein radiologische Institut suchen ?Viele Grüße aus MallorcaJoachim Kilb",Validiert,Madina Sarwari
+27.12.2023,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV0187, Datum: 27.12.2023",Importiert,
+27.12.2023,Rechnung,, R. Nr. 00000000000000010187 Privat,Importiert,
+23.12.2023,Extern,, info&nbsp;&nbsp;Befundbericht per Mail an Pat gesendet,Importiert,
+23.12.2023,Extern,, link&nbsp;&nbsp;Kilb_Joachim_231205.pdf$\TurboMed\Dokumente\Sonstiges\202312\Kilb19650719-16707-618B4AA6-933E-4e90-9EE2-B0B8B16A8867.pdf,Importiert,
+23.12.2023,Extern,, link&nbsp;&nbsp;Kilb_Joachim_231205.odt$\TurboMed\Dokumente\Sonstiges\202312\Kilb19650719-16707-88A80791-719E-4e36-B873-89C0DFF2910E.odt,Importiert,
+23.12.2023,Leistung,75,  (Erhöhter zeitlicher Aufwand),Importiert,
+11.12.2023,Extern,, a&nbsp;&nbsp;tel &lt; 10min: Befunde besprochen; aktuell erst mal keine weiteren Maßnahmen außer symptomatischen - insbesondere im Hinblick auf die Cholesterinwerte.,Importiert,
+11.12.2023,Leistung,1, ,Importiert,Siegbert Stracke
+11.12.2023,Diagnose,Z71 , Befundbesprechung,Importiert,
+07.12.2023,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+07.12.2023,Extern,, MFA&nbsp;&nbsp;FYI: Das Labor wurde schon per Mail an Pat. gesendet.,Importiert,
+07.12.2023,Extern,, labor&nbsp;&nbsp;Labor mit Standardmail versendet,Importiert,
+07.12.2023,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080176956_SESF2_362675903_LG_E.pdf$\TurboMed\Dokumente\Sonstiges\202312\Kilb19650719-16707-30CAA736-63D2-4283-A5A1-72030A089BA9.pdf,Importiert,
+07.12.2023,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080176956_SESF2_362675903_LA_E.pdf$\TurboMed\Dokumente\Sonstiges\202312\Kilb19650719-16707-60439F71-1BD3-41d7-8E9D-A2CD31DD763F.pdf,Importiert,
+07.12.2023,Leistung,2,  (09:27),Importiert,Siegbert Stracke
+07.12.2023,Leistung,3572, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3575, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3571, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3571, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3571, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3574, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3573H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3598H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3621, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3620, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3555, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3557, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3558, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3584H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3583H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3585H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3565H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3564H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3563H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3562H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3597H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3589H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3587H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3592H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3595H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3594H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3581H1, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3560, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3605, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3607, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3561, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3551, ,Importiert,Siegbert Stracke
+07.12.2023,Leistung,3550, ,Importiert,Siegbert Stracke
+07.12.2023,Diagnose,Z71 , Befundübermittlung,Importiert,
+06.12.2023,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+06.12.2023,Extern,, labor&nbsp;&nbsp;Teilbefund sonst soweit ok,Importiert,
+06.12.2023,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080176956_SESF2_362675903_LG_T.pdf$\TurboMed\Dokumente\Sonstiges\202312\Kilb19650719-16707-DD24661D-C69C-4f9c-919E-0C051152B208.pdf,Importiert,
+06.12.2023,Diagnose,E78.0 G, Hypercholesterinämie,Importiert,
+06.12.2023,Diagnose,E78.1 G, Hypertriglyceridämie,Importiert,
+05.12.2023,Extern,, info&nbsp;&nbsp;Befund per e-mail,Importiert,
+05.12.2023,Extern,, info&nbsp;&nbsp;Coloskopie vor 2 J.,Importiert,
+05.12.2023,Extern,, a&nbsp;&nbsp;cardio ct planen,Importiert,
+05.12.2023,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 05.12.2023,Importiert,
+05.12.2023,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 05.12.2023Befund klinischer Auswertung gemäß GLI:Verdacht auf leichte RestriktionReferenz Gemessen&nbsp;&nbsp; % B-Test %IVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.04&nbsp;&nbsp;&nbsp;&nbsp; 3.69&nbsp;&nbsp;73FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.04&nbsp;&nbsp;&nbsp;&nbsp; 3.86&nbsp;&nbsp;76FEV1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.89&nbsp;&nbsp;&nbsp;&nbsp; 3.41&nbsp;&nbsp;88PEF (l/min)&nbsp;&nbsp;&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp;&nbsp;509.7FEF25-75%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.24&nbsp;&nbsp;&nbsp;&nbsp; 3.72 115FEV075&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp; 3.09FEV1/FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.77&nbsp;&nbsp;&nbsp;&nbsp; 0.88 114FEF75%FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03&nbsp;&nbsp;&nbsp;&nbsp; 1.85 180FEV075/FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp; 0.80,Importiert,
+05.12.2023,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 05.12.2023,Importiert,
+05.12.2023,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 05.12.2023submaximal belastetmax. Last: 175 W in Laststufe 5 bei 10:06 min, 88% von Soll 197.0 W,MET: 7.6Max. HF: 125 /min bei Laststufe 5 bei 10:06 min, 88% von Soll 142 /minmax. ST-Hebung in Kanal III: 0.17 mV in Laststufe 4, max.ST-Senkungin Kanal II: -0.10 mV bei Laststufe 5VES: 44Belastungs-EKG Messwerte-----------------------------------------------------------Last Dauer.&nbsp;&nbsp;HF&nbsp;&nbsp; BD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ST(mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(mmHg)&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp; V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V60&nbsp;&nbsp;00:10&nbsp;&nbsp;76&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.02 -0.00&nbsp;&nbsp;0.02&nbsp;&nbsp; 0.03&nbsp;&nbsp;0.04&nbsp;&nbsp;0.0575&nbsp;&nbsp;02:00&nbsp;&nbsp;90 130/76&nbsp;&nbsp;0.01&nbsp;&nbsp;0.01&nbsp;&nbsp;0.03&nbsp;&nbsp; 0.03&nbsp;&nbsp;0.05&nbsp;&nbsp;0.04100&nbsp;&nbsp;02:00&nbsp;&nbsp;95 140/76&nbsp;&nbsp;0.02&nbsp;&nbsp;0.01&nbsp;&nbsp;0.02&nbsp;&nbsp; 0.03&nbsp;&nbsp;0.03&nbsp;&nbsp;0.04125&nbsp;&nbsp;02:00 105 148/82&nbsp;&nbsp;0.01&nbsp;&nbsp;0.02&nbsp;&nbsp;0.02&nbsp;&nbsp;-0.02 -0.02 -0.02150&nbsp;&nbsp;02:00 116 160/84 -0.04 -0.02&nbsp;&nbsp;-0.00 -0.05 -0.09 -0.06175&nbsp;&nbsp;02:06 125 172/90&nbsp;&nbsp;0.07&nbsp;&nbsp;0.05&nbsp;&nbsp;0.07&nbsp;&nbsp;-0.10 -0.04&nbsp;&nbsp;0.0025&nbsp;&nbsp;00:44 103&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.04&nbsp;&nbsp;0.02&nbsp;&nbsp;0.01&nbsp;&nbsp;-0.03 -0.05 -0.05-----------------------------------------------------------",Importiert,
+05.12.2023,Extern,, utxt&nbsp;&nbsp;Check up (Z00.0),Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Ableitende Harnwege:Harnblase mit einem Volumen von ca. 100 mL, Wand soweit beurteilbar ohne erkennbare Wandverdickungen oder Polypen.Prostata mit einem Volumen von 23ml ohne Anhalt für relevante Kalzifikationen oder Raumforderungen. Kein Aufstau.Douglas Raum frei von Flüssigkeit.Keine suspekten Lymphknoten.",Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Abdomenultraschall:Leber mit homogenem verdichtetem Binnenreflexmuster im Sinne einer Steatosis hepatis ohne Anhalt für Raumforderungen mit fokalen Minderzellverfettungen sowie einer bekannten kleinen Zyste im Segment II (soweit einsehbar), Gallenblase reizlos, keineintra- oder extrahepatische Cholestase. DHC bei 0,5 cm.Pfortader duplexsonographisch mit regelrechten laminaren Flussverhältnissen.Nieren bds. orthotop, kein Stau, kein Anhalt für Konkremente, keine freie Flüssigkeit.Pankreas nur ausreichend im Kopfbereich zu beurteilen - kein Anhalt für eine Raumforderung oder entzündliche Veränderung. Ductus pankreaticus bei 1.4mm.Milz soweit unauffällig.Orientierender Darmschall: kein Anhalt für entzündliche Veränderungen.Kolon descendens / Wanddicke: 2 mm, Aorta soweit ohne Anhalt für Ektasien oder Dissektionen.",Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Herz von xiphoidal (Konvexschallkopf):Visuell soweit ausreichende linksventrikuläre Pumpfunktion, in den betrachteten Wandabschnitten keine Wandbewegungsstörungen, kein Perikarderguss, Vena cava inferior mit 1.9 cm atemmodulatorisch konfiguriert.Im beidseitigen Pleurasono kein Pleuraerguss",Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Echokardiographie:Linker Ventrikel mit normaler Pumpfunktion, kein Anhalt für eine linksventrikuläre Compliancestörung bei normalem E/A-Verhältnis, Mitralklappeninsuffizienz Grad 1, normkonfigurierte Herzhöhlen, keine Rechtsherzbelastungszeichen, keine höhergradigeTI, kein verdicktes Septum, kein Perikarderguss. Aortenklappe trikuspid ohne Anhalt mit leichter Sklerosierung.",Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Carotisduplex:Antegrade Strömungsverhältnisse in ACC, ACI und ACE sowie Aa. vertebrales beidseits. Keine relevante Plaquebildung in der Bifurkation bds. Keine Strömungsbeschleunigung, keine Stenosen. IMD in beiden Messbereichen der ACC &lt; 1mm.",Importiert,
+05.12.2023,Extern,," sono&nbsp;&nbsp;SONO - Schilddrüse:Insgesamt bekannte vergrößerte Schilddrüse mit einem Gesamt-Volumen von knapp 45ml (rechter Schilddrüsenlappen: 21ml / linker Schilddrüsenlappen: 22ml ) mit den bekannten knotigen Veränderungen. Indexknoten im Bereich des Isthmus nach rechtseinwachsend mit einem Längsdurchmesser von 3,7cm (formal TIRADS 3) mit einer Makroverkalkung (am ehesten verkalkte Zyste) Unauffälliges Durchblutungsmuster. Keine vergrößerten parathyreoidalen Lymphknoten.",Importiert,
+05.12.2023,Extern,, a&nbsp;&nbsp;Anamnese: Die heutige Vorstellung erfolgte zur orientierenden internistischen Vorsorgeuntersuchung. Aktuell werden keine relevanten Beschwerden angegeben. Wegen der bekannten arteriellen Hypertonie wird aktuell noch der Betablocker genommen.,Importiert,
+05.12.2023,Extern,, a&nbsp;&nbsp;Pat. war bei Dr. Stracke,Importiert,
+05.12.2023,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 23Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 05.12.2023&nbsp;&nbsp; Abnahmezeit: 14:18Diagnose(Verdacht):Check up (Z00.0)Befund/Medikation:Auftrag:",Importiert,
+05.12.2023,Medikament,06160839 D, Lotricomb SAL 20 g,Importiert,
+05.12.2023,Diagnose,K76.8 G, Leberzyste,Importiert,Siegbert Stracke
+05.12.2023,Diagnose,I34.0 G, Mitralklappeninsuffizienz,Importiert,Siegbert Stracke
+05.12.2023,Diagnose,I35.8 G, Aortenklappensklerose,Importiert,Siegbert Stracke
+05.12.2023,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+05.12.2023,Befund,," Urin: pH 6, opB",Importiert,
+05.12.2023,Befund,, BSG: 4/10,Importiert,
+05.12.2023,Befund,, Lungenfunktion:Hier zeigte sich kein Anhalt für eine restriktive oder obstruktive Lungenerkrankung.,Importiert,
+05.12.2023,Befund,, Ergometrie:Stufenweise lineare Belastung bis auf 180 Watt.Unter der Belastung zeigte sich ein normaler Herzfrequenz- sowie Blutdruckanstieg sowie keine signifikanten ST-Streckenveränderungen allerdings mit unter Belastung zunehmenden ventrikulären Extrasystolen.Der Abbruch der Belastung erfolgte wegen peripherer Erschöpfung bei unter Betablockade nicht ausreichender Ausbelastungsfrequenz.In der Erholungsphase zeigte sich ein adäquater Puls- sowie Blutdruckabfall.Insgesamt zeigte sich in der Ergometrie kein Zeichen einer signifikanten myokardialen Ischämie.,Importiert,
+05.12.2023,Befund,," Abdomen:Bauchdecken weich, normale Darmgeräusche, keine Resistenzen, keine Druckdolenz; insbesondere kein Anhalt für einen Peritonismus.",Importiert,
+05.12.2023,Befund,," Pulmo:Vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche, perkutorisch keine pathologische Dämpfung, Zwerchfellverschieblichkeit auf beiden Seiten gut",Importiert,
+05.12.2023,Befund,," Cor:Herztöne rein, keine pathologischen Herzgeräusche, Herzfrequenz regelmäßig mit einer mHF von 70/min.",Importiert,
+05.12.2023,Befund,," Orientierende neurologische Untersuchung:Soweit kein Anhalt für ein fokal neurologisches Defizit, insbesondere keine Anisokorie, keine motorischen oder sensiblen Ausfälle, kein Nystagmus, kein Meningismus.",Importiert,
+05.12.2023,Leistung,3511, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,3501, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,250, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,605a, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,605, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,652, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,657, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,602, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,644, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,406, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,424, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,A644,  (Erhöhter Zeitaufwand wegen zusätzl. Farbe d. Pfortader + Aor\nta),Importiert,Siegbert Stracke
+05.12.2023,Leistung,645,  (Erhöhter Zeitaufwand wegen zusätzl. Farbcodierung der Caroti\nden),Importiert,Siegbert Stracke
+05.12.2023,Leistung,420,  (Niere bds. Galle. Pankreas. Aorta. Blase. Pfortader. Carotis\nbds.\nErhöhter Zeitaufwand wegen Vielzahl der Organe),Importiert,Siegbert Stracke
+05.12.2023,Leistung,417, ,Importiert,Siegbert Stracke
+05.12.2023,Leistung,29,  (Erhöhter zeitlicher Aufwand),Importiert,Siegbert Stracke
+05.12.2023,Diagnose,Z00.0 , Check up,Importiert,
+05.12.2023,Diagnose,K76.8 , Leberzyste,Importiert,
+05.12.2023,Diagnose,I35.8 , Aortenklappensklerose,Importiert,
+05.12.2023,Diagnose,I34.0 , Mitralklappeninsuffizienz,Importiert,
+05.12.2023,Diagnose,E04.2 G, Struma multinodosa,Importiert,
+05.12.2023,Diagnose,I10.90 G, Arterielle Hypertonie,Importiert,
+05.12.2023,Diagnose,K21.9 G, Refluxkrankheit,Importiert,
+05.12.2023,Diagnose,K76.0 G, Steatosis hepatis,Importiert,
+07.11.2023,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV9675, Datum: 07.11.2023",Importiert,
+07.11.2023,Rechnung,, R. Nr. 00000000000000009675 Privat,Importiert,
+01.11.2023,Extern,," MFA&nbsp;&nbsp;@KT: Sie haben geschrieben, dass ein Check vereinbart wurde - wann den? In Doctolib ist nichts eingetragen - ich würde sonst die Rechnung rausschicken. Danke",Importiert,
+05.10.2023,Extern,, anz&nbsp;&nbsp;Check Up termin verienabrt 11/23,Importiert,
+05.10.2023,Extern,, impf&nbsp;&nbsp;Comirnaty (6) CH: HD9869,Importiert,
+05.10.2023,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+05.10.2023,Extern,, info&nbsp;&nbsp;Pat. kam zur Impfung,Importiert,
+05.10.2023,Leistung,375, ,Importiert,
+05.10.2023,Diagnose,Z26.9 , Impfung,Importiert,
+01.10.2023,Privatschein,, ,Importiert,
+01.10.2023,Privatschein,, ,Importiert,
+25.09.2023,Leistung,*MGRIP Te, ,Importiert,Siegbert Stracke
+25.09.2023,Leistung,375, ,Importiert,Siegbert Stracke
+25.09.2023,Diagnose,Z25.1 , Grippeschutzimpfung,Importiert,
+08.09.2023,Leistung,2,  (11:24),Importiert,Siegbert Stracke
+08.09.2023,Leistung,*POR1, ,Importiert,Siegbert Stracke
+13.04.2023,Leistung,*POR1, ,Importiert,Siegbert Stracke
+13.04.2023,Leistung,2, ,Importiert,Siegbert Stracke
+13.04.2023,Diagnose,I10.90 G, Arterielle Hypertonie,Importiert,
+13.03.2023,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV8348, Datum: 13.03.2023",Importiert,
+13.03.2023,Rechnung,, R. Nr. 00000000000000008348 Privat,Importiert,
+09.03.2023,Extern,," ms&nbsp;&nbsp;email an PatSehr geehrter Herr Kilb,anbei schicken wir Ihnen den letzten Befund mit dem PSA Wert zu.Die Blutentnahme war am: 26.07.2022 und der Befund war am 27.07.2022 fertig.Mit freundlichen GrüßenIhr Praxisteam Dr. Stracke und KollegenFrau Sarwari",Importiert,
+09.03.2023,Extern,, Email&nbsp;&nbsp;?allo Praxisteam.Können Sie mir bitte melne&nbsp;&nbsp;letzten PSA-Wert und das Datum der Entnahme mailen ? Ich habe kommende Woche Routineuntersuchung beim Urologen.Danke und GrüßeJoachim KilbRechtsanwalt,Importiert,
+09.03.2023,Leistung,2, ,Importiert,
+09.03.2023,Diagnose,Z71 , Befundübermittlung,Importiert,
+16.02.2023,Extern,, AM&nbsp;&nbsp;Pat kam heute zur 3ten Boostrix,Importiert,
+16.02.2023,Extern,, impf&nbsp;&nbsp;BOOSTRIX (3te + Chargennummer: AC37B420AL,Importiert,
+16.02.2023,Extern,, impfung&nbsp;&nbsp;Impfung - Tetanus - Pertussis - Diphterie (BOOSTRIX):Grundimmunisierung: Tag 0 - 4 Wochen - 6 MonateAuffrischung alle 10 Jahre,Importiert,
+16.02.2023,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+16.02.2023,Leistung,*MBOOS, ,Importiert,Sonja Saul
+16.02.2023,Leistung,375, ,Importiert,Sonja Saul
+16.02.2023,Diagnose,Z27.1 , Diphtherie-Pertussis-Tetanus-Vakzination [DPT] [DTPa] [DaPT],Importiert,
+09.02.2023,Extern,, AM&nbsp;&nbsp;Pat an Impfung&nbsp;&nbsp;und Kolo erinnert / kommt nächste Woche für Impfung mal rein,Importiert,
+03.02.2023,Extern,, impf&nbsp;&nbsp;2te Shingrix Impfung CH:&nbsp;&nbsp;2S3J7,Importiert,
+03.02.2023,Extern,, impfung&nbsp;&nbsp;Impfung - Herpes zoster (SHINGRIX):Indikationsimpfung &gt; 50 LJ.Standardimpfung &gt; 60 LJ.Schema: 2 Impfungen im Abstand von 2-6 Monaten89128A (1. Standardimpfung)89128B (2. Standardimpfung nach 2-6 Monaten)89129A (1. Indikationsimpfung)89129B (2. Indikationsimpfung nach 2-6 Monaten),Importiert,
+03.02.2023,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+03.02.2023,Leistung,375, ,Importiert,Sonja Saul
+03.02.2023,Diagnose,Z26.9 , Impfung,Importiert,
+23.01.2023,Extern,, AM&nbsp;&nbsp;Rezept zugeschickt,Importiert,
+23.01.2023,Diagnose,Z71 , Impfberatung,Importiert,
+22.01.2023,Extern,, Tanz&nbsp;&nbsp;geantowrtet,Importiert,Siegbert Stracke
+22.01.2023,Extern,," Email&nbsp;&nbsp;Hallo Praxisteam.Ich göaube ich benötige noch meine zweite Gürtelroseimpfung.Wäre das am Freitag, den 3.2.2023 gleich morgens möglich ?Ich bräuchte dann auch das Rezept nachhause.Freundliche GrüßeJoachim KilbRechtsanwalt",Importiert,Siegbert Stracke
+22.01.2023,Medikament,13715870 D, Shingrix ISU 1 St,Importiert,Siegbert Stracke
+22.01.2023,Leistung,*POR1, ,Importiert,Sonja Saul
+22.01.2023,Leistung,2, ,Importiert,Sonja Saul
+01.01.2023,Privatschein,, ,Importiert,
+07.11.2022,Leistung,*POR1, ,Importiert,
+07.11.2022,Leistung,2, ,Importiert,Siegbert Stracke
+07.11.2022,Diagnose,I10.90 G, Arterielle Hypertonie,Importiert,
+21.10.2022,Leistung,*MGRIP Te, ,Importiert,Siegbert Stracke
+21.10.2022,Leistung,375, ,Importiert,Siegbert Stracke
+21.10.2022,Diagnose,Z25.1 , Grippeschutzimpfung,Importiert,
+01.10.2022,Privatschein,, ,Importiert,
+19.09.2022,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV7201, Datum: 19.09.2022",Importiert,
+19.09.2022,Rechnung,, R. Nr. 00000000000000007201 Privat,Importiert,
+18.09.2022,Extern,, MFA&nbsp;&nbsp;ReCall für die 3te Boostrix Impfung wurde nicht gesetzt - hat der Patient schon einen Termin erhalten?,Importiert,
+01.09.2022,Extern,," a&nbsp;&nbsp;Müdigkeit, Abgeschlagenheit; teilweise auch unterschwellig aggressives Verhalten; würde gern mal Orthomol probieren; habe ihm ein paar Proben mitgegeben; ansonsten soll er sich bei verschlimmerung der symptome wieder melden; keine weiterenspezifischen maßnahmen aktuell erforderlich.",Importiert,
+01.09.2022,Extern,, impf&nbsp;&nbsp;BOOSTRIX 2te&nbsp;&nbsp;+ CH: AC37B413AH,Importiert,
+01.09.2022,Extern,, impfung&nbsp;&nbsp;Impfung - Tetanus - Pertussis - Diphterie (BOOSTRIX):89303A (1. Impfung)89303B (2. Impfung nach 4 Wochen)89303B (3. Impfung nach 6 Monaten)89303R (Auffrischung alle 10 Jahre),Importiert,
+01.09.2022,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+01.09.2022,Extern,, a&nbsp;&nbsp;Pat. war bei Dr. Stracke,Importiert,
+01.09.2022,Leistung,1, ,Importiert,
+01.09.2022,Leistung,*MBOOS, ,Importiert,Siegbert Stracke
+01.09.2022,Leistung,375, ,Importiert,Siegbert Stracke
+01.09.2022,Diagnose,Z71 , Beratung,Importiert,
+25.08.2022,Extern,," mail&nbsp;&nbsp;Sehr geehrter Herr Kilb,Ich habe Sie bei Dr. Stracke für den 01.09.22 8 Uhr eingetragen.Mit freundlichen GrüßenPraxisteam Dres. Stracke &amp; KollegenFr. Neuschild",Importiert,
+25.08.2022,Extern,," Email&nbsp;&nbsp;Hallo die Damen.Ich wollte fragen, ob ich Dr. Stracke nach meiner nächsten Impfung kommende Woche am Donnerstag kurz sprechen kann ?Viele GrüßeJoachim Kilb",Importiert,
+04.08.2022,Extern,, impf&nbsp;&nbsp;BOOSTRIX 1te + Chargennummer: AC37B413AH,Importiert,
+04.08.2022,Extern,, impfung&nbsp;&nbsp;Impfung - Tetanus - Pertussis - Diphterie (BOOSTRIX):89303A (1. Impfung)89303B (2. Impfung nach 4 Wochen)89303B (3. Impfung nach 6 Monaten)89303R (Auffrischung alle 10 Jahre),Importiert,
+04.08.2022,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+04.08.2022,Extern,, ms&nbsp;&nbsp;kam&nbsp;&nbsp;heute zur 1ten Boostrix- Termin für 2te Boostrix vereinbart,Importiert,
+04.08.2022,Leistung,*MBOOS, ,Importiert,Siegbert Stracke
+04.08.2022,Leistung,375, ,Importiert,Siegbert Stracke
+04.08.2022,Diagnose,Z27.1 G, Diphtherie-Pertussis-Tetanus-Vakzination [DPT] [DTPa] [DaPT],Importiert,
+03.08.2022,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV7020, Datum: 03.08.2022",Importiert,
+03.08.2022,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV6993, Datum: 03.08.2022, wurde storniert am 03.08.2022",Importiert,
+03.08.2022,Diagnose,Z71 , Befundübermittlung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,E04.2 , gesichert Struma multinodosa,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,K76.0 , gesichert Steatosis hepatis,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,D68.9 , Ausschluss (kein Anhalt) Gerinnungsstörung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,E87.8 , Ausschluss Elektrolytstörung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,E14.90 , Ausschluss Diabetes mellitus,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,D64.9 , Ausschluss Anämie,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,K80.80 , Ausschluss Cholelithiasis,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,I25.9 , Ausschluss (kein Anhalt) für KHK,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,J44.99 , Ausschluß Bronchialobstruktion,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,I27.9 , Ausschluß cardio-pulmonale Erkrankung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,I65.2 , Ausschluß Carotis Stenose,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,Z71 , gesichert Befundübermittlung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,E78.1 , gesichert Hypertriglyceridämie,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,E78.0 , gesichert Hypercholesterinämie,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,Z00.0 , gesichert Check up,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,Z26.9 , gesichert Impfung,Importiert,Siegbert Stracke
+03.08.2022,Diagnose,Z71 , gesichert Befundübermittlung,Importiert,Siegbert Stracke
+03.08.2022,Rechnung,, R. Nr. 00000000000000007020 Privat,Importiert,
+03.08.2022,Rechnung,, R. Nr. 00000000000000006993 Privat,Importiert,
+28.07.2022,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+28.07.2022,Extern,, nn&nbsp;&nbsp;Befundbericht heute per Post raus,Importiert,
+28.07.2022,Extern,, impfung&nbsp;&nbsp;Impfung - Herpes zoster (SHINGRIX):Indikationsimpfung &gt; 50 LJ.Standardimpfung &gt; 60 LJ.Schema: 2 Impfungen im Abstand von 2-6 Monaten,Importiert,
+28.07.2022,Extern,," vsr&nbsp;&nbsp;Impfung - Aufklärung:Pat wurde über die Impfung aufgeklärt, Pat. hat aktuell keine Temperatur, keine Zeichen eines Infektes; keine relevanten Allergien, die gegen die Impfung sprechen.Während der Überwachungsphase in der Praxis zeigten sich keine Komplikationen.Über Verhaltensmaßregeln im häuslichen Bereich wurde der Pat. aufgeklärt.",Importiert,
+28.07.2022,Extern,, impf&nbsp;&nbsp;Shingrix 1te CHFP33D,Importiert,
+28.07.2022,Extern,, link&nbsp;&nbsp;220728_sono_kilb_joachim.pdf$\TurboMed\Dokumente\Sonstiges\202208\Kilb19650719-16707-60282901-ABF7-4038-8283-71D8C1C823AB.pdf,Importiert,
+28.07.2022,Extern,, link&nbsp;&nbsp;Kilb_Joachim_220728.odt$\TurboMed\Dokumente\Sonstiges\202207\Kilb19650719-16707-42F3FF38-03FC-4997-8D0D-4A6987A390D8.odt,Importiert,
+28.07.2022,Extern,, link&nbsp;&nbsp;Kilb_Joachim_220728.pdf$\TurboMed\Dokumente\Sonstiges\202207\Kilb19650719-16707-1D1E7043-9D30-4d8e-8988-6547B6840B2A.pdf,Importiert,
+28.07.2022,Extern,, impfung&nbsp;&nbsp;Impfung - Herpes zoster (SHINGRIX):Indikationsimpfung &gt; 50 LJ.Standardimpfung &gt; 60 LJ.Schema: 2 Impfungen im Abstand von 2-6 Monaten,Importiert,
+28.07.2022,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 28.07.2022,Importiert,
+28.07.2022,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 28.07.2022Befund klinischer Auswertung gemäß GLI:normalReferenz Gemessen&nbsp;&nbsp; % B-Test %IVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.03&nbsp;&nbsp;&nbsp;&nbsp; 4.21&nbsp;&nbsp;84FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.03&nbsp;&nbsp;&nbsp;&nbsp; 4.04&nbsp;&nbsp;80FEV1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.89&nbsp;&nbsp;&nbsp;&nbsp; 3.17&nbsp;&nbsp;81PEF (l/min)&nbsp;&nbsp;&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp;&nbsp;467.8FEF25-75%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.30&nbsp;&nbsp;&nbsp;&nbsp; 2.77&nbsp;&nbsp;84FEV075&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp; 2.89FEV1/FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.78&nbsp;&nbsp;&nbsp;&nbsp; 0.78 101FEF75%FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06&nbsp;&nbsp;&nbsp;&nbsp; 1.02&nbsp;&nbsp;97FEV075/FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp; 0.71,Importiert,
+28.07.2022,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 28.07.2022,Importiert,
+28.07.2022,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 28.07.2022ausbelastetmax. Last: 175 W in Laststufe 2 bei 04:00 min, 88% von Soll 197.0 W,MET: 7.7Ruhe HF: 70 /min, Max. HF: 143 /min bei Laststufe 3 bei 06:00 min,100% von Soll 143 /minmax. ST-Hebung in Kanal V1: 0.19 mV in Laststufe 3, max.ST-Senkung inKanal II: -0.09 mV bei Laststufe 3VES: 2Belastungs-EKG Messwerte-----------------------------------------------------------Last Dauer.&nbsp;&nbsp;HF&nbsp;&nbsp; BD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ST(mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(mmHg)&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp; V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V60&nbsp;&nbsp;00:10&nbsp;&nbsp;70 120/80 -0.00 -0.00&nbsp;&nbsp;0.04&nbsp;&nbsp; 0.06&nbsp;&nbsp;0.06&nbsp;&nbsp;0.05105&nbsp;&nbsp;02:00&nbsp;&nbsp;90 140/80&nbsp;&nbsp;0.00&nbsp;&nbsp;0.01&nbsp;&nbsp;0.05&nbsp;&nbsp; 0.06&nbsp;&nbsp;0.08&nbsp;&nbsp;0.06175&nbsp;&nbsp;02:00 108 190/80&nbsp;&nbsp;0.03 -0.00&nbsp;&nbsp;0.02&nbsp;&nbsp; 0.03&nbsp;&nbsp;0.02&nbsp;&nbsp;0.00140&nbsp;&nbsp;02:00 143 220/90&nbsp;&nbsp;0.19&nbsp;&nbsp;0.10&nbsp;&nbsp;0.01&nbsp;&nbsp; 0.06 -0.03 -0.0960&nbsp;&nbsp;02:00 113 180/70 -0.01&nbsp;&nbsp;0.01&nbsp;&nbsp;0.00&nbsp;&nbsp;-0.02 -0.04 -0.0145&nbsp;&nbsp;01:53&nbsp;&nbsp;96 165/60 -0.03&nbsp;&nbsp;0.00&nbsp;&nbsp;-0.00 -0.00 -0.01 -0.0225&nbsp;&nbsp;01:58&nbsp;&nbsp;92 130/70 -0.01 -0.00&nbsp;&nbsp;0.02&nbsp;&nbsp; 0.01&nbsp;&nbsp;0.00&nbsp;&nbsp;0.02-----------------------------------------------------------",Importiert,
+28.07.2022,Extern,," sono&nbsp;&nbsp;SONO - Ableitende Harnwege:Harnblase mit einem Volumen von ca. 50 mL, Wand soweit beurteilbar ohne erkennbare Wandverdickungen oder Polypen.Prostata mit einem Volumen von 20ml ohne Anhalt für relevante Kalzifikationen oder Raumforderungen. Kein Aufstau.Douglas Raum frei von Flüssigkeit.Keine suspekten Lymphknoten.",Importiert,
+28.07.2022,Extern,," sono&nbsp;&nbsp;SONO - Abdomenultraschall:Leber mit homogenem verdichtetem Binnenreflexmuster im Sinne einer Steatosis hepatis ohne Anhalt für Raumforderungen mit fokalen Minderzellverfettungen sowie einer kleinen Zyste im Segment II (soweit einsehbar), Gallenblase reizlos, keine intra-oder extrahepatische Cholestase. DHC bei 0,5 cm.Pfortader duplexsonographisch mit regelrechten laminaren Flussverhältnissen.Nieren bds. orthotop, kein Stau, kein Anhalt für Konkremente, keine freie Flüssigkeit.Pankreas nur ausreichend im Kopfbereich zu beurteilen - kein Anhalt für eine Raumforderung oder entzündliche Veränderung. Ductus pankreaticus bei 1.4mm.Milz soweit unauffällig.Orientierender Darmschall: kein Anhalt für entzündliche Veränderungen.Kolon descendens / Wanddicke: 2 mm, Aorta soweit ohne Anhalt für Ektasien oder Dissektionen.",Importiert,
+28.07.2022,Extern,," sono&nbsp;&nbsp;SONO - Herz von xiphoidal (Konvexschallkopf):Visuell soweit ausreichende linksventrikuläre Pumpfunktion, in den betrachteten Wandabschnitten keine Wandbewegungsstörungen, kein Perikarderguss, Vena cava inferiror mit 1.9 cm atemmodulatorisch konfiguriert.Im beidseitigen Pleurasono kein Pleuraerguss.",Importiert,
+28.07.2022,Extern,," sono&nbsp;&nbsp;SONO - Carotisduplex:Antegrade Strömungsverhältnisse in ACC, ACI und ACE sowie Aa. vertebrales beidseits. Keine Plaquebildung in der Bifurkation bds. Auf der linken Seite leichte IMD Anhebung in der Bifurkation. Keine Strömungsbeschleunigung, keine Stenosen. IMD inbeiden Messbereichen der ACC &lt; 1mm.",Importiert,
+28.07.2022,Extern,," sono&nbsp;&nbsp;SONO - Schilddrüse:Insgesamt bekannte vergrößerte Schilddrüse mit einem Gesamt-Volumen von knapp 45ml (rechter Schilddrüsenlappen: 20ml / linker Schilddrüsenlappen: 25ml ) mit den bekannten knotigen Veränderungen. Indexknoten im Bereich des Isthmus nach rechtseinwachsend mit einem Längsdurchmesser von 3,7cm (formal TIRADS 3) mit einer Makroverkalkung (am ehesten verkalkte Zyste) Unauffälliges Durchblutungsmuster. Keine vergrößerten parathyreoidalen Lymphknoten.",Importiert,
+28.07.2022,Extern,," a&nbsp;&nbsp;Anamnese: Größe 182 cm Gewicht: 90 kg; Vorerkrankungen: siehe oben, Allergien: Paracetamol, Tetracyclin, Medikamente: siehe oben, Impfungen: Boostrix-Grundimmunisierung; Shingrix-Impfung, nächste Koloskopie zusammen mit ÖGD bis 2025. Die heutigeVorstellung erfolgte zur jährlichen Vorsorgeuntersuchung. Aktuell werden keine relevanten Beschwerden beklagt - die Schmerzen in der Schulter seien unter einer Cortison-Stoßtherapie jetzt deutlich besser geworden.",Importiert,
+28.07.2022,Extern,, a&nbsp;&nbsp;war heute bei dr stracke,Importiert,
+28.07.2022,Extern,, ms&nbsp;&nbsp;Laborbefund heute per email verschickt,Importiert,
+28.07.2022,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080173726_SESF2_362675903_LA_E.pdf$\TurboMed\Dokumente\Sonstiges\202207\Kilb19650719-16707-3A3AF094-375E-4541-9881-74BAEBB35897.pdf,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Bild Bild:JPG,Importiert,
+28.07.2022,Extern,, Impfausweis Bild:JPG,Importiert,
+28.07.2022,Diagnose,K76.0 G, Steatosis hepatis,Importiert,
+28.07.2022,Diagnose,E04.2 G, Struma multinodosa,Importiert,
+28.07.2022,Befund,," Zusammenfassung:In der heutigen Vorsorgeuntersuchung zeigten sich bzgl. der kardiovaskulären Risikofaktoren keine nennenswerten Auffälligkeiten. Im Carotisduplex sowie im Sono Abdomen stellten sich die einsehbaren Gefäße ohne nennenswerte makroangiopathischeVeränderungen dar. Insbesondere die Carotiden zeigten keine relevanten Plaques. Die Ergometrie ergab unter adäquater Ausbelastung kein Anhalt für das Vorliegen einer relevanten koronaren Herzkrankheit und die im Anschluss an die Belastungdurchgeführte Lungenfunktion zeigte kein Anhalt für das Vorliegen einer obstruktiven oder restriktiven Lungenerkrankung. Die in der letzten Ergometrie gesehene supraventrikuläre Tachykardie trat dieses Mal nicht auf, auch die in der letztenBelastung aufgetretenen monotopen, monomorphen ventrikulären Extrasystolen traten dieses Mal nicht auf. Unter der Betablockade erreichte Herr Kilb nur knapp die Ausbelastungsfrequenz, allerdings auch bei Blutdruckwerten von 220mmHg systolisch, sodass unter adäquater Belastung kein Anhalt für eine relevante koronare Herzkrankheit vorlag. Sonographisch zeigten sich die bekannten Veränderungen soweit konstant; der Indexknoten im Bereich des Isthmus der Schilddrüse ist soweit nichtgrößenprogredient, die Steatosis hepatis ist ebenfalls unverändert, der restliche sonographische Befund im wesentlichen unauffällig. Laborchemisch waren die Cholesterinwerte leicht erhöht, welche allerdings in der Gesamtschau der Befunde aktuellnicht zwingend medikamentös eingestellt werden muss. Eine erneute Vorsorge empfehle ich nach Ablauf von einem Jahr.",Importiert,
+28.07.2022,Befund,, Lungenfunktion:Hier zeigte sich kein Anhalt für eine restriktive oder obstruktive Lungenerkrankung.,Importiert,
+28.07.2022,Befund,, Ergometrie:Stufenweise lineare Belastung bis auf 220 Watt.Unter der Belastung zeigte sich ein normaler Herzfrequenz- sowie Blutdruckanstieg sowie keine signifikanten ST-Streckenveränderungen oder Rhythmusstörungen.Der Abbruch der Belastung erfolgte wegen peripherer Erschöpfung und Erreichen der Ausbelastungsfrequenz.In der Erholungsphase zeigte sich ein adäquater Puls- sowie Blutdruckabfall.Insgesamt zeigte sich in der Ergometrie kein Zeichen einer signifikanten myokardialen Ischämie.,Importiert,
+28.07.2022,Befund,," Abdomen:Bauchdecken weich, normale Darmgeräusche, keine Resistenzen, keine Druckdolenz; insbesondere kein Anhalt für einen Peritonismus.",Importiert,
+28.07.2022,Befund,," Pulmo:Vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche, perkutorisch keine pathologische Dämpfung, Zwerchfellverschieblichkeit auf beiden Seiten gut",Importiert,
+28.07.2022,Befund,," Cor:Herztöne rein, keine pathologischen Herzgeräusche, Herzfrequenz regelmäßig mit einer mHF von 60/min.",Importiert,
+28.07.2022,Befund,," Orientierende neurologische Untersuchung:Soweit kein Anhalt für ein fokal neurologisches Defizit, insbesondere keine Anisokorie, keine motorischen oder sensiblen Ausfälle, kein Nystagmus, kein Meningismus.",Importiert,
+28.07.2022,Leistung,*POR3, ,Importiert,
+28.07.2022,Leistung,375, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,75,  (Besonderer zeitlicher Aufwand),Importiert,Siegbert Stracke
+28.07.2022,Leistung,605a, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,605, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,652, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,657, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,602, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,A644,  (Erhöhter Zeitaufwand wegen zusätzl. Farbe d. Pfortader + Aor\nta),Importiert,Siegbert Stracke
+28.07.2022,Leistung,645,  (Erhöhter Zeitaufwand wegen zusätzl. Farbcodierung der Caroti\nden),Importiert,Siegbert Stracke
+28.07.2022,Leistung,420,  (Niere bds. Galle. Pankreas. Aorta. Blase. Pfortader. Carotis\nbds.\nErhöhter Zeitaufwand wegen Vielzahl der Organe),Importiert,Siegbert Stracke
+28.07.2022,Leistung,401, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,417, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,29,  (Erhöhter zeitlicher Aufwand),Importiert,Siegbert Stracke
+28.07.2022,Leistung,*POR3, ,Importiert,
+28.07.2022,Leistung,375, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,75,  (Besonderer zeitlicher Aufwand),Importiert,Siegbert Stracke
+28.07.2022,Leistung,605a, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,605, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,652, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,657, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,602, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,A644,  (Erhöhter Zeitaufwand wegen zusätzl. Farbe d. Pfortader + Aor\nta),Importiert,Siegbert Stracke
+28.07.2022,Leistung,645,  (Erhöhter Zeitaufwand wegen zusätzl. Farbcodierung der Caroti\nden),Importiert,Siegbert Stracke
+28.07.2022,Leistung,420,  (Niere bds. Galle. Pankreas. Aorta. Blase. Pfortader. Carotis\nbds.\nErhöhter Zeitaufwand wegen Vielzahl der Organe),Importiert,Siegbert Stracke
+28.07.2022,Leistung,401, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,417, ,Importiert,Siegbert Stracke
+28.07.2022,Leistung,29,  (Erhöhter zeitlicher Aufwand),Importiert,Siegbert Stracke
+28.07.2022,Diagnose,Z71 , Befundübermittlung,Importiert,
+28.07.2022,Diagnose,E04.2 G, Struma multinodosa,Importiert,
+28.07.2022,Diagnose,K76.0 G, Steatosis hepatis,Importiert,
+28.07.2022,Diagnose,D68.9 , Ausschluss (kein Anhalt) Gerinnungsstörung,Importiert,
+28.07.2022,Diagnose,E87.8 , Ausschluss Elektrolytstörung,Importiert,
+28.07.2022,Diagnose,E14.90 , Ausschluss Diabetes mellitus,Importiert,
+28.07.2022,Diagnose,D64.9 , Ausschluss Anämie,Importiert,
+28.07.2022,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,
+28.07.2022,Diagnose,K80.80 , Ausschluss Cholelithiasis,Importiert,
+28.07.2022,Diagnose,I25.9 , Ausschluss (kein Anhalt) für KHK,Importiert,
+28.07.2022,Diagnose,J44.99 , Ausschluß Bronchialobstruktion,Importiert,
+28.07.2022,Diagnose,I27.9 , Ausschluß cardio-pulmonale Erkrankung,Importiert,
+28.07.2022,Diagnose,I65.2 , Ausschluß Carotis Stenose,Importiert,
+28.07.2022,Diagnose,Z71 G, Befundübermittlung,Importiert,
+27.07.2022,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+27.07.2022,Extern,, labor&nbsp;&nbsp;Teil 1 soweit ok,Importiert,
+27.07.2022,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080173726_SESF2_362675903_LG_E.pdf$\TurboMed\Dokumente\Sonstiges\202207\Kilb19650719-16707-605BED07-96D8-4df5-955E-AA61DB39F685.pdf,Importiert,
+27.07.2022,Diagnose,E78.0 G, Hypercholesterinämie,Importiert,Siegbert Stracke
+27.07.2022,Diagnose,E78.1 G, Hypertriglyceridämie,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3572, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3575, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3574, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3573H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3598H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3621, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3620, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3555, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3557, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3558, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3584H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3583H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3585H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3565H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3564H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3563H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3562H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3597H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3589H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3587H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3592H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3595H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3594H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3581H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3560, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3605, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3607, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3561, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3551, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3550, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3572, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3575, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3571, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3574, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3573H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3598H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3621, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3620, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3555, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3557, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3558, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3584H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3583H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3585H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3565H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3564H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3563H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3562H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3597H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3589H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3587H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3592H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3595H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3594H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3581H1, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3560, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3605, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3607, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3561, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3551, ,Importiert,Siegbert Stracke
+27.07.2022,Leistung,3550, ,Importiert,Siegbert Stracke
+27.07.2022,Diagnose,E78.1 G, Hypertriglyceridämie,Importiert,
+27.07.2022,Diagnose,E78.0 G, Hypercholesterinämie,Importiert,
+26.07.2022,Extern,, ms&nbsp;&nbsp;labor mailen,Importiert,
+26.07.2022,Extern,, utxt&nbsp;&nbsp;Check up (Z00.0),Importiert,
+26.07.2022,Extern,, ms&nbsp;&nbsp;kam heute zur BE Check Up + PSA- an impfpass wurde erinnert- Colo 2019,Importiert,
+26.07.2022,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 3 / 22Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 26.07.2022&nbsp;&nbsp; Abnahmezeit: 09:01Diagnose(Verdacht):Check up (Z00.0)Befund/Medikation:Auftrag:",Importiert,
+26.07.2022,Befund,," Urin:pH5, o.p.BBSG: 4/8",Importiert,
+26.07.2022,Leistung,3511, ,Importiert,Siegbert Stracke
+26.07.2022,Leistung,3501, ,Importiert,Siegbert Stracke
+26.07.2022,Leistung,250, ,Importiert,Siegbert Stracke
+26.07.2022,Leistung,3511, ,Importiert,Siegbert Stracke
+26.07.2022,Leistung,3501, ,Importiert,Siegbert Stracke
+26.07.2022,Leistung,250, ,Importiert,Siegbert Stracke
+26.07.2022,Diagnose,Z00.0 G, Check up,Importiert,
+21.07.2022,Extern,, ^hart&nbsp;&nbsp;Rezept heute per Post versendet,Importiert,
+21.07.2022,Extern,, MFA&nbsp;&nbsp;Rezept bitte per Post an den Pat. senden - danke,Importiert,
+21.07.2022,Extern,," a&nbsp;&nbsp;tel (nicht abrechnen): Termin am kommenden Donnerstag auf eine spätere Zeit verlegt; er wünscht weiterhin die Impfung gegen Gürtelrose; mit ihm besprochen, dass wir dies im Anschluss an den Check machen können.",Importiert,
+21.07.2022,Medikament,13715870 D, Shingrix ISU 1 St,Importiert,
+21.07.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+21.07.2022,Leistung,2, ,Importiert,Siegbert Stracke
+21.07.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+21.07.2022,Leistung,2, ,Importiert,Siegbert Stracke
+01.07.2022,Privatschein,, ,Importiert,
+01.07.2022,Privatschein,, ,Importiert,
+01.07.2022,Privatschein,, ,Importiert,
+27.06.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+27.06.2022,Leistung,2, ,Importiert,Siegbert Stracke
+27.06.2022,Diagnose,R00.0 G, Tachycardie,Importiert,
+27.06.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+27.06.2022,Leistung,2, ,Importiert,Siegbert Stracke
+31.03.2022,Diagnose,Z26.9 G, Impfung,Importiert,
+21.02.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+21.02.2022,Leistung,*POR1, ,Importiert,Siegbert Stracke
+21.02.2022,Diagnose,R00.0 G, Tachycardie,Importiert,
+16.11.2021,Leistung,2, ,Importiert,Siegbert Stracke
+16.11.2021,Leistung,2, ,Importiert,Siegbert Stracke
+07.10.2021,Leistung,*MGRIP Te, ,Importiert,
+07.10.2021,Leistung,375, ,Importiert,Siegbert Stracke
+07.10.2021,Diagnose,Z25.1 , Grippeschutzimpfung,Importiert,
+01.10.2021,Privatschein,, ,Importiert,
+29.09.2021,Extern,," Email&nbsp;&nbsp;Sehr geehrter Herr Kilb,eben kam die Lieferung mit dem Impfstoff, für mich ist es ok wenn Sie einfach so vorbei kommen wenn Sie Zeit haben .(Auf für Herrn Käs gilt das gleiche)Bitte beachten Sie das wir diese Woche nur bis 13:00Uhr in der Praxis sind.Vielen DankMit freundlichen GrüßenPraxisteam Dres. Stracke &amp; KollegenFrau Tanz",Importiert,
+19.08.2021,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV4695, Datum: 19.08.2021",Importiert,
+19.08.2021,Rechnung,, R. Nr. 00000000000000004695 Privat,Importiert,
+05.08.2021,Labordaten,, Befundart [E] Endbefund,Importiert,Sonja Saul
+05.08.2021,Extern,, saul&nbsp;&nbsp;Nochmal den Befund per Telefon erklärt,Importiert,
+05.08.2021,Extern,, Tanz&nbsp;&nbsp;per email gesendet wie besprochen,Importiert,
+05.08.2021,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19.07.1965_080171288_SESF2_703640001_LA_E.pdf$\TurboMed\Dokumente\Sonstiges\202108\Kilb19650719-16707-316E2052-BA31-4989-9CCD-7382E8CB8217.pdf,Importiert,
+05.08.2021,Leistung,1,  (13:29),Importiert,
+05.08.2021,Leistung,2,  (12:47),Importiert,Sonja Saul
+05.08.2021,Diagnose,Z71 , Befundbesprechung,Importiert,
+05.08.2021,Diagnose,UUU , Befundübermittlung,Importiert,
+04.08.2021,Extern,, utxt&nbsp;&nbsp;Antikörpersuchtest (Z01.7),Importiert,
+04.08.2021,Extern,, Tanz&nbsp;&nbsp;war heute hier AK Test,Importiert,
+04.08.2021,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 3 / 21Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 04.08.2021&nbsp;&nbsp; Abnahmezeit: 08:20Diagnose(Verdacht):Antikörpersuchtest (Z01.7)Befund/Medikation:Auftrag:",Importiert,
+04.08.2021,Leistung,250, ,Importiert,Sonja Saul
+04.08.2021,Diagnose,Z01.7 , Antikörpersuchtest,Importiert,
+02.08.2021,Extern,, link&nbsp;&nbsp;result 1.8. negative.pdf$\TurboMed\Dokumente\Sonstiges\202108\Kilb19650719-16707-E38C0347-270D-4c9b-9AEA-31A5CB8E2F67.pdf,Importiert,
+30.07.2021,Extern,," Email&nbsp;&nbsp;Guten Morgen Frau Doktor SaulGuten Morgen Frau Tanz,ich brauche bitte postalisch nach Wiesbaden ein Rezept für meine Metohexal Tabletten. Die gehen nir langsam aus.Dann noch zur Info, dass sich das Gesundheitsamt noch immer nicht bei mir gemeldet hat.Viele Grüße aus WiesbadenJoachim Kilb",Importiert,
+30.07.2021,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+30.07.2021,Leistung,*POR1, ,Importiert,Sonja Saul
+30.07.2021,Leistung,2, ,Importiert,Sonja Saul
+26.07.2021,Extern,, a&nbsp;&nbsp;Telefonkontakt: bis au leichte Halsbeschwerden asymptomatisch. Wartet auf Anruf des Gesundheitsamtes. wird. Hat sich von selbst in Quarantäne begeben. Bei Verschlimmerung soll er sich melden,Importiert,
+26.07.2021,Extern,, link&nbsp;&nbsp;result 24.7. positiv e.ps$\TurboMed\Dokumente\Sonstiges\202107\Kilb19650719-16707-CCAC5E39-0C26-4eee-A60D-681AA5565353.ps,Importiert,
+26.07.2021,Extern,, link&nbsp;&nbsp;result 24.7. negative.ps$\TurboMed\Dokumente\Sonstiges\202107\Kilb19650719-16707-972EC18B-8E9F-462f-9AB6-9A10030AC296.ps,Importiert,
+26.07.2021,Extern,," Email&nbsp;&nbsp;Hallo Herr Doktor Stracke,ich bin am Freitagabend aus Palma zurückgekommen (eine Woche Aufenthalt in eigener Wohnung) und habe gleich am Samstagmorgen einen PCR-Test in Wiesbaden machen lassen, obwohl ich das eigentlich nicht musste, und ein Selbsttest vor Anflug negativ war.Ich hatte am Samstagfrüh vor dem PCR - Test noch jeweils eine Ladung Nasic-Spray und Tantum Verde-Spray benutzt, da ich einen kratzigen Hals hatte. Das habe ich aber auf den Flug zurückgeführt.Ich hatte dann zwischen dem PCR - Test und dem Erhalt des Ergebnisses zuhause drei Selbsttests gemacht, die alle positiv waren.Eben kam erst ein negatives Ergebnis und dann ein positives Ergebnis (siehe Anlagen). Da ich ja zweifach geimpft bin, finde ich das alles ziemlich seltsam. Mein Freund Andreas, der mit mir in Palma war, wurde negativ getestet (PCR und Selbsttests).",Importiert,
+26.07.2021,Leistung,1, ,Importiert,Sonja Saul
+26.07.2021,Diagnose,Z71 , Beratung,Importiert,
+01.07.2021,Privatschein,, ,Importiert,
+19.05.2021,Leistung,2, ,Importiert,Sonja Saul
+01.04.2021,Privatschein,, ,Importiert,
+30.03.2021,Leistung,*POR3, ,Importiert,
+30.03.2021,Leistung,75,  (Erhöhter zeitlicher Aufwand),Importiert,Siegbert Stracke
+30.03.2021,Leistung,A245, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,605a, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,605, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,652, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,657, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,602, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,29,  (&gt;15&nbsp;&nbsp;Minuten\nBesonderer zeitlicher Aufwand),Importiert,Siegbert Stracke
+30.03.2021,Leistung,A644,  (Erhöhter Zeitaufwand wegen zusätzl. Farbe d. Pfortader + Aor\nta),Importiert,Siegbert Stracke
+30.03.2021,Leistung,645,  (Erhöhter Zeitaufwand wegen zusätzl. Farbcodierung der Caroti\nden),Importiert,Siegbert Stracke
+30.03.2021,Leistung,420,  (Niere bds. Galle. Pankreas. Aorta. Blase. Pfortader. Carotis\nbds.\nErhöhter Zeitaufwand wegen Vielzahl der Organe),Importiert,Siegbert Stracke
+30.03.2021,Leistung,401, ,Importiert,Siegbert Stracke
+30.03.2021,Leistung,417, ,Importiert,Siegbert Stracke
+30.03.2021,Diagnose,UUU , Befundübermittlung,Importiert,
+30.03.2021,Diagnose,UUU , Ausschluß Prostata Erkrankung,Importiert,
+30.03.2021,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,
+30.03.2021,Diagnose,UUU , Ausschluss entzündliche Darmerkrankung,Importiert,
+30.03.2021,Diagnose,UUU , Ausschluß Cholelithiasis,Importiert,
+30.03.2021,Diagnose,UUU , Ausschluß Carotis Stenose,Importiert,
+30.03.2021,Diagnose,K76.0 , Steatosis hepatis,Importiert,
+30.03.2021,Diagnose,E04.2 , Struma multinodosa,Importiert,
+25.01.2021,Leistung,*POR1, ,Importiert,Siegbert Stracke
+25.01.2021,Leistung,2, ,Importiert,Siegbert Stracke
+20.11.2020,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV3633, Datum: 20.11.2020",Importiert,
+20.11.2020,Rechnung,, R. Nr. 00000000000000003633 Privat,Importiert,
+19.11.2020,Extern,," stracke&nbsp;&nbsp;Laborwerte besprochen, bis auf die leichte Dyslipoproteinämie und der Hypertriglyceridämie keine weiteren wesentlichen Auffälligkeiten. Will demnächst zur Komplettierung des Checks kommen.",Importiert,
+19.11.2020,Extern,, the&nbsp;&nbsp;kommt um die BE werte zu besprechen,Importiert,
+19.11.2020,Extern,, a&nbsp;&nbsp;war heute bei Dr. Stracke,Importiert,
+19.11.2020,Leistung,3, ,Importiert,
+19.11.2020,Leistung,A245, ,Importiert,Siegbert Stracke
+19.11.2020,Diagnose,Z71 , Beratung,Importiert,
+18.11.2020,Extern,, Pathologie keine Barrettschleimhaut 11.11.2020 Bild:JPG,Importiert,
+18.11.2020,Extern,, MVZ-ÖGD 5.11.2020 Bild:JPG,Importiert,
+16.11.2020,Extern,, tel&nbsp;&nbsp;(nicht abrechnen): Mit Pat. die Laborwerte besprochen,Importiert,
+13.11.2020,Extern,, tel&nbsp;&nbsp;Pat wieder telefonisch nicht erreicht (15:15) / auf die Mailbox gesprochen,Importiert,
+13.11.2020,Extern,, tel&nbsp;&nbsp;Pat. tel. nicht erreicht,Importiert,
+11.11.2020,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_603401180.pdf$\TurboMed\Dokumente\Sonstiges\202011\Kilb19650719-16707-1CC66BD3-7917-4386-9144-1C5885D414B4.pdf,Importiert,
+11.11.2020,Befund,, Prevent : leicht positiv,Importiert,
+11.11.2020,Leistung,A3571, ,Importiert,Siegbert Stracke
+10.11.2020,Extern,, Tanhz&nbsp;&nbsp;Laborbefunde zukommen lassen,Importiert,
+10.11.2020,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_603401180.pdf$\TurboMed\Dokumente\Sonstiges\202011\Kilb19650719-16707-F85CD927-D220-4098-9942-DD9585235E5A.pdf,Importiert,
+10.11.2020,Extern,, link&nbsp;&nbsp;KILB_LG_19650719_603401180.pdf$\TurboMed\Dokumente\Sonstiges\202011\Kilb19650719-16707-DBFDD297-F348-4cc6-B6C1-86CFC3A6C232.pdf,Importiert,
+10.11.2020,Leistung,*POR2, ,Importiert,Siegbert Stracke
+10.11.2020,Diagnose,UUU , Befundübermittlung,Importiert,
+10.11.2020,Diagnose,E78.1 , Hypertriglyzeridämie,Importiert,
+09.11.2020,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+09.11.2020,Extern,, utxt&nbsp;&nbsp;Erbitte Urin auf path. Keime und Erreger,Importiert,
+09.11.2020,Extern,, Tanz&nbsp;&nbsp;wurde von Frau Seibert im Labor gefragt PSA - soll mit gemacht werden!,Importiert,
+09.11.2020,Extern,," utxt&nbsp;&nbsp;TSH,PSA,CRP ,Vit D 25oH",Importiert,
+09.11.2020,Extern,, Tanz&nbsp;&nbsp;war heute zur BE hier,Importiert,
+09.11.2020,Extern,, Urinstick 09.11.2020 8:21 Uhr Bild:JPG,Importiert,
+09.11.2020,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 20Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 09.11.2020&nbsp;&nbsp; Abnahmezeit: 08:22Diagnose(Verdacht):Befund/Medikation:Auftrag:Erbitte Urin auf path. Keime und Erreger",Importiert,
+09.11.2020,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 20Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 09.11.2020&nbsp;&nbsp; Abnahmezeit: 08:08Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH,PSA,CRP ,Vit D 25oH",Importiert,
+09.11.2020,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 20Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 09.11.2020&nbsp;&nbsp; Abnahmezeit: 08:05Diagnose(Verdacht):Befund/Medikation:Auftrag:",Importiert,
+09.11.2020,Befund,, BSG: 2/4,Importiert,
+09.11.2020,Befund,," Urin: pH. 5, Leuko: 100, Keton: 5, Ery: 10",Importiert,
+09.11.2020,Leistung,3572, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3575, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3571, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3571, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3571, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3574, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3573H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3621, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3620, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3555, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3557, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3558, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3584H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3583H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3585H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3565H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3563H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3562H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3597H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3587H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3592H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3595H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3594H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3581H1, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3560, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3561, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3551, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3550, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3531, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3501, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,3511, ,Importiert,Siegbert Stracke
+09.11.2020,Leistung,250, ,Importiert,Siegbert Stracke
+06.11.2020,Extern,, Tanz&nbsp;&nbsp;an seinen termin erinnert,Importiert,
+02.11.2020,Medikament,00217001 D, Metoprololsucc Heum23.75mg RET 100 St,Importiert,
+02.11.2020,Leistung,*POR1, ,Importiert,Siegbert Stracke
+02.11.2020,Leistung,2, ,Importiert,Siegbert Stracke
+02.11.2020,Diagnose,R00.0 G, Tachycardie,Importiert,
+29.10.2020,Extern,, Bürgerhospital Diag.: asymptomatischer Rezidiv Nabelhernier 26.10.2020 S2 Bild:JPG,Importiert,
+29.10.2020,Extern,, Bürgerhospital Diag.: asymptomatischer Rezidiv Nabelhernier 26.10.2020 S1 Bild:JPG,Importiert,
+19.10.2020,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV3175, Datum: 19.10.2020",Importiert,
+19.10.2020,Rechnung,, R. Nr. 00000000000000003175 Privat,Importiert,
+19.10.2020,Leistung,*MGRIP, ,Importiert,
+19.10.2020,Leistung,375, ,Importiert,Sonja Saul
+19.10.2020,Diagnose,Z25.1 , Grippe-Schutzimpfung,Importiert,
+01.10.2020,Privatschein,, ,Importiert,
+01.10.2020,Privatschein,, ,Importiert,
+27.07.2020,Leistung,1,  (14:25),Importiert,Sonja Saul
+27.07.2020,Leistung,2,  (07:58),Importiert,Sonja Saul
+27.07.2020,Leistung,*POR1, ,Importiert,Sonja Saul
+27.07.2020,Diagnose,Z71 , Beratung,Importiert,
+07.06.2020,Extern,, stracke&nbsp;&nbsp;Verschluss der Hernia umbilicalis in Direktnaht,Importiert,
+02.06.2020,Extern,, Bürgerhospital stätionäre Behandlung Diag.: symptomatische Nabelhernie 28.-29.05.2020&nbsp;&nbsp;28.05.2020 S2 Bild:JPG,Importiert,
+02.06.2020,Extern,, Bürgerhospital stätionäre Behandlung Diag.: symptomatische Nabelhernie 28.-29.05.2020&nbsp;&nbsp;28.05.2020 S1 Bild:JPG,Importiert,
+22.05.2020,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV2591, Datum: 22.05.2020",Importiert,
+22.05.2020,Extern,, Tanz&nbsp;&nbsp;Laborbefunde zukommen lassen,Importiert,
+22.05.2020,Rechnung,, R. Nr. 00000000000000002591 Privat,Importiert,
+22.05.2020,Leistung,*POR1, ,Importiert,
+22.05.2020,Diagnose,UUU , Befundübermittlung,Importiert,
+19.05.2020,Extern,, stracke&nbsp;&nbsp;LABOR OK,Importiert,
+18.05.2020,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_600813353.pdf$\TurboMed\Dokumente\Sonstiges\202005\Kilb19650719-16707-7EECE523-2740-4a22-AB35-BE85BAA630F8.pdf,Importiert,
+18.05.2020,Extern,, link&nbsp;&nbsp;KILB_LG_19650719_600813353.pdf$\TurboMed\Dokumente\Sonstiges\202005\Kilb19650719-16707-906E2AF1-E120-43b0-BBA1-EF622EB37DC6.pdf,Importiert,
+18.05.2020,Extern,," Email&nbsp;&nbsp;Hallo Frau Tanz,ich scanne Ihnen meinen Impfpass ein (falls ich so etwas überhaupt habe) und maile Ihnen diesen zu.Viele Grüße und ein schönes Wochenende",Importiert,
+18.05.2020,Extern,, Bürgerhospital Symptomatsiche Nabelhernie 07.05.2020 11.05.2020 S2 Bild:JPG,Importiert,
+18.05.2020,Extern,, Bürgerhospital Symptomatsiche Nabelhernie 07.05.2020 11.05.2020 S1 Bild:JPG,Importiert,
+15.05.2020,Labordaten,, Befundart [E] Endbefund,Importiert,Siegbert Stracke
+15.05.2020,Cave,, Ei nwilligung Erinnerung an Alles per Email,Importiert,
+15.05.2020,Extern,, ekg&nbsp;&nbsp;Kein Anhalt für eine myokardiale Ischämie oder Myokarditis; weiterhin in dem geschriebenen Streifen kein Anhalt für eine höhergradige HRST,Importiert,
+15.05.2020,Extern,," stracke&nbsp;&nbsp;Die heutige Vorstellung des Pat. erfolgte mit Zn unspezifischer Symptomatik (Schwindel, Unwohlsein, präkollaptischer Zustand, Gefühl des Harn- und Stuhldrangs). In der Vergangenheit schon mal einmalige vasovagale Synkope gehabt; jetzt wieder Anhaltfür eine vagale Genese der von ihm geschilderten Beschwerden.",Importiert,
+15.05.2020,Extern,, utxt&nbsp;&nbsp;CRP,Importiert,
+15.05.2020,Extern,, utxt&nbsp;&nbsp;CRPO,Importiert,
+15.05.2020,Extern,," rr&nbsp;&nbsp;RR.: 136/ 83, P.: 76 SAT: 97&nbsp;&nbsp;%",Importiert,
+15.05.2020,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 15.05.2020,Importiert,
+15.05.2020,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 15.05.2020normofrequenter SinusrhythmusSteiltypST-Hebung in inferioren Ableitungen, akuter Infarkt möglichRuhe-EKG Messwerte-----------------------------------------------------------HF&nbsp;&nbsp;&nbsp;&nbsp; 71&nbsp;&nbsp;&nbsp;&nbsp;| P&nbsp;&nbsp;116 ms | QT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 381 ms | ST/II 0.08 mVQRS&nbsp;&nbsp;&nbsp;&nbsp;87 ms | PQ 133 ms | QTc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;403 ms |Achse&nbsp;&nbsp; 66 ø |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | QTc disp&nbsp;&nbsp;31 ms |-----------------------------------------------------------",Importiert,
+15.05.2020,Extern,, Einwilligung Erinnerung Bild:JPG,Importiert,
+15.05.2020,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 2 / 20Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 15.05.2020&nbsp;&nbsp; Abnahmezeit: 08:36Diagnose(Verdacht):Befund/Medikation:Auftrag:CRP",Importiert,
+15.05.2020,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 2 / 20Geschlecht: M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 15.05.2020&nbsp;&nbsp; Abnahmezeit: 08:36Diagnose(Verdacht):Befund/Medikation:Auftrag:CRPO",Importiert,
+15.05.2020,Befund,," Pulmo:Vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche, perkutorisch keine pathologische Dämpfung, Zwerchfellverschieblichkeit auf beiden Seiten gut, Orientierende neurologische Untersuchung:Soweit kein Anhalt für ein fokal neurologisches Defizit, insbesondere keine Anisokorie, keine motorischen oder sensiblen Ausfälle, kein Nystagmus, kein Meningismus, direkte und konsensuelle Lichtreaktion o.p.B.",Importiert,
+15.05.2020,Befund,, BZ.: 102mg/ dl,Importiert,
+15.05.2020,Befund,, Trop:&nbsp;&nbsp;eindeutig negatvi,Importiert,
+15.05.2020,Leistung,3551, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,3550, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,7, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,1, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,3514, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,A3732, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,250, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,602, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,657, ,Importiert,Siegbert Stracke
+15.05.2020,Leistung,651, ,Importiert,Siegbert Stracke
+15.05.2020,Diagnose,I51.4 A, Myokarditis,Importiert,
+15.05.2020,Diagnose,I21.9 A, Myokardinfarkt,Importiert,
+14.05.2020,Extern,, MFA&nbsp;&nbsp;wenn er kommt: EKG + Trop-Schnelltest (EDTA+Serum sicherheitshalber aufheben) + SPO2 + RR + BZ-Stix - danke,Importiert,
+14.05.2020,Extern,, Tanz&nbsp;&nbsp;EMail Hallo Herr Doktor Stracke !Haben Sie morgen früh Freitag vielleicht um 8Uhr einen Termin für mich. Ich habe seit gestern massive Kreislaufprobleme und muss um 10Uhr in Wiesbaden sein.Freundliche GrüßeJoachim KilbRechtsanwaltKanzleianschriftVogelweidstrasse 19D - 60596 Frankfurt am Main,Importiert,
+14.05.2020,Extern,, Tanz&nbsp;&nbsp;Telefonat mit Dr-. Stracke wird geschenkt!!!!!!!!!!!!!!!,Importiert,
+07.04.2020,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+07.04.2020,Leistung,*POR1, ,Importiert,Siegbert Stracke
+07.04.2020,Leistung,2, ,Importiert,Siegbert Stracke
+01.04.2020,Privatschein,, ,Importiert,
+18.12.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV1848, Datum: 18.12.2019",Importiert,
+18.12.2019,Rechnung,, R. Nr. 00000000000000001848 Privat,Importiert,
+12.12.2019,Extern,, seibert&nbsp;&nbsp;Rp. abgeholt,Importiert,
+12.12.2019,Diagnose,R00.0 G, Tachycardie,Importiert,
+11.12.2019,Extern,," Tanz&nbsp;&nbsp;schrieb eine email ,will das RZ abholen",Importiert,
+11.12.2019,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+11.12.2019,Leistung,2, ,Importiert,
+28.10.2019,Extern,, MVZ - Coloskopie 3.4.18 Bild:JPG,Importiert,
+22.10.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV1594, Datum: 22.10.2019",Importiert,
+22.10.2019,Extern,, Tanz&nbsp;&nbsp;BEfund + BE Befunde zukommen lassen,Importiert,
+22.10.2019,Extern,, link&nbsp;&nbsp;Kilb_Joachim_191012.odt$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-685F6DC8-5852-4475-904E-F85C282246EE.odt,Importiert,
+22.10.2019,Extern,, link&nbsp;&nbsp;Kilb_Joachim_191012.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-CC184119-18DA-4125-8711-87D9B6EC7779.pdf,Importiert,
+22.10.2019,Rechnung,, R. Nr. 00000000000000001594 Privat,Importiert,
+22.10.2019,Leistung,*POR2, ,Importiert,
+22.10.2019,Leistung,75, ,Importiert,Siegbert Stracke
+17.10.2019,Extern,, stracke&nbsp;&nbsp;LABOR OK,Importiert,
+17.10.2019,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_601016567.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-9561A025-EF74-4e0b-AE87-4F9BF4F0F850.pdf,Importiert,
+17.10.2019,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_601016576.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-4963384C-52A3-4a4a-B3DA-D8F32D08B6FB.pdf,Importiert,
+17.10.2019,Diagnose,I10.90 , Arterielle Hypertonie; essentiell,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß Prostata Erkrankung,Importiert,
+17.10.2019,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß E-lytstörung,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß einer Anämie,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß Diabetes mellitus,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß Cholelithiasis,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß Carotis Stenose,Importiert,
+17.10.2019,Diagnose,UUU , Ausschluß Bronchialobstruktion,Importiert,
+17.10.2019,Diagnose,K76.0 , Steatosis hepatis,Importiert,
+17.10.2019,Diagnose,E04.9 , Schilddrüsenknoten,Importiert,
+16.10.2019,Extern,, link&nbsp;&nbsp;KILB_LG_19650719_601016567.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-6B6E0328-0EE8-48d9-88D8-8CF26CCDA0A6.pdf,Importiert,
+15.10.2019,Labordaten,, Befundart [E] Endbefund,Importiert,
+15.10.2019,Extern,, Tanz&nbsp;&nbsp;Prevent wurde beim gastro gemacht,Importiert,
+15.10.2019,Extern,, utxt&nbsp;&nbsp;erbitte Urin Sediment,Importiert,
+15.10.2019,Extern,," utxt&nbsp;&nbsp;TSH,PSA,CRP ,Vit D 25oH, thyroglobulin,Calcitonin",Importiert,
+15.10.2019,Extern,, seibert&nbsp;&nbsp;war heute zur BE,Importiert,
+15.10.2019,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 19Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 15.10.2019&nbsp;&nbsp; Abnahmezeit: 10:31Diagnose(Verdacht):Befund/Medikation:Auftrag:erbitte Urin Sediment",Importiert,
+15.10.2019,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 19Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 15.10.2019&nbsp;&nbsp; Abnahmezeit: 08:34Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH,PSA,CRP ,Vit D 25oH, thyroglobulin,Calcitonin",Importiert,
+15.10.2019,Befund,, BSG: 2/10,Importiert,
+15.10.2019,Befund,," Urin: Ery: + (ganz&nbsp;&nbsp;minimal), Protein: +, pH 5,0",Importiert,
+15.10.2019,Leistung,3572, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3575, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3571, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3571, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3571, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3574, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3573H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3621, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3620, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3555, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3557, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3558, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3584H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3583H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3585H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3565H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3563H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3562H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3597H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3587H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3592H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3595H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3594H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3581H1, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3560, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3561, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3551, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3550, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3531, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3501, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,3511, ,Importiert,Siegbert Stracke
+15.10.2019,Leistung,250, ,Importiert,Siegbert Stracke
+14.10.2019,Cave,," Vordiagnosen:Arterielle Hypertonie- Zn a.e. neurokardiogener Synkope i.S. einer vasovagalen Reaktion- CMR 2014: peri-/paraventrikul. Gliosen, teils mit zentraler postischämisch lacunärer DefektbildungStruma multinodosaRefluxösophagitis- HiatushernieSpannungskopfschmerzenPollinosisRezidiv Nabelhernie (Zn Verschluss mit Direktnaht 05/20)Zn Herniotomie LeistenhernieFersensporn rechts- Zn analgetischer und antiphlogistischer Strahlentherapie 2017Allergien:- Paracetamol, TetracyclinDauermedikation:Metoprolol 47,5: 1-0-0Vorsorgeuntersuchung:- urologische Vorsorgeuntersuchung: soweit unauffällig- Hautkrebsscreening: in dermatologischer Kontrolle- Koloskopie: nächste Koloskopie bis 2025Koloskopie 2018: Ausschluss NPL",Importiert,
+14.10.2019,Extern,," epikrise&nbsp;&nbsp;In der Sonographie zeigte sich die schon vorbeschriebenen knotigen Veränderungen im Bereich beider Schilddrüsenlappen rechts &lt; links. Herr Kilb gibt an, dass er ausreichend Iod über Fisch aufnähme. Prinzipiell kann hier über eine zusätzlicheIodsubstitution nachgedacht werden. Ansonsten stellte sich die sonographische Vorsorgeuntersuchung im wesentlichen unauffällig dar. Auch in der Ergometrie sowie der Lungenfunktion zeigten sich keine Auffälligkeiten.",Importiert,
+14.10.2019,Extern,," a&nbsp;&nbsp;Die Vorstellung von Herrn Kilb erfolgte heute im Rahmen einer Vorsorgeuntersuchung. Aktuell werden keine wesentlichen Probleme angegeben. An Vorerkrankungen besteht neben dem Zn einer a.e. neurokardiogenen Synkope in der Vergangenheit i.S. einervasovagalen Reaktion sowie einer arteriellen Hypertonie keine wesentlichen kardiovaskulären Vorerkrankungen. Bzgl. der AHT erfolgt aktuell die Einnahme von Metoprolol. Hierunter sind die Blutdruckwerte gut eingestellt, das Herzfrequenzprofil istnormofrequent.",Importiert,
+14.10.2019,Extern,, sono&nbsp;&nbsp;Prostata mit 25ml normkonfiguriert ohne Kalzifikationen oder andere Auffälligkeiten.,Importiert,
+14.10.2019,Extern,," sono&nbsp;&nbsp;Sono Abdomen:Leber mit homogenem leicht verdichtetem&nbsp;&nbsp;Binnenreflexmuster im Sinne einer Steatosis hepatis ohne Anhalt für Raumforderungen (soweit einsehbar), Gallenblase reizlos, keine Cholestase.Pfortader duplexsonographisch mit regelrechten laminaren Flussverhältnissen.VCI atemmodulatorisch konfiguriert.Nieren bds. orthotop, kein Stau, kein Anhalt für Konkremente, keine freie Flüssigkeit.Pankreas nur ausreichend im Kopfbereich zu beurteilen - kein Anhalt für eine Raumforderung oder entzündliche Veränderung.Milz soweit unauffällig.Orientierender Darmschall: kein Anhalt für entzündliche Veränderungen oder Anzeichen eines Ileus.Aorta soweit im normalen sowie Farbduplex ohne Anhalt für Ektasien oder Dissektionen.",Importiert,
+14.10.2019,Extern,," sono&nbsp;&nbsp;Sono Schilddrüse:insgesamt leicht vergößert mit knapp 27ml Volumen sowie Veränderungen im Sinne einer Struma multinodosa links &gt; rechts, wobei auf der rechten Seite lediglich leichte Inhomogenitäten zur Darstellung kommen, während auf der linken Seite 2 Knoten &lt;1cm voneinander abgegrenzt werden können, wobei einer auch zystische Anteile aufweist. Hier ist eine Verlaufskontrolle empfohlen.",Importiert,
+14.10.2019,Extern,," sono&nbsp;&nbsp;Carotisduplex:Antegrade Stömungsverhältnisse in ACC, ACI und ACE beidseits. Keine Plaquebildung in der Bifurkation bds.; im Bereich der linken Bifurkation beginnende Verdickung ohne nennenswerte Plaques. Keine Strömungsbeschleunigung, keine Stenosen.",Importiert,
+14.10.2019,Extern,, link&nbsp;&nbsp;sono_kilb_joachim_191012.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-95B3AFCE-BD6E-464c-A409-F26FDDB4C9F5.pdf,Importiert,
+12.10.2019,Extern,, link&nbsp;&nbsp;sono_alt_kilb_joachim.pdf$\TurboMed\Dokumente\Sonstiges\201910\Kilb19650719-16707-EBF63C81-227B-4dae-855D-4339DE61D23F.pdf,Importiert,
+12.10.2019,Extern,, stracke&nbsp;&nbsp;SONOGRAPHIEBEFUNDE:,Importiert,
+12.10.2019,Extern,, Tanz&nbsp;&nbsp;kommt am MO zur BE +Prävention,Importiert,
+12.10.2019,Extern,," utxt&nbsp;&nbsp;TSH,PSA,CRP ,Vit D 25oH, thyroglobulin,Calcitonin",Importiert,
+12.10.2019,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 12.10.2019,Importiert,
+12.10.2019,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 12.10.2019Befund Standard:normal.Befund klinischer Auswertung gemäß GLI:Verdacht auf leichte RestriktionSOLL&nbsp;&nbsp;Messwert&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp; B-Test&nbsp;&nbsp;&nbsp;&nbsp;%IVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.70&nbsp;&nbsp;&nbsp;&nbsp;90FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.86&nbsp;&nbsp;&nbsp;&nbsp;74FEV1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.52&nbsp;&nbsp;&nbsp;&nbsp;87TV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.32FEV1%VC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75&nbsp;&nbsp;&nbsp;&nbsp;96PEF (l/s)&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.00MEF25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.25&nbsp;&nbsp; 192MEF50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.22MEF75&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.98,Importiert,
+12.10.2019,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 12.10.2019,Importiert,
+12.10.2019,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 12.10.2019submaximal belastetmax. Belastung: 194 W in Laststufe 6 um 13:25 min, 104% von Soll185.0 W, MET: 9.2Ruhe-HF: 69 /min, Max. HF: 139 /min bei Laststufe 6 um 13:25 min, 95%von Soll 146 /minmax. ST-Hebung im Kanal V3: 0.08 mV in Laststufe 1, max. ST-Senkungim Kanal V6: -0.12 mV in Laststufe 6VES: 3Belastungs-EKG Messwerte------------------------------------------------------------Last Dauer.&nbsp;&nbsp; HF&nbsp;&nbsp;BD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ST (mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mmHg)&nbsp;&nbsp;&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp;V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V6000&nbsp;&nbsp;01:00&nbsp;&nbsp;69&nbsp;&nbsp;100/ 80&nbsp;&nbsp; 0.00&nbsp;&nbsp;0.02&nbsp;&nbsp;0.07&nbsp;&nbsp;0.04&nbsp;&nbsp;0.06&nbsp;&nbsp;0.04000&nbsp;&nbsp;01:00&nbsp;&nbsp;78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -0.00&nbsp;&nbsp;0.00&nbsp;&nbsp;0.04&nbsp;&nbsp;0.05&nbsp;&nbsp;0.07&nbsp;&nbsp;0.04075&nbsp;&nbsp;02:00&nbsp;&nbsp;87&nbsp;&nbsp;130/ 80&nbsp;&nbsp; 0.03&nbsp;&nbsp;0.00&nbsp;&nbsp;0.08&nbsp;&nbsp;0.05&nbsp;&nbsp;0.07&nbsp;&nbsp;0.06100&nbsp;&nbsp;02:00&nbsp;&nbsp;92&nbsp;&nbsp;160/ 80&nbsp;&nbsp; 0.02&nbsp;&nbsp;0.00&nbsp;&nbsp;0.04&nbsp;&nbsp;0.04&nbsp;&nbsp;0.05&nbsp;&nbsp;0.04125&nbsp;&nbsp;02:00&nbsp;&nbsp;96&nbsp;&nbsp;173/ 80&nbsp;&nbsp; 0.00 -0.01 -0.01&nbsp;&nbsp;0.04&nbsp;&nbsp;0.07&nbsp;&nbsp;0.07150&nbsp;&nbsp;02:00 108&nbsp;&nbsp;184/ 80&nbsp;&nbsp;-0.03&nbsp;&nbsp;0.01&nbsp;&nbsp;0.06&nbsp;&nbsp;0.02 -0.00 -0.02175&nbsp;&nbsp;02:00 122&nbsp;&nbsp;195/ 80&nbsp;&nbsp; 0.05&nbsp;&nbsp;0.04 -0.02 -0.04 -0.05&nbsp;&nbsp;0.01194&nbsp;&nbsp;01:35 139&nbsp;&nbsp;202/ 80&nbsp;&nbsp; 0.02&nbsp;&nbsp;0.03&nbsp;&nbsp;0.04 -0.04 -0.11 -0.12050&nbsp;&nbsp;02:00&nbsp;&nbsp;96&nbsp;&nbsp;191/ 80&nbsp;&nbsp;-0.06&nbsp;&nbsp;0.04&nbsp;&nbsp;0.03&nbsp;&nbsp;0.02&nbsp;&nbsp;0.01&nbsp;&nbsp;0.01000&nbsp;&nbsp;02:00&nbsp;&nbsp;84&nbsp;&nbsp;140/ 80&nbsp;&nbsp;-0.08 -0.04&nbsp;&nbsp;0.02&nbsp;&nbsp;0.03&nbsp;&nbsp;0.01&nbsp;&nbsp;0.04000&nbsp;&nbsp;01:47&nbsp;&nbsp;83&nbsp;&nbsp;111/ 80&nbsp;&nbsp; 0.03 -0.07&nbsp;&nbsp;0.01 -0.00 -0.01&nbsp;&nbsp;0.00------------------------------------------------------------",Importiert,
+12.10.2019,Extern,, stracke&nbsp;&nbsp;war heute bei Dr.Stracke,Importiert,
+12.10.2019,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 19Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 12.10.2019&nbsp;&nbsp; Abnahmezeit: 11:20Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH,PSA,CRP ,Vit D 25oH, thyroglobulin,Calcitonin",Importiert,
+12.10.2019,Befund,," Lungenfunktion:Hier zeigte sich kein Anhalt für eine obstruktive Lungenerkrankung, allenfalls für eine leichte Restriktion, welche jedoch aufgrund der verwendeten Untersuchungsmethode sowie der sonst unauffälligen Befunde sowie der Klinik zunächst nicht weiterabklärungsbedürftig ist und im Verlauf kontrolliert werden sollte.",Importiert,
+12.10.2019,Befund,, Ergometrie:Stufenweise lineare Belastung bis auf 194 Watt.Unter der Belastung zeigte sich ein normaler Herzfrequenz- sowie Blutdruckanstieg sowie keine signifikanten ST-Streckenveränderungen oder Rhythmusstörungen.Der Abbruch der Belastung erfolgte wegen peripherer Erschöpfung und Erreichen der Ausbelastungsfrequenz.In der Erholungsphase zeigte sich ein adäquater Puls- sowie Blutdruckabfall.Insgesamt zeigte sich in der Ergometrie kein signifikanten myokardialen Ischämie.,Importiert,
+12.10.2019,Leistung,A644,  (Erhöhter Zeitaufwand wegen zusätzl. Farbe d. Pfortader + Aor\nta),Importiert,Siegbert Stracke
+12.10.2019,Leistung,645,  (Erhöhter Zeitaufwand wegen zusätzl. Farbcodierung der Caroti\nden),Importiert,Siegbert Stracke
+12.10.2019,Leistung,420,  (Niere bds. Galle. Pankreas. Aorta. Blase. Pfortader. Carotis\nbds.\nErhöhter Zeitaufwand wegen Vielzahl der Organe),Importiert,Siegbert Stracke
+12.10.2019,Leistung,417, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,D1, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,605a, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,605, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,29, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,652, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,657, ,Importiert,Siegbert Stracke
+12.10.2019,Leistung,602, ,Importiert,Siegbert Stracke
+12.10.2019,Diagnose,Z00.0 , Vorsorgeuntersuchung,Importiert,
+07.10.2019,Extern,, impf&nbsp;&nbsp;Grippeshcutzimpfung,Importiert,
+07.10.2019,Extern,, Tanz&nbsp;&nbsp;rief an und fragte ob er morgen zur Grippeschutzimpfung kommen kann-kann er gerne machen,Importiert,
+07.10.2019,Leistung,*MGRIP, ,Importiert,Siegbert Stracke
+07.10.2019,Leistung,375, ,Importiert,Siegbert Stracke
+07.10.2019,Diagnose,Z25.1 , Grippeschutzimpfung,Importiert,
+01.10.2019,Privatschein,, ,Importiert,
+01.10.2019,Privatschein,, ,Importiert,
+09.09.2019,Extern,, seibert&nbsp;&nbsp;Nur Rp. agbeholt,Importiert,
+09.09.2019,Medikament,05105324 D, Pantopra-Q 20mg Msr Tabl TMR 100 St,Importiert,
+09.09.2019,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+09.09.2019,Leistung,2, ,Importiert,Siegbert Stracke
+09.09.2019,Diagnose,R00.0 G, Tachycardie,Importiert,
+01.07.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV1250, Datum: 01.07.2019",Importiert,
+01.07.2019,Rechnung,, R. Nr. 00000000000000001250 Privat,Importiert,
+01.07.2019,Diagnose,R00.0 G, Tachycardie,Importiert,
+01.07.2019,Privatschein,, ,Importiert,
+06.06.2019,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+06.06.2019,Leistung,2, ,Importiert,
+20.05.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV0955, Datum: 20.05.2019",Importiert,
+20.05.2019,Diagnose,B34.9 , Virale Infektion,Importiert,Siegbert Stracke
+20.05.2019,Rechnung,, R. Nr. 00000000000000000955 Privat,Importiert,Siegbert Stracke
+18.05.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV0855, Datum: 18.05.2019, wurde storniert am 20.05.2019",Importiert,
+18.05.2019,Rechnung,, R. Nr. 00000000000000000855 Privat,Importiert,
+13.05.2019,Cave,, DatenschuztEinverständniserklärung liegt vor,Importiert,
+13.05.2019,Cave,, DatenschuztEinverständniserklärung liegt vor 13.05.19,Importiert,
+13.05.2019,Extern,, Einw&nbsp;&nbsp;Vorgelegte Patienteneinwilligung zum Behandlungsverhältnis dokumentiert durch jseibert am 13.05.2019 um 13:53 Uhr,Importiert,
+13.05.2019,Extern,," diagnose&nbsp;&nbsp;Viraler Pulmonaler Infekt:Vorstellung mit allgemein unspezifischen Symptomen: Gliederschmerzen, leichte Kopfschmerzen, Schnupfen, Husten, leicht erhöhte Temperatur; aktuell kein produktiver Husten, keine Dyspnoe",Importiert,
+13.05.2019,Extern,, stracke&nbsp;&nbsp;Heute war er bei Dr.Stracke,Importiert,
+13.05.2019,Medikament,07116993 D, Azithromycin 500 1A Pharma FTA 3 St,Importiert,
+13.05.2019,Medikament,01016090 D, Ibuprofen Abz 600mg FTA 20 St,Importiert,
+13.05.2019,Medikament,00753739 D, Otriven 0.1% Spray NAS 10 ml,Importiert,
+13.05.2019,Medikament,00562761 D, Nac 600 Akut 1A Pharma BTA 20 St,Importiert,
+13.05.2019,Befund,," Pulmo:Vesikuläres Atemgeräusch beidseits, keine Rasselgeräusche, perkutorisch keine pathologische Dämpfung, Zwerchfellverschieblichkeit auf beiden Seiten gut, Rachen:inspektorisch Rachenhinterwand gerötet, Tonsillen nicht vergrößert, keine eitrigen Beläge, keine Stippchen",Importiert,
+13.05.2019,Leistung,7, ,Importiert,Siegbert Stracke
+13.05.2019,Leistung,1, ,Importiert,Siegbert Stracke
+13.05.2019,Leistung,7, ,Importiert,
+13.05.2019,Leistung,1, ,Importiert,Siegbert Stracke
+13.05.2019,Diagnose,B34.9 , Virale Infektion,Importiert,
+20.04.2019,Extern,," pvs&nbsp;&nbsp;Privatrechnung Nr.: PV0585, Datum: 20.04.2019",Importiert,
+20.04.2019,Rechnung,, R. Nr. 00000000000000000585 Privat,Importiert,
+11.04.2019,Diagnose,R00.0 , Tachycardie,Importiert,
+01.04.2019,Privatschein,, ,Importiert,Siegbert Stracke
+01.04.2019,Privatschein,, ,Importiert,
+01.04.2019,Privatschein,, ,Importiert,
+11.03.2019,Leistung,*POR1, ,Importiert,
+11.03.2019,Leistung,2, ,Importiert,Siegbert Stracke
+21.12.2018,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 1709273/1316, Datum: 21.12.2018",Importiert,
+21.12.2018,Diagnose,R00.0 , Tachycardie,Importiert,Siegbert Stracke
+21.12.2018,Rechnung,, R. Nr. 000000001709273/1316 Privat,Importiert,Siegbert Stracke
+20.11.2018,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+20.11.2018,Leistung,2, ,Importiert,Siegbert Stracke
+05.11.2018,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 1709273/585,Importiert,
+01.11.2018,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 1709273/585, Datum: 01.11.2018",Importiert,
+01.11.2018,Diagnose,UUU , Ausschluß cardio-pulmonale Erkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß E-lytstörung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß endokrine Erkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß Immunerkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß Leberparenchymerkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß Prostata Erkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,UUU , Ausschluß Stoffwechselerkrankung#,Importiert,Siegbert Stracke
+01.11.2018,Diagnose,R00.0 , Tachycardie,Importiert,Siegbert Stracke
+01.11.2018,Rechnung,, R. Nr. 0000000001709273/585 Privat,Importiert,Siegbert Stracke
+25.10.2018,Extern,, Text&nbsp;&nbsp;Wie besprochen die werte zugeschickt,Importiert,
+25.10.2018,Leistung,*POR2, ,Importiert,Siegbert Stracke
+23.10.2018,Leistung,1, ,Importiert,Siegbert Stracke
+22.10.2018,Extern,, link&nbsp;&nbsp;KILB_LG_19650719_076083514.pdf$\TurboMed\Dokumente\Sonstiges\201810\Kilb19650719-16707-B55CC526-CB2E-42bc-B16B-08C97F3801CC.pdf,Importiert,
+22.10.2018,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_076083514.pdf$\TurboMed\Dokumente\Sonstiges\201810\Kilb19650719-16707-899A0CF6-E3D8-4dee-B6BE-04A9F4A64351.pdf,Importiert,
+12.10.2018,Labordaten,, Befundart [E] Endbefund,Importiert,
+12.10.2018,Extern,, CUS&nbsp;&nbsp;CUSTO man. - Fremddarstellung Untersuchung vom: 12.10.2018,Importiert,
+12.10.2018,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 12.10.2018normal.SOLL&nbsp;&nbsp;Messwert&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp; B-Test&nbsp;&nbsp;&nbsp;&nbsp;%IVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.58&nbsp;&nbsp;&nbsp;&nbsp;91FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.30&nbsp;&nbsp;&nbsp;&nbsp;89FEV1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.84&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.67&nbsp;&nbsp;&nbsp;&nbsp;95FEV1VC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80&nbsp;&nbsp; 103PEF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.24&nbsp;&nbsp; 101MEF50VC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.95&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.28&nbsp;&nbsp;&nbsp;&nbsp;86Rfo 8Hz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.00,Importiert,
+12.10.2018,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 12.10.2018,Importiert,
+12.10.2018,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 12.10.2018submaximal belastetmax. Last: 175 W in Laststufe 6 bei 11:11 min, 93 % von Soll 187.0 W,MET: 8.4Ruhe-HF: 68 /min, max. HF: 127 /min in Laststufe 6 bei 11:11 min, 86%von Soll 147 /minmax. ST-Hebung in Kanal V4: 0.11 mV in Ruhephase, max. ST-Senkung inKanal V5: -0.09 mV in Laststufe 6VES gesamt: 4, VES isol.: 2, Couplet: 1Belastungs-EKG Messwerte------------------------------------------------------------Last Dauer&nbsp;&nbsp;HF&nbsp;&nbsp;Blutdr.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST (mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mmHg)&nbsp;&nbsp;&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp;V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V60&nbsp;&nbsp;00:10&nbsp;&nbsp;68&nbsp;&nbsp;130/ 78&nbsp;&nbsp; 0.01&nbsp;&nbsp;0.01&nbsp;&nbsp;0.07&nbsp;&nbsp;0.11&nbsp;&nbsp;0.11&nbsp;&nbsp;0.0950&nbsp;&nbsp;02:00&nbsp;&nbsp;85&nbsp;&nbsp;134/ 76&nbsp;&nbsp;-0.01&nbsp;&nbsp;0.00&nbsp;&nbsp;0.07&nbsp;&nbsp;0.07&nbsp;&nbsp;0.08&nbsp;&nbsp;0.0875&nbsp;&nbsp;02:00&nbsp;&nbsp;87&nbsp;&nbsp;140/ 80&nbsp;&nbsp;-0.00&nbsp;&nbsp;0.01&nbsp;&nbsp;0.08&nbsp;&nbsp;0.09&nbsp;&nbsp;0.09&nbsp;&nbsp;0.08100&nbsp;&nbsp;02:00&nbsp;&nbsp;96&nbsp;&nbsp;142/ 78&nbsp;&nbsp; 0.00&nbsp;&nbsp;0.00&nbsp;&nbsp;0.06&nbsp;&nbsp;0.05&nbsp;&nbsp;0.05&nbsp;&nbsp;0.05125&nbsp;&nbsp;02:00 102&nbsp;&nbsp;172/ 78&nbsp;&nbsp; 0.01&nbsp;&nbsp;0.01&nbsp;&nbsp;0.05&nbsp;&nbsp;0.02&nbsp;&nbsp;0.00&nbsp;&nbsp;0.01150&nbsp;&nbsp;02:00 116&nbsp;&nbsp;204/ 78&nbsp;&nbsp;-0.01&nbsp;&nbsp;0.01&nbsp;&nbsp;0.01 -0.01 -0.03 -0.04175&nbsp;&nbsp;01:11 127&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.05&nbsp;&nbsp;0.02&nbsp;&nbsp;0.01 -0.05 -0.09 -0.0525&nbsp;&nbsp;02:00&nbsp;&nbsp;97&nbsp;&nbsp;178/ 78&nbsp;&nbsp; 0.00 -0.00 -0.01 -0.06 -0.08 -0.070&nbsp;&nbsp;02:00&nbsp;&nbsp;84&nbsp;&nbsp;131/ 78&nbsp;&nbsp;-0.01 -0.01&nbsp;&nbsp;0.00 -0.01 -0.02&nbsp;&nbsp;0.000&nbsp;&nbsp;01:32&nbsp;&nbsp;78&nbsp;&nbsp;107/ 78&nbsp;&nbsp; 0.01&nbsp;&nbsp;0.00&nbsp;&nbsp;0.04&nbsp;&nbsp;0.02&nbsp;&nbsp;0.00&nbsp;&nbsp;0.01------------------------------------------------------------",Importiert,
+12.10.2018,Extern,," sono&nbsp;&nbsp;Struma multinodosa vornehmlich re und praetracheal, Aa carotides frei, normale Strömnungen kein Plaque, Cor oB, Oberbauchorgane oB, Aorta max 1.9 cm",Importiert,
+12.10.2018,Extern,, Text&nbsp;&nbsp;Kein Prevent da er erst eine Kolo hatte,Importiert,
+12.10.2018,Extern,, impf&nbsp;&nbsp;Grippe Influvax R26Xa,Importiert,
+12.10.2018,Extern,, utxt&nbsp;&nbsp;TSH PSA CRP Vit D 25 oH,Importiert,
+12.10.2018,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 18Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 12.10.2018&nbsp;&nbsp; Abnahmezeit: 07:48Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH PSA CRP&nbsp;&nbsp;Vit D 25 oH",Importiert,
+12.10.2018,Befund,, BSG: 2/4,Importiert,
+12.10.2018,Befund,," Urin: Protein: +, pH: 6,5",Importiert,
+12.10.2018,Leistung,3572, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3575, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3571, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3571, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3571, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3574, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3573H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3621, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3620, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3555, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3557, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3558, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3584H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3583H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3585H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3565H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3563H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3562H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3597H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3587H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3592H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3595H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3594H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3581H1, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3560, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3561, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3551, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3550, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,*MGRIP, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,375, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3501, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,3652, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,250, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,602, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,657, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,652, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,605a, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,605, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,29, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,645, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,420,  (Aorta\nExtracranielle Gefäße-Schilddrüse-Leber-Gallenblase-Gallenwe\nge-Pankreas-Nieren-Milz-Blase-Prostata),Importiert,Siegbert Stracke
+12.10.2018,Leistung,422, ,Importiert,Siegbert Stracke
+12.10.2018,Leistung,410,  (Cor eindim),Importiert,Siegbert Stracke
+01.10.2018,Privatschein,, ,Importiert,Siegbert Stracke
+01.10.2018,Privatschein,, ,Importiert,Siegbert Stracke
+04.09.2018,Leistung,5, ,Importiert,Siegbert Stracke
+04.09.2018,Leistung,1, ,Importiert,Siegbert Stracke
+03.08.2018,Leistung,2, ,Importiert,Siegbert Stracke
+25.05.2018,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20173541,Importiert,
+22.05.2018,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20173541, Datum: 22.05.2018",Importiert,
+22.05.2018,Rechnung,, R. Nr. 00000000000020173541 Privat,Importiert,
+20.04.2018,Medikament,11104004 D, Tantum Verde 1.5mg/ml SPR 30 ml,Importiert,
+20.04.2018,Medikament,02834904 D, Dymista Nasenspray NAS 23 g,Importiert,
+20.04.2018,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+20.04.2018,Leistung,7, ,Importiert,
+20.04.2018,Leistung,1, ,Importiert,Siegbert Stracke
+20.04.2018,Diagnose,J30.1 , allergische Rhinitis,Importiert,
+20.04.2018,Diagnose,J06.9 , Grippaler Infekt,Importiert,
+01.04.2018,Privatschein,, ,Importiert,
+01.12.2017,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20172220,Importiert,
+27.11.2017,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20172220, Datum: 27.11.2017",Importiert,
+27.11.2017,Diagnose,R00.0 , Tachycardie,Importiert,Siegbert Stracke
+27.11.2017,Diagnose,M77.3 , Fersensporn,Importiert,Siegbert Stracke
+27.11.2017,Rechnung,, R. Nr. 00000000000020172220 Privat,Importiert,
+26.10.2017,Extern,, MVZ Strahlentherapie 24.10.17 Bild:JPG,Importiert,
+05.10.2017,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+05.10.2017,Leistung,2, ,Importiert,
+02.10.2017,Extern,, impf&nbsp;&nbsp;Grippe 2017/2018,Importiert,
+02.10.2017,Leistung,375, ,Importiert,Siegbert Stracke
+02.10.2017,Leistung,*MGRIP, ,Importiert,Siegbert Stracke
+02.10.2017,Diagnose,Z26.9 , Impfung,Importiert,
+01.10.2017,Privatschein,, ,Importiert,
+11.09.2017,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20171682,Importiert,
+25.08.2017,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20171682, Datum: 25.08.2017",Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß Stoffwechselerkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß Prostata Erkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß Nierenerkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß Leberparenchymerkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß Immunerkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß endokrine Erkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß E-lytstörung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ausschluß cardio-pulmonale Erkrankung,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Fersensporn,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Epicondylitis humeri radialis,Importiert,
+25.08.2017,Extern,, ddg&nbsp;&nbsp;gesichert Ansatztendinose,Importiert,
+25.08.2017,Diagnose,K29.7 , Gastritis,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß Stoffwechselerkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß Prostata Erkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß Leberparenchymerkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß Immunerkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß endokrine Erkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß E-lytstörung#,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,UUU , Ausschluß cardio-pulmonale Erkrankung#,Importiert,Siegbert Stracke
+25.08.2017,Rechnung,, R. Nr. 00000000000020171682 Privat,Importiert,
+25.08.2017,Leistung,*MCARBO, ,Importiert,
+25.08.2017,Leistung,*MPRED10, ,Importiert,Siegbert Stracke
+25.08.2017,Leistung,255, ,Importiert,Siegbert Stracke
+25.08.2017,Diagnose,M77.3 , Fersensporn,Importiert,
+16.08.2017,Leistung,*MCARBO, ,Importiert,Siegbert Stracke
+16.08.2017,Leistung,*MPRED10, ,Importiert,Siegbert Stracke
+16.08.2017,Leistung,255, ,Importiert,Siegbert Stracke
+16.08.2017,Leistung,1, ,Importiert,Siegbert Stracke
+15.08.2017,Extern,, Text&nbsp;&nbsp;BE ausdruck im abholer!,Importiert,
+09.08.2017,Extern,, Bild Bild:JPG,Importiert,
+09.08.2017,Extern,, Bild Bild:JPG,Importiert,
+09.08.2017,Extern,, E-mail Bild:JPG,Importiert,
+08.08.2017,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 08.08.2017,Importiert,
+08.08.2017,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 08.08.2017wenig belastetmax. Last: 175 W in Laststufe 6 bei 11:43 min, 92 % von Soll 190.0 W,MET: 8.4Ruhe-HF: 71 /min, max. HF: 118 /min in Laststufe 6 bei 11:43 min, 79%von Soll 148 /minmax. ST-Hebung in Kanal V3: 0.15 mV in Ruhephase, max. ST-Senkung inKanal III: -0.08 mV in Laststufe 6VES: 3Belastungs-EKG Messwerte------------------------------------------------------------Last Dauer&nbsp;&nbsp;HF&nbsp;&nbsp;Blutdr.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST (mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mmHg)&nbsp;&nbsp;&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp;V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V60&nbsp;&nbsp;00:10&nbsp;&nbsp;71&nbsp;&nbsp;130/ 80&nbsp;&nbsp;-0.02&nbsp;&nbsp;0.07&nbsp;&nbsp;0.15&nbsp;&nbsp;0.12&nbsp;&nbsp;0.15&nbsp;&nbsp;0.1150&nbsp;&nbsp;02:00&nbsp;&nbsp;81&nbsp;&nbsp;136/ 80&nbsp;&nbsp;-0.02&nbsp;&nbsp;0.07&nbsp;&nbsp;0.12&nbsp;&nbsp;0.09&nbsp;&nbsp;0.11&nbsp;&nbsp;0.0975&nbsp;&nbsp;02:00&nbsp;&nbsp;79&nbsp;&nbsp;140/ 82&nbsp;&nbsp;-0.00&nbsp;&nbsp;0.07&nbsp;&nbsp;0.12&nbsp;&nbsp;0.10&nbsp;&nbsp;0.12&nbsp;&nbsp;0.07100&nbsp;&nbsp;02:00&nbsp;&nbsp;93&nbsp;&nbsp;144/ 82&nbsp;&nbsp;-0.01&nbsp;&nbsp;0.04&nbsp;&nbsp;0.07&nbsp;&nbsp;0.08&nbsp;&nbsp;0.04&nbsp;&nbsp;0.05125&nbsp;&nbsp;02:00&nbsp;&nbsp;97&nbsp;&nbsp;168/ 82&nbsp;&nbsp; 0.00 -0.00&nbsp;&nbsp;0.09&nbsp;&nbsp;0.05&nbsp;&nbsp;0.05&nbsp;&nbsp;0.04150&nbsp;&nbsp;02:00 108&nbsp;&nbsp;190/ 84&nbsp;&nbsp;-0.00 -0.01&nbsp;&nbsp;0.07 -0.02 -0.02 -0.03175&nbsp;&nbsp;01:43 118&nbsp;&nbsp;200/ 84&nbsp;&nbsp; 0.02&nbsp;&nbsp;0.01 -0.01 -0.00 -0.05 -0.0325&nbsp;&nbsp;02:00&nbsp;&nbsp;87&nbsp;&nbsp;140/ 70&nbsp;&nbsp; 0.01 -0.02 -0.03 -0.05 -0.07 -0.040&nbsp;&nbsp;02:00&nbsp;&nbsp;82&nbsp;&nbsp;120/ 70&nbsp;&nbsp; 0.01 -0.01&nbsp;&nbsp;0.00 -0.01 -0.01&nbsp;&nbsp;0.000&nbsp;&nbsp;01:26&nbsp;&nbsp;86&nbsp;&nbsp;122/ 78&nbsp;&nbsp;-0.04 -0.04 -0.00 -0.00 -0.03 -0.02------------------------------------------------------------",Importiert,
+08.08.2017,Extern,, utxt&nbsp;&nbsp;Epicondylitis humeri radialis (M77.1) Ansatztendinose (M77.9) Fersenbein,Importiert,
+08.08.2017,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 08.08.2017,Importiert,
+08.08.2017,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 08.08.2017normal.SOLL&nbsp;&nbsp;Messwert&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp; B-Test&nbsp;&nbsp;&nbsp;&nbsp;%IVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.53&nbsp;&nbsp;&nbsp;&nbsp;90FVC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.84&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.87&nbsp;&nbsp;&nbsp;&nbsp;80FEV1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.87&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.38&nbsp;&nbsp;&nbsp;&nbsp;87FEV1VC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75&nbsp;&nbsp;&nbsp;&nbsp;96PEF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.40&nbsp;&nbsp;&nbsp;&nbsp;92MEF50VC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.30&nbsp;&nbsp;&nbsp;&nbsp;86Rfo 8Hz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.00,Importiert,
+08.08.2017,Extern,, Überweisung:an:StrahlentherapieDiag.:Epicondylitis humeri radialis (M77.1)Ansatztendinose (M77.9) Fersenbein,Importiert,
+08.08.2017,Diagnose,M77.9 , Ansatztendinose,Importiert,
+08.08.2017,Leistung,29, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,28, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,645, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,420,  (Aorta\nExtracranielle Gefäße-Schilddrüse-Leber-Gallenblase-Gallenwe\nge-Pankreas-Nieren-Milz-Blase-Prostata),Importiert,Siegbert Stracke
+08.08.2017,Leistung,422, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,410,  (Cor eindim),Importiert,Siegbert Stracke
+08.08.2017,Leistung,657, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,652, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,605a, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,605, ,Importiert,Siegbert Stracke
+08.08.2017,Leistung,602, ,Importiert,Siegbert Stracke
+08.08.2017,Diagnose,M77.1 , Epicondylitis humeri radialis,Importiert,
+07.08.2017,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_727338.pdf$\TurboMed\Dokumente\Sonstiges\201708\Kilb19650719-16707-D95A5A4C-5760-474d-B9BB-E7A064AB91C8.pdf,Importiert,
+03.08.2017,Extern,, link&nbsp;&nbsp;KILB_LG_19650719_076080285.pdf$\TurboMed\Dokumente\Sonstiges\201708\Kilb19650719-16707-88D1453C-5D01-4814-86B2-2EC07C71EFFA.pdf,Importiert,
+03.08.2017,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_076080286.pdf$\TurboMed\Dokumente\Sonstiges\201708\Kilb19650719-16707-FF356250-858A-417c-A942-FE74179A311C.pdf,Importiert,
+02.08.2017,Labordaten,, Befundart [E] Endbefund,Importiert,
+02.08.2017,Extern,, utxt&nbsp;&nbsp;Urin auf Pathogene Keime,Importiert,
+02.08.2017,Extern,," utxt&nbsp;&nbsp;TSH,PSA, Vit D 25oH",Importiert,
+02.08.2017,Extern,, utxt&nbsp;&nbsp;TSH PSA CRP Vit D 25 oH,Importiert,
+02.08.2017,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 3 / 17Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 02.08.2017&nbsp;&nbsp; Abnahmezeit: 08:43Diagnose(Verdacht):Befund/Medikation:Auftrag:Urin auf Pathogene Keime",Importiert,
+02.08.2017,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 3 / 17Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 02.08.2017&nbsp;&nbsp; Abnahmezeit: 07:51Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH,PSA, Vit D 25oH",Importiert,
+02.08.2017,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 15Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 02.08.2017&nbsp;&nbsp; Abnahmezeit: 07:50Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH PSA CRP&nbsp;&nbsp;Vit D 25 oH",Importiert,
+02.08.2017,Befund,, BSG 2/6,Importiert,
+02.08.2017,Befund,, Urin: o.B.,Importiert,
+02.08.2017,Leistung,3574, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3573H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3572, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3571, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3571, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3571, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3621, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3555, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3557, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3558, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3575, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3620, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3597H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3592H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3595H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3594H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3587H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3581H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3584H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3583H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3585H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3563H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3565H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3562H1, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3560, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3561, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3551, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3550, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3501, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,3652, ,Importiert,Siegbert Stracke
+02.08.2017,Leistung,250, ,Importiert,Siegbert Stracke
+03.07.2017,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+03.07.2017,Leistung,2, ,Importiert,Siegbert Stracke
+01.07.2017,Privatschein,, ,Importiert,
+30.03.2017,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_209767683.pdf$\TurboMed\Dokumente\Sonstiges\201703\Kilb19650719-16707-504CCA5D-E2ED-49df-94F8-8ABA563884F0.pdf,Importiert,
+30.03.2017,Leistung,1, ,Importiert,Siegbert Stracke
+29.03.2017,Labordaten,, Befundart [E] Endbefund,Importiert,
+29.03.2017,Extern,, utxt&nbsp;&nbsp;PSA,Importiert,
+29.03.2017,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 1 / 17Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 29.03.2017&nbsp;&nbsp; Abnahmezeit: 08:20Diagnose(Verdacht):Befund/Medikation:Auftrag:PSA",Importiert,
+29.03.2017,Leistung,250, ,Importiert,Siegbert Stracke
+27.03.2017,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+27.03.2017,Leistung,2, ,Importiert,Siegbert Stracke
+23.02.2017,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20170468,Importiert,
+21.02.2017,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20170468, Datum: 21.02.2017",Importiert,
+21.02.2017,Diagnose,R00.0 , Tachycardie,Importiert,Siegbert Stracke
+21.02.2017,Diagnose,K29.7 , Gastritis,Importiert,Siegbert Stracke
+21.02.2017,Rechnung,, R. Nr. 00000000000020170468 Privat,Importiert,
+30.01.2017,Medikament,01016109 D, Ibuprofen Abz 600mg FTA 50 St,Importiert,
+30.01.2017,Medikament,00055509 D, Nasonex 140 Spruehstoesse NAS 18 g,Importiert,
+30.01.2017,Medikament,11104004 D, Tantum Verde 1.5mg/ml SPR 30 ml,Importiert,
+30.01.2017,Leistung,7, ,Importiert,
+30.01.2017,Leistung,1, ,Importiert,Siegbert Stracke
+30.01.2017,Diagnose,J98.8 , Atemwegsinfektion,Importiert,
+05.01.2017,Medikament,09155796 D, Pantoprazol dura 40mg TMR 60 St,Importiert,
+05.01.2017,Leistung,2, ,Importiert,Siegbert Stracke
+01.01.2017,Privatschein,, ,Importiert,
+20.12.2016,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+20.12.2016,Leistung,2, ,Importiert,Siegbert Stracke
+25.11.2016,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20162116,Importiert,
+20.11.2016,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20162116, Datum: 20.11.2016",Importiert,
+20.11.2016,Diagnose,K29.7 , Gastritis,Importiert,
+20.11.2016,Rechnung,, R. Nr. 00000000000020162116 Privat,Importiert,
+01.11.2016,Extern,," a&nbsp;&nbsp;erst gut, jetzt erneut LK groß, Halsschmerzen, Schleim, Kopfschmerzen, Schwitzen stark, Magenschmerzen.",Importiert,
+01.11.2016,Medikament,04890172 D, Azithrobeta 500mg Filmtabl FTA 3 St,Importiert,
+01.11.2016,Leistung,5, ,Importiert,
+01.11.2016,Leistung,1, ,Importiert,
+20.10.2016,Medikament,00964123 D, Cefurax 500mg FTA 12 St,Importiert,
+20.10.2016,Medikament,00168484 D, Bronchipret Tp FTA 50 St,Importiert,
+20.10.2016,Leistung,7, ,Importiert,
+20.10.2016,Leistung,1, ,Importiert,
+20.10.2016,Diagnose,J42 , Peribronchitis,Importiert,
+13.10.2016,Medikament,09155796 D, Pantoprazol dura 40mg TMR 60 St,Importiert,
+13.10.2016,Leistung,2, ,Importiert,
+07.10.2016,Leistung,*MGRIP, ,Importiert,
+07.10.2016,Leistung,70, ,Importiert,
+07.10.2016,Leistung,375, ,Importiert,
+01.10.2016,Privatschein,, ,Importiert,
+30.08.2016,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+30.08.2016,Leistung,2, ,Importiert,
+01.08.2016,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20161308,Importiert,
+11.07.2016,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20161308, Datum: 11.07.2016",Importiert,
+11.07.2016,Diagnose,K29.7 , Gastritis,Importiert,
+11.07.2016,Diagnose,R00.0 , Tachycardie,Importiert,
+11.07.2016,Rechnung,, R. Nr. 00000000000020161308 Privat,Importiert,
+01.07.2016,Privatschein,, ,Importiert,
+21.06.2016,Leistung,1, ,Importiert,
+07.06.2016,Leistung,2, ,Importiert,
+11.04.2016,Leistung,*POR1, ,Importiert,
+11.04.2016,Leistung,2, ,Importiert,
+07.04.2016,Leistung,3574, ,Importiert,
+07.04.2016,Leistung,3573H1, ,Importiert,
+07.04.2016,Leistung,3550, ,Importiert,
+07.04.2016,Leistung,7, ,Importiert,
+07.04.2016,Leistung,1, ,Importiert,
+07.04.2016,Leistung,657, ,Importiert,
+07.04.2016,Leistung,651, ,Importiert,
+07.04.2016,Leistung,250, ,Importiert,
+07.04.2016,Leistung,605a, ,Importiert,
+07.04.2016,Leistung,605, ,Importiert,
+03.03.2016,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+03.03.2016,Leistung,2, ,Importiert,
+10.02.2016,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20160286, Datum: 10.02.2016",Importiert,
+10.02.2016,Extern,, ddg&nbsp;&nbsp;gesichert Gastritis,Importiert,
+10.02.2016,Diagnose,K29.7 , Gastritis,Importiert,
+10.02.2016,Diagnose,R00.0 , Tachycardie,Importiert,
+10.02.2016,Rechnung,, R. Nr. 00000000000020160286 Privat,Importiert,
+08.01.2016,Medikament,09155796 D, Pantoprazol dura 40mg TMR 60 St,Importiert,
+01.01.2016,Privatschein,, ,Importiert,
+02.12.2015,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+02.12.2015,Leistung,3, ,Importiert,
+23.11.2015,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20152152,Importiert,
+17.11.2015,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20152152, Datum: 17.11.2015",Importiert,
+17.11.2015,Diagnose,R00.0 , Tachycardie,Importiert,
+17.11.2015,Rechnung,, R. Nr. 00000000000020152152 Privat,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Stoffwechselerkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Schilddrüsenerkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Prostata Erkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Leberparenchymerkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß endokrine Erkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß E-lytstörung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Carotis Stenose,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß cardio-pulmonale Erkrankung,Importiert,
+17.11.2015,Diagnose,UUU , Ausschluß Bronchialobstruktion,Importiert,
+17.11.2015,Diagnose,Z00.0 , Check up,Importiert,
+06.11.2015,Leistung,1, ,Importiert,
+03.11.2015,Extern,, link&nbsp;&nbsp;KILB_JOACHIM_19650719_209763368.pdf$\TurboMed\Dokumente\Sonstiges\201511\Kilb19650719-16707-C8D4AB01-8CF5-4934-8666-66B6FA2CA65B.pdf,Importiert,
+02.11.2015,Extern,, link&nbsp;&nbsp;209763367_LG_19650719_209763367.pdf$\TurboMed\Dokumente\Sonstiges\201511\Kilb19650719-16707-ADCEE190-C459-4138-A097-A0FF397143A4.pdf,Importiert,
+30.10.2015,Labordaten,, Befundart [E] Endbefund,Importiert,
+30.10.2015,Extern,, utxt&nbsp;&nbsp;TSH PSA CRP Vit D 25 oH,Importiert,
+30.10.2015,Extern,," UEBLABOR&nbsp;&nbsp;Überweisungsschein für Labor als AuftragsleistungQuartal: 4 / 15Geschlecht: [ ] W&nbsp;&nbsp;[X] M[X] Kurativ&nbsp;&nbsp; [ ] Präventiv[ ] bei belegärztl. Behandlung&nbsp;&nbsp; [ ] UnfallfolgenAuftragsnummer des Labors:[ ] Kontrolluntersuchung/bekannte Infektion[ ] Behandlung gemäß  116b SGB V&nbsp;&nbsp; [ ] eingeschr. Leistungsanspruch[ ] Empfängnisregelung, Sterilisation, SchwangerschaftsabbruchErstveranlasser Betriebsstätten-Nr.:&nbsp;&nbsp;&nbsp;&nbsp;Arzt-Nr.:Abnahmedatum: 30.10.2015&nbsp;&nbsp; Abnahmezeit: 08:28Diagnose(Verdacht):Befund/Medikation:Auftrag:TSH PSA CRP&nbsp;&nbsp;Vit D 25 oH",Importiert,
+30.10.2015,Befund,, BSG 1/2mm,Importiert,
+30.10.2015,Befund,, Urin o.b,Importiert,
+30.10.2015,Leistung,3574, ,Importiert,
+30.10.2015,Leistung,3573H1, ,Importiert,
+30.10.2015,Leistung,3572, ,Importiert,
+30.10.2015,Leistung,3571, ,Importiert,
+30.10.2015,Leistung,3571, ,Importiert,
+30.10.2015,Leistung,3571, ,Importiert,
+30.10.2015,Leistung,3621, ,Importiert,
+30.10.2015,Leistung,3555, ,Importiert,
+30.10.2015,Leistung,3557, ,Importiert,
+30.10.2015,Leistung,3558, ,Importiert,
+30.10.2015,Leistung,3575, ,Importiert,
+30.10.2015,Leistung,3620, ,Importiert,
+30.10.2015,Leistung,3597H1, ,Importiert,
+30.10.2015,Leistung,3592H1, ,Importiert,
+30.10.2015,Leistung,3595H1, ,Importiert,
+30.10.2015,Leistung,3594H1, ,Importiert,
+30.10.2015,Leistung,3587H1, ,Importiert,
+30.10.2015,Leistung,3581H1, ,Importiert,
+30.10.2015,Leistung,3584H1, ,Importiert,
+30.10.2015,Leistung,3583H1, ,Importiert,
+30.10.2015,Leistung,3585H1, ,Importiert,
+30.10.2015,Leistung,3563H1, ,Importiert,
+30.10.2015,Leistung,3565H1, ,Importiert,
+30.10.2015,Leistung,3562H1, ,Importiert,
+30.10.2015,Leistung,3560, ,Importiert,
+30.10.2015,Leistung,3561, ,Importiert,
+30.10.2015,Leistung,3551, ,Importiert,
+30.10.2015,Leistung,3550, ,Importiert,
+30.10.2015,Leistung,645, ,Importiert,
+30.10.2015,Leistung,420,  (Aorta\nExtracranielle Gefäße-Schilddrüse-Leber-Gallenblase-Gallenwe\nge-Pankreas-Nieren-Milz-Blase-Prostata),Importiert,
+30.10.2015,Leistung,422, ,Importiert,
+30.10.2015,Leistung,410,  (Cor eindim),Importiert,
+30.10.2015,Leistung,29, ,Importiert,
+30.10.2015,Leistung,28, ,Importiert,
+30.10.2015,Leistung,250, ,Importiert,
+30.10.2015,Leistung,3531, ,Importiert,
+30.10.2015,Leistung,3501, ,Importiert,
+01.10.2015,Privatschein,, ,Importiert,
+30.09.2015,Extern,, Text&nbsp;&nbsp;Blutwerte ausgedruckt,Importiert,
+30.09.2015,Leistung,2, ,Importiert,
+09.09.2015,Medikament,00964123 D, Cefurax 500mg FTA 12 St,Importiert,
+09.09.2015,Leistung,7, ,Importiert,
+09.09.2015,Leistung,1, ,Importiert,
+03.09.2015,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20151615,Importiert,
+31.08.2015,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20151615, Datum: 31.08.2015",Importiert,
+31.08.2015,Diagnose,R00.0 , Tachycardie,Importiert,
+31.08.2015,Rechnung,, R. Nr. 00000000000020151615 Privat,Importiert,
+01.07.2015,Privatschein,, ,Importiert,
+26.06.2015,Leistung,7, ,Importiert,
+26.06.2015,Leistung,1, ,Importiert,
+11.11.2014,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20141859,Importiert,
+28.10.2014,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20141859, Datum: 28.10.2014",Importiert,
+28.10.2014,Diagnose,R00.0 , Tachycardie,Importiert,Siegbert Stracke
+28.10.2014,Rechnung,, R. Nr. 00000000000020141859 Privat,Importiert,
+08.10.2014,Extern,, impf&nbsp;&nbsp;Grippe14/15,Importiert,
+08.10.2014,Leistung,*MGRIP, ,Importiert,
+08.10.2014,Leistung,375, ,Importiert,Siegbert Stracke
+08.10.2014,Diagnose,Z26.9 , Impfung,Importiert,
+01.10.2014,Privatschein,, ,Importiert,
+28.08.2014,Leistung,2, ,Importiert,Siegbert Stracke
+28.08.2014,Diagnose,R51 , Cephalalgia,Importiert,
+30.06.2014,Leistung,7, ,Importiert,Siegbert Stracke
+30.06.2014,Leistung,1, ,Importiert,Siegbert Stracke
+30.06.2014,Leistung,657, ,Importiert,Siegbert Stracke
+30.06.2014,Leistung,651, ,Importiert,Siegbert Stracke
+26.06.2014,Leistung,3, ,Importiert,Siegbert Stracke
+26.06.2014,Diagnose,I51.8 , Hyperkinetisches Herzsyndrom,Importiert,
+25.04.2014,Leistung,2, ,Importiert,Siegbert Stracke
+24.04.2014,Leistung,3, ,Importiert,Siegbert Stracke
+24.04.2014,Diagnose,M51.2 , Prolaps-Bandscheibe,Importiert,
+01.04.2014,Leistung,2, ,Importiert,Siegbert Stracke
+11.12.2013,Extern,, ddg&nbsp;&nbsp;gesichert Tachycardie,Importiert,
+03.12.2013,Medikament,00850419 D, Metohexal-Succ 23.75mg RET 100 St,Importiert,
+03.12.2013,Leistung,2, ,Importiert,Siegbert Stracke
+18.11.2013,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20131482,Importiert,
+28.10.2013,Rechnung,, R. Nr. 00000000000020131482 Privat,Importiert,
+24.10.2013,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20131482, Datum: 24.10.2013",Importiert,
+24.10.2013,Diagnose,UUU , Ausschluß endokrine Erkrankung,Importiert,
+24.10.2013,Diagnose,UUU , Ausschluß E-lytstörung,Importiert,
+24.10.2013,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,
+24.10.2013,Diagnose,UUU , Ausschluß Schilddrüsenerkrankung,Importiert,
+24.10.2013,Diagnose,UUU , Ausschluß Stoffwechselerkrankung,Importiert,
+24.10.2013,Diagnose,Z03.9 , Ausschluß verdächtiger Befund,Importiert,
+01.10.2013,Privatschein,, ,Importiert,
+28.08.2013,Leistung,1, ,Importiert,
+23.08.2013,Leistung,3574, ,Importiert,
+23.08.2013,Leistung,3573H1, ,Importiert,
+23.08.2013,Leistung,3572, ,Importiert,
+23.08.2013,Leistung,3571, ,Importiert,
+23.08.2013,Leistung,3571, ,Importiert,
+23.08.2013,Leistung,3571, ,Importiert,
+23.08.2013,Leistung,3621, ,Importiert,
+23.08.2013,Leistung,3555, ,Importiert,
+23.08.2013,Leistung,3557, ,Importiert,
+23.08.2013,Leistung,3558, ,Importiert,
+23.08.2013,Leistung,3575, ,Importiert,
+23.08.2013,Leistung,3620, ,Importiert,
+23.08.2013,Leistung,3597H1, ,Importiert,
+23.08.2013,Leistung,3592H1, ,Importiert,
+23.08.2013,Leistung,3595H1, ,Importiert,
+23.08.2013,Leistung,3594H1, ,Importiert,
+23.08.2013,Leistung,3587H1, ,Importiert,
+23.08.2013,Leistung,3581H1, ,Importiert,
+23.08.2013,Leistung,3584H1, ,Importiert,
+23.08.2013,Leistung,3583H1, ,Importiert,
+23.08.2013,Leistung,3585H1, ,Importiert,
+23.08.2013,Leistung,3563H1, ,Importiert,
+23.08.2013,Leistung,3565H1, ,Importiert,
+23.08.2013,Leistung,3562H1, ,Importiert,
+23.08.2013,Leistung,3560, ,Importiert,
+23.08.2013,Leistung,3561, ,Importiert,
+23.08.2013,Leistung,3551, ,Importiert,
+23.08.2013,Leistung,3550, ,Importiert,
+23.08.2013,Leistung,3908H3, ,Importiert,
+23.08.2013,Leistung,3741, ,Importiert,
+23.08.2013,Leistung,3905H3, ,Importiert,
+23.08.2013,Leistung,4030, ,Importiert,
+23.08.2013,Leistung,250, ,Importiert,
+06.05.2013,Leistung,3, ,Importiert,
+09.04.2013,Diagnose,R00.0 G, Tachycardie,Importiert,
+05.04.2013,Leistung,3, ,Importiert,
+26.03.2013,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20130468,Importiert,
+20.03.2013,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20130468, Datum: 20.03.2013",Importiert,
+20.03.2013,Rechnung,, R. Nr. 00000000000020130468 Privat,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß E-lytstörung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß endokrine Erkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß Immunerkrankung,Importiert,
+20.03.2013,Diagnose,U99.9 , Ausschluß Nierenerkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß Leberparenchymerkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß Schilddrüsenerkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß Stoffwechselerkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß cardio-pulmonale Erkrankung,Importiert,
+20.03.2013,Diagnose,UUU , Ausschluß periphere arterielle Verschlußkrankheit,Importiert,
+14.03.2013,Extern,, LAbor Bild:JPG,Importiert,
+14.03.2013,Leistung,1, ,Importiert,
+11.03.2013,Extern,, link&nbsp;&nbsp;209763180_LG_19650719_209763180.pdf$\TurboMed\Dokumente\Sonstiges\201303\Kilb19650719-16707-16B38E43-FDF9-49c4-B16E-31C987477F5C.pdf,Importiert,
+08.03.2013,Labordaten,, Befundart [E] Endbefund,Importiert,
+08.03.2013,Leistung,3565H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3564H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3563H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3562H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3592H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3595H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3594H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3573H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3557, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3584H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3583H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3585H1, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3551, ,Importiert,Siegbert Stracke
+08.03.2013,Leistung,3550, ,Importiert,Siegbert Stracke
+07.03.2013,Extern,, CUS&nbsp;&nbsp;CUSTO man. - Fremddarstellung Untersuchung vom: 07.03.2013,Importiert,
+07.03.2013,Extern,," CUS&nbsp;&nbsp;Untersuchung vom: 07.03.2013submaximal belastetmax. Last: 225 W in Laststufe 4 bei 07:24, 111 % von Soll201.7 W, MET: 10.5Ruhe-HF: 85, max. HF: 142 in Laststufe 4 bei 07:24, 92% vonSoll 153max. ST-Hebung in Kanal V1: 0.26 mV in Erholphase 3, max.ST-Senkung in Kanal V5: -0.13 mV in Laststufe 3VES: 15Belastungs-EKG Messwerte------------------------------------------------------------Last Dauer&nbsp;&nbsp;HF&nbsp;&nbsp;Blutdr.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST (mV)(W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mmHg)&nbsp;&nbsp;&nbsp;&nbsp; V1&nbsp;&nbsp;&nbsp;&nbsp;V2&nbsp;&nbsp;&nbsp;&nbsp;V3&nbsp;&nbsp;&nbsp;&nbsp;V4&nbsp;&nbsp;&nbsp;&nbsp;V5&nbsp;&nbsp;&nbsp;&nbsp;V60&nbsp;&nbsp;00:10&nbsp;&nbsp;85&nbsp;&nbsp;120/ 80&nbsp;&nbsp; 0.01&nbsp;&nbsp;0.00&nbsp;&nbsp;0.00 -0.02 -0.03 -0.0175&nbsp;&nbsp;02:00 101&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00&nbsp;&nbsp;0.06&nbsp;&nbsp;0.01&nbsp;&nbsp;0.00 -0.03 -0.05125&nbsp;&nbsp;02:00 112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00&nbsp;&nbsp;0.06&nbsp;&nbsp;0.04&nbsp;&nbsp;0.02 -0.04 -0.06175&nbsp;&nbsp;02:00 126&nbsp;&nbsp;165/ 89&nbsp;&nbsp; 0.06&nbsp;&nbsp;0.03 -0.03 -0.09 -0.13 -0.11225&nbsp;&nbsp;01:24 142&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00&nbsp;&nbsp;0.04&nbsp;&nbsp;0.05 -0.01 -0.09 -0.1225&nbsp;&nbsp;02:00 117&nbsp;&nbsp;150/ 84&nbsp;&nbsp; 0.07&nbsp;&nbsp;0.03 -0.01 -0.09 -0.11 -0.090&nbsp;&nbsp;02:00 103&nbsp;&nbsp;140/ 80&nbsp;&nbsp; 0.05&nbsp;&nbsp;0.02 -0.02 -0.10 -0.11 -0.100&nbsp;&nbsp;02:00 102&nbsp;&nbsp;136/ 78&nbsp;&nbsp; 0.26&nbsp;&nbsp;0.04 -0.03 -0.08 -0.08 -0.080&nbsp;&nbsp;00:19 102&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00&nbsp;&nbsp;0.19&nbsp;&nbsp;0.03 -0.04 -0.09 -0.08------------------------------------------------------------",Importiert,
+07.03.2013,Extern,, CUS&nbsp;&nbsp;CUSTO - Fremddarstellung Untersuchung vom: 07.03.2013,Importiert,
+07.03.2013,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 07.03.2013normofrequenter SinusrhythmusSteiltypunauffälliges EKGRuhe-EKG Messwerte-----------------------------------------------------------HF&nbsp;&nbsp;&nbsp;&nbsp; 84&nbsp;&nbsp;&nbsp;&nbsp;| P&nbsp;&nbsp;117 ms | QT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 356 ms | ST/V6 0.07 mVQRS&nbsp;&nbsp; 104 ms | PQ 140 ms | QTc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;421 ms |Achse&nbsp;&nbsp;80 ø&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | QTc-Disp&nbsp;&nbsp;57 ms |-----------------------------------------------------------,Importiert,
+07.03.2013,Extern,, a&nbsp;&nbsp;Sport viel,Importiert,
+07.03.2013,Extern,," a&nbsp;&nbsp;Raucher, 10-15",Importiert,
+07.03.2013,Extern,," a&nbsp;&nbsp;FA Vater Herzklappenersatz nach Infektion, VHF.",Importiert,
+07.03.2013,Extern,," a&nbsp;&nbsp;Benommenheit, Herzklopfen",Importiert,
+07.03.2013,Extern,, rr&nbsp;&nbsp;RR 150/88 mmHg 92 HF,Importiert,
+07.03.2013,Leistung,3879, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,3871, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,4023H4, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,4022H4, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,4030, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,645, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,422, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,420,  (Cor eindim\nExtracranielle Gefäße\nGallenblase.Gallenwege\nGallenwege\nGefäße peripher\nHalsorgane\nLeber\nMilz\nNiere links\nNiere rechts\nPankreas\nSchilddrüse),Importiert,Siegbert Stracke
+07.03.2013,Leistung,410,  (Aorta),Importiert,Siegbert Stracke
+07.03.2013,Leistung,250, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,29, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,657, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,602, ,Importiert,Siegbert Stracke
+07.03.2013,Leistung,652, ,Importiert,Siegbert Stracke
+05.03.2013,Extern,, rr&nbsp;&nbsp;RR 146/89 mmHg Hf 84,Importiert,
+25.02.2013,Medikament,04405828 D, Aspirin C Beragena Arzneimittel Gmb BTA 40 St,Importiert,
+25.02.2013,Medikament,00743505 D, Mucosolvan Brausetabl 60mg BTA 20 St,Importiert,
+25.02.2013,Leistung,7, ,Importiert,Siegbert Stracke
+25.02.2013,Leistung,1, ,Importiert,Siegbert Stracke
+07.01.2013,Medikament,04114781 D, Posterisan Corte M Hy+Anal SAL 25 g,Importiert,
+07.01.2013,Leistung,2, ,Importiert,Siegbert Stracke
+01.01.2013,Privatschein,, ,Importiert,
+20.11.2012,Medikament,01038447 D, Azithromycin HEXAL 500mg FTA 3 St,Importiert,
+20.11.2012,Leistung,7, ,Importiert,Siegbert Stracke
+20.11.2012,Leistung,1, ,Importiert,Siegbert Stracke
+20.11.2012,Diagnose,J42 , Peribronchitis,Importiert,
+05.11.2012,Extern,, bez&nbsp;&nbsp;Einzahlung zur Rechnung Nr.: 20121799,Importiert,
+23.10.2012,Extern,," rech&nbsp;&nbsp;Privatrechnung Nr.: 20121799, Datum: 23.10.2012",Importiert,
+23.10.2012,Rechnung,, R. Nr. 00000000000020121799 Privat,Importiert,
+23.10.2012,Diagnose,UUU , Ausschluß cardio-pulmonale Erkrankung,Importiert,
+12.10.2012,Labordaten,, Befundart [E] Endbefund,Importiert,
+12.10.2012,Extern,, CUS&nbsp;&nbsp;CUSTO man. - Fremddarstellung Untersuchung vom: 12.10.2012,Importiert,
+12.10.2012,Extern,, CUS&nbsp;&nbsp;Untersuchung vom: 12.10.2012normofrequenter SinusrhythmusSteiltypverbreiterte P-Wellesonst unauffälliges EKGRuhe-EKG Messwerte-----------------------------------------------------------HF&nbsp;&nbsp;&nbsp;&nbsp; 71&nbsp;&nbsp;&nbsp;&nbsp;| P&nbsp;&nbsp;122 ms | QT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 382 ms | ST/V3 0.11 mVQRS&nbsp;&nbsp; 103 ms | PQ 143 ms | QTc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;416 ms |Achse&nbsp;&nbsp;74 ø&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | QTc-Disp&nbsp;&nbsp;41 ms |-----------------------------------------------------------,Importiert,
+12.10.2012,Extern,," BMI&nbsp;&nbsp;BMI: 24,2 (normal)Größe: 183,0 cmGewicht: 81,000 kg",Importiert,
+12.10.2012,Extern,, rr&nbsp;&nbsp;RR 154/85 P81,Importiert,
+12.10.2012,Extern,, Anmeldeformular Bild:JPG,Importiert,
+12.10.2012,Leistung,3574, ,Importiert,
+12.10.2012,Leistung,3573H1, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,3591H1, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,3590H1, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,3594H1, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,3550, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,657, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,602, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,652, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,7, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,3741, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,250, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,*MTROPONI, ,Importiert,Siegbert Stracke
+12.10.2012,Leistung,1, ,Importiert,Siegbert Stracke
+01.10.2012,Privatschein,, ,Importiert,
