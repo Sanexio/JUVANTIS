@@ -1,0 +1,329 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #PraxisHero-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+    min-height: 50rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__bg img,
+  #PraxisHero-{{ section.id }} .praxis-hero__bg svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(78, 161, 217, 0.85) 0%, rgba(115, 194, 94, 0.7) 100%);
+    z-index: 1;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+    color: #fff;
+  }
+
+  @media screen and (min-width: 750px) {
+    #PraxisHero-{{ section.id }} .praxis-hero__heading {
+      font-size: 5.2rem;
+    }
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__subtitle {
+    font-family: var(--font-heading-family);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media screen and (min-width: 750px) {
+    #PraxisHero-{{ section.id }} .praxis-hero__subtitle {
+      font-size: 2.4rem;
+    }
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__languages {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__lang-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.6);
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__address {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__address svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    fill: currentColor;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__cta {
+    display: inline-block;
+    padding: 1.4rem 3.6rem;
+    background: #fff;
+    color: #4ea1d9;
+    font-family: var(--font-heading-family);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__cta:hover {
+    background: #f0f0f0;
+    transform: translateY(-0.2rem);
+  }
+{%- endstyle -%}
+
+<div
+  id="PraxisHero-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="praxis-hero__bg">
+    {%- if section.settings.image != blank -%}
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'eager',
+          sizes: '100vw',
+          widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+    {%- else -%}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="praxis-hero__overlay"></div>
+
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="praxis-hero__content">
+      {%- if section.settings.heading != blank -%}
+        <h1 class="praxis-hero__heading">{{ section.settings.heading | escape }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.subtitle != blank -%}
+        <p class="praxis-hero__subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.description != blank -%}
+        <p class="praxis-hero__description">{{ section.settings.description | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="praxis-hero__languages">
+          {%- for block in section.blocks -%}
+            <span class="praxis-hero__lang-badge" {{ block.shopify_attributes }}>
+              {{ block.settings.code | escape }}
+            </span>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.address != blank -%}
+        <p class="praxis-hero__address">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+          {{ section.settings.address | escape }}
+        </p>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank -%}
+        <a
+          {% if section.settings.button_link != blank %}
+            href="{{ section.settings.button_link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          {% else %}
+            role="link" aria-disabled="true"
+          {% endif %}
+          class="praxis-hero__cta"
+        >
+          {{ section.settings.button_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Praxis Hero",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hintergrundbild"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "GP Medical Center Westend",
+      "label": "Praxisname"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "default": "Praxis Dr. Stracke & Kollegen",
+      "label": "Untertitel"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "default": "Hausärztliche und Innere Medizin im Herzen Frankfurts",
+      "label": "Beschreibung"
+    },
+    {
+      "type": "text",
+      "id": "address",
+      "default": "Grüneburgweg 12, 60322 Frankfurt am Main",
+      "label": "Adresse"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Termin buchen",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link (z.B. Doctolib)"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-1",
+      "label": "Farbschema"
+    },
+    {
+      "type": "header",
+      "content": "Abstandseinstellungen"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand unten",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "language",
+      "name": "Sprache",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "Deutsch",
+          "label": "Sprache (Anzeige)"
+        },
+        {
+          "type": "text",
+          "id": "code",
+          "default": "DE",
+          "label": "Sprachkürzel"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Praxis Hero",
+      "blocks": [
+        { "type": "language", "settings": { "label": "Deutsch", "code": "DE" } },
+        { "type": "language", "settings": { "label": "English", "code": "EN" } },
+        { "type": "language", "settings": { "label": "Français", "code": "FR" } },
+        { "type": "language", "settings": { "label": "Español", "code": "ES" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

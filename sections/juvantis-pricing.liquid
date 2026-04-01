@@ -1,0 +1,480 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #Pricing-{{ section.id }} .pricing__header {
+    text-align: center;
+    max-width: 64rem;
+    margin: 0 auto 4.8rem;
+  }
+
+  #Pricing-{{ section.id }} .pricing__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #Pricing-{{ section.id }} .pricing__heading {
+      font-size: 4.8rem;
+    }
+  }
+
+  #Pricing-{{ section.id }} .pricing__subtitle {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  #Pricing-{{ section.id }} .pricing__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    align-items: stretch;
+  }
+
+  @media screen and (min-width: 750px) {
+    #Pricing-{{ section.id }} .pricing__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #Pricing-{{ section.id }} .pricing__card {
+    background: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    padding: 3.6rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+
+  #Pricing-{{ section.id }} .pricing__card:hover {
+    box-shadow: 0 0.4rem 2.4rem rgba(var(--color-foreground), 0.08);
+  }
+
+  #Pricing-{{ section.id }} .pricing__card--highlighted {
+    border-color: rgb(var(--color-button));
+    border-width: 0.2rem;
+    transform: scale(1.02);
+  }
+
+  @media screen and (min-width: 750px) {
+    #Pricing-{{ section.id }} .pricing__card--highlighted {
+      transform: scale(1.04);
+    }
+  }
+
+  #Pricing-{{ section.id }} .pricing__badge {
+    position: absolute;
+    top: -1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    font-family: var(--font-heading-family);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.4rem 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+  }
+
+  #Pricing-{{ section.id }} .pricing__plan-name {
+    font-family: var(--font-heading-family);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  #Pricing-{{ section.id }} .pricing__plan-desc {
+    font-size: 1.3rem;
+    color: rgba(var(--color-foreground), 0.6);
+    margin-bottom: 2rem;
+  }
+
+  #Pricing-{{ section.id }} .pricing__price {
+    font-family: var(--font-heading-family);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    line-height: 1;
+  }
+
+  #Pricing-{{ section.id }} .pricing__price-suffix {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(var(--color-foreground), 0.6);
+  }
+
+  #Pricing-{{ section.id }} .pricing__period {
+    font-size: 1.3rem;
+    color: rgba(var(--color-foreground), 0.5);
+    margin-bottom: 2.4rem;
+  }
+
+  #Pricing-{{ section.id }} .pricing__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.4rem;
+    flex-grow: 1;
+  }
+
+  #Pricing-{{ section.id }} .pricing__features li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0.6rem 0;
+    padding-left: 2.4rem;
+    position: relative;
+  }
+
+  #Pricing-{{ section.id }} .pricing__features li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: #73c25e;
+    font-weight: 700;
+  }
+
+  #Pricing-{{ section.id }} .pricing__card-cta {
+    margin-top: auto;
+  }
+
+  #Pricing-{{ section.id }} .pricing__card-cta .button {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+{%- endstyle -%}
+
+<div
+  id="Pricing-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="pricing__header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="pricing__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pricing__subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="pricing__grid">
+      {%- assign current_plan = nil -%}
+      {%- assign plan_features = '' -%}
+      {%- assign plan_index = 0 -%}
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'plan' -%}
+          {%- comment -%} Close previous plan card if open {%- endcomment -%}
+          {%- if plan_index > 0 -%}
+              </ul>
+              <div class="pricing__card-cta">
+                <a
+                  {% if current_plan_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ current_plan_link }}"
+                  {% endif %}
+                  class="button {% if current_plan_highlighted %}button--primary{% else %}button--secondary{% endif %}"
+                >
+                  {{- current_plan_cta | escape -}}
+                </a>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- assign plan_index = plan_index | plus: 1 -%}
+          {%- assign current_plan_highlighted = block.settings.highlighted -%}
+          {%- assign current_plan_cta = block.settings.button_label -%}
+          {%- assign current_plan_link = block.settings.button_link -%}
+
+          <div class="pricing__card{% if block.settings.highlighted %} pricing__card--highlighted{% endif %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.badge != blank -%}
+              <span class="pricing__badge">{{ block.settings.badge | escape }}</span>
+            {%- endif -%}
+            <h3 class="pricing__plan-name">{{ block.settings.name | escape }}</h3>
+            {%- if block.settings.description != blank -%}
+              <p class="pricing__plan-desc">{{ block.settings.description | escape }}</p>
+            {%- endif -%}
+            <div class="pricing__price">
+              {{ block.settings.price | escape -}}
+              {%- if block.settings.price_suffix != blank -%}
+                <span class="pricing__price-suffix">{{ block.settings.price_suffix | escape }}</span>
+              {%- endif -%}
+            </div>
+            {%- if block.settings.period != blank -%}
+              <p class="pricing__period">{{ block.settings.period | escape }}</p>
+            {%- endif -%}
+            <ul class="pricing__features">
+
+        {%- elsif block.type == 'feature' -%}
+          <li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- comment -%} Close last plan card {%- endcomment -%}
+      {%- if plan_index > 0 -%}
+            </ul>
+            <div class="pricing__card-cta">
+              <a
+                {% if current_plan_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ current_plan_link }}"
+                {% endif %}
+                class="button {% if current_plan_highlighted %}button--primary{% else %}button--secondary{% endif %}"
+              >
+                {{- current_plan_cta | escape -}}
+              </a>
+            </div>
+          </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juvantis Preise",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 30,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Transparent. Fair. Flexibel.",
+      "label": "Überschrift"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "default": "Starte kostenlos und upgrade, wenn du bereit bist.",
+      "label": "Untertitel"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-2",
+      "label": "Farbschema"
+    },
+    {
+      "type": "header",
+      "content": "Abstandseinstellungen"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand unten",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "plan",
+      "name": "Preisplan",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "default": "Plan",
+          "label": "Planname"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Beschreibung"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "default": "0\u20ac",
+          "label": "Preis"
+        },
+        {
+          "type": "text",
+          "id": "price_suffix",
+          "label": "Preis-Suffix (z.B. /Monat)"
+        },
+        {
+          "type": "text",
+          "id": "period",
+          "label": "Abrechnungszeitraum"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge-Text (z.B. Beliebt)"
+        },
+        {
+          "type": "checkbox",
+          "id": "highlighted",
+          "default": false,
+          "label": "Hervorheben"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Jetzt starten",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Feature-Beschreibung",
+          "label": "Feature-Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis Preise",
+      "blocks": [
+        {
+          "type": "plan",
+          "settings": {
+            "name": "Free",
+            "description": "Perfekt zum Kennenlernen",
+            "price": "0\u20ac",
+            "period": "Kostenlos f\u00fcr immer",
+            "button_label": "Kostenlos starten"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Basis Digital Health Twin" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Vital-Tracking" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Community-Zugang" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "1 Laborwert pro Monat" }
+        },
+        {
+          "type": "plan",
+          "settings": {
+            "name": "Premium",
+            "description": "Voller Zugang zu allen Features",
+            "price": "14,99\u20ac",
+            "price_suffix": "/Monat",
+            "period": "Monatlich k\u00fcndbar",
+            "badge": "Beliebt",
+            "highlighted": true,
+            "button_label": "Premium w\u00e4hlen"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Voller 3D Digital Health Twin" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "80+ Biomarker-Analyse" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "KI-Empfehlungen" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Gamification & Quests" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Fortschrittstracking" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Infusionsberatung" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Priorit\u00e4ts-Support" }
+        },
+        {
+          "type": "plan",
+          "settings": {
+            "name": "Business",
+            "description": "F\u00fcr Praxen & Kliniken",
+            "price": "Individuell",
+            "period": "Auf Anfrage",
+            "button_label": "Kontakt aufnehmen"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "White-Label-L\u00f6sung" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Patienten-Dashboard" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "API-Zugang" }
+        },
+        {
+          "type": "feature",
+          "settings": { "text": "Dedizierter Account Manager" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,287 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #HowItWorks-{{ section.id }} .hiw__heading {
+      font-size: 4.8rem;
+    }
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    position: relative;
+  }
+
+  @media screen and (min-width: 750px) {
+    #HowItWorks-{{ section.id }} .hiw__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #HowItWorks-{{ section.id }} .hiw__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__step {
+    text-align: center;
+    padding: 2.4rem 1.6rem;
+    position: relative;
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    font-family: var(--font-heading-family);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__step-title {
+    font-family: var(--font-heading-family);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__step-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__step-icon {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  /* Connector line between steps (desktop only) */
+  @media screen and (min-width: 990px) {
+    #HowItWorks-{{ section.id }} .hiw__step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 5rem;
+      right: -1.6rem;
+      width: 3.2rem;
+      height: 0.2rem;
+      background: rgba(var(--color-foreground), 0.15);
+    }
+  }
+
+  #HowItWorks-{{ section.id }} .hiw__cta {
+    text-align: center;
+    margin-top: 4.8rem;
+  }
+{%- endstyle -%}
+
+<div
+  id="HowItWorks-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="hiw__header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="hiw__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="hiw__steps">
+        {%- for block in section.blocks -%}
+          <div class="hiw__step" {{ block.shopify_attributes }}>
+            <span class="hiw__step-number">{{ forloop.index }}</span>
+            {%- if block.settings.icon != blank -%}
+              <span class="hiw__step-icon">{{ block.settings.icon }}</span>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <h3 class="hiw__step-title">{{ block.settings.title | escape }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p class="hiw__step-text">{{ block.settings.text | escape }}</p>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="hiw__cta">
+        <a
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+          class="button button--primary"
+        >
+          {{- section.settings.button_label | escape -}}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juvantis So funktioniert's",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "In 4 Schritten zu deinem Health Twin",
+      "label": "Überschrift"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Jetzt Check-up buchen",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-2",
+      "label": "Farbschema"
+    },
+    {
+      "type": "header",
+      "content": "Abstandseinstellungen"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand unten",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Schritt",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "default": "📋",
+          "label": "Icon (Emoji)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Schritt",
+          "label": "Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "default": "Beschreibung des Schritts",
+          "label": "Beschreibung"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis So funktioniert's",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "icon": "📅",
+            "title": "Check-up buchen",
+            "text": "Online-Termin in unter 2 Minuten. Wähle deinen Standort in Frankfurt und dein gewünschtes Paket."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "🩸",
+            "title": "Probe & Analyse",
+            "text": "Blutabnahme vor Ort in unserer Partnerpraxis. Akkreditiertes Labor, Ergebnis in 3-5 Werktagen."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "🤖",
+            "title": "KI-Auswertung & DHT",
+            "text": "Unsere KI analysiert deine Werte, erstellt personalisierte Empfehlungen und aktualisiert deinen Digital Health Twin."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "📈",
+            "title": "Fortschritt tracken",
+            "text": "Verfolge Veränderungen über die Zeit. Dein Avatar reagiert auf Verbesserungen und zeigt deinen Fortschritt."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

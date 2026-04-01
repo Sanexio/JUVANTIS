@@ -1,0 +1,405 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #Comparison-{{ section.id }} .comparison__header {
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto 4.8rem;
+  }
+
+  #Comparison-{{ section.id }} .comparison__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #Comparison-{{ section.id }} .comparison__heading {
+      font-size: 4.8rem;
+    }
+  }
+
+  #Comparison-{{ section.id }} .comparison__subtitle {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
+  #Comparison-{{ section.id }} .comparison__table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #Comparison-{{ section.id }} .comparison__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 60rem;
+  }
+
+  #Comparison-{{ section.id }} .comparison__table th,
+  #Comparison-{{ section.id }} .comparison__table td {
+    padding: 1.6rem 2rem;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    font-size: 1.4rem;
+  }
+
+  #Comparison-{{ section.id }} .comparison__table th {
+    font-family: var(--font-heading-family);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    white-space: nowrap;
+  }
+
+  #Comparison-{{ section.id }} .comparison__table td:first-child {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  /* Highlight Juvantis column */
+  #Comparison-{{ section.id }} .comparison__table th.comparison__highlight,
+  #Comparison-{{ section.id }} .comparison__table td.comparison__highlight {
+    background: rgba(var(--color-button), 0.08);
+  }
+
+  #Comparison-{{ section.id }} .comparison__table th.comparison__highlight {
+    color: rgb(var(--color-button));
+    font-size: 1.8rem;
+  }
+
+  #Comparison-{{ section.id }} .comparison__check {
+    color: #73c25e;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  #Comparison-{{ section.id }} .comparison__cross {
+    color: rgba(var(--color-foreground), 0.3);
+    font-size: 2rem;
+  }
+
+  #Comparison-{{ section.id }} .comparison__partial {
+    color: #e8a838;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
+  /* Mobile scroll hint */
+  #Comparison-{{ section.id }} .comparison__scroll-hint {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(var(--color-foreground), 0.5);
+    margin-top: 1.2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #Comparison-{{ section.id }} .comparison__scroll-hint {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="Comparison-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="comparison__header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="comparison__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="comparison__subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="comparison__table-wrapper">
+      <table class="comparison__table">
+        <thead>
+          <tr>
+            <th>{{ section.settings.col_feature | escape }}</th>
+            <th class="comparison__highlight">{{ section.settings.col_juvantis | escape }}</th>
+            <th>{{ section.settings.col_blood | escape }}</th>
+            <th>{{ section.settings.col_lifestyle | escape }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <td>{{ block.settings.feature | escape }}</td>
+              <td class="comparison__highlight">
+                {%- case block.settings.juvantis -%}
+                  {%- when 'yes' -%}
+                    <span class="comparison__check" aria-label="Ja">&#10003;</span>
+                  {%- when 'no' -%}
+                    <span class="comparison__cross" aria-label="Nein">&#10005;</span>
+                  {%- when 'partial' -%}
+                    <span class="comparison__partial">teilweise</span>
+                {%- endcase -%}
+              </td>
+              <td>
+                {%- case block.settings.blood_test -%}
+                  {%- when 'yes' -%}
+                    <span class="comparison__check" aria-label="Ja">&#10003;</span>
+                  {%- when 'no' -%}
+                    <span class="comparison__cross" aria-label="Nein">&#10005;</span>
+                  {%- when 'partial' -%}
+                    <span class="comparison__partial">teilweise</span>
+                {%- endcase -%}
+              </td>
+              <td>
+                {%- case block.settings.lifestyle -%}
+                  {%- when 'yes' -%}
+                    <span class="comparison__check" aria-label="Ja">&#10003;</span>
+                  {%- when 'no' -%}
+                    <span class="comparison__cross" aria-label="Nein">&#10005;</span>
+                  {%- when 'partial' -%}
+                    <span class="comparison__partial">teilweise</span>
+                {%- endcase -%}
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+      <span class="comparison__scroll-hint">&#8592; Tabelle scrollen &#8594;</span>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juvantis Vergleich",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Warum Juvantis?",
+      "label": "Überschrift"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "default": "Andere bieten Bluttests oder Lifestyle-Tracking. Juvantis vereint Diagnostik, Visualisierung, Therapie und Motivation in einer Plattform.",
+      "label": "Untertitel"
+    },
+    {
+      "type": "header",
+      "content": "Spaltenüberschriften"
+    },
+    {
+      "type": "text",
+      "id": "col_feature",
+      "default": "Feature",
+      "label": "Spalte: Feature"
+    },
+    {
+      "type": "text",
+      "id": "col_juvantis",
+      "default": "Juvantis",
+      "label": "Spalte: Juvantis"
+    },
+    {
+      "type": "text",
+      "id": "col_blood",
+      "default": "Reine Bluttest-Anbieter",
+      "label": "Spalte: Bluttest-Anbieter"
+    },
+    {
+      "type": "text",
+      "id": "col_lifestyle",
+      "default": "Lifestyle-Apps",
+      "label": "Spalte: Lifestyle-Apps"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-1",
+      "label": "Farbschema"
+    },
+    {
+      "type": "header",
+      "content": "Abstandseinstellungen"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand unten",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Vergleichszeile",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "default": "Feature-Name",
+          "label": "Feature"
+        },
+        {
+          "type": "select",
+          "id": "juvantis",
+          "options": [
+            { "value": "yes", "label": "Ja" },
+            { "value": "no", "label": "Nein" },
+            { "value": "partial", "label": "Teilweise" }
+          ],
+          "default": "yes",
+          "label": "Juvantis"
+        },
+        {
+          "type": "select",
+          "id": "blood_test",
+          "options": [
+            { "value": "yes", "label": "Ja" },
+            { "value": "no", "label": "Nein" },
+            { "value": "partial", "label": "Teilweise" }
+          ],
+          "default": "no",
+          "label": "Bluttest-Anbieter"
+        },
+        {
+          "type": "select",
+          "id": "lifestyle",
+          "options": [
+            { "value": "yes", "label": "Ja" },
+            { "value": "no", "label": "Nein" },
+            { "value": "partial", "label": "Teilweise" }
+          ],
+          "default": "no",
+          "label": "Lifestyle-Apps"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis Vergleich",
+      "blocks": [
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Labor-Bluttests (80+ Biomarker)",
+            "juvantis": "yes",
+            "blood_test": "yes",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "3D Digital Health Twin",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Body Check-ups (Ultraschall)",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Infusionstherapie",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Gamification & Quests",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "KI-Empfehlungen",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "partial"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Digitale Patientenakte",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "Longevity-Protokolle",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "feature": "DSGVO-konform (Deutschland)",
+            "juvantis": "yes",
+            "blood_test": "partial",
+            "lifestyle": "no"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
