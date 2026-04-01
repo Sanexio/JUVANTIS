@@ -390,20 +390,440 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "juvantis_stats": {
+      "type": "juvantis-stats",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "value": "80+",
+            "label": "Biomarker pro Analyse"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "value": "2",
+            "label": "Standorte in Frankfurt"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "value": "3D",
+            "label": "Digital Health Twin"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "value": "100%",
+            "label": "DSGVO-konform"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "juvantis_dht": {
+      "type": "juvantis-dht-showcase",
+      "blocks": {
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "icon": "🧴",
+            "title": "Haut & Äußeres",
+            "text": "Sichtbare Veränderungen — Hautbild, Vitalität, Energielevel"
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "icon": "🫀",
+            "title": "Organe & Systeme",
+            "text": "Herz, Leber, Nieren — Statusanzeige basierend auf Laborwerten"
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "icon": "💓",
+            "title": "Vitalwerte",
+            "text": "Blutdruck, Herzfrequenz, Schlafqualität in Echtzeit"
+          }
+        },
+        "feat_4": {
+          "type": "feature",
+          "settings": {
+            "icon": "🔬",
+            "title": "Biomarker",
+            "text": "80+ Laborwerte übersichtlich visualisiert und erklärt"
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3",
+        "feat_4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "Dein Digital Health Twin",
+        "description": "Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert. Veränderungen an Laborwerten werden sofort sichtbar — motivierend statt abstrakt.",
+        "button_label": "Starte deinen DHT",
+        "button_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "juvantis_comparison": {
+      "type": "juvantis-comparison",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "feature": "Labor-Bluttests (80+ Biomarker)",
+            "juvantis": "yes",
+            "blood_test": "yes",
+            "lifestyle": "no"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "feature": "3D Digital Health Twin",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "feature": "Body Check-ups (Ultraschall)",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "feature": "Infusionstherapie",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "feature": "Gamification & Quests",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_6": {
+          "type": "row",
+          "settings": {
+            "feature": "KI-Empfehlungen",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "partial"
+          }
+        },
+        "row_7": {
+          "type": "row",
+          "settings": {
+            "feature": "Digitale Patientenakte",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_8": {
+          "type": "row",
+          "settings": {
+            "feature": "Longevity-Protokolle",
+            "juvantis": "yes",
+            "blood_test": "no",
+            "lifestyle": "no"
+          }
+        },
+        "row_9": {
+          "type": "row",
+          "settings": {
+            "feature": "DSGVO-konform (Deutschland)",
+            "juvantis": "yes",
+            "blood_test": "partial",
+            "lifestyle": "no"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6",
+        "row_7",
+        "row_8",
+        "row_9"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "Warum Juvantis?",
+        "subtitle": "Andere bieten Bluttests oder Lifestyle-Tracking. Juvantis vereint Diagnostik, Visualisierung, Therapie und Motivation in einer Plattform.",
+        "col_feature": "Feature",
+        "col_juvantis": "Juvantis",
+        "col_blood": "Reine Bluttest-Anbieter",
+        "col_lifestyle": "Lifestyle-Apps",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "juvantis_pricing": {
+      "type": "juvantis-pricing",
+      "blocks": {
+        "plan_free": {
+          "type": "plan",
+          "settings": {
+            "name": "Free",
+            "price": "0€",
+            "period": "für immer",
+            "description": "Erste Einblicke in deine Gesundheit",
+            "highlighted": false,
+            "badge": "",
+            "button_label": "Kostenlos starten",
+            "button_link": ""
+          }
+        },
+        "feat_free_1": {
+          "type": "feature",
+          "settings": {
+            "text": "Basis Digital Health Twin"
+          }
+        },
+        "feat_free_2": {
+          "type": "feature",
+          "settings": {
+            "text": "Vital-Tracking (manuell)"
+          }
+        },
+        "feat_free_3": {
+          "type": "feature",
+          "settings": {
+            "text": "Community-Zugang"
+          }
+        },
+        "feat_free_4": {
+          "type": "feature",
+          "settings": {
+            "text": "1 Laborwert-Erklärung/Monat"
+          }
+        },
+        "plan_premium": {
+          "type": "plan",
+          "settings": {
+            "name": "Premium",
+            "price": "14,99€",
+            "period": "/Monat",
+            "description": "Die volle Health-UX Erfahrung",
+            "highlighted": true,
+            "badge": "Beliebt",
+            "button_label": "Premium starten",
+            "button_link": ""
+          }
+        },
+        "feat_prem_1": {
+          "type": "feature",
+          "settings": {
+            "text": "Alle Free-Features"
+          }
+        },
+        "feat_prem_2": {
+          "type": "feature",
+          "settings": {
+            "text": "Voller Digital Health Twin (3D)"
+          }
+        },
+        "feat_prem_3": {
+          "type": "feature",
+          "settings": {
+            "text": "80+ Biomarker-Analysen"
+          }
+        },
+        "feat_prem_4": {
+          "type": "feature",
+          "settings": {
+            "text": "KI-Empfehlungen & Coaching"
+          }
+        },
+        "feat_prem_5": {
+          "type": "feature",
+          "settings": {
+            "text": "Gamification & Challenges"
+          }
+        },
+        "feat_prem_6": {
+          "type": "feature",
+          "settings": {
+            "text": "Fortschrittstracking über Zeit"
+          }
+        },
+        "feat_prem_7": {
+          "type": "feature",
+          "settings": {
+            "text": "Infusionstherapie-Beratung"
+          }
+        },
+        "feat_prem_8": {
+          "type": "feature",
+          "settings": {
+            "text": "Prioritäts-Support"
+          }
+        },
+        "plan_business": {
+          "type": "plan",
+          "settings": {
+            "name": "Business",
+            "price": "Individuell",
+            "period": "",
+            "description": "Für Praxen, Kliniken & Versicherer",
+            "highlighted": false,
+            "badge": "",
+            "button_label": "Kontakt aufnehmen",
+            "button_link": ""
+          }
+        },
+        "feat_biz_1": {
+          "type": "feature",
+          "settings": {
+            "text": "Alle Premium-Features"
+          }
+        },
+        "feat_biz_2": {
+          "type": "feature",
+          "settings": {
+            "text": "White-Label-Integration"
+          }
+        },
+        "feat_biz_3": {
+          "type": "feature",
+          "settings": {
+            "text": "Patienten-Dashboard"
+          }
+        },
+        "feat_biz_4": {
+          "type": "feature",
+          "settings": {
+            "text": "Clinical Decision Support"
+          }
+        },
+        "feat_biz_5": {
+          "type": "feature",
+          "settings": {
+            "text": "API-Zugang"
+          }
+        },
+        "feat_biz_6": {
+          "type": "feature",
+          "settings": {
+            "text": "Dedicated Account Manager"
+          }
+        }
+      },
+      "block_order": [
+        "plan_free",
+        "feat_free_1",
+        "feat_free_2",
+        "feat_free_3",
+        "feat_free_4",
+        "plan_premium",
+        "feat_prem_1",
+        "feat_prem_2",
+        "feat_prem_3",
+        "feat_prem_4",
+        "feat_prem_5",
+        "feat_prem_6",
+        "feat_prem_7",
+        "feat_prem_8",
+        "plan_business",
+        "feat_biz_1",
+        "feat_biz_2",
+        "feat_biz_3",
+        "feat_biz_4",
+        "feat_biz_5",
+        "feat_biz_6"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "Transparent. Fair. Flexibel.",
+        "subtitle": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten.",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "juvantis_partner": {
+      "type": "juvantis-partner-praxis",
+      "settings": {
+        "color_scheme": "background-2",
+        "heading": "Unsere Partnerpraxis",
+        "practice_name": "GP Medical Center Westend",
+        "specialty": "Hausärztliche und Innere Medizin im Herzen Frankfurts",
+        "doctors": "<p>Dr. med. Siegbert Stracke, MBA<br>Docteur en méd. Sonja Saul</p>",
+        "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
+        "phone": "069-247 574 523",
+        "languages": "DE, EN, FR, ES",
+        "button_label": "Zur Partnerpraxis",
+        "button_link": "/pages/partnerpraxis",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "juvantis_cta": {
+      "type": "juvantis-cta-banner",
+      "settings": {
+        "heading": "Bereit für deine Health-Transformation?",
+        "text": "Starte noch heute mit deinem Digital Health Twin und verstehe deine Gesundheit wie nie zuvor.",
+        "button_label": "Jetzt kostenlos starten",
+        "button_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_with_text_kfxcgc",
+    "juvantis_stats",
     "rich_text_GB8eLF",
     "featured_collection",
     "rich_text_KVD8tb",
     "featured_collection_wmn9Uq",
+    "juvantis_dht",
     "rich_text_zXw8r7",
     "multicolumn_K8TRgL",
     "multicolumn_MfrQKb",
+    "juvantis_comparison",
+    "juvantis_pricing",
+    "juvantis_partner",
     "custom_liquid_GMmLqR",
     "9b2c3c14-64e3-47f6-86f1-9c2ce75d2e14",
     "7e95b02b-c5e6-4592-8f60-0eae63e8a4eb",
+    "juvantis_cta",
     "b6b58311-871e-4efb-86fb-02ee33331b03"
   ]
 }
