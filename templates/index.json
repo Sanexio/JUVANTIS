@@ -441,32 +441,32 @@
         "feat_1": {
           "type": "feature",
           "settings": {
-            "icon": "eye",
-            "heading": "Haut & Äußeres",
+            "icon": "🧴",
+            "title": "Haut & Äußeres",
             "text": "Sichtbare Veränderungen — Hautbild, Vitalität, Energielevel"
           }
         },
         "feat_2": {
           "type": "feature",
           "settings": {
-            "icon": "heart",
-            "heading": "Organe & Systeme",
+            "icon": "🫀",
+            "title": "Organe & Systeme",
             "text": "Herz, Leber, Nieren — Statusanzeige basierend auf Laborwerten"
           }
         },
         "feat_3": {
           "type": "feature",
           "settings": {
-            "icon": "activity",
-            "heading": "Vitalwerte",
+            "icon": "💓",
+            "title": "Vitalwerte",
             "text": "Blutdruck, Herzfrequenz, Schlafqualität in Echtzeit"
           }
         },
         "feat_4": {
           "type": "feature",
           "settings": {
-            "icon": "flask",
-            "heading": "Biomarker",
+            "icon": "🔬",
+            "title": "Biomarker",
             "text": "80+ Laborwerte übersichtlich visualisiert und erklärt"
           }
         }
@@ -480,7 +480,7 @@
       "settings": {
         "color_scheme": "background-1",
         "heading": "Dein Digital Health Twin",
-        "text": "Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert. Veränderungen an Laborwerten werden sofort sichtbar — motivierend statt abstrakt.",
+        "description": "Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert. Veränderungen an Laborwerten werden sofort sichtbar — motivierend statt abstrakt.",
         "button_label": "Starte deinen DHT",
         "button_link": "",
         "padding_top": 40,
@@ -495,8 +495,8 @@
           "settings": {
             "feature": "Labor-Bluttests (80+ Biomarker)",
             "juvantis": "yes",
-            "competitor_1": "yes",
-            "competitor_2": "no"
+            "blood_test": "yes",
+            "lifestyle": "no"
           }
         },
         "row_2": {
@@ -504,8 +504,8 @@
           "settings": {
             "feature": "3D Digital Health Twin",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_3": {
@@ -513,8 +513,8 @@
           "settings": {
             "feature": "Body Check-ups (Ultraschall)",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_4": {
@@ -522,8 +522,8 @@
           "settings": {
             "feature": "Infusionstherapie",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_5": {
@@ -531,8 +531,8 @@
           "settings": {
             "feature": "Gamification & Quests",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_6": {
@@ -540,8 +540,8 @@
           "settings": {
             "feature": "KI-Empfehlungen",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "partial"
+            "blood_test": "no",
+            "lifestyle": "partial"
           }
         },
         "row_7": {
@@ -549,8 +549,8 @@
           "settings": {
             "feature": "Digitale Patientenakte",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_8": {
@@ -558,8 +558,8 @@
           "settings": {
             "feature": "Longevity-Protokolle",
             "juvantis": "yes",
-            "competitor_1": "no",
-            "competitor_2": "no"
+            "blood_test": "no",
+            "lifestyle": "no"
           }
         },
         "row_9": {
@@ -567,8 +567,8 @@
           "settings": {
             "feature": "DSGVO-konform (Deutschland)",
             "juvantis": "yes",
-            "competitor_1": "partial",
-            "competitor_2": "no"
+            "blood_test": "partial",
+            "lifestyle": "no"
           }
         }
       },
@@ -586,10 +586,11 @@
       "settings": {
         "color_scheme": "background-1",
         "heading": "Warum Juvantis?",
-        "text": "Andere bieten Bluttests oder Lifestyle-Tracking. Juvantis vereint Diagnostik, Visualisierung, Therapie und Motivation in einer Plattform.",
-        "column_1": "Juvantis",
-        "column_2": "Reine Bluttest-Anbieter",
-        "column_3": "Lifestyle-Apps",
+        "subtitle": "Andere bieten Bluttests oder Lifestyle-Tracking. Juvantis vereint Diagnostik, Visualisierung, Therapie und Motivation in einer Plattform.",
+        "col_feature": "Feature",
+        "col_juvantis": "Juvantis",
+        "col_blood": "Reine Bluttest-Anbieter",
+        "col_lifestyle": "Lifestyle-Apps",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -771,7 +772,7 @@
       "settings": {
         "color_scheme": "background-1",
         "heading": "Transparent. Fair. Flexibel.",
-        "text": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten.",
+        "subtitle": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten.",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -783,7 +784,7 @@
         "heading": "Unsere Partnerpraxis",
         "practice_name": "GP Medical Center Westend",
         "specialty": "Hausärztliche und Innere Medizin im Herzen Frankfurts",
-        "doctors": "Dr. med. Siegbert Stracke, MBA & Docteur en méd. Sonja Saul",
+        "doctors": "<p>Dr. med. Siegbert Stracke, MBA<br>Docteur en méd. Sonja Saul</p>",
         "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
         "phone": "069-247 574 523",
         "languages": "DE, EN, FR, ES",
