@@ -1,0 +1,451 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__header {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto 3.2rem;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__heading {
+      font-size: 4rem;
+    }
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__wrapper {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(var(--color-background));
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table thead {
+    background: #4ea1d9;
+    color: #fff;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table th {
+    font-family: var(--font-heading-family);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    text-align: left;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.6rem;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06);
+    vertical-align: middle;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tr:last-child td {
+    border-bottom: none;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tbody tr:hover {
+    background: rgba(78, 161, 217, 0.04);
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__day {
+    font-weight: 600;
+    min-width: 10rem;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__time {
+    white-space: nowrap;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__akut {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: rgba(115, 194, 94, 0.12);
+    color: #4a8c3a;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__vereinbarung {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: rgba(78, 161, 217, 0.12);
+    color: #4ea1d9;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.6rem 2rem;
+    background: rgba(115, 194, 94, 0.08);
+    border-left: 0.3rem solid #73c25e;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
+  /* Mobile: stack table into cards */
+  @media screen and (max-width: 749px) {
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table thead {
+      display: none;
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table,
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tbody,
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tr,
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td {
+      display: block;
+      width: 100%;
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tr {
+      padding: 1.2rem 1.6rem;
+      border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06);
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td {
+      padding: 0.2rem 0;
+      border-bottom: none;
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__day {
+      font-size: 1.6rem;
+      color: #4ea1d9;
+      margin-bottom: 0.4rem;
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td:before {
+      content: attr(data-label);
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: rgba(var(--color-foreground), 0.5);
+      display: block;
+    }
+
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td.praxis-zeiten__day:before {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="PraxisZeiten-{{ section.id }}"
+  class="color-{{ section.settings.color_scheme }} gradient"
+>
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="praxis-zeiten__header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="praxis-zeiten__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+    </div>
+
+    <div class="praxis-zeiten__wrapper">
+      <table class="praxis-zeiten__table">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Sprechstunde</th>
+            <th>Akutsprechstunde</th>
+            <th>Hinweis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.mo_label | default: "Montag" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.mo_hours | default: "08:00–11:00, 12:30–16:00" }}</td>
+            <td data-label="Akut: "><span class="praxis-zeiten__akut">{{ section.settings.mo_akut | default: "11:00–12:00" }}</span></td>
+            <td data-label="">{{ section.settings.mo_note }}</td>
+          </tr>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.di_label | default: "Dienstag" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.di_hours | default: "08:00–11:00, 12:30–16:00" }}</td>
+            <td data-label="Akut: "><span class="praxis-zeiten__akut">{{ section.settings.di_akut | default: "11:00–12:00" }}</span></td>
+            <td data-label="">{{ section.settings.di_note }}</td>
+          </tr>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.mi_label | default: "Mittwoch" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.mi_hours | default: "08:00–11:00" }}</td>
+            <td data-label="Akut: "><span class="praxis-zeiten__akut">{{ section.settings.mi_akut | default: "11:00–12:00" }}</span></td>
+            <td data-label="">{{ section.settings.mi_note }}</td>
+          </tr>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.do_label | default: "Donnerstag" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.do_hours | default: "08:00–11:00, 12:30–16:00" }}</td>
+            <td data-label="Akut: "><span class="praxis-zeiten__akut">{{ section.settings.do_akut | default: "11:00–12:00" }}</span></td>
+            <td data-label="">{{ section.settings.do_note }}</td>
+          </tr>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.fr_label | default: "Freitag" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.fr_hours | default: "08:00–11:00" }}</td>
+            <td data-label="Akut: "><span class="praxis-zeiten__akut">{{ section.settings.fr_akut | default: "11:00–12:00" }}</span></td>
+            <td data-label="">{{ section.settings.fr_note }}</td>
+          </tr>
+          <tr>
+            <td class="praxis-zeiten__day" data-label="">{{ section.settings.sa_label | default: "Samstag" }}</td>
+            <td class="praxis-zeiten__time" data-label="Sprechstunde: ">{{ section.settings.sa_hours | default: "09:00–13:00" }}</td>
+            <td data-label="Akut: ">—</td>
+            <td data-label=""><span class="praxis-zeiten__vereinbarung">{{ section.settings.sa_note | default: "nur nach Vereinbarung" }}</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      {%- if section.settings.note != blank -%}
+        <div class="praxis-zeiten__note">
+          {{ section.settings.note | escape }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Praxis Sprechzeiten",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Sprechzeiten",
+      "label": "Überschrift"
+    },
+    {
+      "type": "textarea",
+      "id": "note",
+      "default": "Akutsprechstunde täglich 11:00–12:00 Uhr (ohne Termin)",
+      "label": "Hinweistext"
+    },
+    {
+      "type": "header",
+      "content": "Montag"
+    },
+    {
+      "type": "text",
+      "id": "mo_label",
+      "default": "Montag",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "mo_hours",
+      "default": "08:00–11:00, 12:30–16:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "mo_akut",
+      "default": "11:00–12:00",
+      "label": "Akutsprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "mo_note",
+      "label": "Hinweis"
+    },
+    {
+      "type": "header",
+      "content": "Dienstag"
+    },
+    {
+      "type": "text",
+      "id": "di_label",
+      "default": "Dienstag",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "di_hours",
+      "default": "08:00–11:00, 12:30–16:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "di_akut",
+      "default": "11:00–12:00",
+      "label": "Akutsprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "di_note",
+      "label": "Hinweis"
+    },
+    {
+      "type": "header",
+      "content": "Mittwoch"
+    },
+    {
+      "type": "text",
+      "id": "mi_label",
+      "default": "Mittwoch",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "mi_hours",
+      "default": "08:00–11:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "mi_akut",
+      "default": "11:00–12:00",
+      "label": "Akutsprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "mi_note",
+      "label": "Hinweis"
+    },
+    {
+      "type": "header",
+      "content": "Donnerstag"
+    },
+    {
+      "type": "text",
+      "id": "do_label",
+      "default": "Donnerstag",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "do_hours",
+      "default": "08:00–11:00, 12:30–16:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "do_akut",
+      "default": "11:00–12:00",
+      "label": "Akutsprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "do_note",
+      "label": "Hinweis"
+    },
+    {
+      "type": "header",
+      "content": "Freitag"
+    },
+    {
+      "type": "text",
+      "id": "fr_label",
+      "default": "Freitag",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "fr_hours",
+      "default": "08:00–11:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "fr_akut",
+      "default": "11:00–12:00",
+      "label": "Akutsprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "fr_note",
+      "label": "Hinweis"
+    },
+    {
+      "type": "header",
+      "content": "Samstag"
+    },
+    {
+      "type": "text",
+      "id": "sa_label",
+      "default": "Samstag",
+      "label": "Tag"
+    },
+    {
+      "type": "text",
+      "id": "sa_hours",
+      "default": "09:00–13:00",
+      "label": "Sprechstunde"
+    },
+    {
+      "type": "text",
+      "id": "sa_note",
+      "default": "nur nach Vereinbarung",
+      "label": "Hinweis"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-2",
+      "label": "Farbschema"
+    },
+    {
+      "type": "header",
+      "content": "Abstandseinstellungen"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand unten",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Praxis Sprechzeiten"
+    }
+  ]
+}
+{% endschema %}
