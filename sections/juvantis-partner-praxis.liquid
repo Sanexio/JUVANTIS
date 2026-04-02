@@ -427,6 +427,9 @@
   #PP-{{ section.id }} .pp-map-btn:hover { opacity: 0.9; }
 {%- endstyle -%}
 
+{%- comment -%} Only render on dedicated page, not on homepage (Shopify rendering instance workaround) {%- endcomment -%}
+{%- if template.name == 'index' -%}{%- break -%}{%- endif -%}
+
 {%- assign doctors = section.blocks | where: "type", "doctor" -%}
 {%- assign services = section.blocks | where: "type", "service" -%}
 {%- assign infos = section.blocks | where: "type", "schedule_info" -%}
