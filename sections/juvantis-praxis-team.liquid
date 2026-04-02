@@ -149,6 +149,68 @@
     height: 1.6rem;
     fill: currentColor;
   }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__details {
+    margin-top: 1.6rem;
+    border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    padding-top: 1.2rem;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__details summary {
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4ea1d9;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    user-select: none;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__details summary::after {
+    content: '\25B8';
+    transition: transform 0.2s ease;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__details[open] summary::after {
+    transform: rotate(90deg);
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-section {
+    margin-top: 1.6rem;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-title {
+    font-family: var(--font-heading-family);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: rgba(var(--color-foreground), 0.85);
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-content {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-content ul {
+    padding-left: 1.6rem;
+    margin: 0.4rem 0;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-content li {
+    margin-bottom: 0.4rem;
+  }
+
+  #PraxisTeam-{{ section.id }} .praxis-team__cv-content p {
+    margin: 0.4rem 0;
+  }
 {%- endstyle -%}
 
 <div
