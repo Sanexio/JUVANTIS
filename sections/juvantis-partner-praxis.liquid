@@ -428,7 +428,7 @@
 {%- endstyle -%}
 
 {%- comment -%} Only render on dedicated page, not on homepage (Shopify rendering instance workaround) {%- endcomment -%}
-{%- if template.name == 'index' -%}{%- break -%}{%- endif -%}
+{%- unless template.name == 'index' -%}
 
 {%- assign doctors = section.blocks | where: "type", "doctor" -%}
 {%- assign services = section.blocks | where: "type", "service" -%}
@@ -685,6 +685,8 @@
     {%- endif -%}
   </div>
 </div>
+
+{%- endunless -%}
 
 {% schema %}
 {
