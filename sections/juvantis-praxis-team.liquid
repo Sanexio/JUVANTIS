@@ -279,6 +279,24 @@
                   </a>
                 {%- endif -%}
               </div>
+
+              {%- if block.settings.education != blank or block.settings.career != blank -%}
+                <details class="praxis-team__details">
+                  <summary>Vollst&auml;ndiger Lebenslauf</summary>
+                  {%- if block.settings.career != blank -%}
+                    <div class="praxis-team__cv-section">
+                      <h4 class="praxis-team__cv-title">Berufliche Erfahrung</h4>
+                      <div class="praxis-team__cv-content">{{ block.settings.career }}</div>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.education != blank -%}
+                    <div class="praxis-team__cv-section">
+                      <h4 class="praxis-team__cv-title">Ausbildung</h4>
+                      <div class="praxis-team__cv-content">{{ block.settings.education }}</div>
+                    </div>
+                  {%- endif -%}
+                </details>
+              {%- endif -%}
             </div>
           </div>
         {%- endfor -%}
@@ -388,6 +406,16 @@
           "type": "url",
           "id": "linkedin_url",
           "label": "LinkedIn Profil"
+        },
+        {
+          "type": "richtext",
+          "id": "career",
+          "label": "Berufliche Erfahrung"
+        },
+        {
+          "type": "richtext",
+          "id": "education",
+          "label": "Ausbildung"
         }
       ]
     }
