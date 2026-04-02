@@ -786,21 +786,6 @@
         "padding_bottom": 52
       }
     },
-    "juvantis_partner": {
-      "type": "juvantis-partner-praxis",
-      "settings": {
-        "heading": "GP Medical Center Westend",
-        "subtitle": "Praxis Dr. Stracke & Kollegen",
-        "description": "Hausärztliche und Innere Medizin im Herzen Frankfurts. Erfahrene Fachärzte mit internationaler Kompetenz bieten umfassende Diagnostik und individuelle Betreuung.",
-        "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
-        "languages": "DE, EN, FR, ES",
-        "button_label": "Mehr erfahren",
-        "button_link": "/pages/partnerpraxis",
-        "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "juvantis_cta": {
       "type": "juvantis-cta-banner",
       "settings": {
@@ -826,7 +811,6 @@
     "multicolumn_MfrQKb",
     "juvantis_comparison",
     "juvantis_pricing",
-    "juvantis_partner",
     "custom_liquid_GMmLqR",
     "9b2c3c14-64e3-47f6-86f1-9c2ce75d2e14",
     "7e95b02b-c5e6-4592-8f60-0eae63e8a4eb",
