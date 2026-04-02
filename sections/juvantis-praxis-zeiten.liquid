@@ -112,6 +112,55 @@
     color: rgba(var(--color-foreground), 0.75);
   }
 
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extras {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #PraxisZeiten-{{ section.id }} .praxis-zeiten__extras {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-card {
+    background: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border-radius: 0.8rem;
+    padding: 2rem;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-title {
+    font-family: var(--font-heading-family);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content p {
+    margin: 0.4rem 0;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content ul {
+    padding-left: 1.6rem;
+    margin: 0.4rem 0;
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content li {
+    margin-bottom: 0.3rem;
+  }
+
   /* Mobile: stack table into cards */
   @media screen and (max-width: 749px) {
     #PraxisZeiten-{{ section.id }} .praxis-zeiten__table thead {
@@ -220,6 +269,35 @@
       {%- if section.settings.note != blank -%}
         <div class="praxis-zeiten__note">
           {{ section.settings.note | escape }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.blutentnahme_info != blank or section.settings.akut_rules != blank or section.settings.infekt_info != blank or section.settings.abend_info != blank -%}
+        <div class="praxis-zeiten__extras">
+          {%- if section.settings.blutentnahme_info != blank -%}
+            <div class="praxis-zeiten__extra-card">
+              <h3 class="praxis-zeiten__extra-title">&#129656; Blutentnahme</h3>
+              <div class="praxis-zeiten__extra-content">{{ section.settings.blutentnahme_info }}</div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.akut_rules != blank -%}
+            <div class="praxis-zeiten__extra-card">
+              <h3 class="praxis-zeiten__extra-title">&#9888;&#65039; Akutsprechstunde</h3>
+              <div class="praxis-zeiten__extra-content">{{ section.settings.akut_rules }}</div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.infekt_info != blank -%}
+            <div class="praxis-zeiten__extra-card">
+              <h3 class="praxis-zeiten__extra-title">&#129440; Infektionssprechstunde</h3>
+              <div class="praxis-zeiten__extra-content">{{ section.settings.infekt_info }}</div>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.abend_info != blank -%}
+            <div class="praxis-zeiten__extra-card">
+              <h3 class="praxis-zeiten__extra-title">&#127769; Abend- &amp; Samstagssprechstunde</h3>
+              <div class="praxis-zeiten__extra-content">{{ section.settings.abend_info }}</div>
+            </div>
+          {%- endif -%}
         </div>
       {%- endif -%}
     </div>
