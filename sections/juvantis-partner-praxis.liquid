@@ -10,356 +10,351 @@
     }
   }
 
-  /* Hero */
-  #PartnerPraxis-{{ section.id }} .pp-hero {
-    position: relative;
-    overflow: hidden;
-    min-height: 40rem;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(78, 161, 217, 0.88) 0%, rgba(115, 194, 94, 0.72) 100%);
-    margin-bottom: 4rem;
-    border-radius: 0.8rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__content {
-    position: relative;
-    z-index: 2;
+  /* Section header — matches theme pattern */
+  #PP-{{ section.id }} .pp-header {
     text-align: center;
-    max-width: 76rem;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    color: #fff;
+    max-width: 80rem;
+    margin: 0 auto 4rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-hero__heading {
+  #PP-{{ section.id }} .pp-heading {
     font-family: var(--font-heading-family);
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: 1.15;
-    margin-bottom: 0.6rem;
-    color: #fff;
-  }
-  @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-hero__heading { font-size: 4.8rem; }
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__subtitle {
-    font-size: 1.8rem;
-    margin-bottom: 1.2rem;
-    color: rgba(255,255,255,0.92);
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__desc {
-    font-size: 1.5rem;
-    line-height: 1.65;
-    margin-bottom: 2rem;
-    color: rgba(255,255,255,0.88);
-    max-width: 62rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__langs {
-    display: flex;
-    justify-content: center;
-    gap: 0.6rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__lang {
-    padding: 0.35rem 1rem;
-    border: 0.1rem solid rgba(255,255,255,0.5);
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-    background: rgba(255,255,255,0.12);
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__addr {
-    font-size: 1.35rem;
-    color: rgba(255,255,255,0.82);
-    margin-bottom: 2rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__cta {
-    display: inline-block;
-    padding: 1.2rem 3.2rem;
-    background: #fff;
-    color: #4ea1d9;
-    font-family: var(--font-heading-family);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 0.4rem;
-    transition: background 0.3s, transform 0.2s;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-hero__cta:hover {
-    background: #f0f0f0;
-    transform: translateY(-0.15rem);
-  }
-
-  /* Sub-section headings */
-  #PartnerPraxis-{{ section.id }} .pp-section-title {
-    font-family: var(--font-heading-family);
-    font-size: 2.8rem;
+    font-size: 3.6rem;
     line-height: 1.2;
-    text-align: center;
-    margin-bottom: 1rem;
   }
   @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-section-title { font-size: 3.6rem; }
+    #PP-{{ section.id }} .pp-heading { font-size: 4.8rem; }
   }
-  #PartnerPraxis-{{ section.id }} .pp-section-desc {
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgba(var(--color-foreground), 0.7);
-    margin-bottom: 3rem;
+  #PP-{{ section.id }} .pp-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.75);
+    margin-top: 0.8rem;
+  }
+  #PP-{{ section.id }} .pp-desc {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.6);
+    margin-top: 0.4rem;
     max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
   }
-  #PartnerPraxis-{{ section.id }} .pp-subsection {
-    margin-bottom: 5rem;
+  #PP-{{ section.id }} .pp-langs {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+  }
+  #PP-{{ section.id }} .pp-lang {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: rgba(var(--color-button), 0.08);
+    color: rgb(var(--color-button));
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+  #PP-{{ section.id }} .pp-header-cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1.4rem 3.2rem;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    font-family: var(--font-heading-family);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+  }
+  #PP-{{ section.id }} .pp-header-cta:hover {
+    opacity: 0.9;
+    transform: translateY(-0.1rem);
   }
 
-  /* Team */
-  #PartnerPraxis-{{ section.id }} .pp-team-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.8rem;
+  /* Subsection headers */
+  #PP-{{ section.id }} .pp-sub {
+    text-align: center;
+    margin: 6rem auto 3.2rem;
+    max-width: 80rem;
+  }
+  #PP-{{ section.id }} .pp-sub-title {
+    font-family: var(--font-heading-family);
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
   @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-team-grid { grid-template-columns: repeat(2, 1fr); }
+    #PP-{{ section.id }} .pp-sub-title { font-size: 3.2rem; }
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc {
+  #PP-{{ section.id }} .pp-sub-desc {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.7);
+    margin-top: 0.6rem;
+  }
+
+  /* Team grid */
+  #PP-{{ section.id }} .pp-team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+  @media screen and (min-width: 750px) {
+    #PP-{{ section.id }} .pp-team { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Doctor card — matches theme card pattern */
+  #PP-{{ section.id }} .pp-doc {
     background: rgb(var(--color-background));
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    border-radius: 0.8rem;
-    padding: 2.4rem;
-    transition: box-shadow 0.3s, transform 0.3s;
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    padding: 3.2rem 2.4rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc:hover {
-    box-shadow: 0 0.6rem 2.4rem rgba(var(--color-foreground), 0.07);
-    transform: translateY(-0.15rem);
+  #PP-{{ section.id }} .pp-doc:hover {
+    box-shadow: 0 0.4rem 2.4rem rgba(var(--color-foreground), 0.08);
+    transform: translateY(-0.2rem);
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__name {
+  #PP-{{ section.id }} .pp-doc__name {
     font-family: var(--font-heading-family);
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__title {
-    font-size: 1.35rem;
+  #PP-{{ section.id }} .pp-doc__title {
+    font-size: 1.4rem;
+    color: rgb(var(--color-button));
     font-weight: 500;
-    color: #4ea1d9;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__quals {
-    font-size: 1.25rem;
-    line-height: 1.5;
+  #PP-{{ section.id }} .pp-doc__quals {
+    font-size: 1.3rem;
     color: rgba(var(--color-foreground), 0.6);
-    margin-bottom: 1.2rem;
     white-space: pre-line;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-doc__bio {
-    font-size: 1.35rem;
-    line-height: 1.7;
-    color: rgba(var(--color-foreground), 0.75);
     margin-bottom: 1.2rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__cv {
-    margin-top: 1.2rem;
-    border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    padding-top: 1rem;
+  #PP-{{ section.id }} .pp-doc__bio {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.75);
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__cv summary {
-    cursor: pointer;
-    font-size: 1.35rem;
+
+  /* CV expandable */
+  #PP-{{ section.id }} .pp-cv {
+    margin-top: 1.6rem;
+    text-align: left;
+    border-top: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    padding-top: 1.2rem;
+  }
+  #PP-{{ section.id }} .pp-cv summary {
+    font-family: var(--font-heading-family);
+    font-size: 1.3rem;
     font-weight: 600;
-    color: #4ea1d9;
+    cursor: pointer;
+    color: rgb(var(--color-button));
     list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__cv summary::-webkit-details-marker { display: none; }
-  #PartnerPraxis-{{ section.id }} .pp-doc__cv summary::after {
-    content: '\25B8';
-    transition: transform 0.2s;
+  #PP-{{ section.id }} .pp-cv summary::marker,
+  #PP-{{ section.id }} .pp-cv summary::-webkit-details-marker { display: none; }
+  #PP-{{ section.id }} .pp-cv summary::before {
+    content: '+ ';
   }
-  #PartnerPraxis-{{ section.id }} .pp-doc__cv[open] summary::after {
-    transform: rotate(90deg);
+  #PP-{{ section.id }} .pp-cv[open] summary::before {
+    content: '- ';
   }
-  #PartnerPraxis-{{ section.id }} .pp-cv-block {
-    margin-top: 1.2rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-cv-block h4 {
+  #PP-{{ section.id }} .pp-cv summary:hover { opacity: 0.8; }
+  #PP-{{ section.id }} .pp-cv-block { margin-top: 1.2rem; }
+  #PP-{{ section.id }} .pp-cv-block h4 {
     font-family: var(--font-heading-family);
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
     color: rgba(var(--color-foreground), 0.85);
   }
-  #PartnerPraxis-{{ section.id }} .pp-cv-block .pp-cv-text {
+  #PP-{{ section.id }} .pp-cv-text {
     font-size: 1.25rem;
-    line-height: 1.7;
+    line-height: 1.6;
     color: rgba(var(--color-foreground), 0.65);
   }
-  #PartnerPraxis-{{ section.id }} .pp-cv-text p { margin: 0.3rem 0; }
+  #PP-{{ section.id }} .pp-cv-text p { margin: 0.3rem 0; }
 
   /* Services */
-  #PartnerPraxis-{{ section.id }} .pp-svc-cat {
-    margin-bottom: 2.4rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-svc-cat__title {
+  #PP-{{ section.id }} .pp-svc-cat { margin-bottom: 3.2rem; }
+  #PP-{{ section.id }} .pp-svc-cat:last-child { margin-bottom: 0; }
+  #PP-{{ section.id }} .pp-svc-cat-title {
     font-family: var(--font-heading-family);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 0.2rem solid #4ea1d9;
-    color: #4ea1d9;
+    margin-bottom: 1.6rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.1);
   }
-  #PartnerPraxis-{{ section.id }} .pp-svc-grid {
+  #PP-{{ section.id }} .pp-svc-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 2.4rem;
   }
   @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-svc-grid { grid-template-columns: repeat(2, 1fr); }
+    #PP-{{ section.id }} .pp-svc-grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media screen and (min-width: 990px) {
-    #PartnerPraxis-{{ section.id }} .pp-svc-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-  #PartnerPraxis-{{ section.id }} .pp-svc-card {
-    background: rgb(var(--color-background));
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    border-radius: 0.8rem;
-    padding: 2rem 1.6rem;
-    transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-svc-card:hover {
-    box-shadow: 0 0.3rem 1.6rem rgba(var(--color-foreground), 0.06);
-    transform: translateY(-0.15rem);
-    border-color: #4ea1d9;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-svc-card__icon { font-size: 2.8rem; margin-bottom: 0.8rem; }
-  #PartnerPraxis-{{ section.id }} .pp-svc-card__name {
-    font-family: var(--font-heading-family);
-    font-size: 1.45rem;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-svc-card__desc {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: rgba(var(--color-foreground), 0.65);
+    #PP-{{ section.id }} .pp-svc-grid { grid-template-columns: repeat(3, 1fr); }
   }
 
-  /* Schedule */
-  #PartnerPraxis-{{ section.id }} .pp-schedule {
-    max-width: 72rem;
-    margin: 0 auto;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-schedule table {
-    width: 100%;
-    border-collapse: collapse;
+  /* Service card — matches DHT showcase */
+  #PP-{{ section.id }} .pp-svc {
     background: rgb(var(--color-background));
-    border-radius: 0.8rem;
-    overflow: hidden;
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    padding: 2.4rem 2rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
-  #PartnerPraxis-{{ section.id }} .pp-schedule thead {
-    background: #4ea1d9;
-    color: #fff;
+  #PP-{{ section.id }} .pp-svc:hover {
+    box-shadow: 0 0.4rem 2.4rem rgba(var(--color-foreground), 0.08);
+    transform: translateY(-0.2rem);
   }
-  #PartnerPraxis-{{ section.id }} .pp-schedule th {
+  #PP-{{ section.id }} .pp-svc__icon { font-size: 2.4rem; margin-bottom: 1.2rem; }
+  #PP-{{ section.id }} .pp-svc__name {
     font-family: var(--font-heading-family);
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 1.2rem 1.4rem;
-    text-align: left;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-schedule td {
-    font-size: 1.3rem;
-    padding: 1rem 1.4rem;
-    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06);
-  }
-  #PartnerPraxis-{{ section.id }} .pp-schedule tr:last-child td { border-bottom: none; }
-  #PartnerPraxis-{{ section.id }} .pp-schedule .pp-day { font-weight: 600; min-width: 9rem; }
-  #PartnerPraxis-{{ section.id }} .pp-schedule .pp-akut {
-    display: inline-block;
-    padding: 0.15rem 0.7rem;
-    background: rgba(115,194,94,0.12);
-    color: #4a8c3a;
-    border-radius: 0.4rem;
-    font-size: 1.15rem;
-    font-weight: 500;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-info-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-top: 2rem;
-  }
-  @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-info-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  #PartnerPraxis-{{ section.id }} .pp-info-card {
-    background: rgb(var(--color-background));
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    border-radius: 0.8rem;
-    padding: 1.6rem;
-  }
-  #PartnerPraxis-{{ section.id }} .pp-info-card h4 {
-    font-family: var(--font-heading-family);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-info-card .pp-info-text {
+  #PP-{{ section.id }} .pp-svc__desc {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+
+  /* Schedule table — matches comparison table */
+  #PP-{{ section.id }} .pp-schedule { max-width: 72rem; margin: 0 auto; }
+  #PP-{{ section.id }} .pp-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  }
+  #PP-{{ section.id }} .pp-schedule thead {
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+  }
+  #PP-{{ section.id }} .pp-schedule th {
+    font-family: var(--font-heading-family);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.2rem 1.6rem;
+    text-align: left;
+  }
+  #PP-{{ section.id }} .pp-schedule td {
+    font-size: 1.3rem;
+    padding: 1rem 1.6rem;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  }
+  #PP-{{ section.id }} .pp-schedule tr:last-child td { border-bottom: none; }
+  #PP-{{ section.id }} .pp-day { font-weight: 600; min-width: 9rem; }
+  #PP-{{ section.id }} .pp-akut {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: rgba(var(--color-button), 0.08);
+    color: rgb(var(--color-button));
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+  #PP-{{ section.id }} .pp-schedule-note {
+    text-align: center;
+    margin-top: 1.6rem;
+    padding: 1rem 1.6rem;
+    background: rgba(var(--color-button), 0.06);
+    border-left: 0.3rem solid rgb(var(--color-button));
+    font-size: 1.3rem;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+  @media screen and (max-width: 749px) {
+    #PP-{{ section.id }} .pp-schedule thead { display: none; }
+    #PP-{{ section.id }} .pp-schedule table,
+    #PP-{{ section.id }} .pp-schedule tbody,
+    #PP-{{ section.id }} .pp-schedule tr,
+    #PP-{{ section.id }} .pp-schedule td { display: block; width: 100%; }
+    #PP-{{ section.id }} .pp-schedule tr {
+      padding: 1rem 1.4rem;
+      border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    }
+    #PP-{{ section.id }} .pp-schedule td { padding: 0.15rem 0; border-bottom: none; }
+    #PP-{{ section.id }} .pp-day {
+      font-size: 1.5rem;
+      color: rgb(var(--color-button));
+    }
+    #PP-{{ section.id }} .pp-schedule td:before {
+      content: attr(data-label);
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: rgba(var(--color-foreground), 0.5);
+      display: block;
+    }
+    #PP-{{ section.id }} .pp-schedule td.pp-day:before { display: none; }
+  }
+
+  /* Info cards */
+  #PP-{{ section.id }} .pp-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+  }
+  @media screen and (min-width: 750px) {
+    #PP-{{ section.id }} .pp-info-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  #PP-{{ section.id }} .pp-info-card {
+    background: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    padding: 2rem;
+  }
+  #PP-{{ section.id }} .pp-info-card h4 {
+    font-family: var(--font-heading-family);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  #PP-{{ section.id }} .pp-info-text {
     font-size: 1.25rem;
     line-height: 1.6;
     color: rgba(var(--color-foreground), 0.7);
   }
-  #PartnerPraxis-{{ section.id }} .pp-info-card .pp-info-text p { margin: 0.3rem 0; }
-  #PartnerPraxis-{{ section.id }} .pp-info-card .pp-info-text ul { padding-left: 1.4rem; margin: 0.3rem 0; }
-  #PartnerPraxis-{{ section.id }} .pp-info-card .pp-info-text li { margin-bottom: 0.2rem; }
-  @media screen and (max-width: 749px) {
-    #PartnerPraxis-{{ section.id }} .pp-schedule thead { display: none; }
-    #PartnerPraxis-{{ section.id }} .pp-schedule table,
-    #PartnerPraxis-{{ section.id }} .pp-schedule tbody,
-    #PartnerPraxis-{{ section.id }} .pp-schedule tr,
-    #PartnerPraxis-{{ section.id }} .pp-schedule td { display: block; width: 100%; }
-    #PartnerPraxis-{{ section.id }} .pp-schedule tr { padding: 1rem 1.4rem; border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06); }
-    #PartnerPraxis-{{ section.id }} .pp-schedule td { padding: 0.15rem 0; border-bottom: none; }
-    #PartnerPraxis-{{ section.id }} .pp-schedule .pp-day { font-size: 1.5rem; color: #4ea1d9; }
-    #PartnerPraxis-{{ section.id }} .pp-schedule td:before { content: attr(data-label); font-weight: 500; font-size: 1.1rem; color: rgba(var(--color-foreground), 0.5); display: block; }
-    #PartnerPraxis-{{ section.id }} .pp-schedule td.pp-day:before { display: none; }
-  }
+  #PP-{{ section.id }} .pp-info-text p { margin: 0.3rem 0; }
+  #PP-{{ section.id }} .pp-info-text ul { padding-left: 1.6rem; margin: 0.3rem 0; }
+  #PP-{{ section.id }} .pp-info-text li { margin-bottom: 0.2rem; }
 
   /* Contact */
-  #PartnerPraxis-{{ section.id }} .pp-contact-grid {
+  #PP-{{ section.id }} .pp-contact-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.8rem;
+    gap: 2.4rem;
   }
   @media screen and (min-width: 750px) {
-    #PartnerPraxis-{{ section.id }} .pp-contact-grid { grid-template-columns: 1fr 1fr; }
+    #PP-{{ section.id }} .pp-contact-grid { grid-template-columns: 1fr 1fr; }
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-item {
+  #PP-{{ section.id }} .pp-contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.2rem;
     margin-bottom: 1.6rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-icon {
+  #PP-{{ section.id }} .pp-contact-icon {
     flex-shrink: 0;
     width: 3.6rem;
     height: 3.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(78,161,217,0.1);
-    border-radius: 0.6rem;
+    background: rgba(var(--color-button), 0.08);
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-icon svg { width: 1.8rem; height: 1.8rem; fill: #4ea1d9; }
-  #PartnerPraxis-{{ section.id }} .pp-contact-label {
+  #PP-{{ section.id }} .pp-contact-icon svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: rgb(var(--color-button));
+  }
+  #PP-{{ section.id }} .pp-contact-label {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -367,138 +362,151 @@
     color: rgba(var(--color-foreground), 0.5);
     margin-bottom: 0.15rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-value {
+  #PP-{{ section.id }} .pp-contact-value {
     font-size: 1.4rem;
     line-height: 1.5;
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-value a {
-    color: #4ea1d9;
+  #PP-{{ section.id }} .pp-contact-value a {
+    color: rgb(var(--color-button));
     text-decoration: none;
   }
-  #PartnerPraxis-{{ section.id }} .pp-contact-value a:hover { color: #73c25e; }
-  #PartnerPraxis-{{ section.id }} .pp-doctolib-btn {
+  #PP-{{ section.id }} .pp-contact-value a:hover { text-decoration: underline; }
+  #PP-{{ section.id }} .pp-doctolib-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    margin-top: 1rem;
-    padding: 1rem 2.4rem;
-    background: #4ea1d9;
-    color: #fff;
+    margin-top: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
     font-family: var(--font-heading-family);
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 0.4rem;
-    transition: background 0.3s;
+    letter-spacing: 0.05rem;
+    transition: opacity 0.3s ease, transform 0.2s ease;
   }
-  #PartnerPraxis-{{ section.id }} .pp-doctolib-btn:hover { background: #3d8ec4; }
-  #PartnerPraxis-{{ section.id }} .pp-doctolib-btn svg { width: 1.6rem; height: 1.6rem; fill: currentColor; }
-  #PartnerPraxis-{{ section.id }} .pp-map-wrapper {
-    border-radius: 0.8rem;
+  #PP-{{ section.id }} .pp-doctolib-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-0.1rem);
+  }
+  #PP-{{ section.id }} .pp-doctolib-btn svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: currentColor;
+  }
+
+  /* Map */
+  #PP-{{ section.id }} .pp-map-wrapper {
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
     overflow: hidden;
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
     min-height: 32rem;
     background: rgba(var(--color-foreground), 0.03);
   }
-  #PartnerPraxis-{{ section.id }} .pp-map-wrapper iframe {
+  #PP-{{ section.id }} .pp-map-wrapper iframe {
     width: 100%; height: 100%; min-height: 32rem; border: none;
   }
-  #PartnerPraxis-{{ section.id }} .pp-map-consent {
+  #PP-{{ section.id }} .pp-map-consent {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     min-height: 32rem; padding: 2.8rem; text-align: center;
   }
-  #PartnerPraxis-{{ section.id }} .pp-map-consent svg { width: 4rem; height: 4rem; fill: rgba(var(--color-foreground), 0.2); margin-bottom: 1.2rem; }
-  #PartnerPraxis-{{ section.id }} .pp-map-consent p { font-size: 1.3rem; color: rgba(var(--color-foreground), 0.6); margin-bottom: 1.2rem; max-width: 32rem; }
-  #PartnerPraxis-{{ section.id }} .pp-map-btn {
-    padding: 0.8rem 2rem; background: #4ea1d9; color: #fff; font-size: 1.3rem; font-weight: 500;
-    border: none; border-radius: 0.4rem; cursor: pointer;
+  #PP-{{ section.id }} .pp-map-consent svg {
+    width: 4rem; height: 4rem; fill: rgba(var(--color-foreground), 0.2); margin-bottom: 1.2rem;
   }
-  #PartnerPraxis-{{ section.id }} .pp-map-btn:hover { background: #3d8ec4; }
+  #PP-{{ section.id }} .pp-map-consent p {
+    font-size: 1.3rem; color: rgba(var(--color-foreground), 0.6); margin-bottom: 1.2rem; max-width: 32rem;
+  }
+  #PP-{{ section.id }} .pp-map-btn {
+    padding: 0.8rem 2rem;
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    font-size: 1.3rem; font-weight: 500;
+    border: none; cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  #PP-{{ section.id }} .pp-map-btn:hover { opacity: 0.9; }
 {%- endstyle -%}
 
-<div id="PartnerPraxis-{{ section.id }}" class="color-{{ section.settings.color_scheme }} gradient">
+{%- assign doctors = section.blocks | where: "type", "doctor" -%}
+{%- assign services = section.blocks | where: "type", "service" -%}
+{%- assign infos = section.blocks | where: "type", "schedule_info" -%}
+{%- assign is_full = false -%}
+{%- if doctors.size > 0 -%}{%- assign is_full = true -%}{%- endif -%}
+
+<div id="PP-{{ section.id }}" class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width section-{{ section.id }}-padding isolate">
 
-    {%- comment -%} HERO {%- endcomment -%}
-    <div class="pp-hero">
-      <div class="pp-hero__content">
-        {%- if section.settings.heading != blank -%}
-          <h2 class="pp-hero__heading">{{ section.settings.heading | escape }}</h2>
-        {%- endif -%}
-        {%- if section.settings.subtitle != blank -%}
-          <p class="pp-hero__subtitle">{{ section.settings.subtitle | escape }}</p>
-        {%- endif -%}
-        {%- if section.settings.description != blank -%}
-          <p class="pp-hero__desc">{{ section.settings.description | escape }}</p>
-        {%- endif -%}
-        {%- if section.settings.languages != blank -%}
-          <div class="pp-hero__langs">
-            {%- assign langs = section.settings.languages | split: ',' -%}
-            {%- for lang in langs -%}
-              <span class="pp-hero__lang">{{ lang | strip | escape }}</span>
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
-        {%- if section.settings.address != blank -%}
-          <p class="pp-hero__addr">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1.4rem;height:1.4rem;vertical-align:middle;fill:currentColor;margin-right:0.3rem;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-            {{ section.settings.address | escape }}
-          </p>
-        {%- endif -%}
-        {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
-          <a href="{{ section.settings.button_link }}" target="_blank" rel="noopener noreferrer" class="pp-hero__cta">{{ section.settings.button_label | escape }}</a>
-        {%- endif -%}
-      </div>
-    </div>
-
-    {%- comment -%} TEAM {%- endcomment -%}
-    {%- assign doctors = section.blocks | where: "type", "doctor" -%}
-    {%- if doctors.size > 0 -%}
-      <div class="pp-subsection">
-        <h3 class="pp-section-title">Unser Team</h3>
-        <p class="pp-section-desc">Erfahrene Fach&auml;rzte mit internationaler Kompetenz</p>
-        <div class="pp-team-grid">
-          {%- for block in doctors -%}
-            <div class="pp-doc" {{ block.shopify_attributes }}>
-              <h4 class="pp-doc__name">{{ block.settings.name | escape }}</h4>
-              {%- if block.settings.title != blank -%}
-                <p class="pp-doc__title">{{ block.settings.title | escape }}</p>
-              {%- endif -%}
-              {%- if block.settings.qualifications != blank -%}
-                <p class="pp-doc__quals">{{ block.settings.qualifications | escape }}</p>
-              {%- endif -%}
-              {%- if block.settings.bio != blank -%}
-                <p class="pp-doc__bio">{{ block.settings.bio | escape }}</p>
-              {%- endif -%}
-              {%- if block.settings.career != blank or block.settings.education != blank -%}
-                <details class="pp-doc__cv">
-                  <summary>Vollst&auml;ndiger Lebenslauf</summary>
-                  {%- if block.settings.career != blank -%}
-                    <div class="pp-cv-block">
-                      <h4>Berufliche Erfahrung</h4>
-                      <div class="pp-cv-text">{{ block.settings.career }}</div>
-                    </div>
-                  {%- endif -%}
-                  {%- if block.settings.education != blank -%}
-                    <div class="pp-cv-block">
-                      <h4>Ausbildung</h4>
-                      <div class="pp-cv-text">{{ block.settings.education }}</div>
-                    </div>
-                  {%- endif -%}
-                </details>
-              {%- endif -%}
-            </div>
+    {%- comment -%} HEADER {%- endcomment -%}
+    <div class="pp-header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="pp-heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pp-subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <p class="pp-desc">{{ section.settings.description | escape }}</p>
+      {%- endif -%}
+      {%- if section.settings.languages != blank -%}
+        <div class="pp-langs">
+          {%- assign langs = section.settings.languages | split: ',' -%}
+          {%- for lang in langs -%}
+            <span class="pp-lang">{{ lang | strip | escape }}</span>
           {%- endfor -%}
         </div>
-      </div>
-    {%- endif -%}
+      {%- endif -%}
+      {%- if is_full == false and section.settings.button_label != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="pp-header-cta">{{ section.settings.button_label | escape }}</a>
+      {%- endif -%}
+    </div>
 
-    {%- comment -%} SERVICES {%- endcomment -%}
-    {%- assign services = section.blocks | where: "type", "service" -%}
-    {%- if services.size > 0 -%}
-      <div class="pp-subsection">
-        <h3 class="pp-section-title">Unsere Leistungen</h3>
-        <p class="pp-section-desc">Umfassende haus&auml;rztliche und internistische Versorgung mit modernster Diagnostik</p>
+    {%- if is_full -%}
+
+      {%- comment -%} TEAM {%- endcomment -%}
+      <div class="pp-sub">
+        <h3 class="pp-sub-title">Unser Team</h3>
+        <p class="pp-sub-desc">Erfahrene Fach&auml;rzte mit internationaler Kompetenz</p>
+      </div>
+      <div class="pp-team">
+        {%- for block in doctors -%}
+          <div class="pp-doc" {{ block.shopify_attributes }}>
+            <h4 class="pp-doc__name">{{ block.settings.name | escape }}</h4>
+            {%- if block.settings.title != blank -%}
+              <p class="pp-doc__title">{{ block.settings.title | escape }}</p>
+            {%- endif -%}
+            {%- if block.settings.qualifications != blank -%}
+              <p class="pp-doc__quals">{{ block.settings.qualifications | escape }}</p>
+            {%- endif -%}
+            {%- if block.settings.bio != blank -%}
+              <p class="pp-doc__bio">{{ block.settings.bio | escape }}</p>
+            {%- endif -%}
+            {%- if block.settings.career != blank or block.settings.education != blank -%}
+              <details class="pp-cv">
+                <summary>Vollst&auml;ndiger Lebenslauf</summary>
+                {%- if block.settings.career != blank -%}
+                  <div class="pp-cv-block">
+                    <h4>Berufliche Erfahrung</h4>
+                    <div class="pp-cv-text">{{ block.settings.career }}</div>
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.education != blank -%}
+                  <div class="pp-cv-block">
+                    <h4>Ausbildung</h4>
+                    <div class="pp-cv-text">{{ block.settings.education }}</div>
+                  </div>
+                {%- endif -%}
+              </details>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- comment -%} SERVICES {%- endcomment -%}
+      {%- if services.size > 0 -%}
+        <div class="pp-sub">
+          <h3 class="pp-sub-title">Unsere Leistungen</h3>
+          <p class="pp-sub-desc">Umfassende haus&auml;rztliche und internistische Versorgung mit modernster Diagnostik</p>
+        </div>
         {%- assign categories = "" -%}
         {%- for block in services -%}
           {%- unless categories contains block.settings.category -%}
@@ -510,18 +518,18 @@
         {%- for cat in cat_list -%}
           <div class="pp-svc-cat">
             {%- if cat != blank -%}
-              <h4 class="pp-svc-cat__title">{{ cat | escape }}</h4>
+              <h4 class="pp-svc-cat-title">{{ cat | escape }}</h4>
             {%- endif -%}
             <div class="pp-svc-grid">
               {%- for block in services -%}
                 {%- if block.settings.category == cat -%}
-                  <div class="pp-svc-card" {{ block.shopify_attributes }}>
+                  <div class="pp-svc" {{ block.shopify_attributes }}>
                     {%- if block.settings.icon != blank -%}
-                      <div class="pp-svc-card__icon">{{ block.settings.icon }}</div>
+                      <div class="pp-svc__icon">{{ block.settings.icon }}</div>
                     {%- endif -%}
-                    <h5 class="pp-svc-card__name">{{ block.settings.name | escape }}</h5>
+                    <h5 class="pp-svc__name">{{ block.settings.name | escape }}</h5>
                     {%- if block.settings.description != blank -%}
-                      <p class="pp-svc-card__desc">{{ block.settings.description | escape }}</p>
+                      <p class="pp-svc__desc">{{ block.settings.description | escape }}</p>
                     {%- endif -%}
                   </div>
                 {%- endif -%}
@@ -529,12 +537,12 @@
             </div>
           </div>
         {%- endfor -%}
-      </div>
-    {%- endif -%}
+      {%- endif -%}
 
-    {%- comment -%} SCHEDULE {%- endcomment -%}
-    <div class="pp-subsection">
-      <h3 class="pp-section-title">Sprechzeiten</h3>
+      {%- comment -%} SCHEDULE {%- endcomment -%}
+      <div class="pp-sub">
+        <h3 class="pp-sub-title">Sprechzeiten</h3>
+      </div>
       <div class="pp-schedule">
         <table>
           <thead><tr><th>Tag</th><th>Sprechstunde</th><th>Akut</th></tr></thead>
@@ -573,12 +581,9 @@
         </table>
 
         {%- if section.settings.schedule_note != blank -%}
-          <div style="text-align:center;margin-top:1.6rem;padding:1.2rem 1.6rem;background:rgba(115,194,94,0.08);border-left:0.3rem solid #73c25e;border-radius:0.4rem;font-size:1.3rem;color:rgba(var(--color-foreground),0.75);">
-            {{ section.settings.schedule_note | escape }}
-          </div>
+          <div class="pp-schedule-note">{{ section.settings.schedule_note | escape }}</div>
         {%- endif -%}
 
-        {%- assign infos = section.blocks | where: "type", "schedule_info" -%}
         {%- if infos.size > 0 -%}
           <div class="pp-info-grid">
             {%- for block in infos -%}
@@ -594,11 +599,11 @@
           </div>
         {%- endif -%}
       </div>
-    </div>
 
-    {%- comment -%} CONTACT {%- endcomment -%}
-    <div class="pp-subsection">
-      <h3 class="pp-section-title">Kontakt &amp; Anfahrt</h3>
+      {%- comment -%} CONTACT {%- endcomment -%}
+      <div class="pp-sub">
+        <h3 class="pp-sub-title">Kontakt &amp; Anfahrt</h3>
+      </div>
       <div class="pp-contact-grid">
         <div>
           {%- if section.settings.address != blank -%}
@@ -643,7 +648,7 @@
           {%- endif -%}
           {%- if section.settings.website != blank -%}
             <div class="pp-contact-item">
-              <div class="pp-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zm2.95-8H5.08a7.987 7.987 0 014.33-3.56A15.65 15.65 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg></div>
+              <div class="pp-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg></div>
               <div>
                 <div class="pp-contact-label">Website</div>
                 <div class="pp-contact-value"><a href="{{ section.settings.website }}" target="_blank" rel="noopener noreferrer">{{ section.settings.website | remove: 'https://' | remove: 'http://' | remove_last: '/' }}</a></div>
@@ -652,7 +657,7 @@
           {%- endif -%}
           {%- if section.settings.doctolib_url != blank -%}
             <a href="{{ section.settings.doctolib_url }}" target="_blank" rel="noopener noreferrer" class="pp-doctolib-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm-7 5h5v5h-5v-5z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
               Online-Termin buchen
             </a>
           {%- endif -%}
@@ -673,8 +678,8 @@
           {%- endif -%}
         </div>
       </div>
-    </div>
 
+    {%- endif -%}
   </div>
 </div>
 
@@ -690,8 +695,8 @@
     { "type": "textarea", "id": "description", "label": "Beschreibung" },
     { "type": "text", "id": "address", "default": "Grüneburgweg 12, 60322 Frankfurt am Main", "label": "Adresse" },
     { "type": "text", "id": "languages", "default": "DE, EN, FR, ES", "label": "Sprachen (kommagetrennt)" },
-    { "type": "text", "id": "button_label", "default": "Termin buchen", "label": "Hero Button Text" },
-    { "type": "url", "id": "button_link", "label": "Hero Button Link" },
+    { "type": "text", "id": "button_label", "default": "Termin buchen", "label": "Button Text" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
     { "type": "header", "content": "Sprechzeiten" },
     { "type": "text", "id": "mo_hours", "default": "08:00–11:00, 12:30–16:00", "label": "Montag" },
     { "type": "text", "id": "mo_akut", "default": "11:00–12:00", "label": "Montag Akut" },
