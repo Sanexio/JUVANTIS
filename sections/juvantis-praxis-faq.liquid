@@ -1,4 +1,19 @@
 {%- style -%}
+  #PraxisFAQ-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--apple-font);
+    color: var(--apple-text);
+    background: var(--apple-bg-white);
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -13,97 +28,133 @@
   #PraxisFAQ-{{ section.id }} .praxis-faq__header {
     text-align: center;
     max-width: 70rem;
-    margin: 0 auto 4rem;
+    margin: 0 auto 6rem;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__heading {
-    font-family: var(--font-heading-family);
-    font-size: 3.2rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: -0.035em;
+    color: var(--apple-text);
+    margin-bottom: 1.6rem;
   }
-  @media screen and (min-width: 750px) {
-    #PraxisFAQ-{{ section.id }} .praxis-faq__heading {
-      font-size: 4rem;
-    }
-  }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__description {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: rgba(var(--color-foreground), 0.75);
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__wrap {
+    max-width: 80rem;
+    margin: 0 auto;
   }
 
   #PraxisFAQ-{{ section.id }} .praxis-faq__category {
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__category:last-child {
     margin-bottom: 0;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__category-title {
-    font-family: var(--font-heading-family);
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.6rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.2rem solid rgba(var(--color-foreground), 0.08);
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: var(--apple-text);
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   #PraxisFAQ-{{ section.id }} .praxis-faq__item {
-    border-bottom: 1px solid rgba(var(--color-foreground), 0.06);
+    border-bottom: 1px solid rgba(29, 29, 31, 0.08);
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item:last-child {
     border-bottom: none;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.6rem;
-    padding: 1.8rem 0;
-    font-family: var(--font-heading-family);
-    font-size: 1.6rem;
+    gap: 2rem;
+    padding: 2rem 0;
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
     font-weight: 600;
+    letter-spacing: -0.01em;
     cursor: pointer;
     list-style: none;
-    color: rgba(var(--color-foreground), 0.9);
-    transition: color 0.2s ease;
+    color: var(--apple-text);
+    transition: color 0.25s ease;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item summary::marker,
   #PraxisFAQ-{{ section.id }} .praxis-faq__item summary::-webkit-details-marker {
     display: none;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item summary:hover {
-    color: rgb(var(--color-button));
+    color: var(--apple-link);
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item summary svg {
     width: 1.8rem;
     height: 1.8rem;
     flex-shrink: 0;
-    fill: rgba(var(--color-foreground), 0.4);
-    transition: transform 0.3s ease;
+    fill: var(--apple-text-tertiary);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__item[open] summary svg {
     transform: rotate(45deg);
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__answer {
-    padding: 0 0 2rem;
+    padding: 0 0 2.4rem;
+    font-family: var(--apple-font);
     font-size: 1.5rem;
-    line-height: 1.7;
-    color: rgba(var(--color-foreground), 0.65);
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     max-width: 72rem;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__answer p {
-    margin: 0 0 0.8rem;
+    margin: 0 0 1rem;
   }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer p:last-child {
+    margin-bottom: 0;
+  }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__answer ul {
     padding-left: 2rem;
-    margin: 0.4rem 0;
+    margin: 0.6rem 0;
   }
+
   #PraxisFAQ-{{ section.id }} .praxis-faq__answer li {
     margin-bottom: 0.4rem;
+    line-height: 1.53;
   }
-  #PraxisFAQ-{{ section.id }} .praxis-faq__wrap {
-    max-width: 80rem;
-    margin: 0 auto;
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer a {
+    color: var(--apple-link);
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer a:hover {
+    text-decoration: underline;
   }
 {%- endstyle -%}
 

@@ -1,4 +1,20 @@
 {%- style -%}
+  /* Apple Design Override — Praxis Sprechzeiten */
+  #PraxisZeiten-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-secondary: #6e6e73;
+    --apple-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--apple-text);
+    background: var(--apple-bg-white);
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -14,20 +30,17 @@
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__header {
     text-align: center;
     max-width: 70rem;
-    margin: 0 auto 3.2rem;
+    margin: 0 auto 4.8rem;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__heading {
-    font-family: var(--font-heading-family);
-    font-size: 3.2rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    #PraxisZeiten-{{ section.id }} .praxis-zeiten__heading {
-      font-size: 4rem;
-    }
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: -0.035em;
+    color: var(--apple-text);
+    margin-bottom: 0;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__wrapper {
@@ -37,31 +50,38 @@
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table {
     width: 100%;
-    border-collapse: collapse;
-    background: rgb(var(--color-background));
-    border-radius: 0.8rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--apple-bg-white);
+    border-radius: 2rem;
     overflow: hidden;
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border: none;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table thead {
-    background: #4ea1d9;
-    color: #fff;
+    background: var(--apple-text);
+    color: var(--apple-bg-white);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table th {
-    font-family: var(--font-heading-family);
-    font-size: 1.4rem;
+    font-family: var(--apple-font);
+    font-size: 1.3rem;
     font-weight: 600;
-    padding: 1.4rem 1.6rem;
+    padding: 1.6rem 2rem;
     text-align: left;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.92);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td {
-    font-size: 1.4rem;
-    padding: 1.2rem 1.6rem;
-    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06);
+    font-family: var(--apple-font);
+    font-size: 1.5rem;
+    line-height: 1.53;
+    padding: 1.4rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     vertical-align: middle;
+    color: var(--apple-text);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tr:last-child td {
@@ -69,54 +89,62 @@
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tbody tr:hover {
-    background: rgba(78, 161, 217, 0.04);
+    background: var(--apple-bg-gray);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__day {
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
     font-weight: 600;
     min-width: 10rem;
+    color: var(--apple-text);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__time {
     white-space: nowrap;
+    color: var(--apple-secondary);
+    font-size: 1.5rem;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__akut {
     display: inline-block;
-    padding: 0.2rem 0.8rem;
-    background: rgba(115, 194, 94, 0.12);
-    color: #4a8c3a;
-    border-radius: 0.4rem;
-    font-size: 1.2rem;
+    padding: 0.4rem 1.2rem;
+    background: rgba(0, 113, 227, 0.08);
+    color: var(--apple-link);
+    border-radius: 98rem;
+    font-size: 1.3rem;
     font-weight: 500;
+    letter-spacing: 0.01em;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__vereinbarung {
     display: inline-block;
-    padding: 0.2rem 0.8rem;
-    background: rgba(78, 161, 217, 0.12);
-    color: #4ea1d9;
-    border-radius: 0.4rem;
-    font-size: 1.2rem;
+    padding: 0.4rem 1.2rem;
+    background: var(--apple-bg-gray);
+    color: var(--apple-secondary);
+    border-radius: 98rem;
+    font-size: 1.3rem;
     font-weight: 500;
+    letter-spacing: 0.01em;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__note {
     text-align: center;
-    margin-top: 2rem;
-    padding: 1.6rem 2rem;
-    background: rgba(115, 194, 94, 0.08);
-    border-left: 0.3rem solid #73c25e;
-    border-radius: 0.4rem;
-    font-size: 1.4rem;
-    color: rgba(var(--color-foreground), 0.75);
+    margin-top: 2.4rem;
+    padding: 2rem 2.4rem;
+    background: var(--apple-bg-gray);
+    border-left: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-secondary);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extras {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.6rem;
-    margin-top: 2.4rem;
+    gap: 2rem;
+    margin-top: 3.2rem;
   }
 
   @media screen and (min-width: 750px) {
@@ -126,26 +154,34 @@
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-card {
-    background: rgb(var(--color-background));
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    border-radius: 0.8rem;
-    padding: 2rem;
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 2.4rem 2.8rem;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-card:hover {
+    transform: scale(1.02);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-title {
-    font-family: var(--font-heading-family);
-    font-size: 1.5rem;
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
     font-weight: 600;
-    margin-bottom: 0.8rem;
+    letter-spacing: -0.01em;
+    color: var(--apple-text);
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.8rem;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    color: rgba(var(--color-foreground), 0.7);
+    font-family: var(--apple-font);
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-secondary);
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content p {
@@ -153,12 +189,12 @@
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content ul {
-    padding-left: 1.6rem;
-    margin: 0.4rem 0;
+    padding-left: 1.8rem;
+    margin: 0.6rem 0;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content li {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
 
   /* Mobile: stack table into cards */
@@ -176,18 +212,21 @@
     }
 
     #PraxisZeiten-{{ section.id }} .praxis-zeiten__table tr {
-      padding: 1.2rem 1.6rem;
-      border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.06);
+      padding: 1.6rem 2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      background: var(--apple-bg-gray);
+      border-radius: 1.6rem;
+      margin-bottom: 1.2rem;
     }
 
     #PraxisZeiten-{{ section.id }} .praxis-zeiten__table td {
-      padding: 0.2rem 0;
+      padding: 0.3rem 0;
       border-bottom: none;
     }
 
     #PraxisZeiten-{{ section.id }} .praxis-zeiten__day {
-      font-size: 1.6rem;
-      color: #4ea1d9;
+      font-size: 1.7rem;
+      color: var(--apple-text);
       margin-bottom: 0.4rem;
     }
 
@@ -195,7 +234,9 @@
       content: attr(data-label);
       font-weight: 500;
       font-size: 1.2rem;
-      color: rgba(var(--color-foreground), 0.5);
+      color: var(--apple-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
       display: block;
     }
 
@@ -551,4 +592,3 @@
   ]
 }
 {% endschema %}
-
