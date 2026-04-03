@@ -349,33 +349,6 @@
         "padding_bottom": 40
       }
     },
-    "zeiten": {
-      "type": "juvantis-praxis-zeiten",
-      "settings": {
-        "heading": "Sprechzeiten",
-        "note": "Termine über Doctolib oder telefonisch. Bei lebensbedrohlichen Notfällen: 112. Ärztlicher Bereitschaftsdienst: 116 117.",
-        "mo_label": "Montag",
-        "mo_hours": "08:00–11:00, 12:30–16:00",
-        "mo_akut": "11:00–12:00",
-        "di_label": "Dienstag",
-        "di_hours": "08:00–11:00, 12:30–16:00",
-        "di_akut": "11:00–12:00",
-        "mi_label": "Mittwoch",
-        "mi_hours": "08:00–11:00",
-        "mi_akut": "11:00–12:00",
-        "do_label": "Donnerstag",
-        "do_hours": "08:00–11:00, 12:30–16:00",
-        "do_akut": "11:00–12:00",
-        "fr_label": "Freitag",
-        "fr_hours": "08:00–11:00",
-        "fr_akut": "11:00–12:00",
-        "sa_label": "Samstag",
-        "sa_hours": "09:00–13:00",
-        "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "kontakt": {
       "type": "juvantis-praxis-kontakt",
       "settings": {
@@ -401,7 +374,6 @@
     "hero",
     "team",
     "leistungen",
-    "zeiten",
     "kontakt"
   ]
 }
