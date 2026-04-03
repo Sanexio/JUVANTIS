@@ -376,101 +376,6 @@
         "padding_bottom": 40
       }
     },
-    "faq": {
-      "type": "juvantis-praxis-faq",
-      "blocks": {
-        "faq-au-1": {
-          "type": "faq",
-          "settings": {
-            "question": "Wie bekomme ich eine Krankschreibung (AU)?",
-            "answer": "<p>Für eine Arbeitsunfähigkeitsbescheinigung ist eine persönliche Vorstellung in der Praxis erforderlich. Bitte kommen Sie während der Akutsprechstunde (Mo–Fr 11:00–12:00 Uhr) oder vereinbaren Sie einen Termin über Doctolib. Eine AU kann nicht telefonisch oder per E-Mail ausgestellt werden.</p>",
-            "category": "Arbeitsunfähigkeit"
-          }
-        },
-        "faq-au-2": {
-          "type": "faq",
-          "settings": {
-            "question": "Wie lange kann ich krankgeschrieben werden?",
-            "answer": "<p>Die Dauer der Krankschreibung richtet sich nach Ihrem Gesundheitszustand und wird bei jedem Besuch individuell beurteilt. Eine rückwirkende Krankschreibung ist nur in Ausnahmefällen möglich (maximal 3 Tage).</p>",
-            "category": "Arbeitsunfähigkeit"
-          }
-        },
-        "faq-ue-1": {
-          "type": "faq",
-          "settings": {
-            "question": "Wie funktioniert eine Überweisung?",
-            "answer": "<p>Überweisungen zu Fachärzten stellen wir nach Rücksprache oder im Rahmen einer Konsultation aus. Bitte teilen Sie uns den gewünschten Facharzt und den Grund mit. Überweisungen gelten für das laufende Quartal.</p>",
-            "category": "Ein- und Überweisungen"
-          }
-        },
-        "faq-ue-2": {
-          "type": "faq",
-          "settings": {
-            "question": "Brauche ich für jeden Facharzt eine Überweisung?",
-            "answer": "<p>Gesetzlich Versicherte benötigen für die meisten Fachärzte eine Überweisung vom Hausarzt. Ausnahmen: Augenarzt, Frauenarzt, Kinderarzt und Notfälle. Privatversicherte benötigen in der Regel keine Überweisung.</p>",
-            "category": "Ein- und Überweisungen"
-          }
-        },
-        "faq-impf-1": {
-          "type": "faq",
-          "settings": {
-            "question": "Bieten Sie Reiseimpfungen an?",
-            "answer": "<p>Ja. Bitte bringen Sie Ihren Impfpass mit und informieren Sie uns mindestens 4–6 Wochen vor Reiseantritt. Wir erstellen einen individuellen Impfplan basierend auf Ihrem Reiseziel und den Empfehlungen der STIKO und des Robert Koch-Instituts.</p>",
-            "category": "Rund ums Impfen"
-          }
-        },
-        "faq-impf-2": {
-          "type": "faq",
-          "settings": {
-            "question": "Kann ich meinen Impfpass prüfen lassen?",
-            "answer": "<p>Selbstverständlich. Senden Sie uns ein Foto Ihres Impfpasses per E-Mail oder bringen Sie ihn zum nächsten Termin mit. Wir prüfen den Impfstatus und empfehlen ggf. Auffrischungen gemäß den aktuellen STIKO-Empfehlungen.</p>",
-            "category": "Rund ums Impfen"
-          }
-        },
-        "faq-labor-1": {
-          "type": "faq",
-          "settings": {
-            "question": "Muss ich für die Blutentnahme nüchtern sein?",
-            "answer": "<p>Ja, für die meisten Laboruntersuchungen sollten Sie nüchtern erscheinen (4–6 Stunden vorher keine zucker- oder fetthaltigen Speisen). Wasser und ungesüßter Tee sind erlaubt. Medikamente nehmen Sie wie gewohnt ein, Insulin erst nach dem Frühstück.</p>",
-            "category": "Rund ums Labor"
-          }
-        },
-        "faq-labor-2": {
-          "type": "faq",
-          "settings": {
-            "question": "Wann bekomme ich meine Laborergebnisse?",
-            "answer": "<p>Die meisten Ergebnisse liegen nach 1–3 Werktagen vor. Wir kontaktieren Sie telefonisch bei auffälligen Befunden. Routineergebnisse können Sie bei Ihrem nächsten Termin besprechen oder telefonisch in der Praxis erfragen.</p>",
-            "category": "Rund ums Labor"
-          }
-        },
-        "faq-labor-3": {
-          "type": "faq",
-          "settings": {
-            "question": "Welche Laborwerte werden untersucht?",
-            "answer": "<p>Unser Laborspektrum umfasst u.a.: Blutbild, Nierenwerte, Leberwerte, Schilddrüsenhormone, Herzenzyme, Entzündungsmarker (CRP), Cholesterin (Gesamt/HDL/LDL), Elektrolyte, HbA1C, Tumormarker, Borrelien, Chlamydien, Laktose-/Glutenintoleranz, Rheumafaktoren, Epstein-Barr-Virus und Impf-Antikörper-Kontrolle.</p>",
-            "category": "Rund ums Labor"
-          }
-        }
-      },
-      "block_order": [
-        "faq-au-1",
-        "faq-au-2",
-        "faq-ue-1",
-        "faq-ue-2",
-        "faq-impf-1",
-        "faq-impf-2",
-        "faq-labor-1",
-        "faq-labor-2",
-        "faq-labor-3"
-      ],
-      "settings": {
-        "heading": "Häufige Fragen",
-        "description": "Antworten auf die wichtigsten Fragen rund um Ihren Praxisbesuch",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "kontakt": {
       "type": "juvantis-praxis-kontakt",
       "settings": {
@@ -497,7 +402,6 @@
     "team",
     "leistungen",
     "zeiten",
-    "faq",
     "kontakt"
   ]
 }
