@@ -1,0 +1,193 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__header {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto 4rem;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__heading {
+    font-family: var(--font-heading-family);
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+  @media screen and (min-width: 750px) {
+    #PraxisFAQ-{{ section.id }} .praxis-faq__heading {
+      font-size: 4rem;
+    }
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__category {
+    margin-bottom: 3.2rem;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__category:last-child {
+    margin-bottom: 0;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__category-title {
+    font-family: var(--font-heading-family);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid rgba(var(--color-foreground), 0.08);
+  }
+
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item {
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.06);
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item:last-child {
+    border-bottom: none;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 1.8rem 0;
+    font-family: var(--font-heading-family);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    color: rgba(var(--color-foreground), 0.9);
+    transition: color 0.2s ease;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item summary::marker,
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item summary::-webkit-details-marker {
+    display: none;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item summary:hover {
+    color: rgb(var(--color-button));
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item summary svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    fill: rgba(var(--color-foreground), 0.4);
+    transition: transform 0.3s ease;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__item[open] summary svg {
+    transform: rotate(45deg);
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer {
+    padding: 0 0 2rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: rgba(var(--color-foreground), 0.65);
+    max-width: 72rem;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer p {
+    margin: 0 0 0.8rem;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer ul {
+    padding-left: 2rem;
+    margin: 0.4rem 0;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__answer li {
+    margin-bottom: 0.4rem;
+  }
+  #PraxisFAQ-{{ section.id }} .praxis-faq__wrap {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+{%- endstyle -%}
+
+<div id="PraxisFAQ-{{ section.id }}" class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="praxis-faq__header">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="praxis-faq__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <p class="praxis-faq__description">{{ section.settings.description | escape }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      {%- assign categories = "" -%}
+      {%- for block in section.blocks -%}
+        {%- unless categories contains block.settings.category -%}
+          {%- if categories != "" -%}{%- assign categories = categories | append: "|||" -%}{%- endif -%}
+          {%- assign categories = categories | append: block.settings.category -%}
+        {%- endunless -%}
+      {%- endfor -%}
+      {%- assign cat_list = categories | split: "|||" -%}
+
+      <div class="praxis-faq__wrap">
+        {%- for cat in cat_list -%}
+          <div class="praxis-faq__category">
+            {%- if cat != blank -%}
+              <h3 class="praxis-faq__category-title">{{ cat | escape }}</h3>
+            {%- endif -%}
+            {%- for block in section.blocks -%}
+              {%- if block.settings.category == cat -%}
+                <details class="praxis-faq__item" {{ block.shopify_attributes }}>
+                  <summary>
+                    {{ block.settings.question | escape }}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                  </summary>
+                  <div class="praxis-faq__answer">{{ block.settings.answer }}</div>
+                </details>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Praxis FAQ",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "text", "id": "heading", "default": "Häufige Fragen", "label": "Überschrift" },
+    { "type": "textarea", "id": "description", "label": "Beschreibung" },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        { "value": "accent-1", "label": "Akzent 1" },
+        { "value": "accent-2", "label": "Akzent 2" },
+        { "value": "background-1", "label": "Hintergrund 1" },
+        { "value": "background-2", "label": "Hintergrund 2" },
+        { "value": "inverse", "label": "Invertiert" }
+      ],
+      "default": "background-1",
+      "label": "Farbschema"
+    },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Abstand oben", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Abstand unten", "default": 40 }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ-Eintrag",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Frage" },
+        { "type": "richtext", "id": "answer", "label": "Antwort" },
+        { "type": "text", "id": "category", "default": "Allgemein", "label": "Kategorie" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Praxis FAQ" }]
+}
+{% endschema %}
