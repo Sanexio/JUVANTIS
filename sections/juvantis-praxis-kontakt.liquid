@@ -204,6 +204,14 @@
             <div>
               <div class="praxis-kontakt__label">Adresse</div>
               <div class="praxis-kontakt__value">{{ section.settings.address | escape }}</div>
+              {%- if section.settings.address_2 != blank -%}
+                <div class="praxis-kontakt__value" style="margin-top:0.8rem;font-size:1.3rem;color:rgba(var(--color-foreground),0.55);">
+                  {%- if section.settings.address_2_label != blank -%}
+                    <strong>{{ section.settings.address_2_label | escape }}:</strong><br>
+                  {%- endif -%}
+                  {{ section.settings.address_2 | escape }}
+                </div>
+              {%- endif -%}
             </div>
           </div>
         {%- endif -%}
