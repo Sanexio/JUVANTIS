@@ -1,101 +1,101 @@
 {%- style -%}
-  /* Apple Design System Override */
+  /* Apple Design — Split Hero: Image top, text below */
   #PraxisHero-{{ section.id }} {
     --apple-text: #1d1d1f;
     --apple-text-secondary: #6e6e73;
     --apple-text-tertiary: #86868b;
     --apple-link: #0071e3;
     --apple-bg-gray: #f5f5f7;
-    --apple-bg-white: #fff;
     --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
-  #PraxisHero-{{ section.id }} {
-    position: relative;
-    overflow: hidden;
-    min-height: 50rem;
-    display: flex;
-    align-items: center;
     font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  #PraxisHero-{{ section.id }} .praxis-hero__bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
+  /* Hide the redundant Shopify page title */
+  .template-page #PraxisHero-{{ section.id }} ~ .shopify-section .main-page-title,
+  #shopify-section-{{ section.id }} + .shopify-section .page-title,
+  #MainContent .section-template--{{ section.id }}__main .page-header { display: none; }
+
+  .section-{{ section.id }}-padding {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
+  /* Image block — full width, natural height */
+  #PraxisHero-{{ section.id }} .praxis-hero__bg {
+    width: 100%;
+    max-height: 56rem;
+    overflow: hidden;
+    border-radius: 0 0 2rem 2rem;
+  }
+  @media screen and (min-width: 750px) {
+    #PraxisHero-{{ section.id }} .praxis-hero__bg {
+      max-height: 64rem;
+    }
+  }
   #PraxisHero-{{ section.id }} .praxis-hero__bg img,
   #PraxisHero-{{ section.id }} .praxis-hero__bg svg {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
+    display: block;
   }
 
+  /* No overlay needed */
   #PraxisHero-{{ section.id }} .praxis-hero__overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
+    display: none;
   }
 
+  /* Text block — below image, clean white background */
   #PraxisHero-{{ section.id }} .praxis-hero__content {
-    position: relative;
-    z-index: 2;
     text-align: center;
-    max-width: 80rem;
+    max-width: 72rem;
     margin: 0 auto;
-    color: #fff;
+    padding: 6rem 2.4rem 4rem;
     opacity: 0;
     transform: translateY(1.6rem);
-    animation: praxisHeroFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s forwards;
+    animation: praxisHeroFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s forwards;
+  }
+  @media screen and (min-width: 750px) {
+    #PraxisHero-{{ section.id }} .praxis-hero__content {
+      padding: 8rem 4rem 6rem;
+    }
   }
 
   @keyframes praxisHeroFadeIn-{{ section.id }} {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__heading {
     font-family: var(--apple-font);
-    font-size: clamp(4rem, 7vw, 8rem);
+    font-size: clamp(3.6rem, 6vw, 7rem);
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.04em;
-    margin-bottom: 0.8rem;
-    color: #fff;
+    color: var(--apple-text);
+    margin-bottom: 1.2rem;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__subtitle {
     font-family: var(--apple-font);
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
-    font-weight: 400;
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+    font-weight: 600;
     letter-spacing: -0.02em;
+    color: var(--apple-text-secondary);
     margin-bottom: 1.6rem;
-    color: rgba(255, 255, 255, 0.88);
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__description {
+    font-family: var(--apple-font);
     font-size: 1.7rem;
     line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin-bottom: 2.4rem;
-    color: rgba(255, 255, 255, 0.82);
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__languages {
@@ -109,33 +109,25 @@
   #PraxisHero-{{ section.id }} .praxis-hero__lang-badge {
     display: inline-block;
     padding: 0.4rem 1.4rem;
-    border: none;
     border-radius: 98rem;
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.02em;
-    color: var(--apple-text);
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: background 0.3s ease;
-  }
-
-  #PraxisHero-{{ section.id }} .praxis-hero__lang-badge:hover {
-    background: #fff;
+    color: var(--apple-text-secondary);
+    background: var(--apple-bg-gray);
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__address {
-    font-size: 1.4rem;
-    margin-bottom: 2.4rem;
-    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.5rem;
+    margin-bottom: 3.2rem;
+    color: var(--apple-text-tertiary);
     letter-spacing: 0.01em;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__address svg {
-    width: 1.6rem;
-    height: 1.6rem;
-    vertical-align: middle;
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: -0.2rem;
     margin-right: 0.4rem;
     fill: currentColor;
   }
@@ -150,7 +142,6 @@
     font-weight: 500;
     text-decoration: none;
     border-radius: 98rem;
-    border: none;
     letter-spacing: -0.01em;
     transition: background 0.3s ease, transform 0.2s ease;
   }
@@ -300,10 +291,6 @@
       "label": "Farbschema"
     },
     {
-      "type": "header",
-      "content": "Abstandseinstellungen"
-    },
-    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -332,14 +319,12 @@
         {
           "type": "text",
           "id": "label",
-          "default": "Deutsch",
-          "label": "Sprache (Anzeige)"
+          "label": "Sprache"
         },
         {
           "type": "text",
           "id": "code",
-          "default": "DE",
-          "label": "Sprachkürzel"
+          "label": "Kürzel (z.B. DE)"
         }
       ]
     }
