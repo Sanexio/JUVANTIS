@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "praxen": {
+      "type": "juvantis-partnerpraxen",
+      "settings": {
+        "eyebrow": "Juvantis Netzwerk",
+        "heading": "Partnerpraxen",
+        "description": "Unsere Partnerpraxen verbinden medizinische Exzellenz mit moderner Diagnostik und persönlicher Betreuung.",
+        "padding_top": 0,
+        "padding_bottom": 0
+      },
+      "blocks": {
+        "praxis-stracke": {
+          "type": "praxis",
+          "settings": {
+            "name": "Praxis Dr. Stracke und Kollegen",
+            "specialty": "Hausärztliche und Innere Medizin",
+            "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "/pages/partnerpraxis"
+          }
+        }
+      },
+      "block_order": [
+        "praxis-stracke"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "praxen"
+  ]
+}
