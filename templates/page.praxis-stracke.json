@@ -1,0 +1,379 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hero": {
+      "type": "juvantis-praxis-hero",
+      "settings": {
+        "heading": "Praxis Dr. Stracke und Kollegen",
+        "subtitle": "Hausärztliche und Innere Medizin im Herzen Frankfurts",
+        "description": "Zwei erfahrene Fachärzte mit internationaler Kompetenz bieten Ihnen umfassende Diagnostik, moderne Check-Up-Programme und individuelle Betreuung — von der Vorsorge bis zur Akutversorgung.",
+        "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
+        "button_label": "Termin anfragen",
+        "button_link": "https://www.doctolib.de/praxis/frankfurt-am-main/praxis-dr-stracke-und-kollegen",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "team": {
+      "type": "juvantis-praxis-team",
+      "blocks": {
+        "dr-saul": {
+          "type": "doctor",
+          "settings": {
+            "name": "Docteur en méd. Sonja Saul",
+            "title": "Fachärztin für Allgemeinmedizin",
+            "qualifications": "Ultraschalldiagnostik Zertifikat I und II (SEECO)\nMaster Péritaje y valoración de daños corporales (Universität Barcelona)\nSprachen: Deutsch, Englisch, Französisch, Spanisch",
+            "bio": "Nach einer Kindheit zwischen Deutschland, Frankreich und Belgien, Abitur an der Europaschule in Brüssel mit anschließendem Medizinstudium an der Université Catholique de Louvain ist für Frau Docteur en méd. Saul eine Anamnese in deutsch, englisch, französisch und spanisch kein Problem. Zuletzt war sie als leitende Oberärztin in Spanien tätig.",
+            "career": "<p><strong>10/2019–04/2020:</strong> Haus- und Facharztzentrum Sachsenhausen, Frankfurt — Hospitation</p><p><strong>2018–2019:</strong> MC Mutual, Madrid — Leitende Oberärztin für Kliniken in Extremadura und Kastilien und León</p><p><strong>2010–2018:</strong> MC Mutual, Madrid — Referent Ultraschalldiagnostik (1.200+ Untersuchungen/Jahr)</p><p><strong>2007–2009:</strong> Private Praxis CENSALUD, Madrid — Allgemeinmedizin, Schwerpunkt ausländische Patienten</p><p><strong>2004–2007:</strong> IMSALUD Madrid — Angestellte Fachärztin</p><p><strong>2002–2005:</strong> Hospital San Rafael Madrid — Notaufnahme Pädiatrie</p><p><strong>2003–2004:</strong> IMSALUD — 2. Jahr Facharztausbildung</p><p><strong>2002–2003:</strong> Praxis Dres. Beucken et Bouffesile, Brüssel — 1. Jahr Facharztausbildung</p>",
+            "education": "<p><strong>2005–2018:</strong> SEECO Spanien — Ultraschalldiagnostik Zertifikat I und II</p><p><strong>2006–2007:</strong> Universidad de Barcelona (virtual) — Master „Péritaje y valoración de daños corporales&quot;</p><p><strong>2001–2004:</strong> UCL Belgien — Facharzt für Allgemeinmedizin</p><p><strong>1994–2002:</strong> Université Catholique de Louvain, Belgien — Studium der Medizin, cum laudum</p><p><strong>1991–1994:</strong> Europaschule Brüssel — Europäisches Abitur, deutsche Sektion (1,2)</p>"
+          }
+        },
+        "dr-stracke": {
+          "type": "doctor",
+          "settings": {
+            "name": "Dr. med. Siegbert Stracke, MBA",
+            "title": "Facharzt für Innere Medizin, Notfall- und Intensivmedizin",
+            "qualifications": "MBA Health Care Management (EBS)\nGesundheitsökonom (EBS)\nCEO Sanexio GmbH",
+            "bio": "Nach dem Studium der Humanmedizin beginnt Dr. Stracke im Jahr 2005 seine klinische Weiterbildung am Zentrum für Innere Medizin am Universitätsklinikum Gießen. Nach Erlangung der Zusatzbezeichnung Notfallmedizin (2007) sowie der Facharztbezeichnung Innere Medizin (2010) liegt der klinische Schwerpunkt in den Bereichen Notfallmedizin sowie kardiologischer Intensivmedizin. Die breite Ausbildung im gesamten internistischen Spektrum wird durch die ambulante Tätigkeit im Rahmen des Kassenärztlichen Bereitschaftsdienstes ergänzt.\n\nDurch die langjährige klinische Erfahrung an einer Uniklinik sowie durch die anhaltende Tätigkeit als freiberuflicher Arzt kennt Dr. Stracke die problembehaftete Versorgungswirklichkeit vieler medizinischer Einrichtungen. Diesem Wunsch nach gesundheitsökonomischer Expertise kommt er 2011 mit erfolgreichem Abschluss des Studienganges „Executive MBA Health Care Management&quot; an der EBS Universität für Wirtschaft und Recht nach.\n\nDer Überzeugung folgend, dass zur Bewältigung zukünftiger Herausforderungen im Gesundheitswesen neue Wege der Organisation von Informationen nötig sein werden, gründet Dr. Stracke die Sanexio GmbH.",
+            "career": "<p><strong>Seit 01/2013:</strong> Geschäftsführender Gesellschafter Sanexio GmbH — Digitale Lösungen im Gesundheitswesen und Big Data Management</p><p><strong>Ab 2012:</strong> Medizincontrolling, Universitätsklinikum Gießen — Steuerung und Optimierung der Kodierungs- und Abrechnungsprozesse, Kennzahlen relevanter Patientenprozesse, MDK-Prüfungen und Entgeltverhandlungen</p><p><strong>01/2013–12/2018:</strong> Freiberuflicher Arzt, Schwerpunkt Notaufnahmen</p><p><strong>01/2010–12/2012:</strong> Medizinische Klinik, Universitätsklinikum Gießen</p><p><strong>01/2008–12/2009:</strong> Notarzt am Standort Uniklinikum Gießen</p><p><strong>04/2007–12/2009:</strong> Kardiologische und pulmologische Intensivstation, Med. Klinik I</p><p><strong>02/2005–04/2007:</strong> Ambulanz, Herzkatheterlabor, Intermediate-Care Station</p>",
+            "education": "<p><strong>09/2011–09/2012:</strong> MBA Health Care Management, European Business School — OAM: very good. Thesis: „Der Terminkontrakthandel als Risikoinstrument für die Beteiligten im Gesundheitswesen&quot;. Auslandssemester University of Stellenbosch, Cape Town</p><p><strong>09/2010–09/2011:</strong> Gesundheitsökonom, EBS — Note: sehr gut (ECTS A)</p><p><strong>2008:</strong> Gasthörer Wirtschaftsinformatik, FernUni Hagen</p><p><strong>10/1998–10/2004:</strong> Studium der Medizin, JLU Gießen — Staatsexamen &amp; Approbation, Note: sehr gut. Promotion: „Laser-Doppler-Fluxmetrie bei Osteoporose&quot;</p><p><strong>10/1998–10/2000:</strong> Gasthörer Mathematik, JLU Gießen</p>"
+          }
+        }
+      },
+      "block_order": [
+        "dr-saul",
+        "dr-stracke"
+      ],
+      "settings": {
+        "heading": "Unser Ärzteteam",
+        "description": "Internationale Kompetenz und langjährige klinische Erfahrung für Ihre bestmögliche Versorgung",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "leistungen": {
+      "type": "juvantis-praxis-leistungen",
+      "blocks": {
+        "svc-gesundheit": {
+          "type": "service",
+          "settings": {
+            "icon": "🩺",
+            "name": "Gesundheits-Check-Up",
+            "description": "Umfassende Vorsorge mit Risikoanalyse, Dauer 2–3 Stunden je nach Risikoprofil. Zwei Schwerpunkte: Tumorrisiko-Bewertung und kardiovaskuläre Gesundheit.",
+            "category": "Check-Up-Programme",
+            "link": "/products/bloody-check"
+          }
+        },
+        "svc-cardio": {
+          "type": "service",
+          "settings": {
+            "icon": "🫀",
+            "name": "Cardio-Check-Up",
+            "description": "Herzdiagnostik mit Belastungs-EKG (Ergometrie). Erkennung von Koronararterienverkalkungen unter Belastung.",
+            "category": "Check-Up-Programme",
+            "link": "/products/ultraschall-echokardiographie"
+          }
+        },
+        "svc-angio": {
+          "type": "service",
+          "settings": {
+            "icon": "🩸",
+            "name": "Angio-Check-Up",
+            "description": "Gefäßdiagnostik mit Carotis-Duplex, Bauchaorta-Screening und Beingefäß-Untersuchung.",
+            "category": "Check-Up-Programme",
+            "link": "/products/halsschlagadern-quick-check"
+          }
+        },
+        "svc-tumor": {
+          "type": "service",
+          "settings": {
+            "icon": "🔬",
+            "name": "Tumorscreening",
+            "description": "Gezielte Krebsvorsorge als Teil des Check-Up-Programms. Umfassender als das Standard-Vorsorgeprogramm.",
+            "category": "Check-Up-Programme",
+            "link": "/products/sono-check"
+          }
+        },
+        "svc-echo": {
+          "type": "service",
+          "settings": {
+            "icon": "💓",
+            "name": "Echokardiographie",
+            "description": "Herzultraschall zur Beurteilung von Pumpfunktion, Herzklappen und Wandbewegungsstörungen.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-echokardiographie"
+          }
+        },
+        "svc-carotis": {
+          "type": "service",
+          "settings": {
+            "icon": "🔍",
+            "name": "Carotis-Duplex",
+            "description": "Ultraschall der Halsschlagadern: Intima-Media-Komplex, Plaque-Darstellung und farbkodierte Duplexsonografie.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/halsschlagadern-quick-check"
+          }
+        },
+        "svc-schilddruese": {
+          "type": "service",
+          "settings": {
+            "icon": "🦋",
+            "name": "Schilddrüsen-Sonographie",
+            "description": "Erkennung von Struma, Knoten und bösartigen Veränderungen. Bei Bedarf Weiterleitung zu Szintigrafie oder Feinnadelpunktion.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-schilddruse-krebsscreening"
+          }
+        },
+        "svc-bein": {
+          "type": "service",
+          "settings": {
+            "icon": "🦵",
+            "name": "Ultraschall Beingefäße",
+            "description": "ABI (Knöchel-Arm-Index) zur Erkennung der Schaufensterkrankheit. Duplex bei Thrombose-Verdacht und Durchblutungsstörungen.",
+            "category": "Ultraschall-Diagnostik"
+          }
+        },
+        "svc-sono": {
+          "type": "service",
+          "settings": {
+            "icon": "📱",
+            "name": "Abdomineller Ultraschall",
+            "description": "Ultraschall des Bauchraums: Leber, Gallenwege, Bauchspeicheldrüse, Milz, Nieren, Prostata/Gebärmutter sowie Bewegungsapparat.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/sono-abdomen"
+          }
+        },
+        "svc-ekg": {
+          "type": "service",
+          "settings": {
+            "icon": "🏃",
+            "name": "Belastungs-EKG (Ergometrie)",
+            "description": "Provokation einer Minderdurchblutung unter Belastung zur Erkennung von Verkalkungen der Herzkranzgefäße.",
+            "category": "Weitere Diagnostik"
+          }
+        },
+        "svc-lunge": {
+          "type": "service",
+          "settings": {
+            "icon": "🫁",
+            "name": "Lungenfunktion (Spirometrie)",
+            "description": "Bei Atemwegserkrankungen (COPD, Asthma), chronischem Husten, präoperativ und arbeitsmedizinisch.",
+            "category": "Weitere Diagnostik"
+          }
+        },
+        "svc-labor": {
+          "type": "service",
+          "settings": {
+            "icon": "🧪",
+            "name": "Labordiagnostik",
+            "description": "Blutbild, Nierenwerte, Leberwerte, Schilddrüse, Herzenzyme, Entzündungsmarker, Cholesterin, HbA1C, Tumormarker, Borrelien, Laktose-/Glutenintoleranz, Rheumafaktoren, Impf-Antikörper und vieles mehr.",
+            "category": "Weitere Diagnostik",
+            "link": "/products/labor-check-up"
+          }
+        },
+        "svc-impf": {
+          "type": "service",
+          "settings": {
+            "icon": "💉",
+            "name": "Impfungen",
+            "description": "Impfbuch-Check, individueller Impfplan mit automatischer Terminerinnerung. Influenza, Pneumokokken, FSME, Hepatitis, Reiseimpfungen.",
+            "category": "Weitere Diagnostik"
+          }
+        }
+      },
+      "block_order": [
+        "svc-gesundheit",
+        "svc-cardio",
+        "svc-angio",
+        "svc-tumor",
+        "svc-echo",
+        "svc-carotis",
+        "svc-schilddruese",
+        "svc-bein",
+        "svc-sono",
+        "svc-ekg",
+        "svc-lunge",
+        "svc-labor",
+        "svc-impf"
+      ],
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "description": "Umfassende hausärztliche und internistische Versorgung mit modernster Diagnostik",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "zeiten": {
+      "type": "juvantis-praxis-zeiten",
+      "settings": {
+        "heading": "Sprechzeiten",
+        "note": "Termine über Doctolib oder telefonisch. Bei lebensbedrohlichen Notfällen: 112. Ärztlicher Bereitschaftsdienst: 116 117.",
+        "mo_label": "Montag",
+        "mo_hours": "08:00–11:00, 12:30–16:00",
+        "mo_akut": "11:00–12:00",
+        "di_label": "Dienstag",
+        "di_hours": "08:00–11:00, 12:30–16:00",
+        "di_akut": "11:00–12:00",
+        "mi_label": "Mittwoch",
+        "mi_hours": "08:00–11:00",
+        "mi_akut": "11:00–12:00",
+        "do_label": "Donnerstag",
+        "do_hours": "08:00–11:00, 12:30–16:00",
+        "do_akut": "11:00–12:00",
+        "fr_label": "Freitag",
+        "fr_hours": "08:00–11:00",
+        "fr_akut": "11:00–12:00",
+        "sa_label": "Samstag",
+        "sa_hours": "09:00–13:00",
+        "blutentnahme_info": "<p><strong>Täglich 08:00–08:30 Uhr.</strong></p><p>Bitte nüchtern erscheinen (4–6 Stunden vorher keine zucker- oder fetthaltigen Speisen). Medikamente wie üblich einnehmen, Insulin erst nach dem Frühstück.</p>",
+        "akut_rules": "<p><strong>Mo–Fr 11:00–12:00 Uhr (ohne Termin)</strong></p><ul><li>Nur einen Behandlungsgrund vorbringen</li><li>Ca. 10 Minuten Behandlungszeit</li><li>Wartezeit bis zu 2 Stunden möglich</li><li>Arzt kann nicht ausgewählt werden</li><li>Lebensbedrohliche Zustände werden sofort behandelt</li></ul>",
+        "infekt_info": "<p>Zur Erkältungssaison bieten wir eine separate Infektionssprechstunde an — <strong>nur mit vorherigem Termin</strong>. Die Praxistür bleibt während dieser Zeit verschlossen.</p>",
+        "abend_info": "<p><strong>Abendsprechstunden</strong> sind ausschließlich nach vorheriger Terminvergabe möglich.</p><p><strong>Samstag 09:00–13:00 Uhr</strong> — ebenfalls nur nach Terminvergabe.</p>",
+        "color_scheme": "background-2",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "faq": {
+      "type": "juvantis-praxis-faq",
+      "blocks": {
+        "faq-au-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Wie bekomme ich eine Krankschreibung (AU)?",
+            "answer": "<p>Für eine Arbeitsunfähigkeitsbescheinigung ist eine persönliche Vorstellung in der Praxis erforderlich. Bitte kommen Sie während der Akutsprechstunde (Mo–Fr 11:00–12:00 Uhr) oder vereinbaren Sie einen Termin über Doctolib. Eine AU kann nicht telefonisch oder per E-Mail ausgestellt werden.</p>",
+            "category": "Arbeitsunfähigkeit"
+          }
+        },
+        "faq-au-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Wie lange kann ich krankgeschrieben werden?",
+            "answer": "<p>Die Dauer der Krankschreibung richtet sich nach Ihrem Gesundheitszustand und wird bei jedem Besuch individuell beurteilt. Eine rückwirkende Krankschreibung ist nur in Ausnahmefällen möglich (maximal 3 Tage).</p>",
+            "category": "Arbeitsunfähigkeit"
+          }
+        },
+        "faq-ue-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Wie funktioniert eine Überweisung?",
+            "answer": "<p>Überweisungen zu Fachärzten stellen wir nach Rücksprache oder im Rahmen einer Konsultation aus. Bitte teilen Sie uns den gewünschten Facharzt und den Grund mit. Überweisungen gelten für das laufende Quartal.</p>",
+            "category": "Ein- und Überweisungen"
+          }
+        },
+        "faq-ue-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Brauche ich für jeden Facharzt eine Überweisung?",
+            "answer": "<p>Gesetzlich Versicherte benötigen für die meisten Fachärzte eine Überweisung vom Hausarzt. Ausnahmen: Augenarzt, Frauenarzt, Kinderarzt und Notfälle. Privatversicherte benötigen in der Regel keine Überweisung.</p>",
+            "category": "Ein- und Überweisungen"
+          }
+        },
+        "faq-impf-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Bieten Sie Reiseimpfungen an?",
+            "answer": "<p>Ja. Bitte bringen Sie Ihren Impfpass mit und informieren Sie uns mindestens 4–6 Wochen vor Reiseantritt. Wir erstellen einen individuellen Impfplan basierend auf Ihrem Reiseziel und den Empfehlungen der STIKO und des Robert Koch-Instituts.</p>",
+            "category": "Rund ums Impfen"
+          }
+        },
+        "faq-impf-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Kann ich meinen Impfpass prüfen lassen?",
+            "answer": "<p>Selbstverständlich. Senden Sie uns ein Foto Ihres Impfpasses per E-Mail oder bringen Sie ihn zum nächsten Termin mit. Wir prüfen den Impfstatus und empfehlen ggf. Auffrischungen gemäß den aktuellen STIKO-Empfehlungen.</p>",
+            "category": "Rund ums Impfen"
+          }
+        },
+        "faq-labor-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Muss ich für die Blutentnahme nüchtern sein?",
+            "answer": "<p>Ja, für die meisten Laboruntersuchungen sollten Sie nüchtern erscheinen (4–6 Stunden vorher keine zucker- oder fetthaltigen Speisen). Wasser und ungesüßter Tee sind erlaubt. Medikamente nehmen Sie wie gewohnt ein, Insulin erst nach dem Frühstück.</p>",
+            "category": "Rund ums Labor"
+          }
+        },
+        "faq-labor-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Wann bekomme ich meine Laborergebnisse?",
+            "answer": "<p>Die meisten Ergebnisse liegen nach 1–3 Werktagen vor. Wir kontaktieren Sie telefonisch bei auffälligen Befunden. Routineergebnisse können Sie bei Ihrem nächsten Termin besprechen oder telefonisch in der Praxis erfragen.</p>",
+            "category": "Rund ums Labor"
+          }
+        },
+        "faq-labor-3": {
+          "type": "faq",
+          "settings": {
+            "question": "Welche Laborwerte werden untersucht?",
+            "answer": "<p>Unser Laborspektrum umfasst u.a.: Blutbild, Nierenwerte, Leberwerte, Schilddrüsenhormone, Herzenzyme, Entzündungsmarker (CRP), Cholesterin (Gesamt/HDL/LDL), Elektrolyte, HbA1C, Tumormarker, Borrelien, Chlamydien, Laktose-/Glutenintoleranz, Rheumafaktoren, Epstein-Barr-Virus und Impf-Antikörper-Kontrolle.</p>",
+            "category": "Rund ums Labor"
+          }
+        }
+      },
+      "block_order": [
+        "faq-au-1",
+        "faq-au-2",
+        "faq-ue-1",
+        "faq-ue-2",
+        "faq-impf-1",
+        "faq-impf-2",
+        "faq-labor-1",
+        "faq-labor-2",
+        "faq-labor-3"
+      ],
+      "settings": {
+        "heading": "Häufige Fragen",
+        "description": "Antworten auf die wichtigsten Fragen rund um Ihren Praxisbesuch",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "kontakt": {
+      "type": "juvantis-praxis-kontakt",
+      "settings": {
+        "heading": "Kontakt & Standorte",
+        "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
+        "address_2_label": "Zweiter Standort (bei Eterno)",
+        "address_2": "Bockenheimer Landstraße 33, 5. Etage, 60325 Frankfurt am Main",
+        "phone_general": "069 - 247 574 523",
+        "phone_private": "069 - 247 574 526",
+        "fax": "069 - 972 064 08",
+        "email": "praxis@westend-hausarzt.de",
+        "website_url": "https://westend-hausarzt.com",
+        "doctolib_url": "https://www.doctolib.de/praxis/frankfurt-am-main/praxis-dr-stracke-und-kollegen",
+        "maps_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.5!2d8.6725!3d50.1215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0ea4b5a945ad%3A0x5c6a1b3e31a31e48!2sGr%C3%BCneburgweg%2012%2C%2060322%20Frankfurt%20am%20Main!5e0!3m2!1sde!2sde!4v1",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "team",
+    "leistungen",
+    "zeiten",
+    "faq",
+    "kontakt"
+  ]
+}
