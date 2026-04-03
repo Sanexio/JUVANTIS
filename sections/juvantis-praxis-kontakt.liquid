@@ -1,4 +1,20 @@
 {%- style -%}
+  /* Apple Design Override — Praxis Kontakt */
+  #PraxisKontakt-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-secondary: #6e6e73;
+    --apple-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--apple-text);
+    background: var(--apple-bg-white);
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -14,20 +30,17 @@
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__header {
     text-align: center;
     max-width: 70rem;
-    margin: 0 auto 3.2rem;
+    margin: 0 auto 4.8rem;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__heading {
-    font-family: var(--font-heading-family);
-    font-size: 3.2rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    #PraxisKontakt-{{ section.id }} .praxis-kontakt__heading {
-      font-size: 4rem;
-    }
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: -0.035em;
+    color: var(--apple-text);
+    margin-bottom: 0;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__grid {
@@ -39,82 +52,86 @@
   @media screen and (min-width: 750px) {
     #PraxisKontakt-{{ section.id }} .praxis-kontakt__grid {
       grid-template-columns: 1fr 1fr;
+      gap: 4rem;
     }
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.4rem;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__item {
     display: flex;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: 1.6rem;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__icon {
     flex-shrink: 0;
-    width: 4rem;
-    height: 4rem;
+    width: 4.8rem;
+    height: 4.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(78, 161, 217, 0.1);
-    border-radius: 0.8rem;
+    background: var(--apple-bg-gray);
+    border-radius: 50%;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__icon svg {
-    width: 2rem;
-    height: 2rem;
-    fill: #4ea1d9;
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: var(--apple-tertiary);
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__label {
-    font-family: var(--font-heading-family);
-    font-size: 1.3rem;
+    font-family: var(--apple-font);
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: rgba(var(--color-foreground), 0.5);
-    margin-bottom: 0.2rem;
+    letter-spacing: 0.06em;
+    color: var(--apple-tertiary);
+    margin-bottom: 0.3rem;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__value {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
+    line-height: 1.53;
+    color: var(--apple-text);
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__value a {
-    color: #4ea1d9;
+    color: var(--apple-link);
     text-decoration: none;
     transition: color 0.2s ease;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__value a:hover {
-    color: #73c25e;
+    color: #0077ed;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__doctolib {
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    margin-top: 1.2rem;
+    margin-top: 1.6rem;
     padding: 1.2rem 2.8rem;
-    background: #4ea1d9;
-    color: #fff;
-    font-family: var(--font-heading-family);
+    background: var(--apple-link);
+    color: var(--apple-bg-white);
+    font-family: var(--apple-font);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
-    border-radius: 0.4rem;
-    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 98rem;
+    transition: background 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    letter-spacing: -0.01em;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__doctolib:hover {
-    background: #3d8ec4;
-    transform: translateY(-0.1rem);
+    background: #0077ed;
+    transform: scale(1.02);
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__doctolib svg {
@@ -124,11 +141,11 @@
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-wrapper {
-    border-radius: 0.8rem;
+    border-radius: 2rem;
     overflow: hidden;
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border: none;
     min-height: 36rem;
-    background: rgba(var(--color-foreground), 0.04);
+    background: var(--apple-bg-gray);
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-wrapper iframe {
@@ -147,39 +164,53 @@
     min-height: 36rem;
     padding: 3.2rem;
     text-align: center;
-    background: rgba(var(--color-foreground), 0.02);
+    background: var(--apple-bg-gray);
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent svg {
     width: 4.8rem;
     height: 4.8rem;
-    fill: rgba(var(--color-foreground), 0.2);
+    fill: var(--apple-tertiary);
     margin-bottom: 1.6rem;
+    opacity: 0.5;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: rgba(var(--color-foreground), 0.6);
-    margin-bottom: 1.6rem;
+    font-family: var(--apple-font);
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-secondary);
+    margin-bottom: 2rem;
     max-width: 36rem;
+  }
+
+  #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent p a {
+    color: var(--apple-link);
+    text-decoration: none;
+  }
+
+  #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent p a:hover {
+    text-decoration: underline;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent-btn {
     display: inline-block;
-    padding: 1rem 2.4rem;
-    background: #4ea1d9;
-    color: #fff;
-    font-size: 1.4rem;
+    padding: 1.1rem 2.6rem;
+    background: var(--apple-link);
+    color: var(--apple-bg-white);
+    font-family: var(--apple-font);
+    font-size: 1.5rem;
     font-weight: 500;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 98rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    letter-spacing: -0.01em;
   }
 
   #PraxisKontakt-{{ section.id }} .praxis-kontakt__map-consent-btn:hover {
-    background: #3d8ec4;
+    background: #0077ed;
+    transform: scale(1.02);
   }
 {%- endstyle -%}
 
@@ -439,4 +470,3 @@
   ]
 }
 {% endschema %}
-
