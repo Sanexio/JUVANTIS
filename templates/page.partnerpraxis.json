@@ -16,232 +16,89 @@
         "padding_bottom": 0
       }
     },
-    "partner": {
-      "type": "juvantis-partner-praxis",
+    "praxen": {
+      "type": "juvantis-partnerpraxen",
       "settings": {
-        "heading": "Praxis Dr. Stracke und Kollegen",
-        "subtitle": "Praxis Dr. Stracke & Kollegen",
-        "description": "Hausärztliche und Innere Medizin im Herzen Frankfurts. Erfahrene Fachärzte mit internationaler Kompetenz bieten umfassende Diagnostik und individuelle Betreuung.",
-        "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
-        "button_label": "Termin buchen",
-        "button_link": "https://www.doctolib.de/praxis/frankfurt-am-main/praxis-dr-stracke-und-kollegen",
-        "mo_hours": "08:00–11:00, 12:30–16:00",
-        "mo_akut": "11:00–12:00",
-        "di_hours": "08:00–11:00, 12:30–16:00",
-        "di_akut": "11:00–12:00",
-        "mi_hours": "08:00–11:00",
-        "mi_akut": "11:00–12:00",
-        "do_hours": "08:00–11:00, 12:30–16:00",
-        "do_akut": "11:00–12:00",
-        "fr_hours": "08:00–11:00",
-        "fr_akut": "11:00–12:00",
-        "sa_hours": "09:00–13:00",
-        "schedule_note": "Akutsprechstunde täglich Mo–Fr 11:00–12:00 Uhr (ohne Termin, max. 1 Behandlungsgrund)",
-        "phone": "069-247 574 523",
-        "phone_private": "069-247 574 526",
-        "fax": "069-97206408",
-        "email": "praxis@westend-hausarzt.de",
-        "website": "https://westend-hausarzt.com",
-        "doctolib_url": "https://www.doctolib.de/praxis/frankfurt-am-main/praxis-dr-stracke-und-kollegen",
-        "maps_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.5!2d8.6725!3d50.1215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0ea4b5a945ad%3A0x5c6a1b3e31a31e48!2sGr%C3%BCneburgweg%2012%2C%2060322%20Frankfurt%20am%20Main!5e0!3m2!1sde!2sde!4v1",
-        "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "eyebrow": "Juvantis Netzwerk",
+        "heading": "Partnerpraxen",
+        "description": "Unsere Partnerpraxen verbinden medizinische Exzellenz mit moderner Diagnostik und persönlicher Betreuung.",
+        "padding_top": 0,
+        "padding_bottom": 0
       },
       "blocks": {
-        "doctor-stracke": {
-          "type": "doctor",
+        "praxis-stracke": {
+          "type": "praxis",
           "settings": {
-            "name": "Dr. med. Siegbert Stracke, MBA",
-            "title": "Facharzt Innere Medizin, Notfall- und Intensivmedizin",
-            "qualifications": "Gesundheitsökonom, MBA Healthcare Management (EBS)\nCEO Sanexio GmbH\nPrivate Equity Advisor (EBS)",
-            "bio": "Der Überzeugung folgend, dass zur Bewältigung zukünftiger Herausforderungen im Gesundheitswesen und zur Verbesserung der Patientenversorgung neue Wege der Organisation von Informationen inklusive des produktiven Umganges mit dem vorhandenen Wissen nötig sein werden, bringt Siegbert Stracke seine Expertise aus langjähriger klinischer Erfahrung und Kenntnissen aus dem informationstechnischen Bereich in die Praxis ein.",
-            "career": "<p><strong>Seit 01/2013:</strong> Geschäftsführender Gesellschafter Sanexio GmbH – Digitale Lösungen im Gesundheitswesen und Big Data Management</p><p><strong>11/2021–heute:</strong> Private Equity Advisor (EBS)</p><p><strong>01/2013–12/2018:</strong> Freiberuflicher Arzt, Schwerpunkt Notaufnahmen</p><p><strong>01/2010–12/2012:</strong> Medizinische Klinik, Universitätsklinikum Gießen</p><p><strong>01/2008–12/2009:</strong> Notarzt am Standort Uniklinikum Gießen</p><p><strong>04/2007–12/2009:</strong> Kardiologische und pulmologische Intensivstation, Med. Klinik I</p><p><strong>02/2005–04/2007:</strong> Ambulanz, Herzkatheterlabor, Intermediate-Care Station</p>",
-            "education": "<p><strong>09/2011–09/2012:</strong> MBA Health Care Management, European Business School – OAM: very good. Thesis: „Der Terminkontrakthandel als Risikoinstrument für die Beteiligten im Gesundheitswesen“. Auslandssemester University of Stellenbosch, Cape Town</p><p><strong>09/2010–09/2011:</strong> Gesundheitsökonom, EBS – Note: sehr gut (ECTS A)</p><p><strong>2008:</strong> Gasthörer Wirtschaftsinformatik, FernUni Hagen</p><p><strong>10/1998–10/2004:</strong> Studium der Medizin, JLU Gießen – Staatsexamen &amp; Approbation, Note: sehr gut. Promotion: „Laser-Doppler-Fluxmetrie bei Osteoporose“</p><p><strong>10/1998–10/2000:</strong> Gasthörer Mathematik, JLU Gießen</p>"
+            "name": "Praxis Dr. Stracke und Kollegen",
+            "specialty": "Hausärztliche und Innere Medizin",
+            "address": "Grüneburgweg 12, 60322 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "/pages/praxis-stracke"
           }
         },
-        "doctor-saul": {
-          "type": "doctor",
+        "praxis-urologen": {
+          "type": "praxis",
           "settings": {
-            "name": "Docteur en méd. Sonja Saul",
-            "title": "Fachärztin für Allgemeinmedizin",
-            "qualifications": "Ultraschalldiagnostik Zertifikat I und II (SEECO)\nMaster Péritaje y valoración de daños corporales (Universität Barcelona)\nSprachen: Deutsch, Englisch, Französisch, Spanisch",
-            "bio": "Nach einer Kindheit zwischen Deutschland, Frankreich und Belgien, Abitur an der Europaschule in Brüssel mit anschließendem Medizinstudium in der Université Catholique de Louvain ist für Sonja Saul eine Anamnese in deutsch, englisch, französisch und spanisch kein Problem. Mehr als 15 Jahre Berufserfahrung, zuletzt als leitende Oberärztin in Spanien tätig.",
-            "career": "<p><strong>10/2019–04/2020:</strong> Haus- und Facharztzentrum Sachsenhausen, Frankfurt – Hospitation</p><p><strong>2018–2019:</strong> MC Mutual, Madrid – Leitende Oberärztin für Kliniken in Extremadura und Kastilien und León</p><p><strong>2010–2018:</strong> MC Mutual, Madrid – Referent Ultraschalldiagnostik (1.200+ Untersuchungen/Jahr)</p><p><strong>2007–2009:</strong> Private Praxis CENSALUD, Madrid – Allgemeinmedizin, Schwerpunkt ausländische Patienten</p><p><strong>2004–2007:</strong> IMSALUD Madrid – Angestellte Fachärztin</p><p><strong>2002–2005:</strong> Hospital San Rafael Madrid – Notaufnahme Pädiatrie</p><p><strong>2003–2004:</strong> IMSALUD – 2. Jahr Facharztausbildung</p><p><strong>2002–2003:</strong> Praxis Dres. Beucken et Bouffesile, Brüssel – 1. Jahr Facharztausbildung</p>",
-            "education": "<p><strong>2005–2018:</strong> SEECO Spanien – Ultraschalldiagnostik Zertifikat I und II</p><p><strong>2006–2007:</strong> Universidad de Barcelona (virtual) – Master „Péritaje y valoración de daños corporales“</p><p><strong>2001–2004:</strong> UCL Belgien – Facharzt für Allgemeinmedizin</p><p><strong>1994–2002:</strong> Université Catholique de Louvain, Belgien – Studium der Medizin, cum laudum</p><p><strong>1991–1994:</strong> Europaschule Brüssel – Europäisches Abitur, deutsche Sektion (1,2)</p>"
+            "name": "MVZ Offenbacher Urologen",
+            "specialty": "Urologie",
+            "address": "Rowentastraße 2, 63071 Offenbach",
+            "badge": "Juvantis Partner",
+            "link": "https://www.offenbacherurologen.de/"
           }
         },
-        "svc-checkup": {
-          "type": "service",
+        "praxis-seelig": {
+          "type": "praxis",
           "settings": {
-            "icon": "🩺",
-            "name": "Gesundheits Check-Up",
-            "description": "Komplette Risikoanalyse an einem Tag (2–3 Std.): Kardio-Block, Angio-Block, Gastro-Block und Nephro-Block. Labor sollte 2 Tage vorher abgenommen werden.",
-            "category": "Gesundheits Check-Ups"
+            "name": "Frauenarztpraxis Dr. med. Stefanie K. Seelig",
+            "specialty": "Gynäkologie und Geburtshilfe",
+            "address": "Königsteiner Straße 55, 65812 Bad Soden am Taunus",
+            "badge": "Juvantis Partner",
+            "link": "https://www.praxis-seelig.de/"
           }
         },
-        "svc-cardio": {
-          "type": "service",
+        "praxis-psychotherapeutikum": {
+          "type": "praxis",
           "settings": {
-            "icon": "🫀",
-            "name": "Cardio Check-Up",
-            "description": "Ausführliche kardiovaskuläre Analyse (ca. 2 Std.): Körperliche Untersuchung, Blutentnahme, Echokardiografie, Ergometrie und Spirometrie.",
-            "category": "Gesundheits Check-Ups"
+            "name": "Psychotherapeutikum",
+            "specialty": "Psychologische Diagnostik und Psychotherapie",
+            "address": "Bockenheimer Landstraße 33-35, 60325 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "https://psychotherapeutikum.net/"
           }
         },
-        "svc-angio": {
-          "type": "service",
+        "praxis-arbitmann": {
+          "type": "praxis",
           "settings": {
-            "icon": "🩸",
-            "name": "Angio Check-Up",
-            "description": "Gefäß-Screening: Carotis Duplex, Bauchaorten-Screening, Knöchel-Arm-Index (ABI) und Duplex der Beingefäße.",
-            "category": "Gesundheits Check-Ups"
+            "name": "Naturheilpraxis Anna Arbitmann",
+            "specialty": "Physiotherapie, Osteopathie und Naturheilkunde",
+            "address": "Kaiserstraße 5, 60311 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "https://www.naturheilpraxis-arbitmann.com/"
           }
         },
-        "svc-tumor": {
-          "type": "service",
+        "praxis-hno": {
+          "type": "praxis",
           "settings": {
-            "icon": "🔬",
-            "name": "Tumorscreening",
-            "description": "Umfassender als das Standard-Vorsorgeprogramm: Ultraschall von Schilddrüse und inneren Organen zur Früherkennung.",
-            "category": "Gesundheits Check-Ups"
-          }
-        },
-        "svc-echo": {
-          "type": "service",
-          "settings": {
-            "icon": "💓",
-            "name": "Echokardiographie",
-            "description": "Herzultraschall zur Beurteilung von Pumpfunktion, Herzklappen und Wandbewegungsstörungen. Bei Herzgeräuschen, Infarkt-Verdacht, Herzinsuffizienz.",
-            "category": "Ultraschalldiagnostik"
-          }
-        },
-        "svc-carotis": {
-          "type": "service",
-          "settings": {
-            "icon": "🔍",
-            "name": "Carotis Duplex",
-            "description": "Ultraschall der Halsschlagadern: Intima-Media-Komplex, Plaque-Darstellung. Farbkodierte Duplexsonografie zeigt Einengungen und Verschlüsse.",
-            "category": "Ultraschalldiagnostik"
-          }
-        },
-        "svc-schilddruese": {
-          "type": "service",
-          "settings": {
-            "icon": "🦋",
-            "name": "Schilddrüsen-Sonographie",
-            "description": "Ultraschall der Schilddrüse: Erkennung von Struma, Knoten und bösartigen Veränderungen. Bei Bedarf Weiterleitung zu Szintigrafie oder Feinnadelpunktion.",
-            "category": "Ultraschalldiagnostik"
-          }
-        },
-        "svc-bein": {
-          "type": "service",
-          "settings": {
-            "icon": "🦵",
-            "name": "Ultraschall Beingefäße",
-            "description": "ABI (Knöchel-Arm-Index) zur Erkennung der Schaufensterkrankheit. Duplex der Beingefäße bei Thrombose-Verdacht und Durchblutungsstörungen.",
-            "category": "Ultraschalldiagnostik"
-          }
-        },
-        "svc-sono": {
-          "type": "service",
-          "settings": {
-            "icon": "📱",
-            "name": "Abdominelle Sonographie",
-            "description": "Ultraschall des Bauchraums: Leber, Gallenwege, Bauchspeicheldrüse, Milz, Gefäße, Darm, Nieren, Prostata/Gebärmutter sowie Bewegungsapparat.",
-            "category": "Ultraschalldiagnostik"
-          }
-        },
-        "svc-belastung": {
-          "type": "service",
-          "settings": {
-            "icon": "🏃",
-            "name": "Belastungs-EKG",
-            "description": "Ergometrie: Provokation einer Minderdurchblutung unter Belastung zur Erkennung von Verkalkungen der Herzkranzgefäße im EKG.",
-            "category": "Weitere Leistungen"
-          }
-        },
-        "svc-lunge": {
-          "type": "service",
-          "settings": {
-            "icon": "🫁",
-            "name": "Lungenfunktion",
-            "description": "Spirometrie bei Atemwegserkrankungen (COPD, Asthma), chronischem Husten, präoperativ und arbeitsmedizinisch. Teil des großen Check-Up.",
-            "category": "Weitere Leistungen"
-          }
-        },
-        "svc-labor": {
-          "type": "service",
-          "settings": {
-            "icon": "🧪",
-            "name": "Labordiagnostik",
-            "description": "Blutbild, Nierenfunktion, Leberwerte, Schilddrüse, Herzenzyme, Cholesterin, HbA1C, Tumormarker, Borrelien, Rheumafaktoren, Impfstatus und vieles mehr.",
-            "category": "Weitere Leistungen"
-          }
-        },
-        "svc-impfung": {
-          "type": "service",
-          "settings": {
-            "icon": "💉",
-            "name": "Impfungen",
-            "description": "Impfbuch-Check per Zusendung, individueller Impfplan mit automatischer Terminerinnerung. Influenza, Pneumokokken, FSME, Hepatitis, Reiseimpfungen.",
-            "category": "Weitere Leistungen"
-          }
-        },
-        "info_blut": {
-          "type": "schedule_info",
-          "settings": {
-            "title": "Blutentnahme",
-            "content": "<p><strong>Täglich 08:00–08:30 Uhr.</strong></p><p>Bitte nüchtern erscheinen (4–6 Stunden vorher keine zucker- oder fetthaltigen Speisen). Medikamente wie üblich einnehmen, Insulin erst nach dem Frühstück.</p>"
-          }
-        },
-        "info_akut": {
-          "type": "schedule_info",
-          "settings": {
-            "title": "Akutsprechstunde",
-            "content": "<ul><li>Nur <strong>einen</strong> Behandlungsgrund vorbringen</li><li>Ca. 10 Minuten Behandlungszeit einplanen</li><li>Wartezeit bis zu 2 Stunden möglich</li><li>Arzt kann nicht ausgewählt werden</li><li>Lebensbedrohliche Zustände werden sofort behandelt</li></ul>"
-          }
-        },
-        "info_infekt": {
-          "type": "schedule_info",
-          "settings": {
-            "title": "Infektionssprechstunde",
-            "content": "<p>Zur Erkältungssaison bieten wir eine separate Infektionssprechstunde an – <strong>nur mit vorherigem Termin</strong>. Die Praxistür bleibt während dieser Zeit verschlossen.</p>"
-          }
-        },
-        "info_abend": {
-          "type": "schedule_info",
-          "settings": {
-            "title": "Abendsprechstunde",
-            "content": "<p><strong>Abendsprechstunden</strong> sind ausschließlich nach vorheriger Terminvergabe möglich.</p><p><strong>Samstag 09:00–13:00 Uhr</strong> – ebenfalls nur nach Terminvergabe.</p>"
+            "name": "HNO Praxis Eschborn",
+            "specialty": "Hals-Nasen-Ohren-Heilkunde",
+            "address": "Götzenstraße 47-55, 65760 Eschborn",
+            "badge": "Juvantis Partner",
+            "link": "https://hno-eschborn.de/"
           }
         }
       },
       "block_order": [
-        "doctor-stracke",
-        "doctor-saul",
-        "svc-checkup",
-        "svc-cardio",
-        "svc-angio",
-        "svc-tumor",
-        "svc-echo",
-        "svc-carotis",
-        "svc-schilddruese",
-        "svc-bein",
-        "svc-sono",
-        "svc-belastung",
-        "svc-lunge",
-        "svc-labor",
-        "svc-impfung",
-        "info_blut",
-        "info_akut",
-        "info_infekt",
-        "info_abend"
+        "praxis-stracke",
+        "praxis-urologen",
+        "praxis-seelig",
+        "praxis-psychotherapeutikum",
+        "praxis-arbitmann",
+        "praxis-hno"
       ]
     }
   },
   "order": [
     "main",
-    "partner"
+    "praxen"
   ]
 }
