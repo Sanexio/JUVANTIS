@@ -17,7 +17,7 @@
       }
     },
     "partner": {
-      "type": "juvantis-partnerpraxen",
+      "type": "juvantis-partner-praxis",
       "settings": {
         "eyebrow": "Juvantis Netzwerk",
         "heading": "Partnerpraxen",
