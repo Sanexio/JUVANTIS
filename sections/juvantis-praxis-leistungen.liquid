@@ -115,6 +115,16 @@
     line-height: 1;
   }
 
+  #PraxisLeistungen-{{ section.id }} .praxis-leistungen__thumb {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 1.4rem;
+    object-fit: cover;
+    margin-bottom: 1.6rem;
+    display: block;
+    box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,0.06);
+  }
+
   #PraxisLeistungen-{{ section.id }} .praxis-leistungen__name {
     font-family: var(--apple-font);
     font-size: 1.9rem;
@@ -184,7 +194,9 @@
             {%- for block in section.blocks -%}
               {%- if block.settings.category == category -%}
                 <div class="praxis-leistungen__card" {{ block.shopify_attributes }}>
-                  {%- if block.settings.icon != blank -%}
+                  {%- if block.settings.image_url != blank -%}
+                    <img src="{{ block.settings.image_url }}" alt="{{ block.settings.name | escape }}" class="praxis-leistungen__thumb" loading="lazy" width="64" height="64">
+                  {%- elsif block.settings.icon != blank -%}
                     <span class="praxis-leistungen__icon">{{ block.settings.icon }}</span>
                   {%- endif -%}
                   {%- if block.settings.name != blank -%}
