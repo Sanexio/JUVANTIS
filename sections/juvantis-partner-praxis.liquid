@@ -133,22 +133,6 @@
     color: var(--ap-text-tertiary);
     margin-bottom: 3.2rem;
   }
-  #AP-{{ section.id }} .ap-hero__langs {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
-  }
-  #AP-{{ section.id }} .ap-lang {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--ap-text-tertiary);
-    padding: 0.5rem 1.4rem;
-    background: var(--ap-gray);
-    border-radius: 10rem;
-    letter-spacing: 0.02em;
-  }
   #AP-{{ section.id }} .ap-hero__cta {
     display: inline-flex;
     align-items: center;
@@ -729,14 +713,6 @@
     {%- if section.settings.address != blank -%}
       <p class="ap-hero__address">{{ section.settings.address | escape }}</p>
     {%- endif -%}
-    {%- if section.settings.languages != blank -%}
-      <div class="ap-hero__langs">
-        {%- assign langs = section.settings.languages | split: ',' -%}
-        {%- for lang in langs -%}
-          <span class="ap-lang">{{ lang | strip | escape }}</span>
-        {%- endfor -%}
-      </div>
-    {%- endif -%}
     {%- if is_full == false and section.settings.button_label != blank and section.settings.button_link != blank -%}
       <a href="{{ section.settings.button_link }}" class="ap-hero__cta">
         {{ section.settings.button_label | escape }}
@@ -1065,7 +1041,6 @@
     { "type": "text", "id": "subtitle", "default": "Praxis Dr. Stracke & Kollegen", "label": "Untertitel" },
     { "type": "textarea", "id": "description", "label": "Beschreibung" },
     { "type": "text", "id": "address", "default": "Grüneburgweg 12, 60322 Frankfurt am Main", "label": "Adresse" },
-    { "type": "text", "id": "languages", "default": "DE, EN, FR, ES", "label": "Sprachen (kommagetrennt)" },
     { "type": "text", "id": "button_label", "default": "Termin buchen", "label": "Button Text" },
     { "type": "url", "id": "button_link", "label": "Button Link" },
     { "type": "header", "content": "Sprechzeiten" },
