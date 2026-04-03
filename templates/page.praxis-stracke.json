@@ -78,6 +78,7 @@
           "type": "service",
           "settings": {
             "icon": "🩺",
+            "image_url": "//sanexio.eu/cdn/shop/products/CheckUpLabor1080x1080.jpg?v=1679737368&width=128",
             "name": "Gesundheits-Check-Up",
             "description": "Umfassende Vorsorge mit Risikoanalyse, Dauer 2–3 Stunden je nach Risikoprofil. Zwei Schwerpunkte: Tumorrisiko-Bewertung und kardiovaskuläre Gesundheit.",
             "category": "Check-Up-Programme",
@@ -88,6 +89,7 @@
           "type": "service",
           "settings": {
             "icon": "🫀",
+            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
             "name": "Cardio-Check-Up",
             "description": "Herzdiagnostik mit Belastungs-EKG (Ergometrie). Erkennung von Koronararterienverkalkungen unter Belastung.",
             "category": "Check-Up-Programme",
@@ -98,6 +100,7 @@
           "type": "service",
           "settings": {
             "icon": "🩸",
+            "image_url": "//sanexio.eu/cdn/shop/files/Atherosklerose.jpg?v=1722190405&width=128",
             "name": "Angio-Check-Up",
             "description": "Gefäßdiagnostik mit Carotis-Duplex, Bauchaorta-Screening und Beingefäß-Untersuchung.",
             "category": "Check-Up-Programme",
@@ -108,6 +111,7 @@
           "type": "service",
           "settings": {
             "icon": "🔬",
+            "image_url": "//sanexio.eu/cdn/shop/files/SD-Tumor.jpg?v=1684425118&width=128",
             "name": "Tumorscreening",
             "description": "Gezielte Krebsvorsorge als Teil des Check-Up-Programms. Umfassender als das Standard-Vorsorgeprogramm.",
             "category": "Check-Up-Programme",
@@ -118,6 +122,7 @@
           "type": "service",
           "settings": {
             "icon": "💓",
+            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
             "name": "Echokardiographie",
             "description": "Herzultraschall zur Beurteilung von Pumpfunktion, Herzklappen und Wandbewegungsstörungen.",
             "category": "Ultraschall-Diagnostik",
@@ -128,6 +133,7 @@
           "type": "service",
           "settings": {
             "icon": "🔍",
+            "image_url": "//sanexio.eu/cdn/shop/files/Halsgefaesse_m.jpg?v=1684404241&width=128",
             "name": "Carotis-Duplex",
             "description": "Ultraschall der Halsschlagadern: Intima-Media-Komplex, Plaque-Darstellung und farbkodierte Duplexsonografie.",
             "category": "Ultraschall-Diagnostik",
@@ -138,6 +144,7 @@
           "type": "service",
           "settings": {
             "icon": "🦋",
+            "image_url": "//sanexio.eu/cdn/shop/files/SD-Tumor.jpg?v=1684425118&width=128",
             "name": "Schilddrüsen-Sonographie",
             "description": "Erkennung von Struma, Knoten und bösartigen Veränderungen. Bei Bedarf Weiterleitung zu Szintigrafie oder Feinnadelpunktion.",
             "category": "Ultraschall-Diagnostik",
@@ -148,6 +155,7 @@
           "type": "service",
           "settings": {
             "icon": "🦵",
+            "image_url": "//sanexio.eu/cdn/shop/files/Atherosklerose.jpg?v=1722190405&width=128",
             "name": "Ultraschall Beingefäße",
             "description": "ABI (Knöchel-Arm-Index) zur Erkennung der Schaufensterkrankheit. Duplex bei Thrombose-Verdacht und Durchblutungsstörungen.",
             "category": "Ultraschall-Diagnostik"
@@ -157,6 +165,7 @@
           "type": "service",
           "settings": {
             "icon": "📱",
+            "image_url": "//sanexio.eu/cdn/shop/products/SonoAbdomen1080x1080.jpg?v=1679737045&width=128",
             "name": "Abdomineller Ultraschall",
             "description": "Ultraschall des Bauchraums: Leber, Gallenwege, Bauchspeicheldrüse, Milz, Nieren, Prostata/Gebärmutter sowie Bewegungsapparat.",
             "category": "Ultraschall-Diagnostik",
