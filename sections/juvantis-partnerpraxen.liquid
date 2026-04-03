@@ -1,0 +1,257 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @keyframes apx-fadein {
+    from { opacity: 0; transform: translateY(1.6rem); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @supports (animation-timeline: view()) {
+    #APX-{{ section.id }} .apx-reveal {
+      animation: apx-fadein linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 20%;
+    }
+  }
+  @supports not (animation-timeline: view()) {
+    #APX-{{ section.id }} .apx-reveal {
+      animation: apx-fadein 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    }
+    #APX-{{ section.id }} .apx-reveal:nth-child(2) { animation-delay: 0.12s; }
+    #APX-{{ section.id }} .apx-reveal:nth-child(3) { animation-delay: 0.24s; }
+    #APX-{{ section.id }} .apx-reveal:nth-child(4) { animation-delay: 0.36s; }
+  }
+
+  #APX-{{ section.id }} {
+    --ap-white: #fff;
+    --ap-gray: #f5f5f7;
+    --ap-text: #1d1d1f;
+    --ap-text-secondary: #6e6e73;
+    --ap-text-tertiary: #86868b;
+    --ap-blue: #0071e3;
+    --ap-blue-hover: #0077ed;
+    --ap-border: rgba(0,0,0,0.04);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hero */
+  #APX-{{ section.id }} .apx-hero {
+    text-align: center;
+    padding: 8rem 2.4rem 4rem;
+  }
+  @media screen and (min-width: 750px) {
+    #APX-{{ section.id }} .apx-hero {
+      padding: 12rem 4rem 6rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    #APX-{{ section.id }} .apx-hero {
+      padding: 14rem 4rem 8rem;
+    }
+  }
+  #APX-{{ section.id }} .apx-hero__eyebrow {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ap-text-secondary);
+    margin-bottom: 1.2rem;
+  }
+  #APX-{{ section.id }} .apx-hero__heading {
+    font-size: clamp(4rem, 7vw, 8rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--ap-text);
+    margin: 0 auto 1.6rem;
+    max-width: 90rem;
+  }
+  #APX-{{ section.id }} .apx-hero__desc {
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.53;
+    color: var(--ap-text-secondary);
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  /* Praxis cards grid */
+  #APX-{{ section.id }} .apx-grid {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 4rem 2.4rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 750px) {
+    #APX-{{ section.id }} .apx-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 4rem 4rem 10rem;
+      gap: 2.4rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    #APX-{{ section.id }} .apx-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3.2rem;
+    }
+  }
+
+  /* Individual praxis card */
+  #APX-{{ section.id }} .apx-card {
+    background: var(--ap-gray);
+    border-radius: 2.4rem;
+    padding: 4rem 3.6rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    min-height: 28rem;
+    justify-content: flex-end;
+  }
+  @media screen and (min-width: 750px) {
+    #APX-{{ section.id }} .apx-card {
+      padding: 4.8rem 4rem;
+      min-height: 32rem;
+    }
+  }
+  #APX-{{ section.id }} .apx-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.6rem 5rem rgba(0,0,0,0.08);
+  }
+  #APX-{{ section.id }} .apx-card__badge {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ap-text-tertiary);
+  }
+  #APX-{{ section.id }} .apx-card__name {
+    font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ap-text);
+  }
+  #APX-{{ section.id }} .apx-card__specialty {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ap-text-secondary);
+    line-height: 1.4;
+  }
+  #APX-{{ section.id }} .apx-card__address {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ap-text-tertiary);
+    line-height: 1.4;
+  }
+  #APX-{{ section.id }} .apx-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--ap-blue);
+    margin-top: 0.8rem;
+    transition: color 0.2s ease;
+  }
+  #APX-{{ section.id }} .apx-card:hover .apx-card__link {
+    color: var(--ap-blue-hover);
+  }
+  #APX-{{ section.id }} .apx-card__link svg {
+    width: 1rem; height: 1rem; fill: currentColor;
+    transition: transform 0.2s ease;
+  }
+  #APX-{{ section.id }} .apx-card:hover .apx-card__link svg {
+    transform: translateX(0.3rem);
+  }
+{%- endstyle -%}
+
+{%- unless template.name == 'index' -%}
+
+{%- assign praxen = section.blocks | where: "type", "praxis" -%}
+
+<div id="APX-{{ section.id }}" class="section-{{ section.id }}-padding">
+
+  <div class="apx-hero apx-reveal">
+    {%- if section.settings.eyebrow != blank -%}
+      <div class="apx-hero__eyebrow">{{ section.settings.eyebrow | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="apx-hero__heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.description != blank -%}
+      <p class="apx-hero__desc">{{ section.settings.description | escape }}</p>
+    {%- endif -%}
+  </div>
+
+  {%- if praxen.size > 0 -%}
+    <div class="apx-grid">
+      {%- for block in praxen -%}
+        <a href="{{ block.settings.link }}" class="apx-card apx-reveal" {{ block.shopify_attributes }}>
+          {%- if block.settings.badge != blank -%}
+            <div class="apx-card__badge">{{ block.settings.badge | escape }}</div>
+          {%- endif -%}
+          <div class="apx-card__name">{{ block.settings.name | escape }}</div>
+          {%- if block.settings.specialty != blank -%}
+            <div class="apx-card__specialty">{{ block.settings.specialty | escape }}</div>
+          {%- endif -%}
+          {%- if block.settings.address != blank -%}
+            <div class="apx-card__address">{{ block.settings.address | escape }}</div>
+          {%- endif -%}
+          <div class="apx-card__link">
+            Mehr erfahren
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+</div>
+
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "Juvantis Partnerpraxen",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "text", "id": "eyebrow", "default": "Juvantis Netzwerk", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "default": "Partnerpraxen", "label": "Überschrift" },
+    { "type": "textarea", "id": "description", "label": "Beschreibung" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Abstand oben", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Abstand unten", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "praxis",
+      "name": "Partnerpraxis",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Praxisname" },
+        { "type": "text", "id": "specialty", "label": "Fachrichtung" },
+        { "type": "text", "id": "address", "label": "Adresse" },
+        { "type": "text", "id": "badge", "label": "Badge (z.B. 'Juvantis Partner')" },
+        { "type": "url", "id": "link", "label": "Link zur Praxis-Seite" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Juvantis Partnerpraxen" }]
+}
+{% endschema %}
