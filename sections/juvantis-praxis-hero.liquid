@@ -1,4 +1,15 @@
 {%- style -%}
+  /* Apple Design System Override */
+  #PraxisHero-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -17,6 +28,9 @@
     min-height: 50rem;
     display: flex;
     align-items: center;
+    font-family: var(--apple-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__bg {
@@ -35,7 +49,7 @@
   #PraxisHero-{{ section.id }} .praxis-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(78, 161, 217, 0.85) 0%, rgba(115, 194, 94, 0.7) 100%);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
   }
 
@@ -46,42 +60,42 @@
     max-width: 80rem;
     margin: 0 auto;
     color: #fff;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: praxisHeroFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s forwards;
+  }
+
+  @keyframes praxisHeroFadeIn-{{ section.id }} {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__heading {
-    font-family: var(--font-heading-family);
-    font-size: 3.2rem;
+    font-family: var(--apple-font);
+    font-size: clamp(4rem, 7vw, 8rem);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
     margin-bottom: 0.8rem;
     color: #fff;
   }
 
-  @media screen and (min-width: 750px) {
-    #PraxisHero-{{ section.id }} .praxis-hero__heading {
-      font-size: 5.2rem;
-    }
-  }
-
   #PraxisHero-{{ section.id }} .praxis-hero__subtitle {
-    font-family: var(--font-heading-family);
-    font-size: 1.8rem;
+    font-family: var(--apple-font);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
     font-weight: 400;
+    letter-spacing: -0.02em;
     margin-bottom: 1.6rem;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  @media screen and (min-width: 750px) {
-    #PraxisHero-{{ section.id }} .praxis-hero__subtitle {
-      font-size: 2.4rem;
-    }
+    color: rgba(255, 255, 255, 0.88);
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__description {
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.7rem;
+    line-height: 1.53;
     margin-bottom: 2.4rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.82);
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__languages {
@@ -94,21 +108,28 @@
 
   #PraxisHero-{{ section.id }} .praxis-hero__lang-badge {
     display: inline-block;
-    padding: 0.4rem 1.2rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.6);
-    border-radius: 2rem;
+    padding: 0.4rem 1.4rem;
+    border: none;
+    border-radius: 98rem;
     font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
+    letter-spacing: 0.02em;
+    color: var(--apple-text);
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 0.3s ease;
+  }
+
+  #PraxisHero-{{ section.id }} .praxis-hero__lang-badge:hover {
+    background: #fff;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__address {
     font-size: 1.4rem;
     margin-bottom: 2.4rem;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.78);
+    letter-spacing: 0.01em;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__address svg {
@@ -122,19 +143,21 @@
   #PraxisHero-{{ section.id }} .praxis-hero__cta {
     display: inline-block;
     padding: 1.4rem 3.6rem;
-    background: #fff;
-    color: #4ea1d9;
-    font-family: var(--font-heading-family);
-    font-size: 1.6rem;
-    font-weight: 600;
+    background: var(--apple-link);
+    color: #fff;
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
+    font-weight: 500;
     text-decoration: none;
-    border-radius: 0.4rem;
+    border-radius: 98rem;
+    border: none;
+    letter-spacing: -0.01em;
     transition: background 0.3s ease, transform 0.2s ease;
   }
 
   #PraxisHero-{{ section.id }} .praxis-hero__cta:hover {
-    background: #f0f0f0;
-    transform: translateY(-0.2rem);
+    background: #0077ed;
+    transform: scale(1.02);
   }
 {%- endstyle -%}
 
@@ -327,4 +350,3 @@
   ]
 }
 {% endschema %}
-
