@@ -36,6 +36,7 @@
         "dr-saul": {
           "type": "doctor",
           "settings": {
+            "asset_image": "dr-saul.jpg",
             "name": "Docteur en méd. Sonja Saul",
             "title": "Fachärztin für Allgemeinmedizin",
             "qualifications": "Ultraschalldiagnostik Zertifikat I und II (SEECO)\nMaster Péritaje y valoración de daños corporales (Universität Barcelona)\nSprachen: Deutsch, Englisch, Französisch, Spanisch",
@@ -47,6 +48,7 @@
         "dr-stracke": {
           "type": "doctor",
           "settings": {
+            "asset_image": "dr-stracke.jpg",
             "name": "Dr. med. Siegbert Stracke, MBA",
             "title": "Facharzt für Innere Medizin, Notfall- und Intensivmedizin",
             "qualifications": "MBA Health Care Management (EBS)\nGesundheitsökonom (EBS)\nCEO Sanexio GmbH",
