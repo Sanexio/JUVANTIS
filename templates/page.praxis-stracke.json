@@ -176,6 +176,7 @@
           "type": "service",
           "settings": {
             "icon": "🏃",
+            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
             "name": "Belastungs-EKG (Ergometrie)",
             "description": "Provokation einer Minderdurchblutung unter Belastung zur Erkennung von Verkalkungen der Herzkranzgefäße.",
             "category": "Weitere Diagnostik"
@@ -185,6 +186,7 @@
           "type": "service",
           "settings": {
             "icon": "🫁",
+            "image_url": "//sanexio.eu/cdn/shop/products/Lunge21080x1080.jpg?v=1679736966&width=128",
             "name": "Lungenfunktion (Spirometrie)",
             "description": "Bei Atemwegserkrankungen (COPD, Asthma), chronischem Husten, präoperativ und arbeitsmedizinisch.",
             "category": "Weitere Diagnostik"
@@ -194,6 +196,7 @@
           "type": "service",
           "settings": {
             "icon": "🧪",
+            "image_url": "//sanexio.eu/cdn/shop/products/CheckUpLabor1080x1080.jpg?v=1679737368&width=128",
             "name": "Labordiagnostik",
             "description": "Blutbild, Nierenwerte, Leberwerte, Schilddrüse, Herzenzyme, Entzündungsmarker, Cholesterin, HbA1C, Tumormarker, Borrelien, Laktose-/Glutenintoleranz, Rheumafaktoren, Impf-Antikörper und vieles mehr.",
             "category": "Weitere Diagnostik",
