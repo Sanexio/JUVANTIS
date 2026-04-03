@@ -371,10 +371,6 @@
         "fr_akut": "11:00–12:00",
         "sa_label": "Samstag",
         "sa_hours": "09:00–13:00",
-        "blutentnahme_info": "<p><strong>Täglich 08:00–08:30 Uhr.</strong></p><p>Bitte nüchtern erscheinen (4–6 Stunden vorher keine zucker- oder fetthaltigen Speisen). Medikamente wie üblich einnehmen, Insulin erst nach dem Frühstück.</p>",
-        "akut_rules": "<p><strong>Mo–Fr 11:00–12:00 Uhr (ohne Termin)</strong></p><ul><li>Nur einen Behandlungsgrund vorbringen</li><li>Ca. 10 Minuten Behandlungszeit</li><li>Wartezeit bis zu 2 Stunden möglich</li><li>Arzt kann nicht ausgewählt werden</li><li>Lebensbedrohliche Zustände werden sofort behandelt</li></ul>",
-        "infekt_info": "<p>Zur Erkältungssaison bieten wir eine separate Infektionssprechstunde an — <strong>nur mit vorherigem Termin</strong>. Die Praxistür bleibt während dieser Zeit verschlossen.</p>",
-        "abend_info": "<p><strong>Abendsprechstunden</strong> sind ausschließlich nach vorheriger Terminvergabe möglich.</p><p><strong>Samstag 09:00–13:00 Uhr</strong> — ebenfalls nur nach Terminvergabe.</p>",
         "color_scheme": "background-2",
         "padding_top": 40,
         "padding_bottom": 40
