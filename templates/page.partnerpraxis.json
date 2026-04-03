@@ -16,7 +16,7 @@
         "padding_bottom": 0
       }
     },
-    "praxen": {
+    "partner": {
       "type": "juvantis-partnerpraxen",
       "settings": {
         "eyebrow": "Juvantis Netzwerk",
@@ -99,6 +99,6 @@
   },
   "order": [
     "main",
-    "praxen"
+    "partner"
   ]
 }
