@@ -293,6 +293,8 @@
                     sizes: '(min-width: 750px) 50vw, 100vw',
                     widths: '375, 550, 750, 800'
                 }}
+              {%- elsif block.settings.asset_image != blank -%}
+                <img src="{{ block.settings.asset_image | asset_url }}" alt="{{ block.settings.name | escape }}" loading="lazy" width="800" height="800" style="width:100%;height:100%;object-fit:cover;">
               {%- else -%}
                 <div class="praxis-team__placeholder">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
@@ -425,6 +427,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Profilbild"
+        },
+        {
+          "type": "text",
+          "id": "asset_image",
+          "label": "Bild-Dateiname (Theme-Asset, z.B. dr-stracke.jpg)"
         },
         {
           "type": "text",
