@@ -35,10 +35,65 @@
             "badge": "Juvantis Partner",
             "link": "/pages/partnerpraxis"
           }
+        },
+        "praxis-urologen": {
+          "type": "praxis",
+          "settings": {
+            "name": "MVZ Offenbacher Urologen",
+            "specialty": "Urologie",
+            "address": "Rowentastraße 2, 63071 Offenbach",
+            "badge": "Juvantis Partner",
+            "link": "https://www.offenbacherurologen.de/"
+          }
+        },
+        "praxis-seelig": {
+          "type": "praxis",
+          "settings": {
+            "name": "Frauenarztpraxis Dr. med. Stefanie K. Seelig",
+            "specialty": "Gynäkologie und Geburtshilfe",
+            "address": "Königsteiner Straße 55, 65812 Bad Soden am Taunus",
+            "badge": "Juvantis Partner",
+            "link": "https://www.praxis-seelig.de/"
+          }
+        },
+        "praxis-psychotherapeutikum": {
+          "type": "praxis",
+          "settings": {
+            "name": "Psychotherapeutikum",
+            "specialty": "Psychologische Diagnostik und Psychotherapie",
+            "address": "Bockenheimer Landstraße 33-35, 60325 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "https://psychotherapeutikum.net/"
+          }
+        },
+        "praxis-arbitmann": {
+          "type": "praxis",
+          "settings": {
+            "name": "Naturheilpraxis Anna Arbitmann",
+            "specialty": "Physiotherapie, Osteopathie und Naturheilkunde",
+            "address": "Kaiserstraße 5, 60311 Frankfurt am Main",
+            "badge": "Juvantis Partner",
+            "link": "https://www.naturheilpraxis-arbitmann.com/"
+          }
+        },
+        "praxis-hno": {
+          "type": "praxis",
+          "settings": {
+            "name": "HNO Praxis Eschborn",
+            "specialty": "Hals-Nasen-Ohren-Heilkunde",
+            "address": "Götzenstraße 47-55, 65760 Eschborn",
+            "badge": "Juvantis Partner",
+            "link": "https://hno-eschborn.de/"
+          }
         }
       },
       "block_order": [
-        "praxis-stracke"
+        "praxis-stracke",
+        "praxis-urologen",
+        "praxis-seelig",
+        "praxis-psychotherapeutikum",
+        "praxis-arbitmann",
+        "praxis-hno"
       ]
     }
   },
