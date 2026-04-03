@@ -100,7 +100,13 @@
     border: none;
     border-radius: 2rem;
     padding: 3.2rem 2.8rem;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #PraxisLeistungen-{{ section.id }} .praxis-leistungen__text {
+    flex: 1;
   }
 
   #PraxisLeistungen-{{ section.id }} .praxis-leistungen__card:hover {
