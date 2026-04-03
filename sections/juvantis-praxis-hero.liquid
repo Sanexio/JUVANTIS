@@ -12,10 +12,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Hide the redundant Shopify page title */
-  .template-page #PraxisHero-{{ section.id }} ~ .shopify-section .main-page-title,
-  #shopify-section-{{ section.id }} + .shopify-section .page-title,
-  #MainContent .section-template--{{ section.id }}__main .page-header { display: none; }
+  /* Hide the redundant Shopify page title above hero */
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
   .section-{{ section.id }}-padding {
     padding-top: 0;
