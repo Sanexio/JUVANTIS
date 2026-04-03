@@ -111,6 +111,19 @@
     line-height: 1.5;
     color: rgba(var(--color-foreground), 0.65);
   }
+
+  #PraxisLeistungen-{{ section.id }} .praxis-leistungen__link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(var(--color-button));
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  #PraxisLeistungen-{{ section.id }} .praxis-leistungen__link:hover {
+    opacity: 0.7;
+  }
 {%- endstyle -%}
 
 <div
@@ -157,6 +170,11 @@
                   {%- endif -%}
                   {%- if block.settings.description != blank -%}
                     <p class="praxis-leistungen__text">{{ block.settings.description | escape }}</p>
+                  {%- endif -%}
+                  {%- if block.settings.link != blank -%}
+                    <a href="{{ block.settings.link }}" class="praxis-leistungen__link">
+                      Jetzt buchen →
+                    </a>
                   {%- endif -%}
                 </div>
               {%- endif -%}
@@ -255,6 +273,11 @@
           "id": "category",
           "default": "Weitere Leistungen",
           "label": "Kategorie"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (z.B. zum Shop-Produkt)"
         }
       ]
     }
