@@ -158,7 +158,13 @@
     border: none;
     border-radius: 2rem;
     padding: 2.4rem 2.8rem;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-content {
+    flex: 1;
   }
 
   #PraxisZeiten-{{ section.id }} .praxis-zeiten__extra-card:hover {
