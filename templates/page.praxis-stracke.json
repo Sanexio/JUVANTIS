@@ -74,163 +74,276 @@
     "leistungen": {
       "type": "juvantis-praxis-leistungen",
       "blocks": {
-        "svc-gesundheit": {
+        "p-praevention": {
           "type": "service",
           "settings": {
-            "icon": "🩺",
-            "image_url": "//sanexio.eu/cdn/shop/products/CheckUpLabor1080x1080.jpg?v=1679737368&width=128",
-            "name": "Gesundheits-Check-Up",
-            "description": "Umfassende Vorsorge mit Risikoanalyse, Dauer 2–3 Stunden je nach Risikoprofil. Zwei Schwerpunkte: Tumorrisiko-Bewertung und kardiovaskuläre Gesundheit.",
+            "image_url": "//sanexio.eu/cdn/shop/products/KomplettCheck1080x1080.jpg?width=600",
+            "name": "Präventionsprogramm",
+            "description": "Umfassende Vorsorge mit Risikoanalyse. Kardiovaskuläre Gesundheit und Tumorrisiko-Bewertung in einem Termin.",
             "category": "Check-Up-Programme",
-            "link": "/products/bloody-check"
+            "link": "/products/komplett-check"
           }
         },
-        "svc-cardio": {
+        "p-kardio": {
           "type": "service",
           "settings": {
-            "icon": "🫀",
-            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
-            "name": "Cardio-Check-Up",
-            "description": "Herzdiagnostik mit Belastungs-EKG (Ergometrie). Erkennung von Koronararterienverkalkungen unter Belastung.",
+            "image_url": "//sanexio.eu/cdn/shop/products/Herz1080x1080.jpg?width=600",
+            "name": "Kardio Check",
+            "description": "Herzdiagnostik mit Echokardiographie und Belastungs-EKG zur Erkennung kardiovaskulärer Risiken.",
             "category": "Check-Up-Programme",
-            "link": "/products/ultraschall-echokardiographie"
+            "link": "/products/kardio-check"
           }
         },
-        "svc-angio": {
+        "p-body": {
           "type": "service",
           "settings": {
-            "icon": "🩸",
-            "image_url": "//sanexio.eu/cdn/shop/files/Atherosklerose.jpg?v=1722190405&width=128",
-            "name": "Angio-Check-Up",
-            "description": "Gefäßdiagnostik mit Carotis-Duplex, Bauchaorta-Screening und Beingefäß-Untersuchung.",
+            "image_url": "//sanexio.eu/cdn/shop/products/BodyCheck1080x1080.jpg?width=600",
+            "name": "Body Check",
+            "description": "Ganzkörper-Screening mit Ultraschall der inneren Organe, Schilddrüse und Gefäße.",
             "category": "Check-Up-Programme",
-            "link": "/products/halsschlagadern-quick-check"
+            "link": "/products/body-check"
           }
         },
-        "svc-tumor": {
+        "p-diving": {
           "type": "service",
           "settings": {
-            "icon": "🔬",
-            "image_url": "//sanexio.eu/cdn/shop/files/SD-Tumor.jpg?v=1684425118&width=128",
-            "name": "Tumorscreening",
-            "description": "Gezielte Krebsvorsorge als Teil des Check-Up-Programms. Umfassender als das Standard-Vorsorgeprogramm.",
+            "image_url": "//sanexio.eu/cdn/shop/products/Diving1080x1080.jpg?width=600",
+            "name": "Fit for Diving",
+            "description": "Tauchtauglichkeitsuntersuchung nach GTÜM-Richtlinien mit Belastungs-EKG und Lungenfunktion.",
             "category": "Check-Up-Programme",
-            "link": "/products/sono-check"
+            "link": "/products/fit-for-diving"
           }
         },
-        "svc-echo": {
+        "p-echo": {
           "type": "service",
           "settings": {
-            "icon": "💓",
-            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
+            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?width=600",
             "name": "Echokardiographie",
             "description": "Herzultraschall zur Beurteilung von Pumpfunktion, Herzklappen und Wandbewegungsstörungen.",
             "category": "Ultraschall-Diagnostik",
             "link": "/products/ultraschall-echokardiographie"
           }
         },
-        "svc-carotis": {
+        "p-carotis": {
           "type": "service",
           "settings": {
-            "icon": "🔍",
-            "image_url": "//sanexio.eu/cdn/shop/files/Halsgefaesse_m.jpg?v=1684404241&width=128",
-            "name": "Carotis-Duplex",
-            "description": "Ultraschall der Halsschlagadern: Intima-Media-Komplex, Plaque-Darstellung und farbkodierte Duplexsonografie.",
+            "image_url": "//sanexio.eu/cdn/shop/files/Halsgefaesse_m.jpg?width=600",
+            "name": "Halsschlagadern",
+            "description": "Carotis-Duplex: Intima-Media-Komplex, Plaque-Darstellung und farbkodierte Duplexsonografie.",
             "category": "Ultraschall-Diagnostik",
             "link": "/products/halsschlagadern-quick-check"
           }
         },
-        "svc-schilddruese": {
+        "p-sono-komplett": {
           "type": "service",
           "settings": {
-            "icon": "🦋",
-            "image_url": "//sanexio.eu/cdn/shop/files/SD-Tumor.jpg?v=1684425118&width=128",
-            "name": "Schilddrüsen-Sonographie",
-            "description": "Erkennung von Struma, Knoten und bösartigen Veränderungen. Bei Bedarf Weiterleitung zu Szintigrafie oder Feinnadelpunktion.",
+            "image_url": "//sanexio.eu/cdn/shop/products/SonoCheck1080x1080.jpg?width=600",
+            "name": "Ultraschall Komplett",
+            "description": "Umfassende Sonografie aller relevanten Organsysteme in einer Sitzung.",
             "category": "Ultraschall-Diagnostik",
-            "link": "/products/ultraschall-schilddruse-krebsscreening"
+            "link": "/products/sono-check"
           }
         },
-        "svc-bein": {
+        "p-sono-abdomen": {
           "type": "service",
           "settings": {
-            "icon": "🦵",
-            "image_url": "//sanexio.eu/cdn/shop/files/Atherosklerose.jpg?v=1722190405&width=128",
-            "name": "Ultraschall Beingefäße",
-            "description": "ABI (Knöchel-Arm-Index) zur Erkennung der Schaufensterkrankheit. Duplex bei Thrombose-Verdacht und Durchblutungsstörungen.",
-            "category": "Ultraschall-Diagnostik"
-          }
-        },
-        "svc-sono": {
-          "type": "service",
-          "settings": {
-            "icon": "📱",
-            "image_url": "//sanexio.eu/cdn/shop/products/SonoAbdomen1080x1080.jpg?v=1679737045&width=128",
-            "name": "Abdomineller Ultraschall",
-            "description": "Ultraschall des Bauchraums: Leber, Gallenwege, Bauchspeicheldrüse, Milz, Nieren, Prostata/Gebärmutter sowie Bewegungsapparat.",
+            "image_url": "//sanexio.eu/cdn/shop/products/SonoAbdomen1080x1080.jpg?width=600",
+            "name": "Bauchorgane",
+            "description": "Ultraschall von Leber, Gallenwege, Bauchspeicheldrüse, Milz, Nieren und Bewegungsapparat.",
             "category": "Ultraschall-Diagnostik",
             "link": "/products/sono-abdomen"
           }
         },
-        "svc-ekg": {
+        "p-schilddruese": {
           "type": "service",
           "settings": {
-            "icon": "🏃",
-            "image_url": "//sanexio.eu/cdn/shop/files/Herz42000x2000.jpg?v=1685212574&width=128",
-            "name": "Belastungs-EKG (Ergometrie)",
-            "description": "Provokation einer Minderdurchblutung unter Belastung zur Erkennung von Verkalkungen der Herzkranzgefäße.",
-            "category": "Weitere Diagnostik"
+            "image_url": "//sanexio.eu/cdn/shop/files/SD-Tumor.jpg?width=600",
+            "name": "Schilddrüse",
+            "description": "Erkennung von Struma, Knoten und bösartigen Veränderungen der Schilddrüse.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-schilddruse-krebsscreening"
           }
         },
-        "svc-lunge": {
+        "p-leber": {
           "type": "service",
           "settings": {
-            "icon": "🫁",
-            "image_url": "//sanexio.eu/cdn/shop/products/Lunge21080x1080.jpg?v=1679736966&width=128",
-            "name": "Lungenfunktion (Spirometrie)",
-            "description": "Bei Atemwegserkrankungen (COPD, Asthma), chronischem Husten, präoperativ und arbeitsmedizinisch.",
-            "category": "Weitere Diagnostik"
+            "image_url": "//sanexio.eu/cdn/shop/files/Lebertumor2.jpg?width=600",
+            "name": "Leber und Gallenblase",
+            "description": "Ultraschall zur Früherkennung von Leberveränderungen, Gallensteinleiden und Tumoren.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-leber-krebsscreening"
           }
         },
-        "svc-labor": {
+        "p-niere": {
           "type": "service",
           "settings": {
-            "icon": "🧪",
-            "image_url": "//sanexio.eu/cdn/shop/products/CheckUpLabor1080x1080.jpg?v=1679737368&width=128",
-            "name": "Labordiagnostik",
-            "description": "Blutbild, Nierenwerte, Leberwerte, Schilddrüse, Herzenzyme, Entzündungsmarker, Cholesterin, HbA1C, Tumormarker, Borrelien, Laktose-/Glutenintoleranz, Rheumafaktoren, Impf-Antikörper und vieles mehr.",
-            "category": "Weitere Diagnostik",
+            "image_url": "//sanexio.eu/cdn/shop/files/Niere.jpg?width=600",
+            "name": "Nieren und Harnwege",
+            "description": "Sonografie der Nieren, Harnleiter und Harnblase zur Erkennung von Steinen und Tumoren.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-niere-und-ableitende-harnwege-krebsscreening"
+          }
+        },
+        "p-prostata": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Prostata.jpg?width=600",
+            "name": "Prostata und Harnblase",
+            "description": "Ultraschall der Prostata und Harnblase zur Krebsfrüherkennung und Restharnbestimmung.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-prostata-und-harnblase-krebsscreening"
+          }
+        },
+        "p-pankreas": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Pankreas.jpg?width=600",
+            "name": "Bauchspeicheldrüse",
+            "description": "Gezielte Sonografie des Pankreas zur Früherkennung des Pankreaskarzinoms.",
+            "category": "Ultraschall-Diagnostik",
+            "link": "/products/ultraschall-bauchspeicheldruse-krebsscreening-pankreaskarzinom"
+          }
+        },
+        "p-ekg": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/products/Herz11080x1080.jpg?width=600",
+            "name": "Belastungs-EKG",
+            "description": "Ergometrie zur Erkennung von Koronararterienverkalkungen unter Belastung.",
+            "category": "Funktionsdiagnostik",
+            "link": "/products/ergometrie"
+          }
+        },
+        "p-lunge": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/products/Lunge21080x1080.jpg?width=600",
+            "name": "Spirometrie",
+            "description": "Lungenfunktionsprüfung bei COPD, Asthma, chronischem Husten und präoperativ.",
+            "category": "Funktionsdiagnostik",
+            "link": "/products/air-pump-test"
+          }
+        },
+        "p-eye": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/products/Auge1080x1080.jpg?width=600",
+            "name": "Eye Check",
+            "description": "Augenuntersuchung mit Reaktionszeitmessung und Sehfunktionstest.",
+            "category": "Funktionsdiagnostik",
+            "link": "/products/gaming-reaktionszeit"
+          }
+        },
+        "p-lab-prevent": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/STATUSP_REVENT_Teaser.png?width=600",
+            "name": "STATUS: PREVENT",
+            "description": "Umfassendes Präventionslabor mit Risikomarkern für Herz, Gefäße und Stoffwechsel.",
+            "category": "Labordiagnostik",
+            "link": "/products/labor-pravention"
+          }
+        },
+        "p-lab-advanced": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/STATUSADVANCED-ExtendedHealthReadout.png?width=600",
+            "name": "STATUS: ADVANCED",
+            "description": "Erweitertes Laborprofil mit Schilddrüse, Entzündungsmarkern und Tumormarkern.",
+            "category": "Labordiagnostik",
             "link": "/products/labor-check-up"
           }
         },
-        "svc-impf": {
+        "p-lab-baseline": {
           "type": "service",
           "settings": {
-            "icon": "💉",
-            "name": "Impfungen",
-            "description": "Impfbuch-Check, individueller Impfplan mit automatischer Terminerinnerung. Influenza, Pneumokokken, FSME, Hepatitis, Reiseimpfungen.",
-            "category": "Weitere Diagnostik"
+            "image_url": "//sanexio.eu/cdn/shop/files/STATUSBASELINE-InitialHealthReadout.png?width=600",
+            "name": "STATUS: BASELINE",
+            "description": "Basis-Laborprofil: Blutbild, Leber, Niere, Cholesterin und Blutzucker.",
+            "category": "Labordiagnostik",
+            "link": "/products/labor-mini-check-up"
+          }
+        },
+        "p-lab-risiko": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/products/CheckUpLabor1080x1080.jpg?width=600",
+            "name": "Labor Risikoprofil",
+            "description": "Gezieltes Labor für kardiovaskuläre Risikoabschätzung und metabolisches Screening.",
+            "category": "Labordiagnostik",
+            "link": "/products/bloody-check"
+          }
+        },
+        "p-lab-stoffwechsel": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Atherosklerose.jpg?width=600",
+            "name": "Labor Stoffwechsel",
+            "description": "Stoffwechselprofil mit Lipidstatus, HbA1c und Entzündungsmarkern.",
+            "category": "Labordiagnostik",
+            "link": "/products/bloody-check-risikolabor-kopie"
+          }
+        },
+        "p-lab-renal": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Niere-BEangepasst.jpg?width=600",
+            "name": "SYSTEM: RENAL",
+            "description": "Nierenfunktionsprofil mit Kreatinin, GFR, Elektrolyte und Urindiagnostik.",
+            "category": "Labordiagnostik",
+            "link": "/products/bloody-check-stoffwechsel-kopie"
+          }
+        },
+        "p-lab-liver": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Leber-BEangepasst.jpg?width=600",
+            "name": "SYSTEM: LIVER",
+            "description": "Leberfunktionsprofil mit Transaminasen, Bilirubin und Syntheseparametern.",
+            "category": "Labordiagnostik",
+            "link": "/products/bloody-check-risikolabor-kopie-1"
+          }
+        },
+        "p-lab-immune": {
+          "type": "service",
+          "settings": {
+            "image_url": "//sanexio.eu/cdn/shop/files/Immunsystemangepasst.jpg?width=600",
+            "name": "SYSTEM: IMMUNE",
+            "description": "Immunstatus mit Differentialblutbild, Immunglobulinen und Entzündungsmarkern.",
+            "category": "Labordiagnostik",
+            "link": "/products/labor-abwehr-immunsystem"
           }
         }
       },
       "block_order": [
-        "svc-gesundheit",
-        "svc-cardio",
-        "svc-angio",
-        "svc-tumor",
-        "svc-echo",
-        "svc-carotis",
-        "svc-schilddruese",
-        "svc-bein",
-        "svc-sono",
-        "svc-ekg",
-        "svc-lunge",
-        "svc-labor",
-        "svc-impf"
+        "p-praevention",
+        "p-kardio",
+        "p-body",
+        "p-diving",
+        "p-echo",
+        "p-carotis",
+        "p-sono-komplett",
+        "p-sono-abdomen",
+        "p-schilddruese",
+        "p-leber",
+        "p-niere",
+        "p-prostata",
+        "p-pankreas",
+        "p-ekg",
+        "p-lunge",
+        "p-eye",
+        "p-lab-prevent",
+        "p-lab-advanced",
+        "p-lab-baseline",
+        "p-lab-risiko",
+        "p-lab-stoffwechsel",
+        "p-lab-renal",
+        "p-lab-liver",
+        "p-lab-immune"
       ],
       "settings": {
         "heading": "Unsere Leistungen",
-        "description": "Umfassende hausärztliche und internistische Versorgung mit modernster Diagnostik",
+        "description": "Umfassende hausärztliche und internistische Versorgung mit modernster Diagnostik. Alle Untersuchungen direkt online buchbar.",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 40
