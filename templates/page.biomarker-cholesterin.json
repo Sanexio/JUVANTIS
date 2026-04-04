@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "Cholesterin",
+        "heading": "Cholesterin (Gesamt, LDL, HDL) — Dein Gefaessrisiko-Marker",
+        "category": "Stoffwechsel",
+        "short_description": "Cholesterin ist ein lebenswichtiges Blutfett, das dein Koerper fuer Zellmembranen, Hormone und Vitamin D braucht. Zu viel LDL-Cholesterin lagert sich jedoch in den Gefaesswaenden ab und erhoeht das Risiko fuer Herzinfarkt und Schlaganfall.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist Cholesterin?",
+            "content": "<p>Cholesterin ist ein fettaehnlicher Stoff, den dein Koerper zum groessten Teil selbst herstellt (ca. 70-80% in der Leber). Der Rest kommt aus der Nahrung. Es ist unverzichtbar fuer den Aufbau von Zellmembranen, die Produktion von Steroidhormonen (Cortisol, Testosteron, Oestrogen) und die Bildung von Gallensaeuren.</p><p>Man unterscheidet LDL-Cholesterin (Low Density Lipoprotein — das sogenannte schlechte Cholesterin, das sich in Gefaesswaenden ablagert) und HDL-Cholesterin (High Density Lipoprotein — das gute Cholesterin, das ueberschuessiges Cholesterin zurueck zur Leber transportiert).</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Gesamtcholesterin: unter 200 mg/dl (optimal) | LDL (niedriges Risiko): unter 116 mg/dl | LDL (hohes Risiko): unter 70 mg/dl | LDL (sehr hohes Risiko): unter 55 mg/dl | HDL Maenner: ueber 40 mg/dl | HDL Frauen: ueber 50 mg/dl | Triglyceride: unter 150 mg/dl"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Ein erhoehtes LDL-Cholesterin (Hypercholesterinaemie) ist einer der wichtigsten Risikofaktoren fuer Atherosklerose — die Verkalkung und Verengung der Blutgefaesse. Im Laufe der Jahre lagert sich ueberschuessiges LDL in den Gefaesswaenden ab und bildet sogenannte Plaques.</p><p>Ursachen fuer erhoehte Werte: Genetische Veranlagung (familiaere Hypercholesterinaemie betrifft ca. 1 von 250 Menschen), fett- und cholesterinreiche Ernaehrung, Bewegungsmangel, Uebergewicht, Schilddruesenunterfunktion, Diabetes und bestimmte Nierenerkrankungen.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein niedriges LDL-Cholesterin ist aus kardiovaskulaerer Sicht erstrebenswert. Bei Gesamtcholesterin unter 120 mg/dl sollte man allerdings nach Ursachen suchen: Leber­erkrankungen, Schilddruesen­ueberfunktion, Mana­b­sorp­tion oder chronische Infektionen koennen dahinterstecken.</p><p>Ein niedriges HDL-Cholesterin (unter 40 mg/dl bei Maennern, unter 50 mg/dl bei Frauen) ist ein eigenstaendiger Risikofaktor fuer Herz-Kreislauf-Erkrankungen. Ursachen sind Rauchen, Bewegungsmangel, Uebergewicht und genetische Faktoren.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>Erhoehtes Cholesterin verursacht lange Zeit keine Symptome — es ist ein stiller Risikofaktor. Erst wenn die Gefaessverengung fortgeschritten ist, koennen Beschwerden auftreten:</p><p>Brustschmerzen bei Belastung (Angina pectoris). Schmerzen in den Beinen beim Gehen (Schaufensterkrankheit). Im schlimmsten Fall Herzinfarkt oder Schlaganfall. Bei extrem hohen Werten (familiaere Hypercholesterinaemie): gelbliche Ablagerungen an Augenlidern (Xanthelasmen) oder Sehnen (Xanthome).</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Ernaehrung: Gesaettigte Fette (Wurst, Kaese, Butter, Frittiertes) reduzieren und durch ungesaettigte Fette ersetzen (Olivenoel, Nuesse, Avocado, fetter Seefisch). Ballaststoffreiche Lebensmittel (Hafer, Huelsenfruechte, Gemuese) koennen LDL um 5-10% senken.</p><p>Bewegung: 150 Minuten moderate Ausdauer pro Woche erhoehen HDL und senken LDL. Rauchen aufhoeren: Verbessert HDL erheblich. Gewicht: Schon 5-10% Gewichtsabnahme verbessern das Lipidprofil deutlich. Medikamente: Bei hohem Risiko oder genetischer Belastung koennen Statine das LDL um 30-50% senken — besprich das mit deinem Arzt.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "Triglyceride | HbA1c:/pages/biomarker-hba1c | CRP:/pages/biomarker-crp"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}

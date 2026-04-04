@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "seo": {
+      "type": "juvantis-seo-page",
+      "settings": {
+        "badge": "Therapie",
+        "heading": "Infusionstherapie: Naehrstoffe direkt dorthin, wo sie wirken",
+        "intro": "Infusionstherapien umgehen den Magen-Darm-Trakt und bringen Vitamine, Mineralstoffe und Wirkstoffe direkt in deine Blutbahn. Das bedeutet: 100 % Bioverfuegbarkeit, schnellere Wirkung und hoehere Dosierungen als mit Tabletten moeglich waere.",
+        "table_col1": "Infusion",
+        "table_col2": "Dauer",
+        "table_col3": "Preis",
+        "cta_label": "Beratungstermin buchen",
+        "cta_link": "shopify://pages/contact",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "h2_angebote": {
+          "type": "heading",
+          "settings": {
+            "text": "Unsere Infusionstherapien"
+          }
+        },
+        "rt_angebote_intro": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Alle Infusionen werden unter aerztlicher Aufsicht in unserer Praxis im Frankfurter Westend verabreicht. Vor jeder Erstbehandlung findet ein Beratungsgespraech statt, um die optimale Therapie fuer dich zu bestimmen.</p>"
+          }
+        },
+        "card_vitc": {
+          "type": "card",
+          "settings": {
+            "icon": "🍊",
+            "title": "Vitamin-C-Hochdosis",
+            "description": "7,5 bis 15 g Vitamin C intravenoes. Staerkt das Immunsystem, wirkt antioxidativ und unterstuetzt die Regeneration nach Infekten, Operationen oder bei chronischer Muedigkeit."
+          }
+        },
+        "card_eisen": {
+          "type": "card",
+          "settings": {
+            "icon": "🩸",
+            "title": "Eisen-Infusion",
+            "description": "Schnelle Auffuellung der Eisenspeicher bei nachgewiesenem Eisenmangel. Deutlich wirksamer als orale Praeparate -- besonders bei Unvertraeglichkeit von Eisentabletten."
+          }
+        },
+        "card_nad": {
+          "type": "card",
+          "settings": {
+            "icon": "⚡",
+            "title": "NAD+ Infusion",
+            "description": "Nicotinamid-Adenin-Dinukleotid ist ein zentrales Coenzym fuer Zellreparatur und Energiestoffwechsel. NAD+-Infusionen werden in der Longevity-Medizin zur Unterstuetzung der Zellgesundheit eingesetzt."
+          }
+        },
+        "card_myers": {
+          "type": "card",
+          "settings": {
+            "icon": "💉",
+            "title": "Myers' Cocktail",
+            "description": "Der Klassiker der Infusionsmedizin: Ein Mix aus Magnesium, Calcium, B-Vitaminen und Vitamin C. Bewaehrt bei Erschoepfung, Migraene und allgemeinem Naehrstoffmangel."
+          }
+        },
+        "card_immun": {
+          "type": "card",
+          "settings": {
+            "icon": "🛡️",
+            "title": "Immun-Boost",
+            "description": "Hochdosierter Mix aus Zink, Selen, Vitamin C und B-Vitaminen. Ideal zur Staerkung des Immunsystems in der Erkaeltungszeit oder nach laengerer Belastung."
+          }
+        },
+        "h2_fuer_wen": {
+          "type": "heading",
+          "settings": {
+            "text": "Fuer wen ist Infusionstherapie geeignet?"
+          }
+        },
+        "rt_fuer_wen": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Infusionstherapien eignen sich fuer verschiedene Situationen und Zielgruppen:</p><p>Chronische Muedigkeit und Erschoepfung -- wenn trotz ausreichend Schlaf die Energie fehlt. Nachgewiesener Naehrstoffmangel, insbesondere Eisen, Vitamin D oder B12. Regeneration nach Infekten, Operationen oder intensivem Sport. Praevention und Longevity -- fuer Menschen, die proaktiv in ihre Gesundheit investieren.</p><p>Wichtig: Jede Infusionstherapie bei Juvantis basiert auf einer vorherigen Laboranalyse. Wir infundieren nicht auf Verdacht, sondern gezielt auf Basis deiner Blutwerte.</p>"
+          }
+        },
+        "h2_ablauf": {
+          "type": "heading",
+          "settings": {
+            "text": "Ablauf & Sicherheit"
+          }
+        },
+        "rt_ablauf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Deine Infusionstherapie bei Juvantis ist sicher, komfortabel und aerztlich begleitet:</p>"
+          }
+        },
+        "card_beratung": {
+          "type": "card",
+          "settings": {
+            "icon": "🗣️",
+            "title": "Beratungsgespraech",
+            "description": "Vor der ersten Infusion besprechen wir deine Laborwerte, Vorerkrankungen und Ziele. So stellen wir sicher, dass die Therapie optimal zu dir passt."
+          }
+        },
+        "card_durchfuehrung": {
+          "type": "card",
+          "settings": {
+            "icon": "🪑",
+            "title": "Komfortable Behandlung",
+            "description": "Die Infusion erfolgt im Sitzen oder Liegen in unserer Praxis. Dauer je nach Infusion 20 bis 90 Minuten. Du kannst lesen, arbeiten oder einfach entspannen."
+          }
+        },
+        "card_sicherheit": {
+          "type": "card",
+          "settings": {
+            "icon": "✅",
+            "title": "Aerztliche Ueberwachung",
+            "description": "Waehrend der gesamten Infusion bist du unter aerztlicher Aufsicht. Allergische Reaktionen sind selten, aber wir sind auf alles vorbereitet."
+          }
+        },
+        "info_hinweis": {
+          "type": "info",
+          "settings": {
+            "content": "<p><strong>Wichtiger Hinweis:</strong> Infusionstherapien sind keine Kassenleistung und werden als IGeL-Leistung (Individuelle Gesundheitsleistung) abgerechnet. Wir beraten dich transparent zu allen Kosten.</p>"
+          }
+        },
+        "h2_preise": {
+          "type": "heading",
+          "settings": {
+            "text": "Preise im Ueberblick"
+          }
+        },
+        "row_vitc": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Vitamin-C-Hochdosis",
+            "col2": "ca. 45 Min.",
+            "col3": "ab 89 EUR"
+          }
+        },
+        "row_eisen": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Eisen-Infusion",
+            "col2": "ca. 30 Min.",
+            "col3": "ab 149 EUR"
+          }
+        },
+        "row_nad": {
+          "type": "table_row",
+          "settings": {
+            "col1": "NAD+ Infusion",
+            "col2": "ca. 60-90 Min.",
+            "col3": "ab 249 EUR"
+          }
+        },
+        "row_myers": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Myers' Cocktail",
+            "col2": "ca. 30 Min.",
+            "col3": "ab 119 EUR"
+          }
+        },
+        "row_immun": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Immun-Boost",
+            "col2": "ca. 30 Min.",
+            "col3": "ab 99 EUR"
+          }
+        },
+        "highlight_kombination": {
+          "type": "highlight",
+          "settings": {
+            "title": "Infusion + Laborcheck = maximaler Effekt",
+            "text": "Die staerkste Wirkung erzielst du, wenn Infusionstherapie auf echten Labordaten basiert. Deshalb empfehlen wir: Erst testen, dann gezielt auffuellen. Kombiniere deinen Bloody Check mit einer passenden Infusion."
+          }
+        }
+      },
+      "block_order": [
+        "h2_angebote",
+        "rt_angebote_intro",
+        "card_vitc",
+        "card_eisen",
+        "card_nad",
+        "card_myers",
+        "card_immun",
+        "h2_fuer_wen",
+        "rt_fuer_wen",
+        "h2_ablauf",
+        "rt_ablauf",
+        "card_beratung",
+        "card_durchfuehrung",
+        "card_sicherheit",
+        "info_hinweis",
+        "h2_preise",
+        "row_vitc",
+        "row_eisen",
+        "row_nad",
+        "row_myers",
+        "row_immun",
+        "highlight_kombination"
+      ]
+    }
+  },
+  "order": ["main", "seo"]
+}
