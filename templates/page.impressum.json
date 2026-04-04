@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "legal": {
+      "type": "juvantis-legal",
+      "settings": {
+        "badge_text": "Rechtliches",
+        "heading": "Impressum",
+        "subtitle": "Angaben gemäß § 5 TMG",
+        "show_date": true,
+        "last_updated": "April 2026",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "company": {
+          "type": "heading",
+          "settings": {
+            "text": "Betreiber"
+          }
+        },
+        "company_info": {
+          "type": "contact_card",
+          "settings": {
+            "content": "<p><strong>Sanexio GmbH</strong><br>Grüneburgweg 12<br>60322 Frankfurt am Main</p><p><strong>Geschäftsführer:</strong> Dr. med. Siegbert Stracke, MBA<br><strong>Registergericht:</strong> Amtsgericht Frankfurt am Main<br><strong>HRB:</strong> [wird ergänzt]<br><strong>USt-IdNr:</strong> [wird ergänzt]</p>"
+          }
+        },
+        "contact_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Kontakt"
+          }
+        },
+        "contact_info": {
+          "type": "contact_card",
+          "settings": {
+            "content": "<p><strong>Telefon:</strong> 069 727819<br><strong>Privatpatienten:</strong> 069 247 574 526<br><strong>Fax:</strong> 069 97206408<br><strong>E-Mail:</strong> praxis@westend-hausarzt.de</p>"
+          }
+        },
+        "responsible_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Verantwortlich für den Inhalt"
+          }
+        },
+        "responsible_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Verantwortlich gemäß § 55 Abs. 2 RStV:<br><strong>Dr. med. Siegbert Stracke, MBA</strong><br>Grüneburgweg 12, 60322 Frankfurt am Main</p>"
+          }
+        },
+        "profession_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Berufsrechtliche Angaben"
+          }
+        },
+        "profession_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p><strong>Berufsbezeichnung:</strong> Facharzt für Innere Medizin (verliehen in der Bundesrepublik Deutschland)</p><p><strong>Zuständige Kammer:</strong> Landesärztekammer Hessen</p><p><strong>Zuständige KV:</strong> Kassenärztliche Vereinigung Hessen</p><p><strong>Berufsordnung:</strong> Berufsordnung der Landesärztekammer Hessen — <a href=\"https://www.laekh.de\" target=\"_blank\" rel=\"noopener\">www.laekh.de</a></p>"
+          }
+        },
+        "dispute_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Streitschlichtung"
+          }
+        },
+        "dispute_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href=\"https://ec.europa.eu/consumers/odr\" target=\"_blank\" rel=\"noopener\">ec.europa.eu/consumers/odr</a></p><p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>"
+          }
+        },
+        "liability_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Haftung für Inhalte"
+          }
+        },
+        "liability_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p><p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>"
+          }
+        },
+        "links_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Haftung für Links"
+          }
+        },
+        "links_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p><p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>"
+          }
+        },
+        "copyright_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Urheberrecht"
+          }
+        },
+        "copyright_info": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "company",
+        "company_info",
+        "contact_heading",
+        "contact_info",
+        "responsible_heading",
+        "responsible_info",
+        "profession_heading",
+        "profession_info",
+        "dispute_heading",
+        "dispute_info",
+        "liability_heading",
+        "liability_info",
+        "links_heading",
+        "links_info",
+        "copyright_heading",
+        "copyright_info"
+      ]
+    }
+  },
+  "order": ["main", "legal"]
+}
