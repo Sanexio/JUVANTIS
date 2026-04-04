@@ -1,217 +1,269 @@
 {%- comment -%}
   Juvantis Section: Biomarker-Lexikon Hub
   Zweck: Uebersichtsseite aller Biomarker mit Suche und Kategorien
+  Design: Apple-inspired Design System
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
 {%- if template.suffix == 'biomarker' -%}
 
 {%- style -%}
-  .jv-bio-hub {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #BioHub-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-bio-hub__container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
-
-  .jv-bio-hub__hero { text-align: center; padding: 3rem 0 2rem; }
-
-  .jv-bio-hub__badge {
-    display: inline-flex;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1.2rem;
-  }
-
-  .jv-bio-hub__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 0.8rem;
-  }
-
-  .jv-bio-hub__hero p {
-    color: var(--jv-text-sec);
-    max-width: 38rem;
+  #BioHub-{{ section.id }} .hub-container {
+    max-width: 72rem;
     margin: 0 auto;
-    line-height: 1.7;
+    padding: 0 2rem;
+  }
+
+  /* Hero */
+  #BioHub-{{ section.id }} .hub-hero {
+    text-align: center;
+    padding: 4rem 0 2.4rem;
+  }
+
+  #BioHub-{{ section.id }} .hub-label {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--apple-text-tertiary);
+    margin-bottom: 1.6rem;
+  }
+
+  #BioHub-{{ section.id }} .hub-hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin: 0 0 1.6rem;
+    color: var(--apple-text);
+  }
+
+  #BioHub-{{ section.id }} .hub-hero p {
+    color: var(--apple-text-secondary);
+    max-width: 48rem;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    line-height: 1.53;
   }
 
   /* Search */
-  .jv-bio-hub__search {
-    max-width: 32rem;
-    margin: 0 auto 2.5rem;
+  #BioHub-{{ section.id }} .hub-search {
+    max-width: 36rem;
+    margin: 0 auto 3.2rem;
     position: relative;
   }
 
-  .jv-bio-hub__search-input {
+  #BioHub-{{ section.id }} .hub-search-input {
     width: 100%;
-    padding: 0.85rem 1.2rem 0.85rem 3rem;
-    border: 1px solid var(--jv-border);
+    padding: 1.2rem 1.6rem 1.2rem 4rem;
+    border: none;
     border-radius: 2rem;
-    font-family: inherit;
-    font-size: 0.95rem;
-    background: var(--jv-bg);
-    color: var(--jv-text);
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
+    background: var(--apple-bg-gray);
+    color: var(--apple-text);
     outline: none;
-    transition: border-color 0.2s;
+    transition: box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-bio-hub__search-input:focus {
-    border-color: var(--jv-teal);
+  #BioHub-{{ section.id }} .hub-search-input:focus {
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.3);
   }
 
-  .jv-bio-hub__search-icon {
+  #BioHub-{{ section.id }} .hub-search-input::placeholder {
+    color: var(--apple-text-tertiary);
+  }
+
+  #BioHub-{{ section.id }} .hub-search-icon {
     position: absolute;
-    left: 1.1rem;
+    left: 1.4rem;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.1rem;
-    opacity: 0.4;
     pointer-events: none;
+    color: var(--apple-text-tertiary);
   }
 
-  /* Categories */
-  .jv-bio-hub__grid {
+  #BioHub-{{ section.id }} .hub-search-icon svg {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+  }
+
+  /* Category grid */
+  #BioHub-{{ section.id }} .hub-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 1.6rem;
     margin-bottom: 3rem;
   }
 
   @media (min-width: 750px) {
-    .jv-bio-hub__grid {
+    #BioHub-{{ section.id }} .hub-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 990px) {
-    .jv-bio-hub__grid {
-      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    #BioHub-{{ section.id }} .hub-grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
     }
   }
 
-  .jv-bio-hub__cat {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.8rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  #BioHub-{{ section.id }} .hub-cat {
+    background: var(--apple-bg-gray);
+    border-radius: 2rem;
+    padding: 2.4rem;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: hubFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-bio-hub__cat:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  #BioHub-{{ section.id }} .hub-cat:nth-child(1) { animation-delay: 0s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(2) { animation-delay: 0.12s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(3) { animation-delay: 0.24s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(4) { animation-delay: 0.36s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(5) { animation-delay: 0.48s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(6) { animation-delay: 0.60s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(7) { animation-delay: 0.72s; }
+  #BioHub-{{ section.id }} .hub-cat:nth-child(8) { animation-delay: 0.84s; }
+
+  @keyframes hubFadeIn-{{ section.id }} {
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  .jv-bio-hub__cat[hidden] { display: none; }
+  #BioHub-{{ section.id }} .hub-cat:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
+  }
 
-  .jv-bio-hub__cat-icon { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+  #BioHub-{{ section.id }} .hub-cat[hidden] { display: none; }
 
-  .jv-bio-hub__cat-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.1rem;
+  #BioHub-{{ section.id }} .hub-cat-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #BioHub-{{ section.id }} .hub-cat-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--apple-text);
+  }
+
+  #BioHub-{{ section.id }} .hub-cat-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.6rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 1rem;
+    color: var(--apple-text);
   }
 
-  .jv-bio-hub__cat-links {
+  #BioHub-{{ section.id }} .hub-cat-links {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .jv-bio-hub__cat-links li { padding: 0.3rem 0; }
-
-  .jv-bio-hub__cat-links a {
-    color: var(--jv-teal);
-    text-decoration: none;
-    font-size: 0.88rem;
-    transition: color 0.2s;
+  #BioHub-{{ section.id }} .hub-cat-links li {
+    padding: 0.4rem 0;
   }
 
-  .jv-bio-hub__cat-links a:hover {
-    color: var(--jv-teal-light);
+  #BioHub-{{ section.id }} .hub-cat-links a {
+    color: var(--apple-link);
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    transition: opacity 0.2s;
+  }
+
+  #BioHub-{{ section.id }} .hub-cat-links a:hover {
     text-decoration: underline;
   }
 
-  .jv-bio-hub__no-results {
+  #BioHub-{{ section.id }} .hub-cat-links span {
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
+  }
+
+  #BioHub-{{ section.id }} .hub-no-results {
     text-align: center;
-    color: var(--jv-text-sec);
-    padding: 2rem 0;
+    color: var(--apple-text-secondary);
+    font-size: 1.7rem;
+    padding: 3rem 0;
     display: none;
   }
 
-  @supports (animation-timeline: view()) {
-    .jv-bio-hub__cat {
-      animation: jvBioFade 0.5s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 35%;
-    }
-  }
-
-  @keyframes jvBioFade {
-    from { opacity: 0; transform: translateY(1.5rem); }
-    to { opacity: 1; transform: translateY(0); }
+  /* Mobile */
+  @media (max-width: 749px) {
+    #BioHub-{{ section.id }} .hub-hero { padding: 3rem 0 2rem; }
+    #BioHub-{{ section.id }} .hub-cat { padding: 2rem; }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-bio-hub"
-  style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+  id="BioHub-{{ section.id }}"
+  class="page-width section-{{ section.id }}-padding"
+  style="padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;"
 >
-  <div class="jv-bio-hub__container">
+  <div class="hub-container">
 
-    <header class="jv-bio-hub__hero">
-      <span class="jv-bio-hub__badge">Wissen</span>
+    <header class="hub-hero">
+      <span class="hub-label">Wissen</span>
       <h1>{{ section.settings.heading }}</h1>
       <p>{{ section.settings.description }}</p>
     </header>
 
-    <div class="jv-bio-hub__search">
-      <span class="jv-bio-hub__search-icon">🔍</span>
+    <div class="hub-search">
+      <span class="hub-search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </span>
       <input
         type="text"
-        class="jv-bio-hub__search-input"
+        class="hub-search-input"
         placeholder="Biomarker suchen (z.B. Vitamin D, CRP, TSH...)"
-        id="jv-bio-search"
+        id="jv-bio-search-{{ section.id }}"
       >
     </div>
 
-    <div class="jv-bio-hub__grid" id="jv-bio-grid">
+    <div class="hub-grid" id="jv-bio-grid-{{ section.id }}">
       {%- for block in section.blocks -%}
         {%- if block.type == 'category' -%}
           <div
-            class="jv-bio-hub__cat"
+            class="hub-cat"
             data-search="{{ block.settings.title | downcase }} {{ block.settings.markers | downcase }}"
             {{ block.shopify_attributes }}
           >
-            <span class="jv-bio-hub__cat-icon">{{ block.settings.icon }}</span>
-            <h2 class="jv-bio-hub__cat-title">{{ block.settings.title }}</h2>
+            <div class="hub-cat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h2 class="hub-cat-title">{{ block.settings.title }}</h2>
             {%- if block.settings.markers != blank -%}
-              <ul class="jv-bio-hub__cat-links">
+              <ul class="hub-cat-links">
                 {%- assign items = block.settings.markers | split: '|' -%}
                 {%- for item in items -%}
                   {%- assign parts = item | split: ':' -%}
@@ -219,7 +271,7 @@
                     {%- if parts.size > 1 -%}
                       <a href="{{ parts[1] | strip }}">{{ parts[0] | strip }}</a>
                     {%- else -%}
-                      <span style="font-size:0.88rem;color:var(--jv-text-sec)">{{ parts[0] | strip }}</span>
+                      <span>{{ parts[0] | strip }}</span>
                     {%- endif -%}
                   </li>
                 {%- endfor -%}
@@ -230,18 +282,26 @@
       {%- endfor -%}
     </div>
 
-    <p class="jv-bio-hub__no-results" id="jv-bio-noresults">Kein Biomarker gefunden. Versuch einen anderen Suchbegriff.</p>
+    <p class="hub-no-results" id="jv-bio-noresults-{{ section.id }}">Kein Biomarker gefunden. Versuch einen anderen Suchbegriff.</p>
 
   </div>
 </section>
 
+<style media="screen and (min-width: 750px)">
+  #BioHub-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px !important;
+    padding-bottom: {{ section.settings.padding_bottom }}px !important;
+  }
+</style>
+
 <script>
   (function() {
-    var input = document.getElementById('jv-bio-search');
-    var grid = document.getElementById('jv-bio-grid');
-    var noResults = document.getElementById('jv-bio-noresults');
+    var sectionId = '{{ section.id }}';
+    var input = document.getElementById('jv-bio-search-' + sectionId);
+    var grid = document.getElementById('jv-bio-grid-' + sectionId);
+    var noResults = document.getElementById('jv-bio-noresults-' + sectionId);
     if (!input || !grid) return;
-    var cats = grid.querySelectorAll('.jv-bio-hub__cat');
+    var cats = grid.querySelectorAll('.hub-cat');
 
     input.addEventListener('input', function() {
       var q = this.value.toLowerCase().trim();
@@ -275,7 +335,7 @@
       "type": "category",
       "name": "Kategorie",
       "settings": [
-        { "type": "text", "id": "icon", "label": "Icon", "default": "🩸" },
+        { "type": "text", "id": "icon", "label": "Icon", "default": "\ud83e\ude78" },
         { "type": "text", "id": "title", "label": "Kategorie-Name" },
         { "type": "textarea", "id": "markers", "label": "Biomarker (Name:URL | getrennt)", "info": "Format: Name:/pages/slug | Name2:/pages/slug2" }
       ]
