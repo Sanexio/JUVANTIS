@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "bluttests": {
+      "type": "juvantis-bluttests",
+      "settings": {
+        "heading": "Dein Blut weiss mehr, als du denkst.",
+        "intro": "Ein Bluttest bei Juvantis ist mehr als ein Blutbild beim Hausarzt. Wir analysieren bis zu 80+ Biomarker und visualisieren deine Ergebnisse in deinem persoenlichen Digital Health Twin -- verstaendlich, motivierend und medizinisch fundiert.",
+        "categories_heading": "Unsere Check-up-Kategorien",
+        "process_heading": "So funktioniert dein Bluttest",
+        "price_text": "Ab 45 EUR pro Check-up",
+        "price_note": "Einzelne Checks oder als Teil deines Komplett-Pakets",
+        "cta_label": "Jetzt Bluttest buchen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "komplett": {
+          "type": "checkup",
+          "settings": {
+            "icon": "🏆",
+            "title": "Komplett-Check",
+            "description": "Unser umfassendster Check: 80+ Biomarker in einer einzigen Blutentnahme. Blutbild, Stoffwechsel, Hormone, Vitamine, Entzuendungsmarker -- das volle Programm fuer maximale Klarheit.",
+            "markers": "Grosses Blutbild, Leber, Niere, Schilddruese, Lipide, Hormone, Vitamine, CRP, HbA1c",
+            "featured": true
+          }
+        },
+        "basis": {
+          "type": "checkup",
+          "settings": {
+            "icon": "🩸",
+            "title": "Basis-Check",
+            "description": "Dein Einstieg in die Labordiagnostik: Blutbild, Leber-, Nieren- und Schilddruesenwerte -- die wichtigsten Grundlagen auf einen Blick.",
+            "markers": "Blutbild, GOT, GPT, GGT, Kreatinin, TSH",
+            "featured": false
+          }
+        },
+        "herz": {
+          "type": "checkup",
+          "settings": {
+            "icon": "❤️",
+            "title": "Herz-Check",
+            "description": "Dein kardiovaskulaeres Risikoprofil: Lipide, Entzuendungsmarker und Homocystein -- alles, was dein Herz betrifft.",
+            "markers": "Cholesterin, LDL, HDL, Triglyceride, CRP, Homocystein, Lp(a)",
+            "featured": false
+          }
+        },
+        "hormon": {
+          "type": "checkup",
+          "settings": {
+            "icon": "⚡",
+            "title": "Hormon-Check",
+            "description": "Hormone steuern Energie, Schlaf und Stimmung. Wir messen die wichtigsten Achsen -- vom Stresshormon bis zum Sexualhormon.",
+            "markers": "Testosteron, Oestrogen, Cortisol, DHEA-S, TSH, fT3, fT4",
+            "featured": false
+          }
+        },
+        "sport": {
+          "type": "checkup",
+          "settings": {
+            "icon": "🏃",
+            "title": "Sport-Check",
+            "description": "Optimiert fuer aktive Menschen: Naehrstoffstatus, Regeneration und Leistungsfaehigkeit im Blick.",
+            "markers": "Eisen, Ferritin, Vitamin D, B12, Magnesium, CK, Zink",
+            "featured": false
+          }
+        },
+        "step1": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "title": "Buchen",
+            "text": "Waehle deinen Check-up online und buche einen Termin -- unkompliziert und schnell."
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "Blutentnahme",
+            "text": "Komm morgens vorbei. Die Blutentnahme dauert nur wenige Minuten."
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Ergebnis in 48h",
+            "text": "Deine Ergebnisse sind innerhalb von 48 Stunden verfuegbar -- aerztlich ausgewertet."
+          }
+        },
+        "step4": {
+          "type": "step",
+          "settings": {
+            "number": "4",
+            "title": "DHT-Visualisierung",
+            "text": "Deine Werte werden in deinem Digital Health Twin sichtbar -- intuitiv und motivierend."
+          }
+        }
+      },
+      "block_order": [
+        "komplett",
+        "basis",
+        "herz",
+        "hormon",
+        "sport",
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ]
+    }
+  },
+  "order": ["main", "bluttests"]
+}
