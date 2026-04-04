@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "Vitamin B12",
+        "heading": "Vitamin B12 (Cobalamin) — Dein Nerven- und Blut-Vitamin",
+        "category": "Vitamine",
+        "short_description": "Vitamin B12 ist unverzichtbar fuer die Blutbildung, das Nervensystem und den Energiestoffwechsel. Ein Mangel entwickelt sich schleichend ueber Jahre und kann zu irreversiblen Nervenschaeden fuehren — besonders bei veganer Ernaehrung und im Alter.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist Vitamin B12?",
+            "content": "<p>Vitamin B12 (Cobalamin) ist ein wasserloesliches Vitamin, das dein Koerper nicht selbst herstellen kann. Es kommt fast ausschliesslich in tierischen Lebensmitteln vor — Fleisch, Fisch, Eier, Milchprodukte. Dein Koerper kann B12 in der Leber fuer 3-5 Jahre speichern, weshalb ein Mangel sich oft erst spaet bemerkbar macht.</p><p>B12 wird fuer drei zentrale Aufgaben benoetigt: Die Bildung roter Blutkoerperchen, die Erhaltung der Nervenhuelle (Myelinscheide) und die DNA-Synthese. Fuer die Aufnahme aus der Nahrung braucht der Koerper den sogenannten Intrinsic Factor aus der Magenschleimhaut — fehlt dieser, entsteht eine perniziöse Anaemie.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Mangel: unter 200 pg/ml (unter 148 pmol/l) | Grauzone: 200-300 pg/ml (148-221 pmol/l) | Normal: 300-900 pg/ml (221-664 pmol/l) | Optimal: 400-700 pg/ml | Holotranscobalamin (aktives B12): ueber 50 pmol/l"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Erhoehte B12-Werte (ueber 900 pg/ml) ohne Supplementierung koennen ein Warnsignal sein und sollten abgeklaert werden. Moegliche Ursachen sind: Lebererkrankungen (Hepatitis, Leberzirrhose — die geschaedigte Leber setzt gespeichertes B12 frei), myeloproliferative Erkrankungen (bestimmte Blutkrebsarten) und Niereninsuffizienz.</p><p>Bei Einnahme von B12-Praeparaten sind erhoehte Werte normal und unbedenklich — ueberschuessiges B12 wird ueber die Nieren ausgeschieden. Trotzdem sollte bei unerwartet hohen Werten ohne bekannte Supplementierung immer nach einer Ursache gesucht werden.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein B12-Mangel ist haeufiger als angenommen — schaetzungsweise 5-10% der Bevoelkerung sind betroffen, bei ueber 65-Jaehrigen bis zu 20%. Ursachen sind: Vegane oder streng vegetarische Ernaehrung (ohne Supplementierung entwickelt sich in 2-5 Jahren ein Mangel), Resorptionsstoerungen (chronische Gastritis, Zoeliaki, Morbus Crohn), Medikamente (Metformin bei Diabetes, Protonenpumpenhemmer gegen Sodbrennen) und Alkoholmissbrauch.</p><p>Im Graubereich (200-300 pg/ml) kann zusaetzlich Holotranscobalamin (aktives B12) oder Methylmalonsaeure bestimmt werden, um einen funktionellen Mangel nachzuweisen.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>B12-Mangelsymptome entwickeln sich schleichend und werden oft anderen Ursachen zugeschrieben:</p><p>Muedigkeit, Schwaeche und verminderte Leistungsfaehigkeit. Blasse, leicht gelbliche Haut. Kribbeln und Taubheit in Haenden und Fuessen (Polyneuropathie). Gangstoerugen und Gleichgewichtsprobleme. Konzentrations- und Gedaechtnisprobleme. Depressive Verstimmungen und Reizbarkeit. Glossitis (glatte, rote, brennende Zunge). Bei schwerer Anaemie: Kurzatmigkeit und Herzrasen.</p><p>Wichtig: Nervenschaeden durch langjaehtigen B12-Mangel koennen teilweise irreversibel sein — deshalb ist fruehe Erkennung entscheidend.</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>B12-reiche Lebensmittel: Leber und Innereien (hoechster Gehalt), Lachs, Hering, Rindfleisch, Eier, Kaese und Milch. Bei veganer Ernaehrung ist eine Supplementierung obligat — empfohlen werden 250-500 Mikrogramm taeglich oral oder als Lutschtablette.</p><p>Bei nachgewiesenem Mangel kann der Arzt zunaechst eine Auffuelltherapie mit Spritzen (1.000 Mikrogramm intramuskulaer) durchfuehren, gefolgt von einer Erhaltungstherapie. Bei Aufnahmestoerungen (z.B. fehlender Intrinsic Factor) ist die lebenslange Gabe per Spritze oder hochdosiert oral notwendig. Eine Kontrolle nach 8-12 Wochen zeigt, ob die Therapie anschlaegt.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "Vitamin D:/pages/biomarker-vitamin-d | Ferritin:/pages/biomarker-ferritin | Folsaeure"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
