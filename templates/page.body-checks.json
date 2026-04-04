@@ -1,0 +1,148 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "body_checks": {
+      "type": "juvantis-body-checks",
+      "settings": {
+        "heading": "Du bist mehr als die Summe deiner Teile.",
+        "intro": "Ein Bluttest allein zeigt nicht alles. Unsere Body Checks kombinieren Ultraschall, EKG und Lungenfunktion mit deinen Laborwerten -- fuer ein Gesamtbild deiner Gesundheit, das kein reiner Bluttest-Anbieter liefern kann.",
+        "usp_heading": "Was uns unterscheidet",
+        "usp_text": "Wir schauen nicht nur ins Blut, sondern in deinen Koerper. Ultraschall, EKG, Lungenfunktion -- apparative Diagnostik und Labormedizin unter einem Dach. Das bieten reine Bluttest-Startups nicht.",
+        "checks_heading": "Unsere Untersuchungen",
+        "timeline_heading": "So laeuft dein Body Check ab",
+        "cta_label": "Jetzt Body Check buchen",
+        "cta_link": "shopify://collections/ultraschalluntersuchungen",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "sono_abd": {
+          "type": "check",
+          "settings": {
+            "icon": "🫁",
+            "title": "Sonografie Abdomen",
+            "description": "Ultraschall der Bauchorgane: Leber, Niere, Milz, Pankreas, Aorta. Schmerzfrei und in Echtzeit."
+          }
+        },
+        "sono_sd": {
+          "type": "check",
+          "settings": {
+            "icon": "🦋",
+            "title": "Sonografie Schilddruese",
+            "description": "Groesse, Struktur und Knoten der Schilddruese -- wichtig bei auffaelligen TSH-Werten."
+          }
+        },
+        "echo": {
+          "type": "check",
+          "settings": {
+            "icon": "❤️",
+            "title": "Echokardiografie",
+            "description": "Herzultraschall: Pumpfunktion, Klappen, Wandbewegung. Die eleganteste Methode, dein Herz zu beurteilen."
+          }
+        },
+        "carotis": {
+          "type": "check",
+          "settings": {
+            "icon": "🩺",
+            "title": "Duplex Carotiden",
+            "description": "Ultraschall der Halsschlagadern -- Verkalkungen erkennen, Schlaganfallrisiko senken."
+          }
+        },
+        "ekg": {
+          "type": "check",
+          "settings": {
+            "icon": "📈",
+            "title": "Ruhe-EKG",
+            "description": "Herzrhythmus und elektrische Aktivitaet im Ruhezustand -- schnell, schmerzfrei, aussagekraeftig."
+          }
+        },
+        "ergo": {
+          "type": "check",
+          "settings": {
+            "icon": "🚴",
+            "title": "Belastungs-EKG",
+            "description": "Ergometrie unter Belastung: Zeigt Durchblutungsstoerungen, die im Ruhe-EKG verborgen bleiben."
+          }
+        },
+        "lufu": {
+          "type": "check",
+          "settings": {
+            "icon": "💨",
+            "title": "Lungenfunktion",
+            "description": "Spirometrie misst Lungenvolumen und Atemfluss -- wichtig fuer Sportler und Raucher."
+          }
+        },
+        "diving": {
+          "type": "check",
+          "settings": {
+            "icon": "🤿",
+            "title": "Fit for Diving",
+            "description": "Tauchtauglichkeitsuntersuchung nach GTUE-Standard. Pflicht fuer jeden Taucher."
+          }
+        },
+        "tl_1": {
+          "type": "timeline_step",
+          "settings": {
+            "number": "1",
+            "title": "Termin buchen",
+            "text": "Online oder telefonisch -- waehle deinen Wunschtermin."
+          }
+        },
+        "tl_2": {
+          "type": "timeline_step",
+          "settings": {
+            "number": "2",
+            "title": "Anamnese",
+            "text": "Ausfuehrliches Gespraech ueber deine Krankengeschichte und Ziele."
+          }
+        },
+        "tl_3": {
+          "type": "timeline_step",
+          "settings": {
+            "number": "3",
+            "title": "Untersuchungen",
+            "text": "Du durchlaeufst die gebuchten Stationen -- in 2-3 Stunden."
+          }
+        },
+        "tl_4": {
+          "type": "timeline_step",
+          "settings": {
+            "number": "4",
+            "title": "Befundbesprechung",
+            "text": "Aerztliche Auswertung und Visualisierung in deinem Digital Health Twin."
+          }
+        }
+      },
+      "block_order": [
+        "sono_abd",
+        "sono_sd",
+        "echo",
+        "carotis",
+        "ekg",
+        "ergo",
+        "lufu",
+        "diving",
+        "tl_1",
+        "tl_2",
+        "tl_3",
+        "tl_4"
+      ]
+    }
+  },
+  "order": ["main", "body_checks"]
+}
