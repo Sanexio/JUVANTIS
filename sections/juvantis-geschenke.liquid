@@ -1,291 +1,396 @@
 {%- comment -%}
   Juvantis Section: Geschenkgutscheine
   Zweck: "Schenke Gesundheit" — Gutscheine fuer Check-ups
-  Erstellt: 2026-04-04
+  Design: Apple-inspired design system
 {%- endcomment -%}
 
 {%- if template.suffix == 'geschenke' -%}
 
 {%- style -%}
-  .jv-gift {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #JvGeschenke-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--apple-text);
+    font-size: 1.7rem;
+    line-height: 1.53;
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-gift__container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
-
-  .jv-gift__hero {
-    text-align: center;
-    padding: 3rem 0 2.5rem;
-  }
-
-  .jv-gift__badge {
-    display: inline-flex;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1.2rem;
-  }
-
-  .jv-gift__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-  }
-
-  .jv-gift__hero-text {
-    font-size: clamp(1rem, 2vw, 1.12rem);
-    color: var(--jv-text-sec);
-    max-width: 38rem;
+  #JvGeschenke-{{ section.id }} .jv-gift__container {
+    max-width: 98rem;
     margin: 0 auto;
-    line-height: 1.7;
+    padding: 0 2.4rem;
+  }
+
+  /* Hero */
+  #JvGeschenke-{{ section.id }} .jv-gift__hero {
+    text-align: center;
+    padding: 6rem 0 4rem;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__badge {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--apple-text-tertiary);
+    margin-bottom: 1.6rem;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin: 0 0 2rem;
+    color: var(--apple-text);
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__hero-text {
+    font-size: 1.7rem;
+    color: var(--apple-text-secondary);
+    max-width: 52rem;
+    margin: 0 auto;
+    line-height: 1.53;
   }
 
   /* Gift cards grid */
-  .jv-gift__grid {
+  #JvGeschenke-{{ section.id }} .jv-gift__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-bottom: 3rem;
+    gap: 1.6rem;
+    margin-bottom: 6rem;
   }
 
   @media (min-width: 750px) {
-    .jv-gift__grid {
-      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    #JvGeschenke-{{ section.id }} .jv-gift__grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
     }
   }
 
-  .jv-gift__card {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2rem;
+  #JvGeschenke-{{ section.id }} .jv-gift__card {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 3.2rem 2.8rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(1.6rem);
   }
 
-  .jv-gift__card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  #JvGeschenke-{{ section.id }} .jv-gift__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
   }
 
-  .jv-gift__card--featured {
-    border-color: var(--jv-teal);
-    background: var(--jv-bg-subtle);
-  }
-
-  .jv-gift__card-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-
-  .jv-gift__card-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 0 0.4rem;
-  }
-
-  .jv-gift__card-price {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--jv-teal);
-    margin: 0.5rem 0;
-  }
-
-  .jv-gift__card-text {
-    font-size: 0.88rem;
-    color: var(--jv-text-sec);
-    line-height: 1.6;
-    margin: 0 0 1.2rem;
-  }
-
-  .jv-gift__card-btn {
-    display: inline-flex;
-    padding: 0.7rem 1.5rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    font-size: 0.88rem;
-    text-decoration: none;
-    transition: transform 0.2s;
-    background: var(--jv-gradient);
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured {
+    background: var(--apple-text);
     color: #fff;
   }
 
-  .jv-gift__card-btn:hover { transform: translateY(-2px); color: #fff; }
+  #JvGeschenke-{{ section.id }} .jv-gift__card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 1.4rem;
+    margin: 0 auto 1.6rem;
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-icon {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.8rem;
+    color: var(--apple-text);
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-title {
+    color: #fff;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card-price {
+    font-family: var(--apple-font);
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--apple-link);
+    margin: 1.2rem 0;
+    line-height: 1.1;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-price {
+    color: #fff;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card-text {
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
+    margin: 0 0 2rem;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--apple-link);
+    color: #fff;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-btn {
+    background: #fff;
+    color: var(--apple-text);
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3);
+    color: #fff;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card--featured .jv-gift__card-btn:hover {
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+    color: var(--apple-text);
+  }
 
   /* How it works */
-  .jv-gift__how {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin-bottom: 3rem;
+  #JvGeschenke-{{ section.id }} .jv-gift__how {
+    margin-bottom: 6rem;
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
   }
 
-  .jv-gift__how h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  #JvGeschenke-{{ section.id }} .jv-gift__how h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    margin: 0 0 1.5rem;
+    letter-spacing: -0.035em;
+    margin: 0 0 4rem;
+    color: var(--apple-text);
+    line-height: 1.08;
   }
 
-  .jv-gift__how-steps {
+  #JvGeschenke-{{ section.id }} .jv-gift__how-steps {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.4rem;
   }
 
   @media (min-width: 750px) {
-    .jv-gift__how-steps { grid-template-columns: repeat(3, 1fr); }
+    #JvGeschenke-{{ section.id }} .jv-gift__how-steps {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
-  .jv-gift__how-step-num {
+  #JvGeschenke-{{ section.id }} .jv-gift__how-step {
+    text-align: center;
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__how-step-num {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    background: var(--jv-gradient);
+    background: var(--apple-link);
     color: #fff;
     font-weight: 700;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
   }
 
-  .jv-gift__how-step-title {
+  #JvGeschenke-{{ section.id }} .jv-gift__how-step-title {
+    font-family: var(--apple-font);
     font-weight: 700;
-    font-size: 0.95rem;
-    margin: 0 0 0.3rem;
+    font-size: 2.4rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-gift__how-step-text {
-    font-size: 0.85rem;
-    color: var(--jv-text-sec);
+  #JvGeschenke-{{ section.id }} .jv-gift__how-step-text {
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
     margin: 0;
+    line-height: 1.53;
   }
 
   /* Occasions */
-  .jv-gift__occasions {
+  #JvGeschenke-{{ section.id }} .jv-gift__occasions {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
-  .jv-gift__occasions h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.3rem;
+  #JvGeschenke-{{ section.id }} .jv-gift__occasions h2 {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 1rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 2rem;
+    color: var(--apple-text);
   }
 
-  .jv-gift__occasion-pills {
+  #JvGeschenke-{{ section.id }} .jv-gift__occasion-pills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 
-  .jv-gift__occasion-pill {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.4rem 1rem;
-    font-size: 0.85rem;
+  #JvGeschenke-{{ section.id }} .jv-gift__occasion-pill {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 98rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    color: var(--apple-text);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @supports (animation-timeline: view()) {
-    .jv-gift__card, .jv-gift__how {
-      animation: jvGiftFade 0.6s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 40%;
-    }
+  #JvGeschenke-{{ section.id }} .jv-gift__occasion-pill:hover {
+    transform: scale(1.04);
   }
 
-  @keyframes jvGiftFade {
-    from { opacity: 0; transform: translateY(2rem); }
+  /* Animations */
+  @keyframes jvGiftReveal {
+    from { opacity: 0; transform: translateY(1.6rem); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  #JvGeschenke-{{ section.id }} .jv-gift__card.jv-gift--visible,
+  #JvGeschenke-{{ section.id }} .jv-gift__how.jv-gift--visible {
+    animation: jvGiftReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
+
+  /* Hover override for featured visible state */
+  #JvGeschenke-{{ section.id }} .jv-gift__card.jv-gift--visible:hover {
+    transform: scale(1.02);
+  }
+
+  /* Mobile padding scale */
+  @media (max-width: 749px) {
+    #JvGeschenke-{{ section.id }} .jv-gift__hero { padding: 4rem 0 3rem; }
+    #JvGeschenke-{{ section.id }} .jv-gift__card { padding: 2.4rem 2rem; }
+    #JvGeschenke-{{ section.id }} .jv-gift__container { padding: 0 1.6rem; }
   }
 {%- endstyle -%}
 
-<section class="jv-gift" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;">
-  <div class="jv-gift__container">
+<section id="JvGeschenke-{{ section.id }}" class="jv-gift" style="padding-top:{{ section.settings.padding_top | times: 0.75 }}px;padding-bottom:{{ section.settings.padding_bottom | times: 0.75 }}px;">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="jv-gift__container">
 
-    <header class="jv-gift__hero">
-      <span class="jv-gift__badge">Geschenke</span>
-      <h1>{{ section.settings.heading }}</h1>
-      <p class="jv-gift__hero-text">{{ section.settings.intro }}</p>
-    </header>
-
-    <div class="jv-gift__grid">
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'gift' -%}
-          <div class="jv-gift__card{% if block.settings.featured %} jv-gift__card--featured{% endif %}" {{ block.shopify_attributes }}>
-            <span class="jv-gift__card-icon">{{ block.settings.icon }}</span>
-            <h3 class="jv-gift__card-title">{{ block.settings.title }}</h3>
-            <div class="jv-gift__card-price">{{ block.settings.price }}</div>
-            <p class="jv-gift__card-text">{{ block.settings.description }}</p>
-            {%- if block.settings.button_label != blank -%}
-              <a href="{{ block.settings.button_link }}" class="jv-gift__card-btn">{{ block.settings.button_label }}</a>
-            {%- endif -%}
-          </div>
+      <header class="jv-gift__hero">
+        <span class="jv-gift__badge">Geschenke</span>
+        <h1>{{ section.settings.heading }}</h1>
+        {%- if section.settings.intro != blank -%}
+          <p class="jv-gift__hero-text">{{ section.settings.intro }}</p>
         {%- endif -%}
-      {%- endfor -%}
-    </div>
+      </header>
 
-    <div class="jv-gift__how">
-      <h2>{{ section.settings.how_heading }}</h2>
-      <div class="jv-gift__how-steps">
+      <div class="jv-gift__grid">
         {%- for block in section.blocks -%}
-          {%- if block.type == 'step' -%}
-            <div {{ block.shopify_attributes }}>
-              <span class="jv-gift__how-step-num">{{ block.settings.number }}</span>
-              <h3 class="jv-gift__how-step-title">{{ block.settings.title }}</h3>
-              <p class="jv-gift__how-step-text">{{ block.settings.text }}</p>
+          {%- if block.type == 'gift' -%}
+            <div class="jv-gift__card{% if block.settings.featured %} jv-gift__card--featured{% endif %}" {{ block.shopify_attributes }}>
+              <span class="jv-gift__card-icon">{{ block.settings.icon }}</span>
+              <h3 class="jv-gift__card-title">{{ block.settings.title }}</h3>
+              <div class="jv-gift__card-price">{{ block.settings.price }}</div>
+              <p class="jv-gift__card-text">{{ block.settings.description }}</p>
+              {%- if block.settings.button_label != blank -%}
+                <a href="{{ block.settings.button_link }}" class="jv-gift__card-btn">{{ block.settings.button_label }}</a>
+              {%- endif -%}
             </div>
           {%- endif -%}
         {%- endfor -%}
       </div>
-    </div>
 
-    {%- if section.settings.occasions != blank -%}
-      <div class="jv-gift__occasions">
-        <h2>{{ section.settings.occasions_heading }}</h2>
-        <div class="jv-gift__occasion-pills">
-          {%- assign occs = section.settings.occasions | split: ',' -%}
-          {%- for o in occs -%}
-            <span class="jv-gift__occasion-pill">{{ o | strip }}</span>
+      <div class="jv-gift__how">
+        <h2>{{ section.settings.how_heading }}</h2>
+        <div class="jv-gift__how-steps">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'step' -%}
+              <div class="jv-gift__how-step" {{ block.shopify_attributes }}>
+                <span class="jv-gift__how-step-num">{{ block.settings.number }}</span>
+                <h3 class="jv-gift__how-step-title">{{ block.settings.title }}</h3>
+                <p class="jv-gift__how-step-text">{{ block.settings.text }}</p>
+              </div>
+            {%- endif -%}
           {%- endfor -%}
         </div>
       </div>
-    {%- endif -%}
 
+      {%- if section.settings.occasions != blank -%}
+        <div class="jv-gift__occasions">
+          <h2>{{ section.settings.occasions_heading }}</h2>
+          <div class="jv-gift__occasion-pills">
+            {%- assign occs = section.settings.occasions | split: ',' -%}
+            {%- for o in occs -%}
+              <span class="jv-gift__occasion-pill">{{ o | strip }}</span>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+    </div>
   </div>
 </section>
+
+<script>
+  (function() {
+    var section = document.getElementById('JvGeschenke-{{ section.id }}');
+    if (!section) return;
+    var els = section.querySelectorAll('.jv-gift__card, .jv-gift__how');
+    if (!els.length) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var idx = Array.prototype.indexOf.call(els, entry.target);
+          var delay = idx * 120;
+          entry.target.style.animationDelay = delay + 'ms';
+          entry.target.classList.add('jv-gift--visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    els.forEach(function(el) { observer.observe(el); });
+  })();
+</script>
 
 {%- endif -%}
 

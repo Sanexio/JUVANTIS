@@ -1,196 +1,296 @@
 {%- comment -%}
   Juvantis Section: FAQ mit FAQPage Schema
   Zweck: Haeufige Fragen mit Accordion + Google Structured Data
-  Erstellt: 2026-04-04
+  Design: Apple-inspired Design System
 {%- endcomment -%}
 
 {%- if template.suffix == 'faq' -%}
 
 {%- style -%}
-  .jv-faq {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #FAQPage-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-faq__container { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+  #FAQPage-{{ section.id }} .faq__container {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+  }
 
-  .jv-faq__hero { text-align: center; padding: 3rem 0 2.5rem; }
+  /* Hero */
+  #FAQPage-{{ section.id }} .faq__hero {
+    text-align: center;
+    padding: 6rem 0 4rem;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: faqFadeIn 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  }
 
-  .jv-faq__badge {
-    display: inline-flex;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
+  #FAQPage-{{ section.id }} .faq__badge {
+    display: inline-block;
+    background: var(--apple-bg-gray);
+    border-radius: 98rem;
+    padding: 0.5rem 1.6rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1.2rem;
+    color: var(--apple-text-secondary);
+    margin-bottom: 2rem;
   }
 
-  .jv-faq__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 800;
+  #FAQPage-{{ section.id }} .faq__hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 0.8rem;
+    line-height: 1.05;
+    margin: 0 0 1.2rem;
+    color: var(--apple-text);
   }
 
-  .jv-faq__hero p {
-    color: var(--jv-text-sec);
-    font-size: 1.05rem;
+  #FAQPage-{{ section.id }} .faq__hero p {
+    color: var(--apple-text-secondary);
+    font-size: 1.7rem;
+    line-height: 1.53;
     margin: 0;
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Category label */
-  .jv-faq__cat {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.2rem;
+  #FAQPage-{{ section.id }} .faq__cat {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    color: var(--jv-teal);
-    margin: 2.5rem 0 1rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--jv-border);
+    letter-spacing: -0.025em;
+    color: var(--apple-text);
+    margin: 3.6rem 0 1.6rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: faqFadeIn 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.12s forwards;
   }
 
-  .jv-faq__cat:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  #FAQPage-{{ section.id }} .faq__cat:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
 
   /* Accordion */
-  .jv-faq__item {
-    border-bottom: 1px solid var(--jv-border);
+  #FAQPage-{{ section.id }} .faq__item {
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: faqFadeIn 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.24s forwards;
   }
 
-  .jv-faq__q {
+  #FAQPage-{{ section.id }} .faq__q {
     width: 100%;
     background: none;
     border: none;
-    padding: 1.1rem 0;
+    padding: 1.6rem 0;
     text-align: left;
     cursor: pointer;
-    font-family: inherit;
-    font-size: 0.98rem;
+    font-family: var(--apple-font);
+    font-size: 1.7rem;
     font-weight: 600;
-    color: var(--jv-text);
+    color: var(--apple-text);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
     line-height: 1.4;
+    transition: color 0.2s ease;
   }
 
-  .jv-faq__q::after {
-    content: '+';
-    font-size: 1.4rem;
-    color: var(--jv-teal);
-    transition: transform 0.2s ease;
+  #FAQPage-{{ section.id }} .faq__q:hover {
+    color: var(--apple-link);
+  }
+
+  #FAQPage-{{ section.id }} .faq__icon {
+    width: 2.4rem;
+    height: 2.4rem;
     flex-shrink: 0;
+    position: relative;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-faq__item.is-open .jv-faq__q::after {
+  #FAQPage-{{ section.id }} .faq__icon::before,
+  #FAQPage-{{ section.id }} .faq__icon::after {
+    content: '';
+    position: absolute;
+    background: var(--apple-text-secondary);
+    border-radius: 1px;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s ease;
+  }
+
+  #FAQPage-{{ section.id }} .faq__icon::before {
+    width: 1.6rem;
+    height: 0.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #FAQPage-{{ section.id }} .faq__icon::after {
+    width: 0.2rem;
+    height: 1.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #FAQPage-{{ section.id }} .faq__item.is-open .faq__icon {
     transform: rotate(45deg);
   }
 
-  .jv-faq__a {
+  #FAQPage-{{ section.id }} .faq__q:hover .faq__icon::before,
+  #FAQPage-{{ section.id }} .faq__q:hover .faq__icon::after {
+    background: var(--apple-link);
+  }
+
+  #FAQPage-{{ section.id }} .faq__a {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-faq__item.is-open .jv-faq__a {
-    max-height: 30rem;
+  #FAQPage-{{ section.id }} .faq__item.is-open .faq__a {
+    max-height: 40rem;
   }
 
-  .jv-faq__a-inner {
-    padding: 0 0 1.2rem;
-    font-size: 0.92rem;
-    color: var(--jv-text-sec);
-    line-height: 1.7;
+  #FAQPage-{{ section.id }} .faq__a-inner {
+    padding: 0 0 1.6rem;
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
+    max-width: 48rem;
   }
 
-  .jv-faq__a-inner p { margin: 0 0 0.6rem; }
-  .jv-faq__a-inner p:last-child { margin: 0; }
+  #FAQPage-{{ section.id }} .faq__a-inner p { margin: 0 0 0.8rem; }
+  #FAQPage-{{ section.id }} .faq__a-inner p:last-child { margin: 0; }
+
+  #FAQPage-{{ section.id }} .faq__a-inner a {
+    color: var(--apple-link);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  #FAQPage-{{ section.id }} .faq__a-inner a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
 
   /* CTA */
-  .jv-faq__cta {
+  #FAQPage-{{ section.id }} .faq__cta {
     text-align: center;
-    padding: 2.5rem 0 0;
-    margin-top: 2rem;
-    border-top: 1px solid var(--jv-border);
+    padding: 3.6rem 0 0;
+    margin-top: 3.2rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: faqFadeIn 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.36s forwards;
   }
 
-  .jv-faq__cta p {
-    color: var(--jv-text-sec);
-    margin: 0 0 1rem;
+  #FAQPage-{{ section.id }} .faq__cta p {
+    color: var(--apple-text-secondary);
+    font-size: 1.7rem;
+    line-height: 1.53;
+    margin: 0 0 1.6rem;
   }
 
-  .jv-faq__cta-btn {
+  #FAQPage-{{ section.id }} .faq__cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.6rem;
+    background: var(--apple-link);
     color: #fff;
     font-weight: 600;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-faq__cta-btn:hover {
-    transform: translateY(-2px);
+  #FAQPage-{{ section.id }} .faq__cta-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
     color: #fff;
+  }
+
+  /* Responsive */
+  @media (max-width: 749px) {
+    #FAQPage-{{ section.id }} .faq__hero {
+      padding: 4rem 0 3rem;
+    }
+  }
+
+  @keyframes faqFadeIn {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
   }
 {%- endstyle -%}
 
-<section class="jv-faq" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;">
-  <div class="jv-faq__container">
+<section
+  id="FAQPage-{{ section.id }}"
+  class="section-{{ section.id }}-padding"
+  style="
+    padding-top: {{ section.settings.padding_top | times: 0.75 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 }}px;
+  "
+>
+  <div class="page-width">
+    <div class="faq__container">
 
-    <header class="jv-faq__hero">
-      <span class="jv-faq__badge">Hilfe</span>
-      <h1>{{ section.settings.heading }}</h1>
-      <p>{{ section.settings.subtitle }}</p>
-    </header>
+      <header class="faq__hero">
+        <span class="faq__badge">Hilfe</span>
+        <h1>{{ section.settings.heading }}</h1>
+        <p>{{ section.settings.subtitle }}</p>
+      </header>
 
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'category' -%}
-        <h2 class="jv-faq__cat" {{ block.shopify_attributes }}>{{ block.settings.title }}</h2>
-      {%- endif -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'category' -%}
+          <h2 class="faq__cat" {{ block.shopify_attributes }}>{{ block.settings.title }}</h2>
+        {%- endif -%}
 
-      {%- if block.type == 'question' -%}
-        <div class="jv-faq__item" {{ block.shopify_attributes }}>
-          <button class="jv-faq__q" onclick="this.parentElement.classList.toggle('is-open')">
-            {{ block.settings.question }}
-          </button>
-          <div class="jv-faq__a">
-            <div class="jv-faq__a-inner">{{ block.settings.answer }}</div>
+        {%- if block.type == 'question' -%}
+          <div class="faq__item" {{ block.shopify_attributes }}>
+            <button class="faq__q" onclick="this.parentElement.classList.toggle('is-open')">
+              {{ block.settings.question }}
+              <span class="faq__icon"></span>
+            </button>
+            <div class="faq__a">
+              <div class="faq__a-inner">{{ block.settings.answer }}</div>
+            </div>
           </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if section.settings.cta_label != blank -%}
+        <div class="faq__cta">
+          <p>{{ section.settings.cta_text }}</p>
+          <a href="{{ section.settings.cta_link }}" class="faq__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
         </div>
       {%- endif -%}
-    {%- endfor -%}
 
-    {%- if section.settings.cta_label != blank -%}
-      <div class="jv-faq__cta">
-        <p>{{ section.settings.cta_text }}</p>
-        <a href="{{ section.settings.cta_link }}" class="jv-faq__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
-      </div>
-    {%- endif -%}
-
+    </div>
   </div>
 </section>
 
