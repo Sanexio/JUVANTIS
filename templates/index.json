@@ -15,21 +15,21 @@
         "heading_wjk6jn": {
           "type": "heading",
           "settings": {
-            "heading": "Health deserves understanding.",
+            "heading": "Gesundheit verdient Klarheit.",
             "heading_size": "h2"
           }
         },
         "text_cTrNkW": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>We help you gain clarity for informed decisions.</strong></p>",
+            "text": "<p><strong>Bluttests, Body Checks und dein persönlicher Digital Health Twin — alles an einem Ort.</strong></p>",
             "text_style": "subtitle"
           }
         },
         "button_8tYyLz": {
           "type": "button",
           "settings": {
-            "button_label": "Start now",
+            "button_label": "Jetzt Check-up buchen",
             "button_link": "shopify://collections/alle-untersuchungen"
           }
         }
@@ -386,7 +386,7 @@
     "b6b58311-871e-4efb-86fb-02ee33331b03": {
       "type": "featured-blog",
       "settings": {
-        "heading": "SanexI0 Blog: Predictive Analytics",
+        "heading": "Juvantis Blog: Predictive Analytics",
         "heading_size": "h0",
         "blog": "news",
         "post_limit": 3,
@@ -413,8 +413,8 @@
         "stat_2": {
           "type": "stat",
           "settings": {
-            "value": "2",
-            "label": "Standorte in Frankfurt"
+            "value": "✓",
+            "label": "Von Ärzten entwickelt"
           }
         },
         "stat_3": {
