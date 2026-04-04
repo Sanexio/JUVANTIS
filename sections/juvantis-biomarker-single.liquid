@@ -1,0 +1,313 @@
+{%- comment -%}
+  Juvantis Section: Biomarker Einzelseite (wiederverwendbar)
+  Zweck: Eine Section fuer alle individuellen Biomarker-Seiten
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- assign bio_pages = 'biomarker-vitamin-d,biomarker-crp,biomarker-tsh,biomarker-cholesterin,biomarker-ferritin,biomarker-hba1c,biomarker-testosteron,biomarker-vitamin-b12,biomarker-leberwerte,biomarker-kreatinin' | split: ',' -%}
+{%- assign is_bio = false -%}
+{%- for p in bio_pages -%}
+  {%- if template.suffix == p -%}{%- assign is_bio = true -%}{%- endif -%}
+{%- endfor -%}
+
+{%- if is_bio -%}
+
+{%- style -%}
+  .jv-bio {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-bio__container { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Breadcrumb */
+  .jv-bio__breadcrumb {
+    font-size: 0.8rem;
+    color: var(--jv-text-sec);
+    padding: 1.5rem 0 0;
+  }
+
+  .jv-bio__breadcrumb a {
+    color: var(--jv-teal);
+    text-decoration: none;
+  }
+
+  .jv-bio__breadcrumb a:hover { text-decoration: underline; }
+
+  /* Hero */
+  .jv-bio__hero { padding: 1.5rem 0 2rem; }
+
+  .jv-bio__badge {
+    display: inline-flex;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1rem;
+  }
+
+  .jv-bio__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin: 0 0 0.8rem;
+  }
+
+  .jv-bio__short {
+    font-size: 1.05rem;
+    color: var(--jv-text-sec);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* Content sections */
+  .jv-bio__section {
+    margin-bottom: 2rem;
+  }
+
+  .jv-bio__section h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--jv-border);
+  }
+
+  .jv-bio__section:first-of-type h2 { border-top: none; padding-top: 0; }
+
+  .jv-bio__text {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--jv-text-sec);
+  }
+
+  .jv-bio__text p { margin: 0 0 1rem; }
+  .jv-bio__text ul { margin: 0 0 1rem; padding-left: 1.5rem; }
+  .jv-bio__text li { margin-bottom: 0.4rem; }
+
+  /* Reference table */
+  .jv-bio__ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .jv-bio__ref-table th, .jv-bio__ref-table td {
+    padding: 0.65rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--jv-border);
+  }
+
+  .jv-bio__ref-table th {
+    font-weight: 600;
+    background: var(--jv-bg-subtle);
+    color: var(--jv-text);
+  }
+
+  /* Related links */
+  .jv-bio__related {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+  }
+
+  .jv-bio__related h3 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.8rem;
+  }
+
+  .jv-bio__related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .jv-bio__related-pill {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.82rem;
+    color: var(--jv-teal);
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .jv-bio__related-pill:hover {
+    background: var(--jv-bg-subtle);
+    border-color: var(--jv-teal);
+  }
+
+  /* CTA */
+  .jv-bio__cta {
+    text-align: center;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--jv-border);
+    margin-top: 2rem;
+  }
+
+  .jv-bio__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .jv-bio__cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(78,161,217,0.3);
+    color: #fff;
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-bio"
+  style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+>
+  <div class="jv-bio__container">
+
+    <nav class="jv-bio__breadcrumb">
+      <a href="/">Home</a> &rsaquo;
+      <a href="/pages/biomarker">Biomarker-Lexikon</a> &rsaquo;
+      {{ section.settings.name }}
+    </nav>
+
+    <header class="jv-bio__hero">
+      <span class="jv-bio__badge">{{ section.settings.category }}</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="jv-bio__short">{{ section.settings.short_description }}</p>
+    </header>
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+
+        {%- when 'content_section' -%}
+          <div class="jv-bio__section" {{ block.shopify_attributes }}>
+            <h2>{{ block.settings.title }}</h2>
+            <div class="jv-bio__text">{{ block.settings.content }}</div>
+          </div>
+
+        {%- when 'ref_table' -%}
+          <div class="jv-bio__section" {{ block.shopify_attributes }}>
+            <h2>{{ block.settings.title }}</h2>
+            <table class="jv-bio__ref-table">
+              <thead><tr>
+                <th>Gruppe</th><th>Referenzbereich</th>
+              </tr></thead>
+              <tbody>
+                {%- assign rows = block.settings.rows | split: '|' -%}
+                {%- for row in rows -%}
+                  {%- assign cols = row | split: ':' -%}
+                  <tr><td>{{ cols[0] | strip }}</td><td>{{ cols[1] | strip }}</td></tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+
+        {%- when 'related' -%}
+          <div class="jv-bio__related" {{ block.shopify_attributes }}>
+            <h3>Verwandte Biomarker</h3>
+            <div class="jv-bio__related-links">
+              {%- assign links = block.settings.links | split: '|' -%}
+              {%- for link in links -%}
+                {%- assign parts = link | split: ':' -%}
+                {%- if parts.size > 1 -%}
+                  <a href="{{ parts[1] | strip }}" class="jv-bio__related-pill">{{ parts[0] | strip }}</a>
+                {%- else -%}
+                  <span class="jv-bio__related-pill">{{ parts[0] | strip }}</span>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+
+      {%- endcase -%}
+    {%- endfor -%}
+
+    {%- if section.settings.cta_label != blank -%}
+      <div class="jv-bio__cta">
+        <a href="{{ section.settings.cta_link }}" class="jv-bio__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Biomarker",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    { "type": "text", "id": "name", "label": "Biomarker-Name", "default": "Vitamin D" },
+    { "type": "text", "id": "heading", "label": "H1 Ueberschrift" },
+    { "type": "text", "id": "category", "label": "Kategorie-Badge", "default": "Vitamine" },
+    { "type": "textarea", "id": "short_description", "label": "Kurzbeschreibung (1-2 Saetze)" },
+    { "type": "text", "id": "cta_label", "label": "CTA-Text", "default": "Lass diesen Wert bei Juvantis testen" },
+    { "type": "url", "id": "cta_link", "label": "CTA-Link" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand oben" },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "default": 52, "label": "Abstand unten" }
+  ],
+  "blocks": [
+    {
+      "type": "content_section",
+      "name": "Inhaltsabschnitt",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Ueberschrift" },
+        { "type": "richtext", "id": "content", "label": "Inhalt" }
+      ]
+    },
+    {
+      "type": "ref_table",
+      "name": "Referenzwert-Tabelle",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Ueberschrift", "default": "Referenzwerte" },
+        { "type": "textarea", "id": "rows", "label": "Zeilen (Gruppe:Wert | getrennt)", "info": "z.B. Frauen: 30-100 ng/ml | Maenner: 30-100 ng/ml | Kinder: 20-100 ng/ml" }
+      ]
+    },
+    {
+      "type": "related",
+      "name": "Verwandte Biomarker",
+      "settings": [
+        { "type": "textarea", "id": "links", "label": "Links (Name:URL | getrennt)", "info": "z.B. Calcium:/pages/biomarker-calcium | Phosphat:/pages/biomarker-phosphat" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Juvantis: Biomarker" }]
+}
+{% endschema %}
