@@ -1,0 +1,573 @@
+{%- comment -%}
+  Juvantis Section: Über uns
+  Zweck: Team, Mission, Werte — Kernseite für Vertrauen
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- if template.suffix == 'ueber-uns' -%}
+
+{%- style -%}
+  .jv-about {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-teal-bright: #02C39A;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-about__container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ── Hero ── */
+  .jv-about__hero {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .jv-about__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-about__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  .jv-about__hero p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--jv-text-sec);
+    max-width: 40rem;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  /* ── Mission ── */
+  .jv-about__mission {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2.5rem;
+    margin: 0 0 3rem;
+    text-align: center;
+  }
+
+  .jv-about__mission h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 1rem;
+  }
+
+  .jv-about__mission p {
+    color: var(--jv-text-sec);
+    max-width: 38rem;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── Team Grid (Bento) ── */
+  .jv-about__team-heading {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-about__team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-about__team-grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
+    }
+  }
+
+  .jv-about__team-card {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-about__team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+
+  .jv-about__team-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  .jv-about__team-img--placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--jv-bg-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--jv-border);
+  }
+
+  .jv-about__team-body {
+    padding: 1.5rem;
+  }
+
+  .jv-about__team-name {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.2rem;
+  }
+
+  .jv-about__team-role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--jv-teal);
+    margin: 0 0 0.8rem;
+  }
+
+  .jv-about__team-qualifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .jv-about__pill {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--jv-text-sec);
+  }
+
+  .jv-about__team-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--jv-text-sec);
+    margin: 0;
+  }
+
+  /* ── History / Timeline ── */
+  .jv-about__history {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2.5rem;
+    margin: 0 0 3rem;
+  }
+
+  .jv-about__history h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+
+  .jv-about__history p {
+    color: var(--jv-text-sec);
+    line-height: 1.7;
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* ── Values (Bento Grid) ── */
+  .jv-about__values-heading {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-about__values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-about__values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 990px) {
+    .jv-about__values-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .jv-about__value-card {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-about__value-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  .jv-about__value-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .jv-about__value-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 0.4rem;
+  }
+
+  .jv-about__value-text {
+    font-size: 0.85rem;
+    color: var(--jv-text-sec);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── CTA ── */
+  .jv-about__cta {
+    text-align: center;
+    padding: 2.5rem 0 1rem;
+  }
+
+  .jv-about__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .jv-about__cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+    color: #fff;
+  }
+
+  /* ── Scroll Animation ── */
+  @supports (animation-timeline: view()) {
+    .jv-about__team-card,
+    .jv-about__value-card,
+    .jv-about__mission,
+    .jv-about__history {
+      animation: jvFadeUp 0.6s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 40%;
+    }
+  }
+
+  @keyframes jvFadeUp {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-about"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="jv-about__container">
+
+    <!-- Hero -->
+    <header class="jv-about__hero">
+      <span class="jv-about__badge">Über uns</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.description }}</p>
+    </header>
+
+    <!-- Mission -->
+    <div class="jv-about__mission">
+      <h2>{{ section.settings.mission_heading }}</h2>
+      <p>{{ section.settings.mission_text }}</p>
+    </div>
+
+    <!-- Team -->
+    <h2 class="jv-about__team-heading">{{ section.settings.team_heading }}</h2>
+    <div class="jv-about__team-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'team_member' -%}
+          <div class="jv-about__team-card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <img
+                class="jv-about__team-img"
+                src="{{ block.settings.image | image_url: width: 800 }}"
+                alt="{{ block.settings.name }}"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            {%- else -%}
+              <div class="jv-about__team-img--placeholder">👤</div>
+            {%- endif -%}
+            <div class="jv-about__team-body">
+              <h3 class="jv-about__team-name">{{ block.settings.name }}</h3>
+              <p class="jv-about__team-role">{{ block.settings.role }}</p>
+              {%- if block.settings.qualifications != blank -%}
+                <div class="jv-about__team-qualifications">
+                  {%- assign quals = block.settings.qualifications | split: ',' -%}
+                  {%- for q in quals -%}
+                    <span class="jv-about__pill">{{ q | strip }}</span>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+              {%- if block.settings.bio != blank -%}
+                <p class="jv-about__team-text">{{ block.settings.bio }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- History -->
+    {%- if section.settings.history_heading != blank -%}
+      <div class="jv-about__history">
+        <h2>{{ section.settings.history_heading }}</h2>
+        <p>{{ section.settings.history_text }}</p>
+      </div>
+    {%- endif -%}
+
+    <!-- Values -->
+    <h2 class="jv-about__values-heading">{{ section.settings.values_heading }}</h2>
+    <div class="jv-about__values-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'value' -%}
+          <div class="jv-about__value-card" {{ block.shopify_attributes }}>
+            <span class="jv-about__value-icon">{{ block.settings.icon }}</span>
+            <h3 class="jv-about__value-title">{{ block.settings.title }}</h3>
+            <p class="jv-about__value-text">{{ block.settings.text }}</p>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- CTA -->
+    {%- if section.settings.cta_label != blank -%}
+      <div class="jv-about__cta">
+        <a href="{{ section.settings.cta_link }}" class="jv-about__cta-btn">
+          {{ section.settings.cta_label }} &rarr;
+        </a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Über uns",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Die Menschen hinter Juvantis"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Einleitung",
+      "default": "Ärzte und Health-Tech-Experten aus Frankfurt mit einer Mission: Gesundheit verständlich und zugänglich machen."
+    },
+    {
+      "type": "text",
+      "id": "mission_heading",
+      "label": "Mission-Überschrift",
+      "default": "Unsere Mission"
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text",
+      "label": "Mission-Text",
+      "default": "Wir glauben, dass jeder Mensch das Recht hat, seine eigene Gesundheit zu verstehen. Nicht in abstrakten Laborwerten, sondern visuell, motivierend und auf Augenhöhe. Juvantis verbindet ärztliche Expertise mit modernster Technologie — für eine Gesundheitsversorgung, die informiert statt verunsichert."
+    },
+    {
+      "type": "text",
+      "id": "team_heading",
+      "label": "Team-Überschrift",
+      "default": "Unser Team"
+    },
+    {
+      "type": "text",
+      "id": "history_heading",
+      "label": "Geschichte-Überschrift",
+      "default": "Von der Hausarztpraxis zum Digital Health Pioneer"
+    },
+    {
+      "type": "textarea",
+      "id": "history_text",
+      "label": "Geschichte-Text",
+      "default": "Was als internistische Schwerpunktpraxis im Frankfurter Westend begann, hat sich zu einem Vorreiter für digitale Gesundheitsvorsorge entwickelt. Mit der Gründung der Sanexio GmbH und dem Juvantis-Projekt verbinden wir über 15 Jahre klinische Erfahrung mit der Vision eines Digital Health Twins — einem 3D-Avatar, der deine Gesundheit sichtbar macht."
+    },
+    {
+      "type": "text",
+      "id": "values_heading",
+      "label": "Werte-Überschrift",
+      "default": "Unsere Werte"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA-Button Text",
+      "default": "Lerne uns kennen — buche deinen ersten Check-up"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA-Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "label": "Abstand oben"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 52,
+      "label": "Abstand unten"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "team_member",
+      "name": "Teammitglied",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Dr. med. Vorname Nachname"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Rolle/Titel",
+          "default": "Facharzt für Innere Medizin"
+        },
+        {
+          "type": "text",
+          "id": "qualifications",
+          "label": "Qualifikationen (kommagetrennt)",
+          "default": "Innere Medizin, MBA, Notfallmedizin"
+        },
+        {
+          "type": "textarea",
+          "id": "bio",
+          "label": "Kurzbiografie"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "name": "Wert",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Emoji)",
+          "default": "🔬"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Evidenzbasiert"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Beschreibung",
+          "default": "Jede Empfehlung basiert auf medizinischer Evidenz und deinen individuellen Daten."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis: Über uns"
+    }
+  ]
+}
+{% endschema %}
