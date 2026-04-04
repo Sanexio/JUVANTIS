@@ -1,0 +1,212 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "legal": {
+      "type": "juvantis-legal",
+      "settings": {
+        "badge_text": "Datenschutz",
+        "heading": "Datenschutzerklärung",
+        "subtitle": "Informationen gemäß DSGVO",
+        "show_date": true,
+        "last_updated": "April 2026",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "intro_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "1. Verantwortlicher"
+          }
+        },
+        "intro_text": {
+          "type": "contact_card",
+          "settings": {
+            "content": "<p><strong>Sanexio GmbH</strong><br>Grüneburgweg 12<br>60322 Frankfurt am Main<br><strong>E-Mail:</strong> praxis@westend-hausarzt.de<br><strong>Telefon:</strong> 069 727819</p><p>Geschäftsführer: Dr. med. Siegbert Stracke, MBA</p>"
+          }
+        },
+        "overview_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "2. Übersicht der Verarbeitungen"
+          }
+        },
+        "overview_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten erfolgt regelmäßig nur nach Einwilligung oder wenn die Verarbeitung durch gesetzliche Vorschriften gestattet ist.</p>"
+          }
+        },
+        "legal_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "3. Rechtsgrundlagen"
+          }
+        },
+        "legal_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Soweit wir für Verarbeitungsvorgänge eine Einwilligung einholen, dient <strong>Art. 6 Abs. 1 lit. a DSGVO</strong> als Rechtsgrundlage.</p><p>Ist die Verarbeitung zur Erfüllung eines Vertrags erforderlich, stützen wir uns auf <strong>Art. 6 Abs. 1 lit. b DSGVO</strong>.</p><p>Für die Erfüllung rechtlicher Verpflichtungen gilt <strong>Art. 6 Abs. 1 lit. c DSGVO</strong>.</p><p>Ist die Verarbeitung zur Wahrung berechtigter Interessen erforderlich, erfolgt sie auf Grundlage von <strong>Art. 6 Abs. 1 lit. f DSGVO</strong>.</p>"
+          }
+        },
+        "hosting_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "4. Hosting"
+          }
+        },
+        "hosting_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Diese Website wird von <strong>Shopify Inc.</strong> gehostet (Shopify Inc., 151 O'Connor Street, Ottawa, Ontario, K2P 2L8, Kanada). Shopify verarbeitet in unserem Auftrag die Daten, die beim Besuch unserer Website anfallen (z. B. IP-Adresse, Zeitpunkt des Zugriffs, Geräteinformationen).</p><p>Die Datenübertragung nach Kanada ist durch den <strong>Angemessenheitsbeschluss der EU-Kommission</strong> gemäß Art. 45 DSGVO abgesichert. Zusätzlich bestehen Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO.</p><p>Weitere Informationen: <a href=\"https://www.shopify.com/legal/privacy\" target=\"_blank\" rel=\"noopener\">Shopify Datenschutzerklärung</a></p>"
+          }
+        },
+        "cookies_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "5. Cookies"
+          }
+        },
+        "cookies_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Unsere Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die auf deinem Endgerät gespeichert werden.</p><p><strong>Technisch notwendige Cookies</strong> werden eingesetzt, um die Grundfunktionen der Website sicherzustellen (Warenkorb, Login, Spracheinstellungen). Diese sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p><p><strong>Analyse-Cookies</strong> werden nur mit deiner ausdrücklichen Einwilligung gesetzt. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO. Du kannst deine Einwilligung jederzeit widerrufen.</p>"
+          }
+        },
+        "ssl_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "6. SSL-Verschlüsselung"
+          }
+        },
+        "ssl_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Diese Website nutzt aus Sicherheitsgründen eine <strong>SSL-Verschlüsselung</strong> (erkennbar an &#8222;https://&#8220; in der Adresszeile). Dadurch werden alle Daten, die du an uns übermittelst, verschlüsselt und können nicht von Dritten mitgelesen werden.</p>"
+          }
+        },
+        "contact_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "7. Kontaktformular"
+          }
+        },
+        "contact_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wenn du uns über das Kontaktformular kontaktierst, werden die von dir angegebenen Daten (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung deiner Anfrage verarbeitet und gespeichert. Diese Daten geben wir nicht ohne deine Einwilligung weiter.</p><p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (bei Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).</p><p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zwecks ihrer Erhebung nicht mehr erforderlich sind — in der Regel nach Abschluss der Kommunikation.</p>"
+          }
+        },
+        "shop_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "8. Bestellungen und Zahlungsdaten"
+          }
+        },
+        "shop_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Bei der Bestellung von Leistungen verarbeiten wir die für den Vertragsschluss und die Abwicklung erforderlichen Daten: Name, Anschrift, E-Mail-Adresse, Zahlungsinformationen.</p><p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p><p>Zahlungen werden über den Zahlungsdienstleister von Shopify abgewickelt. Wir haben keinen Zugriff auf vollständige Kreditkarten- oder Bankdaten.</p>"
+          }
+        },
+        "maps_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "9. Google Maps"
+          }
+        },
+        "maps_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wir nutzen auf unserer Kontaktseite den Kartendienst <strong>Google Maps</strong> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Die Karte wird erst nach deiner ausdrücklichen Einwilligung (Opt-in) geladen — es findet ohne Klick kein Datentransfer an Google statt.</p><p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).</p><p>Weitere Informationen: <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google Datenschutzerklärung</a></p>"
+          }
+        },
+        "newsletter_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "10. Newsletter"
+          }
+        },
+        "newsletter_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wenn du dich für unseren Newsletter anmeldest, wird deine E-Mail-Adresse für den Versand von Informationen über unsere Leistungen und Angebote genutzt. Der Versand erfolgt über <strong>Shopify Email</strong>.</p><p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Du kannst den Newsletter jederzeit über den Abmeldelink in jeder E-Mail abbestellen.</p>"
+          }
+        },
+        "rights_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "11. Deine Rechte"
+          }
+        },
+        "rights_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:</p><ul><li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li><li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li><li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li><li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li><li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li><li><strong>Recht auf Widerspruch</strong> (Art. 21 DSGVO)</li><li><strong>Recht auf Widerruf erteilter Einwilligungen</strong> (Art. 7 Abs. 3 DSGVO)</li></ul><p>Zur Ausübung deiner Rechte wende dich an: <strong>praxis@westend-hausarzt.de</strong></p>"
+          }
+        },
+        "complaint_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "12. Beschwerderecht"
+          }
+        },
+        "complaint_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen die DSGVO verstößt.</p><p>Zuständige Aufsichtsbehörde:<br><strong>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit</strong><br>Postfach 3163, 65021 Wiesbaden<br><a href=\"https://datenschutz.hessen.de\" target=\"_blank\" rel=\"noopener\">datenschutz.hessen.de</a></p>"
+          }
+        },
+        "disclaimer": {
+          "type": "info_box",
+          "settings": {
+            "content": "<p><strong>Hinweis:</strong> Diese Datenschutzerklärung wurde mit größter Sorgfalt erstellt, ersetzt jedoch keine Rechtsberatung. Wir empfehlen die regelmäßige Überprüfung durch einen Datenschutzbeauftragten oder Rechtsanwalt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "intro_heading",
+        "intro_text",
+        "overview_heading",
+        "overview_text",
+        "legal_heading",
+        "legal_text",
+        "hosting_heading",
+        "hosting_text",
+        "cookies_heading",
+        "cookies_text",
+        "ssl_heading",
+        "ssl_text",
+        "contact_heading",
+        "contact_text",
+        "shop_heading",
+        "shop_text",
+        "maps_heading",
+        "maps_text",
+        "newsletter_heading",
+        "newsletter_text",
+        "rights_heading",
+        "rights_text",
+        "complaint_heading",
+        "complaint_text",
+        "disclaimer"
+      ]
+    }
+  },
+  "order": ["main", "legal"]
+}
