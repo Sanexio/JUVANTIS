@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "Kreatinin & GFR",
+        "heading": "Kreatinin & GFR — Dein Nierenfunktions-Check",
+        "category": "Niere",
+        "short_description": "Kreatinin ist ein Stoffwechselprodukt der Muskulatur und wird ueber die Nieren ausgeschieden. Zusammen mit der daraus berechneten GFR (Glomerulaere Filtrationsrate) zeigt er, wie gut deine Nieren arbeiten.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist Kreatinin?",
+            "content": "<p>Kreatinin entsteht beim Abbau von Kreatin in deiner Muskulatur. Es wird mit relativ konstanter Rate produziert und fast ausschliesslich ueber die Nieren aus dem Blut gefiltert und mit dem Urin ausgeschieden. Deshalb ist der Kreatinin-Spiegel im Blut ein guter Indikator fuer die Nierenfunktion.</p><p>Noch aussagekraeftiger ist die GFR (Glomerulaere Filtrationsrate), die aus dem Kreatinin-Wert unter Beruecksichtigung von Alter, Geschlecht und Koerpergewicht berechnet wird. Die GFR gibt an, wie viel Blut die Nieren pro Minute filtern koennen — normalerweise etwa 90-120 ml pro Minute.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Kreatinin Maenner: 0,7-1,3 mg/dl | Kreatinin Frauen: 0,5-1,1 mg/dl | GFR Stadium 1 (normal): ueber 90 ml/min | GFR Stadium 2 (leicht eingeschraenkt): 60-89 ml/min | GFR Stadium 3 (maessig eingeschraenkt): 30-59 ml/min | GFR Stadium 4 (schwer eingeschraenkt): 15-29 ml/min | GFR Stadium 5 (Nierenversagen): unter 15 ml/min"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Ein erhoehtes Kreatinin (bzw. eine erniedrigte GFR) zeigt an, dass die Nieren nicht mehr optimal filtern. Wichtig: Das Kreatinin steigt erst an, wenn bereits ca. 50% der Nierenfunktion verloren sind — es ist also kein Fruehmarker.</p><p>Akute Ursachen: Starker Fluessigkeitsmangel (Dehydratation), bestimmte Medikamente (Ibuprofen, ACE-Hemmer, Antibiotika), Kontrastmittel bei CT-Untersuchungen, akute Infektionen. Chronische Ursachen: Diabetes mellitus (haeufigste Ursache fuer chronische Nierenerkrankung), Bluthochdruck, Glomerulonephritis, Zystennieren. Harmloser Grund: Sehr grosse Muskelmasse oder intensiver Sport koennen das Kreatinin leicht erhoehen, ohne dass eine Nierenschaedigung vorliegt.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein niedriges Kreatinin findet sich haeufig bei: Geringer Muskelmasse (aeltere Menschen, Bettlaegerigkeit, Kachexie), Schwangerschaft (erhoehte Nierenperfusion) und sehr schlanken Personen.</p><p>Ein niedriger Kreatininwert ist in der Regel kein Grund zur Sorge. Allerdings kann er dazu fuehren, dass die GFR ueberschaetzt wird — die Nierenfunktion scheint dann besser als sie tatsaechlich ist. Bei aelteren, untergewichtigen Patienten sollte deshalb zusaetzlich Cystatin C bestimmt werden, das unabhaengig von der Muskelmasse ist.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>Nierenerkrankungen verlaufen oft lange symptomlos — die Nieren haben grosse Reserven. Erst ab einer GFR unter 30 ml/min treten haeufig Symptome auf:</p><p>Muedigkeit und verminderte Leistungsfaehigkeit. Wassereinlagerungen (Oedeme), besonders an den Beinen und im Gesicht (morgens). Schaum im Urin (Hinweis auf Eiweissverlust). Veraenderte Urinmenge (mehr oder weniger als normal). Appetitlosigkeit und Uebelkeit. Juckreiz am ganzen Koerper. Bluthochdruck, der schwer einstellbar ist. Knochen- und Muskelschmerzen (durch gestoerten Kalzium-Phosphat-Haushalt). Anaemie (Blaesse, Kurzatmigkeit) — die Nieren produzieren Erythropoetin fuer die Blutbildung.</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Die wichtigste Massnahme ist die Kontrolle der Grunderkrankungen: Blutzucker und Blutdruck optimal einstellen (Ziel bei Diabetes: HbA1c unter 7%, Blutdruck unter 130/80 mmHg). Nierenschaedliche Medikamente vermeiden — besonders Ibuprofen und Diclofenac bei eingeschraenkter Nierenfunktion. Ausreichend trinken (1,5-2 Liter pro Tag), aber bei fortgeschrittener Nierenerkrankung die Trinkmenge mit dem Arzt absprechen.</p><p>Eiweissreiche Diaeten koennen die Nieren zusaetzlich belasten — bei GFR unter 60 ml/min eine massvoll eiweisshaltige Ernaehrung waehlen. Rauchen aufhoeren: Nikotin verschlechtert die Nierendurchblutung. Regelmaessige Kontrollen: Ab einem Alter von 50 Jahren oder bei Risikofaktoren (Diabetes, Bluthochdruck, familiare Belastung) sollten Kreatinin und GFR jaehrlich kontrolliert werden.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "Harnstoff | Kalium | Natrium"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
