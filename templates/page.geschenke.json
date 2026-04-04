@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "geschenke": {
+      "type": "juvantis-geschenke",
+      "blocks": {
+        "gift_basis": {
+          "type": "gift",
+          "settings": {
+            "icon": "🩸",
+            "title": "Basis-Check",
+            "price": "45 EUR",
+            "description": "Blutbild Grundlagen -- der perfekte Einstieg in die eigene Gesundheit.",
+            "featured": false
+          }
+        },
+        "gift_komplett": {
+          "type": "gift",
+          "settings": {
+            "icon": "🏆",
+            "title": "Komplett-Check",
+            "price": "249 EUR",
+            "description": "80+ Biomarker -- das volle Programm fuer maximale Klarheit ueber den eigenen Koerper.",
+            "featured": true
+          }
+        },
+        "gift_body": {
+          "type": "gift",
+          "settings": {
+            "icon": "🫀",
+            "title": "Body Check",
+            "price": "449 EUR",
+            "description": "Ultraschall, EKG und umfassendes Labor -- der Premium-Check fuer alle, die es genau wissen wollen.",
+            "featured": false
+          }
+        },
+        "gift_wunsch": {
+          "type": "gift",
+          "settings": {
+            "icon": "🎁",
+            "title": "Wunschbetrag",
+            "price": "Flexibel",
+            "description": "Freier Betrag als Gutschein -- der Beschenkte entscheidet selbst, was er buchen moechte.",
+            "featured": false
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "title": "Gutschein waehlen & kaufen",
+            "text": "Waehle den passenden Gutschein und schliesse den Kauf online ab."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "Per E-Mail oder Print verschenken",
+            "text": "Du erhaeltst den Gutschein als PDF zum Ausdrucken oder als digitale Version zum Weiterleiten."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Termin buchen & einloesen",
+            "text": "Der Beschenkte bucht einen Termin und loest den Gutschein-Code bei der Buchung ein."
+          }
+        }
+      },
+      "block_order": [
+        "gift_basis",
+        "gift_komplett",
+        "gift_body",
+        "gift_wunsch",
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "heading": "Schenke Gesundheit.",
+        "intro": "<p>Das wertvollste Geschenk? Wissen ueber den eigenen Koerper. Mit einem Juvantis-Gutschein schenkst du mehr als einen Check-up -- du schenkst Klarheit.</p>",
+        "occasions_heading": "Der perfekte Anlass",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "geschenke"
+  ]
+}
