@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hub": {
+      "type": "juvantis-biomarker-hub",
+      "settings": {
+        "heading": "Biomarker-Lexikon: Deine Laborwerte verstehen",
+        "description": "Alle wichtigen Biomarker und Laborwerte erklaert: Referenzwerte, Bedeutung bei Abweichung und was du tun kannst.",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "cat-blut": {
+          "type": "category",
+          "settings": {
+            "icon": "🩸",
+            "title": "Blutbild",
+            "markers": "Erythrozyten | Leukozyten | Thrombozyten | Haemoglobin"
+          }
+        },
+        "cat-stoffwechsel": {
+          "type": "category",
+          "settings": {
+            "icon": "🧬",
+            "title": "Stoffwechsel",
+            "markers": "Glucose | HbA1c:/pages/biomarker-hba1c | Cholesterin:/pages/biomarker-cholesterin | Triglyceride"
+          }
+        },
+        "cat-schilddruese": {
+          "type": "category",
+          "settings": {
+            "icon": "🦋",
+            "title": "Schilddruese",
+            "markers": "TSH:/pages/biomarker-tsh | fT3 | fT4"
+          }
+        },
+        "cat-leber": {
+          "type": "category",
+          "settings": {
+            "icon": "🫁",
+            "title": "Leber",
+            "markers": "GOT:/pages/biomarker-leberwerte | GPT:/pages/biomarker-leberwerte | GGT | Bilirubin"
+          }
+        },
+        "cat-niere": {
+          "type": "category",
+          "settings": {
+            "icon": "💧",
+            "title": "Niere",
+            "markers": "Kreatinin:/pages/biomarker-kreatinin | GFR | Harnstoff"
+          }
+        },
+        "cat-vitamine": {
+          "type": "category",
+          "settings": {
+            "icon": "💊",
+            "title": "Vitamine & Mineralstoffe",
+            "markers": "Vitamin D:/pages/biomarker-vitamin-d | B12:/pages/biomarker-vitamin-b12 | Eisen | Ferritin:/pages/biomarker-ferritin"
+          }
+        },
+        "cat-entzuendung": {
+          "type": "category",
+          "settings": {
+            "icon": "🔥",
+            "title": "Entzuendung",
+            "markers": "CRP:/pages/biomarker-crp | BSG | Leukozyten"
+          }
+        },
+        "cat-hormone": {
+          "type": "category",
+          "settings": {
+            "icon": "⚡",
+            "title": "Hormone",
+            "markers": "Testosteron:/pages/biomarker-testosteron | Cortisol | DHEA-S"
+          }
+        }
+      },
+      "block_order": [
+        "cat-blut",
+        "cat-stoffwechsel",
+        "cat-schilddruese",
+        "cat-leber",
+        "cat-niere",
+        "cat-vitamine",
+        "cat-entzuendung",
+        "cat-hormone"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "hub"
+  ]
+}
