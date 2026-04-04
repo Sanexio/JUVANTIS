@@ -2,6 +2,7 @@
   Juvantis Section: SEO Content Page (wiederverwendbar)
   Zweck: Flexible Content-Seite fuer SEO-Landingpages
   Verwendet fuer: Grosses Blutbild, Standort, Infusionen, Longevity
+  Design: Apple-inspired Design System
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
@@ -14,241 +15,322 @@
 {%- if is_seo -%}
 
 {%- style -%}
-  .jv-seo {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #SeoPage-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-seo__container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+  #SeoPage-{{ section.id }} .seo-container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
   /* Hero */
-  .jv-seo__hero { text-align: center; padding: 3rem 0 2.5rem; }
-
-  .jv-seo__badge {
-    display: inline-flex;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1.2rem;
+  #SeoPage-{{ section.id }} .seo-hero {
+    text-align: center;
+    padding: 4rem 0 3rem;
   }
 
-  .jv-seo__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-  }
-
-  .jv-seo__hero-text {
-    font-size: clamp(1rem, 2vw, 1.12rem);
-    color: var(--jv-text-sec);
-    max-width: 42rem;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  /* Content blocks */
-  .jv-seo__body { margin-bottom: 2rem; }
-
-  .jv-seo__body h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin: 2.5rem 0 1rem;
-  }
-
-  .jv-seo__body h3 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+  #SeoPage-{{ section.id }} .seo-label {
+    display: inline-block;
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 1.8rem 0 0.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--apple-text-tertiary);
+    margin-bottom: 1.6rem;
   }
 
-  .jv-seo__richtext {
-    line-height: 1.75;
-    font-size: 0.95rem;
-    color: var(--jv-text-sec);
+  #SeoPage-{{ section.id }} .seo-hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin: 0 0 1.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-seo__richtext p { margin: 0 0 1rem; }
-  .jv-seo__richtext ul, .jv-seo__richtext ol { margin: 0 0 1rem; padding-left: 1.5rem; }
-  .jv-seo__richtext li { margin-bottom: 0.4rem; }
+  #SeoPage-{{ section.id }} .seo-hero-text {
+    font-size: 1.7rem;
+    color: var(--apple-text-secondary);
+    max-width: 48rem;
+    margin: 0 auto;
+    line-height: 1.53;
+  }
 
-  .jv-seo__richtext a {
-    color: var(--jv-teal);
+  /* Content body */
+  #SeoPage-{{ section.id }} .seo-body {
+    margin-bottom: 2rem;
+  }
+
+  #SeoPage-{{ section.id }} .seo-body h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.07;
+    margin: 4rem 0 1.6rem;
+    color: var(--apple-text);
+  }
+
+  #SeoPage-{{ section.id }} .seo-body h3 {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin: 2.4rem 0 1rem;
+    color: var(--apple-text);
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext {
+    line-height: 1.53;
+    font-size: 1.7rem;
+    color: var(--apple-text-secondary);
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext p {
+    margin: 0 0 1.4rem;
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext ul,
+  #SeoPage-{{ section.id }} .seo-richtext ol {
+    margin: 0 0 1.4rem;
+    padding-left: 2rem;
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext li {
+    margin-bottom: 0.6rem;
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext a {
+    color: var(--apple-link);
+    text-decoration: none;
+  }
+
+  #SeoPage-{{ section.id }} .seo-richtext a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.15em;
   }
 
   /* Highlight box */
-  .jv-seo__highlight {
-    background: var(--jv-gradient);
+  #SeoPage-{{ section.id }} .seo-highlight {
+    background: var(--apple-text);
     color: #fff;
-    border-radius: var(--jv-radius);
-    padding: 2rem 2.5rem;
-    margin: 2rem 0;
+    border-radius: 2rem;
+    padding: 3.2rem 3.6rem;
+    margin: 3rem 0;
     text-align: center;
   }
 
-  .jv-seo__highlight h2 {
+  #SeoPage-{{ section.id }} .seo-highlight h2 {
     color: #fff;
     margin-top: 0;
-    border: none;
+    font-size: 2.4rem;
+    letter-spacing: -0.025em;
   }
 
-  .jv-seo__highlight p { color: rgba(255,255,255,0.9); margin: 0; }
+  #SeoPage-{{ section.id }} .seo-highlight p {
+    color: rgba(255,255,255,0.82);
+    font-size: 1.7rem;
+    line-height: 1.53;
+    margin: 0;
+  }
 
   /* Info box */
-  .jv-seo__info {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.5rem 2rem;
-    margin: 1.5rem 0;
+  #SeoPage-{{ section.id }} .seo-info {
+    background: var(--apple-bg-gray);
+    border-radius: 2rem;
+    padding: 2.4rem 2.8rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
   }
 
-  .jv-seo__info p { margin: 0; }
-  .jv-seo__info strong { color: var(--jv-text); }
+  #SeoPage-{{ section.id }} .seo-info p { margin: 0; }
+  #SeoPage-{{ section.id }} .seo-info strong { color: var(--apple-text); }
 
-  /* Bento cards grid */
-  .jv-seo__cards {
+  /* Card grid */
+  #SeoPage-{{ section.id }} .seo-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 1.5rem 0;
+    gap: 1.6rem;
+    margin: 2.4rem 0;
   }
 
   @media (min-width: 750px) {
-    .jv-seo__cards { grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); }
+    #SeoPage-{{ section.id }} .seo-cards {
+      grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+    }
   }
 
-  .jv-seo__card {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.8rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  #SeoPage-{{ section.id }} .seo-card {
+    background: var(--apple-bg-gray);
+    border-radius: 2rem;
+    padding: 2.4rem;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-seo__card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  #SeoPage-{{ section.id }} .seo-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
   }
 
-  .jv-seo__card-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+  #SeoPage-{{ section.id }} .seo-card-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
 
-  .jv-seo__card-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.05rem;
+  #SeoPage-{{ section.id }} .seo-card-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--apple-text);
+  }
+
+  #SeoPage-{{ section.id }} .seo-card-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.4rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-seo__card-text {
-    font-size: 0.88rem;
-    color: var(--jv-text-sec);
-    line-height: 1.6;
+  #SeoPage-{{ section.id }} .seo-card-text {
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
     margin: 0;
   }
 
   /* Table */
-  .jv-seo__table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+  #SeoPage-{{ section.id }} .seo-table-wrap {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
 
-  .jv-seo__table {
+  #SeoPage-{{ section.id }} .seo-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 24rem;
-    font-size: 0.9rem;
+    min-width: 28rem;
+    font-size: 1.5rem;
   }
 
-  .jv-seo__table th, .jv-seo__table td {
-    padding: 0.7rem 1rem;
+  #SeoPage-{{ section.id }} .seo-table th,
+  #SeoPage-{{ section.id }} .seo-table td {
+    padding: 1.2rem 1.6rem;
     text-align: left;
-    border-bottom: 1px solid var(--jv-border);
   }
 
-  .jv-seo__table th {
+  #SeoPage-{{ section.id }} .seo-table th {
     font-weight: 600;
-    color: var(--jv-text);
-    background: var(--jv-bg-subtle);
+    background: var(--apple-text);
+    color: #fff;
+    border-bottom: none;
+  }
+
+  #SeoPage-{{ section.id }} .seo-table td {
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    color: var(--apple-text-secondary);
+  }
+
+  #SeoPage-{{ section.id }} .seo-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  #SeoPage-{{ section.id }} .seo-table tbody tr:nth-child(even) {
+    background: var(--apple-bg-gray);
   }
 
   /* CTA */
-  .jv-seo__cta { text-align: center; padding: 2rem 0 0; }
+  #SeoPage-{{ section.id }} .seo-cta {
+    text-align: center;
+    padding: 3rem 0 0;
+  }
 
-  .jv-seo__cta-btn {
+  #SeoPage-{{ section.id }} .seo-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.6rem;
+    background: var(--apple-link);
     color: #fff;
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-seo__cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(78,161,217,0.3);
+  #SeoPage-{{ section.id }} .seo-cta-btn:hover {
+    opacity: 0.88;
     color: #fff;
   }
 
-  @supports (animation-timeline: view()) {
-    .jv-seo__card, .jv-seo__highlight, .jv-seo__info {
-      animation: jvSeoFade 0.6s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 40%;
-    }
+  /* Animations */
+  #SeoPage-{{ section.id }} .seo-animate {
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: seoFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  @keyframes jvSeoFade {
-    from { opacity: 0; transform: translateY(2rem); }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(1) { animation-delay: 0s; }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(2) { animation-delay: 0.12s; }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(3) { animation-delay: 0.24s; }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(4) { animation-delay: 0.36s; }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(5) { animation-delay: 0.48s; }
+  #SeoPage-{{ section.id }} .seo-animate:nth-child(6) { animation-delay: 0.60s; }
+
+  @keyframes seoFadeIn-{{ section.id }} {
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 749px) {
+    #SeoPage-{{ section.id }} .seo-hero { padding: 3rem 0 2rem; }
+    #SeoPage-{{ section.id }} .seo-highlight { padding: 2.4rem 2rem; }
+    #SeoPage-{{ section.id }} .seo-card { padding: 2rem; }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-seo"
-  style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+  id="SeoPage-{{ section.id }}"
+  class="page-width section-{{ section.id }}-padding"
+  style="padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;"
 >
-  <div class="jv-seo__container">
+  <div class="seo-container">
 
-    <header class="jv-seo__hero">
+    <header class="seo-hero">
       {%- if section.settings.badge != blank -%}
-        <span class="jv-seo__badge">{{ section.settings.badge }}</span>
+        <span class="seo-label">{{ section.settings.badge }}</span>
       {%- endif -%}
       <h1>{{ section.settings.heading }}</h1>
       {%- if section.settings.intro != blank -%}
-        <p class="jv-seo__hero-text">{{ section.settings.intro }}</p>
+        <p class="seo-hero-text">{{ section.settings.intro }}</p>
       {%- endif -%}
     </header>
 
-    <div class="jv-seo__body">
+    <div class="seo-body">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
 
@@ -259,16 +341,16 @@
             <h3 {{ block.shopify_attributes }}>{{ block.settings.text }}</h3>
 
           {%- when 'richtext' -%}
-            <div class="jv-seo__richtext" {{ block.shopify_attributes }}>{{ block.settings.content }}</div>
+            <div class="seo-richtext" {{ block.shopify_attributes }}>{{ block.settings.content }}</div>
 
           {%- when 'highlight' -%}
-            <div class="jv-seo__highlight" {{ block.shopify_attributes }}>
+            <div class="seo-highlight seo-animate" {{ block.shopify_attributes }}>
               {%- if block.settings.title != blank -%}<h2>{{ block.settings.title }}</h2>{%- endif -%}
               <p>{{ block.settings.text }}</p>
             </div>
 
           {%- when 'info' -%}
-            <div class="jv-seo__info" {{ block.shopify_attributes }}>
+            <div class="seo-info seo-animate" {{ block.shopify_attributes }}>
               {{ block.settings.content }}
             </div>
 
@@ -284,14 +366,16 @@
         {%- if block.type == 'card' -%}
           {%- assign prev_idx = forloop.index0 | minus: 1 -%}
           {%- if prev_idx < 0 or section.blocks[prev_idx].type != 'card' -%}
-            <div class="jv-seo__cards">
+            <div class="seo-cards">
           {%- endif -%}
-          <div class="jv-seo__card" {{ block.shopify_attributes }}>
+          <div class="seo-card seo-animate" {{ block.shopify_attributes }}>
             {%- if block.settings.icon != blank -%}
-              <span class="jv-seo__card-icon">{{ block.settings.icon }}</span>
+              <div class="seo-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
             {%- endif -%}
-            <h3 class="jv-seo__card-title">{{ block.settings.title }}</h3>
-            <p class="jv-seo__card-text">{{ block.settings.description }}</p>
+            <h3 class="seo-card-title">{{ block.settings.title }}</h3>
+            <p class="seo-card-text">{{ block.settings.description }}</p>
           </div>
           {%- assign next_idx = forloop.index -%}
           {%- if next_idx >= section.blocks.size or section.blocks[next_idx].type != 'card' -%}
@@ -303,7 +387,7 @@
         {%- if block.type == 'table_row' -%}
           {%- assign prev_idx = forloop.index0 | minus: 1 -%}
           {%- if prev_idx < 0 or section.blocks[prev_idx].type != 'table_row' -%}
-            <div class="jv-seo__table-wrap"><table class="jv-seo__table">
+            <div class="seo-table-wrap"><table class="seo-table">
               <thead><tr>
                 <th>{{ section.settings.table_col1 }}</th>
                 <th>{{ section.settings.table_col2 }}</th>
@@ -325,13 +409,20 @@
     </div>
 
     {%- if section.settings.cta_label != blank -%}
-      <div class="jv-seo__cta">
-        <a href="{{ section.settings.cta_link }}" class="jv-seo__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
+      <div class="seo-cta">
+        <a href="{{ section.settings.cta_link }}" class="seo-cta-btn">{{ section.settings.cta_label }} &rarr;</a>
       </div>
     {%- endif -%}
 
   </div>
 </section>
+
+<style media="screen and (min-width: 750px)">
+  #SeoPage-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px !important;
+    padding-bottom: {{ section.settings.padding_bottom }}px !important;
+  }
+</style>
 
 {%- endif -%}
 
