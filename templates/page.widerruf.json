@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "legal": {
+      "type": "juvantis-legal",
+      "settings": {
+        "badge_text": "Widerrufsrecht",
+        "heading": "Widerrufsbelehrung",
+        "subtitle": "Gesetzliches Widerrufsrecht für Verbraucher",
+        "show_date": true,
+        "last_updated": "April 2026",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Widerrufsrecht"
+          }
+        },
+        "right_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Du hast das Recht, binnen <strong>vierzehn Tagen</strong> ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p><p>Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.</p><p>Um dein Widerrufsrecht auszuüben, musst du uns</p>"
+          }
+        },
+        "address": {
+          "type": "contact_card",
+          "settings": {
+            "content": "<p><strong>Sanexio GmbH</strong><br>Grüneburgweg 12<br>60322 Frankfurt am Main<br><strong>E-Mail:</strong> praxis@westend-hausarzt.de<br><strong>Telefon:</strong> 069 727819</p>"
+          }
+        },
+        "right_text_2": {
+          "type": "text",
+          "settings": {
+            "content": "<p>mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p><p>Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest.</p>"
+          }
+        },
+        "consequences_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Folgen des Widerrufs"
+          }
+        },
+        "consequences_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wenn du diesen Vertrag widerrufst, haben wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über deinen Widerruf dieses Vertrags bei uns eingegangen ist.</p><p>Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt hast, es sei denn, mit dir wurde ausdrücklich etwas anderes vereinbart. In keinem Fall werden dir wegen dieser Rückzahlung Entgelte berechnet.</p>"
+          }
+        },
+        "started_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Vorzeitiger Beginn der Leistung"
+          }
+        },
+        "started_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Hast du verlangt, dass die Dienstleistung während der Widerrufsfrist beginnen soll, so hast du uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem du uns von der Ausübung des Widerrufsrechts unterrichtest, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht.</p>"
+          }
+        },
+        "exceptions_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Ausnahmen vom Widerrufsrecht"
+          }
+        },
+        "exceptions_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Das Widerrufsrecht erlischt vorzeitig, wenn wir die Dienstleistung vollständig erbracht haben und mit der Ausführung der Dienstleistung erst begonnen haben, nachdem du deine ausdrückliche Zustimmung gegeben und gleichzeitig deine Kenntnis davon bestätigt hast, dass du dein Widerrufsrecht bei vollständiger Vertragserfüllung verlierst (<strong>§ 356 Abs. 4 BGB</strong>).</p>"
+          }
+        },
+        "form_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Muster-Widerrufsformular"
+          }
+        },
+        "form_info": {
+          "type": "info_box",
+          "settings": {
+            "content": "<p><strong>Wenn du den Vertrag widerrufen willst, fülle bitte dieses Formular aus und sende es zurück:</strong></p><p>An: Sanexio GmbH, Grüneburgweg 12, 60322 Frankfurt am Main, E-Mail: praxis@westend-hausarzt.de</p><p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung:</p><p>Bestellt am (*) / erhalten am (*):<br>Name des/der Verbraucher(s):<br>Anschrift des/der Verbraucher(s):<br>Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier):<br>Datum:</p><p><em>(*) Unzutreffendes streichen.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "right_heading",
+        "right_text",
+        "address",
+        "right_text_2",
+        "consequences_heading",
+        "consequences_text",
+        "started_heading",
+        "started_text",
+        "exceptions_heading",
+        "exceptions_text",
+        "form_heading",
+        "form_info"
+      ]
+    }
+  },
+  "order": ["main", "legal"]
+}
