@@ -1,0 +1,499 @@
+{%- comment -%}
+  Juvantis Section: Bluttests / Bloody Check-ups
+  Zweck: Produktkatalog der Labor-Check-ups mit Bento Grid
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- if template.suffix == 'bluttests' -%}
+
+{%- style -%}
+  .jv-blood {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-teal-bright: #02C39A;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-blood__container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ── Hero ── */
+  .jv-blood__hero {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .jv-blood__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-blood__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  .jv-blood__hero-text {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: var(--jv-text-sec);
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── Bento Grid — Check-up Categories ── */
+  .jv-blood__section-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-blood__bento {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-blood__bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .jv-blood__bento .jv-blood__card:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: 990px) {
+    .jv-blood__bento {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .jv-blood__bento .jv-blood__card:first-child {
+      grid-column: 1 / 3;
+    }
+  }
+
+  .jv-blood__card {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .jv-blood__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+
+  .jv-blood__card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .jv-blood__card-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+
+  .jv-blood__card-text {
+    font-size: 0.9rem;
+    color: var(--jv-text-sec);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+
+  .jv-blood__card-markers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .jv-blood__marker-pill {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--jv-text-sec);
+  }
+
+  .jv-blood__card--featured {
+    background: var(--jv-bg-subtle);
+    border-color: var(--jv-teal);
+  }
+
+  .jv-blood__card--featured .jv-blood__card-title {
+    color: var(--jv-teal);
+  }
+
+  /* ── Process Steps ── */
+  .jv-blood__process {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .jv-blood__process h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-blood__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-blood__steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .jv-blood__step {
+    text-align: center;
+  }
+
+  .jv-blood__step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .jv-blood__step-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0 0 0.3rem;
+  }
+
+  .jv-blood__step-text {
+    font-size: 0.85rem;
+    color: var(--jv-text-sec);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── Price Teaser ── */
+  .jv-blood__price-teaser {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .jv-blood__price-tag {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--jv-teal);
+  }
+
+  .jv-blood__price-note {
+    font-size: 0.9rem;
+    color: var(--jv-text-sec);
+    margin-top: 0.3rem;
+  }
+
+  /* ── CTA ── */
+  .jv-blood__cta {
+    text-align: center;
+    padding: 1rem 0 0;
+  }
+
+  .jv-blood__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .jv-blood__cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+    color: #fff;
+  }
+
+  /* ── Scroll Animation ── */
+  @supports (animation-timeline: view()) {
+    .jv-blood__card,
+    .jv-blood__process,
+    .jv-blood__step {
+      animation: jvBloodFadeUp 0.6s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 40%;
+    }
+  }
+
+  @keyframes jvBloodFadeUp {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-blood"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="jv-blood__container">
+
+    <!-- Hero -->
+    <header class="jv-blood__hero">
+      <span class="jv-blood__badge">Labordiagnostik</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="jv-blood__hero-text">{{ section.settings.intro }}</p>
+    </header>
+
+    <!-- Check-up Bento Grid -->
+    <h2 class="jv-blood__section-title">{{ section.settings.categories_heading }}</h2>
+    <div class="jv-blood__bento">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'checkup' -%}
+          <div class="jv-blood__card{% if block.settings.featured %} jv-blood__card--featured{% endif %}" {{ block.shopify_attributes }}>
+            <span class="jv-blood__card-icon">{{ block.settings.icon }}</span>
+            <h3 class="jv-blood__card-title">{{ block.settings.title }}</h3>
+            <p class="jv-blood__card-text">{{ block.settings.description }}</p>
+            {%- if block.settings.markers != blank -%}
+              <div class="jv-blood__card-markers">
+                {%- assign markers = block.settings.markers | split: ',' -%}
+                {%- for m in markers -%}
+                  <span class="jv-blood__marker-pill">{{ m | strip }}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- Process -->
+    <div class="jv-blood__process">
+      <h2>{{ section.settings.process_heading }}</h2>
+      <div class="jv-blood__steps">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'step' -%}
+            <div class="jv-blood__step" {{ block.shopify_attributes }}>
+              <span class="jv-blood__step-num">{{ block.settings.number }}</span>
+              <h3 class="jv-blood__step-title">{{ block.settings.title }}</h3>
+              <p class="jv-blood__step-text">{{ block.settings.text }}</p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <!-- Price + CTA -->
+    <div class="jv-blood__price-teaser">
+      <div class="jv-blood__price-tag">{{ section.settings.price_text }}</div>
+      <p class="jv-blood__price-note">{{ section.settings.price_note }}</p>
+    </div>
+
+    <div class="jv-blood__cta">
+      <a href="{{ section.settings.cta_link }}" class="jv-blood__cta-btn">
+        {{ section.settings.cta_label }} &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Bluttests",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Dein Blut weiß mehr, als du denkst."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Einleitung",
+      "default": "Ein Bluttest bei Juvantis ist mehr als ein Blutbild beim Hausarzt. Wir analysieren bis zu 80+ Biomarker und visualisieren deine Ergebnisse in deinem persönlichen Digital Health Twin — verständlich, motivierend und medizinisch fundiert."
+    },
+    {
+      "type": "text",
+      "id": "categories_heading",
+      "label": "Kategorien-Überschrift",
+      "default": "Unsere Check-up-Kategorien"
+    },
+    {
+      "type": "text",
+      "id": "process_heading",
+      "label": "Ablauf-Überschrift",
+      "default": "So funktioniert dein Bluttest"
+    },
+    {
+      "type": "text",
+      "id": "price_text",
+      "label": "Preis-Teaser",
+      "default": "Ab 45 EUR pro Check-up"
+    },
+    {
+      "type": "text",
+      "id": "price_note",
+      "label": "Preis-Hinweis",
+      "default": "Einzelne Checks oder als Teil deines Komplett-Pakets"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA-Button Text",
+      "default": "Jetzt Bluttest buchen"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA-Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "label": "Abstand oben"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 52,
+      "label": "Abstand unten"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "checkup",
+      "name": "Check-up Kategorie",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Emoji)",
+          "default": "🩸"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Beschreibung"
+        },
+        {
+          "type": "text",
+          "id": "markers",
+          "label": "Biomarker (kommagetrennt)"
+        },
+        {
+          "type": "checkbox",
+          "id": "featured",
+          "label": "Hervorgehoben",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "name": "Ablauf-Schritt",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Schritt-Nummer",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Beschreibung"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis: Bluttests"
+    }
+  ]
+}
+{% endschema %}
