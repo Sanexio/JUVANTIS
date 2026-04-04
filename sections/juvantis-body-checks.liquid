@@ -1,0 +1,443 @@
+{%- comment -%}
+  Juvantis Section: Body Checks
+  Zweck: Physische Untersuchungen (Ultraschall, EKG etc.) — USP gegenueber Aware/Aniva
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- if template.suffix == 'body-checks' -%}
+
+{%- style -%}
+  .jv-body {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-body__container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .jv-body__hero {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .jv-body__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-body__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  .jv-body__hero-text {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: var(--jv-text-sec);
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* USP Box */
+  .jv-body__usp {
+    background: var(--jv-gradient);
+    color: #fff;
+    border-radius: var(--jv-radius);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .jv-body__usp h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+
+  .jv-body__usp p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Bento Grid */
+  .jv-body__section-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-body__bento {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-body__bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 990px) {
+    .jv-body__bento {
+      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    }
+  }
+
+  .jv-body__card {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-body__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+
+  .jv-body__card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .jv-body__card-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+  }
+
+  .jv-body__card-text {
+    font-size: 0.88rem;
+    color: var(--jv-text-sec);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Timeline */
+  .jv-body__timeline {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .jv-body__timeline h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-body__timeline-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-body__timeline-steps {
+      grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+    }
+  }
+
+  .jv-body__tl-step {
+    text-align: center;
+  }
+
+  .jv-body__tl-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+
+  .jv-body__tl-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0 0 0.3rem;
+  }
+
+  .jv-body__tl-text {
+    font-size: 0.85rem;
+    color: var(--jv-text-sec);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* CTA */
+  .jv-body__cta {
+    text-align: center;
+    padding: 1rem 0 0;
+  }
+
+  .jv-body__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .jv-body__cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+    color: #fff;
+  }
+
+  @supports (animation-timeline: view()) {
+    .jv-body__card,
+    .jv-body__usp,
+    .jv-body__timeline,
+    .jv-body__tl-step {
+      animation: jvBodyFadeUp 0.6s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 40%;
+    }
+  }
+
+  @keyframes jvBodyFadeUp {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-body"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="jv-body__container">
+
+    <header class="jv-body__hero">
+      <span class="jv-body__badge">Apparative Diagnostik</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="jv-body__hero-text">{{ section.settings.intro }}</p>
+    </header>
+
+    <div class="jv-body__usp">
+      <h2>{{ section.settings.usp_heading }}</h2>
+      <p>{{ section.settings.usp_text }}</p>
+    </div>
+
+    <h2 class="jv-body__section-title">{{ section.settings.checks_heading }}</h2>
+    <div class="jv-body__bento">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'check' -%}
+          <div class="jv-body__card" {{ block.shopify_attributes }}>
+            <span class="jv-body__card-icon">{{ block.settings.icon }}</span>
+            <h3 class="jv-body__card-title">{{ block.settings.title }}</h3>
+            <p class="jv-body__card-text">{{ block.settings.description }}</p>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="jv-body__timeline">
+      <h2>{{ section.settings.timeline_heading }}</h2>
+      <div class="jv-body__timeline-steps">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'timeline_step' -%}
+            <div class="jv-body__tl-step" {{ block.shopify_attributes }}>
+              <span class="jv-body__tl-num">{{ block.settings.number }}</span>
+              <h3 class="jv-body__tl-title">{{ block.settings.title }}</h3>
+              <p class="jv-body__tl-text">{{ block.settings.text }}</p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="jv-body__cta">
+      <a href="{{ section.settings.cta_link }}" class="jv-body__cta-btn">
+        {{ section.settings.cta_label }} &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Body Checks",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Ueberschrift",
+      "default": "Du bist mehr als die Summe deiner Teile."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Einleitung"
+    },
+    {
+      "type": "text",
+      "id": "usp_heading",
+      "label": "USP-Ueberschrift",
+      "default": "Was uns unterscheidet"
+    },
+    {
+      "type": "textarea",
+      "id": "usp_text",
+      "label": "USP-Text",
+      "default": "Wir schauen nicht nur ins Blut, sondern in deinen Koerper. Ultraschall, EKG, Lungenfunktion — apparative Diagnostik und Labormedizin unter einem Dach."
+    },
+    {
+      "type": "text",
+      "id": "checks_heading",
+      "label": "Untersuchungen-Ueberschrift",
+      "default": "Unsere Untersuchungen"
+    },
+    {
+      "type": "text",
+      "id": "timeline_heading",
+      "label": "Ablauf-Ueberschrift",
+      "default": "So laeuft dein Body Check ab"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA-Text",
+      "default": "Jetzt Body Check buchen"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA-Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "label": "Abstand oben"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 52,
+      "label": "Abstand unten"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "check",
+      "name": "Untersuchung",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Emoji)",
+          "default": "🔊"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Beschreibung"
+        }
+      ]
+    },
+    {
+      "type": "timeline_step",
+      "name": "Ablauf-Schritt",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Nummer",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Beschreibung"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis: Body Checks"
+    }
+  ]
+}
+{% endschema %}
