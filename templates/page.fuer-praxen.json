@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "zielgruppe": {
+      "type": "juvantis-zielgruppe",
+      "blocks": {
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🏷️",
+            "title": "White-Label DHT"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔌",
+            "title": "API-Integration"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📊",
+            "title": "Patienten-Dashboard"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧠",
+            "title": "Clinical Decision Support"
+          }
+        },
+        "benefit_5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🤝",
+            "title": "Dedicated Account Manager"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4",
+        "benefit_5"
+      ],
+      "settings": {
+        "badge": "Fuer Praxen",
+        "heading": "Der Digital Health Twin fuer deine Praxis.",
+        "intro": "<p>White-Label-Integration des Juvantis Digital Health Twin in deine Praxissoftware. Biete deinen Patienten eine Gesundheitsvisualisierung, die motiviert.</p>",
+        "usp_heading": "B2B-Partnerschaft auf Augenhoehe",
+        "usp_text": "<p>Wir liefern die Technologie, du lieferst die Medizin. Integriere den DHT als White-Label-Loesung und biete deinen Patienten ein Erlebnis, das sie an deine Praxis bindet.</p>",
+        "benefits_heading": "Deine Vorteile als Partner",
+        "cta_label": "Partnerschaft anfragen",
+        "cta_link": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "zielgruppe"
+  ]
+}
