@@ -1,0 +1,410 @@
+{%- comment -%}
+  Juvantis Section: Legal Pages
+  Zweck: Wiederverwendbare Section für Impressum, Datenschutz, AGB, Widerruf
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- comment -%} Liquid-Guard (R-012) — nur auf Legal-Seiten rendern {%- endcomment -%}
+{%- assign legal_pages = 'impressum,datenschutz,agb,widerruf' | split: ',' -%}
+{%- assign is_legal = false -%}
+{%- for p in legal_pages -%}
+  {%- if template.suffix == p -%}
+    {%- assign is_legal = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if is_legal -%}
+
+{%- style -%}
+  /* ── Juvantis Legal Section ── */
+  .jv-legal {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-text: #1a1a1a;
+    --jv-text-secondary: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.2rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  /* Hide redundant Shopify page title */
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-legal__container {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ── Header ── */
+  .jv-legal__header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--jv-border);
+    margin-bottom: 2.5rem;
+  }
+
+  .jv-legal__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-legal__title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--jv-text);
+    margin: 0 0 0.6rem;
+  }
+
+  .jv-legal__subtitle {
+    font-size: 1rem;
+    color: var(--jv-text-secondary);
+    margin: 0;
+  }
+
+  .jv-legal__date {
+    font-size: 0.8rem;
+    color: var(--jv-text-secondary);
+    margin-top: 0.8rem;
+  }
+
+  /* ── Content body ── */
+  .jv-legal__body {
+    line-height: 1.75;
+    font-size: 0.95rem;
+  }
+
+  .jv-legal__body h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--jv-text);
+    margin: 2.5rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--jv-border);
+  }
+
+  .jv-legal__body h2:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .jv-legal__body h3 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--jv-text);
+    margin: 1.8rem 0 0.6rem;
+  }
+
+  .jv-legal__body p {
+    margin: 0 0 1rem;
+    color: var(--jv-text-secondary);
+  }
+
+  .jv-legal__body ul,
+  .jv-legal__body ol {
+    margin: 0 0 1rem;
+    padding-left: 1.5rem;
+    color: var(--jv-text-secondary);
+  }
+
+  .jv-legal__body li {
+    margin-bottom: 0.4rem;
+  }
+
+  .jv-legal__body a {
+    color: var(--jv-teal);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    transition: color 0.2s ease;
+  }
+
+  .jv-legal__body a:hover {
+    color: var(--jv-teal-light);
+  }
+
+  /* ── Info box (for disclaimers, notes) ── */
+  .jv-legal__info {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+    color: var(--jv-text-secondary);
+  }
+
+  .jv-legal__info strong {
+    color: var(--jv-text);
+  }
+
+  /* ── Contact card ── */
+  .jv-legal__contact {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+  }
+
+  .jv-legal__contact p {
+    margin: 0 0 0.3rem;
+    color: var(--jv-text);
+  }
+
+  /* ── Table styles ── */
+  .jv-legal__body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .jv-legal__body th,
+  .jv-legal__body td {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--jv-border);
+  }
+
+  .jv-legal__body th {
+    font-weight: 600;
+    color: var(--jv-text);
+    background: var(--jv-bg-subtle);
+  }
+
+  /* ── Footer / back link ── */
+  .jv-legal__footer {
+    text-align: center;
+    padding: 2.5rem 0 1rem;
+    border-top: 1px solid var(--jv-border);
+    margin-top: 3rem;
+  }
+
+  .jv-legal__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--jv-teal);
+    text-decoration: none;
+    transition: gap 0.2s ease, color 0.2s ease;
+  }
+
+  .jv-legal__back:hover {
+    gap: 0.7rem;
+    color: var(--jv-teal-light);
+  }
+
+  /* ── Responsive ── */
+  @media (min-width: 750px) {
+    .jv-legal__container {
+      padding: 0 2rem;
+    }
+
+    .jv-legal__header {
+      padding: 4rem 0 2.5rem;
+    }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-legal"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="jv-legal__container">
+
+    <!-- Header -->
+    <header class="jv-legal__header">
+      <span class="jv-legal__badge">{{ section.settings.badge_text }}</span>
+      <h1 class="jv-legal__title">{{ section.settings.heading }}</h1>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="jv-legal__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+      {%- if section.settings.show_date -%}
+        <p class="jv-legal__date">Stand: {{ section.settings.last_updated }}</p>
+      {%- endif -%}
+    </header>
+
+    <!-- Content blocks -->
+    <div class="jv-legal__body">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+
+          {%- when 'heading' -%}
+            <h2 {{ block.shopify_attributes }}>{{ block.settings.text }}</h2>
+
+          {%- when 'subheading' -%}
+            <h3 {{ block.shopify_attributes }}>{{ block.settings.text }}</h3>
+
+          {%- when 'text' -%}
+            <div {{ block.shopify_attributes }}>{{ block.settings.content }}</div>
+
+          {%- when 'contact_card' -%}
+            <div class="jv-legal__contact" {{ block.shopify_attributes }}>
+              {{ block.settings.content }}
+            </div>
+
+          {%- when 'info_box' -%}
+            <div class="jv-legal__info" {{ block.shopify_attributes }}>
+              {{ block.settings.content }}
+            </div>
+
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- Footer -->
+    <footer class="jv-legal__footer">
+      <a href="/" class="jv-legal__back">&larr; Zurück zur Startseite</a>
+    </footer>
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Legal",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge-Text",
+      "default": "Rechtliches"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Impressum"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Untertitel"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Stand-Datum anzeigen",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "last_updated",
+      "label": "Stand (Datum)",
+      "default": "April 2026"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "label": "Abstand oben"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 52,
+      "label": "Abstand unten"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Überschrift (H2)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Unterüberschrift (H3)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Textabschnitt",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Inhalt"
+        }
+      ]
+    },
+    {
+      "type": "contact_card",
+      "name": "Kontakt-Box",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Inhalt"
+        }
+      ]
+    },
+    {
+      "type": "info_box",
+      "name": "Info-Hinweis",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Inhalt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juvantis: Legal"
+    }
+  ]
+}
+{% endschema %}
