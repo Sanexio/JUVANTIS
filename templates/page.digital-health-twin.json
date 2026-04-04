@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "dht": {
+      "type": "juvantis-dht-page",
+      "blocks": {
+        "f_organs": {
+          "type": "feature",
+          "settings": {
+            "icon": "🫀",
+            "title": "Organe & Systeme"
+          }
+        },
+        "f_skin": {
+          "type": "feature",
+          "settings": {
+            "icon": "🧴",
+            "title": "Haut & Aeusseres"
+          }
+        },
+        "f_vitals": {
+          "type": "feature",
+          "settings": {
+            "icon": "💓",
+            "title": "Vitalwerte"
+          }
+        },
+        "f_biomarkers": {
+          "type": "feature",
+          "settings": {
+            "icon": "🔬",
+            "title": "80+ Biomarker"
+          }
+        },
+        "f_trends": {
+          "type": "feature",
+          "settings": {
+            "icon": "📊",
+            "title": "Zeitverlaeufe"
+          }
+        },
+        "f_ai": {
+          "type": "feature",
+          "settings": {
+            "icon": "🤖",
+            "title": "KI-Empfehlungen"
+          }
+        },
+        "h_1": {
+          "type": "how_step",
+          "settings": {
+            "number": "1",
+            "title": "Check-up machen",
+            "text": "Komm zum Bluttest oder Body Check. Deine Ergebnisse fliessen automatisch in deinen DHT."
+          }
+        },
+        "h_2": {
+          "type": "how_step",
+          "settings": {
+            "number": "2",
+            "title": "Avatar entdecken",
+            "text": "Oeffne die App und sieh deinen 3D-Avatar. Tippe auf Organe, um Details zu sehen."
+          }
+        },
+        "h_3": {
+          "type": "how_step",
+          "settings": {
+            "number": "3",
+            "title": "Fortschritte feiern",
+            "text": "Verfolge deine Entwicklung, schliesse Quests ab und steige im Level auf."
+          }
+        }
+      },
+      "block_order": [
+        "f_organs",
+        "f_skin",
+        "f_vitals",
+        "f_biomarkers",
+        "f_trends",
+        "f_ai",
+        "h_1",
+        "h_2",
+        "h_3"
+      ],
+      "settings": {
+        "heading": "Dein Koerper. Digital. Verstanden.",
+        "hero_sub": "Der weltweit erste Digital Health Twin: Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert -- motivierend statt abstrakt.",
+        "explainer_heading": "Was ist der Digital Health Twin?",
+        "explainer_text": "Stell dir vor, du haettest einen digitalen Zwilling deines Koerpers. Einen 3D-Avatar, der in Echtzeit zeigt, wie es um deine Gesundheit steht. Nicht in abstrakten Zahlen, sondern visuell: Organe, Haut, Vitalwerte -- alles auf einen Blick. Das ist dein Digital Health Twin.",
+        "features_heading": "Was dein DHT kann",
+        "how_heading": "So funktioniert es",
+        "game_heading": "Gesundheit wird zum Spiel",
+        "game_text": "Quests, Challenges und ein Level-System motivieren dich, dranzubleiben. Verbessere deine Werte, steige im Level auf und feiere deine Fortschritte -- Gesundheit darf Spass machen.",
+        "privacy_heading": "Deine Daten gehoeren dir. 100% DSGVO-konform.",
+        "privacy_text": "Alle Daten werden in Deutschland gespeichert und verarbeitet. Du entscheidest, wer Zugriff hat. Keine Weitergabe an Dritte, keine versteckten Datennutzungen. Punkt.",
+        "cta_label": "Starte deinen Digital Health Twin -- kostenlos",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dht"
+  ]
+}
