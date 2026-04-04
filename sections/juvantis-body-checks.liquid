@@ -1,321 +1,384 @@
 {%- comment -%}
   Juvantis Section: Body Checks
-  Zweck: Physische Untersuchungen (Ultraschall, EKG etc.) — USP gegenueber Aware/Aniva
+  Apple-inspired design system rewrite
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
-{%- if template.suffix == 'body-checks' -%}
-
 {%- style -%}
-  .jv-body {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #BodyChecks-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
-  .main-page-title.page-title { display: none !important; }
-  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  #BodyChecks-{{ section.id }} .main-page-title.page-title { display: none !important; }
 
-  .jv-body__container {
-    max-width: 72rem;
+  #BodyChecks-{{ section.id }} .bc__container {
+    max-width: 100rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2.4rem;
   }
 
-  .jv-body__hero {
+  /* Hero */
+  #BodyChecks-{{ section.id }} .bc__hero {
     text-align: center;
-    padding: 3rem 0 2.5rem;
+    padding: 6rem 0 4rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-body__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
+  #BodyChecks-{{ section.id }} .bc__label {
+    display: inline-block;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1.2rem;
+    color: var(--apple-text-tertiary);
+    margin-bottom: 1.6rem;
   }
 
-  .jv-body__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-  }
-
-  .jv-body__hero-text {
-    font-size: clamp(1rem, 2vw, 1.15rem);
-    color: var(--jv-text-sec);
-    max-width: 42rem;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  /* USP Box */
-  .jv-body__usp {
-    background: var(--jv-gradient);
-    color: #fff;
-    border-radius: var(--jv-radius);
-    padding: 2rem 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .jv-body__usp h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  #BodyChecks-{{ section.id }} .bc__hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
     font-weight: 700;
-    margin: 0 0 0.5rem;
+    letter-spacing: -0.04em;
+    line-height: 1.08;
+    margin: 0 0 2rem;
+    color: var(--apple-text);
   }
 
-  .jv-body__usp p {
+  #BodyChecks-{{ section.id }} .bc__hero-text {
+    font-size: 1.7rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  /* USP Box — dark */
+  #BodyChecks-{{ section.id }} .bc__usp {
+    background: var(--apple-text);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 4rem 3.2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.12s forwards;
+  }
+
+  #BodyChecks-{{ section.id }} .bc__usp h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    margin: 0 0 1.2rem;
+    color: #fff;
+  }
+
+  #BodyChecks-{{ section.id }} .bc__usp p {
     margin: 0;
-    opacity: 0.9;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 1.7rem;
+    line-height: 1.53;
+    opacity: 0.8;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  /* Section title */
+  #BodyChecks-{{ section.id }} .bc__section-title {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    text-align: center;
+    margin: 0 0 4rem;
+    color: var(--apple-text);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.24s forwards;
   }
 
   /* Bento Grid */
-  .jv-body__section-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-align: center;
-    margin: 0 0 2rem;
-  }
-
-  .jv-body__bento {
+  #BodyChecks-{{ section.id }} .bc__bento {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 1.6rem;
+    margin-bottom: 6rem;
   }
 
   @media (min-width: 750px) {
-    .jv-body__bento {
+    #BodyChecks-{{ section.id }} .bc__bento {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 990px) {
-    .jv-body__bento {
-      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    #BodyChecks-{{ section.id }} .bc__bento {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
-  .jv-body__card {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.8rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  #BodyChecks-{{ section.id }} .bc__card {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 2.8rem;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-body__card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  #BodyChecks-{{ section.id }} .bc__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
   }
 
-  .jv-body__card-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-    display: block;
+  #BodyChecks-{{ section.id }} .bc__card-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-body__card-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.1rem;
+  #BodyChecks-{{ section.id }} .bc__card-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  #BodyChecks-{{ section.id }} .bc__card-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.4rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.8rem;
+    color: var(--apple-text);
   }
 
-  .jv-body__card-text {
-    font-size: 0.88rem;
-    color: var(--jv-text-sec);
-    line-height: 1.6;
+  #BodyChecks-{{ section.id }} .bc__card-text {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin: 0;
   }
 
   /* Timeline */
-  .jv-body__timeline {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin-bottom: 3rem;
+  #BodyChecks-{{ section.id }} .bc__timeline {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 4.8rem 3.2rem;
+    margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-body__timeline h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+  #BodyChecks-{{ section.id }} .bc__timeline h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
+    letter-spacing: -0.035em;
     text-align: center;
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
+    color: var(--apple-text);
   }
 
-  .jv-body__timeline-steps {
+  #BodyChecks-{{ section.id }} .bc__timeline-steps {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.4rem;
   }
 
   @media (min-width: 750px) {
-    .jv-body__timeline-steps {
-      grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+    #BodyChecks-{{ section.id }} .bc__timeline-steps {
+      grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
     }
   }
 
-  .jv-body__tl-step {
+  #BodyChecks-{{ section.id }} .bc__tl-step {
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-body__tl-num {
+  #BodyChecks-{{ section.id }} .bc__tl-num {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 50%;
-    background: var(--jv-gradient);
+    background: var(--apple-text);
     color: #fff;
+    font-family: var(--apple-font);
     font-weight: 700;
-    margin-bottom: 0.6rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
   }
 
-  .jv-body__tl-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+  #BodyChecks-{{ section.id }} .bc__tl-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    font-size: 0.95rem;
-    margin: 0 0 0.3rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-body__tl-text {
-    font-size: 0.85rem;
-    color: var(--jv-text-sec);
+  #BodyChecks-{{ section.id }} .bc__tl-text {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin: 0;
-    line-height: 1.5;
   }
 
   /* CTA */
-  .jv-body__cta {
+  #BodyChecks-{{ section.id }} .bc__cta {
     text-align: center;
-    padding: 1rem 0 0;
+    padding: 2rem 0 0;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bcReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-body__cta-btn {
+  #BodyChecks-{{ section.id }} .bc__cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.8rem;
+    background: var(--apple-link);
     color: #fff;
+    font-family: var(--apple-font);
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-body__cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+  #BodyChecks-{{ section.id }} .bc__cta-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,113,227,0.2);
     color: #fff;
   }
 
-  @supports (animation-timeline: view()) {
-    .jv-body__card,
-    .jv-body__usp,
-    .jv-body__timeline,
-    .jv-body__tl-step {
-      animation: jvBodyFadeUp 0.6s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 40%;
-    }
+  /* Mobile padding multiplier */
+  @media (max-width: 749px) {
+    #BodyChecks-{{ section.id }} .bc__hero { padding: 4.5rem 0 3rem; }
+    #BodyChecks-{{ section.id }} .bc__usp { padding: 3rem 2.4rem; margin-bottom: 4.5rem; }
+    #BodyChecks-{{ section.id }} .bc__section-title { margin-bottom: 3rem; }
+    #BodyChecks-{{ section.id }} .bc__bento { margin-bottom: 4.5rem; }
+    #BodyChecks-{{ section.id }} .bc__timeline { padding: 3.6rem 2.4rem; margin-bottom: 4.5rem; }
   }
 
-  @keyframes jvBodyFadeUp {
-    from { opacity: 0; transform: translateY(2rem); }
-    to { opacity: 1; transform: translateY(0); }
+  @keyframes bcReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-body"
+  id="BodyChecks-{{ section.id }}"
+  class="section-{{ section.id }}-padding"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="jv-body__container">
+  <div class="page-width bc__container">
 
-    <header class="jv-body__hero">
-      <span class="jv-body__badge">Apparative Diagnostik</span>
+    <header class="bc__hero">
+      <span class="bc__label">Apparative Diagnostik</span>
       <h1>{{ section.settings.heading }}</h1>
-      <p class="jv-body__hero-text">{{ section.settings.intro }}</p>
+      <p class="bc__hero-text">{{ section.settings.intro }}</p>
     </header>
 
-    <div class="jv-body__usp">
+    <div class="bc__usp">
       <h2>{{ section.settings.usp_heading }}</h2>
       <p>{{ section.settings.usp_text }}</p>
     </div>
 
-    <h2 class="jv-body__section-title">{{ section.settings.checks_heading }}</h2>
-    <div class="jv-body__bento">
+    <h2 class="bc__section-title">{{ section.settings.checks_heading }}</h2>
+    <div class="bc__bento">
+      {%- assign check_index = 0 -%}
       {%- for block in section.blocks -%}
         {%- if block.type == 'check' -%}
-          <div class="jv-body__card" {{ block.shopify_attributes }}>
-            <span class="jv-body__card-icon">{{ block.settings.icon }}</span>
-            <h3 class="jv-body__card-title">{{ block.settings.title }}</h3>
-            <p class="jv-body__card-text">{{ block.settings.description }}</p>
+          <div class="bc__card" style="animation-delay: {{ check_index | times: 0.12 | plus: 0.36 }}s;" {{ block.shopify_attributes }}>
+            <div class="bc__card-icon">
+              {%- case block.settings.icon -%}
+                {%- when 'sono' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+                {%- when 'schilddruese' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-1.2 0-2.4.6-3 1.5C8.4 5.4 7.2 6 6 6s-2.4-.6-3-1.5M12 3c1.2 0 2.4.6 3 1.5.6.9 1.8 1.5 3 1.5s2.4-.6 3-1.5M12 3v18"/></svg>
+                {%- when 'echo' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg>
+                {%- when 'carotis' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"/></svg>
+                {%- when 'ekg' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+                {%- when 'ergo' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                {%- when 'lufu' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                {%- when 'diving' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5m-4.75-11.396c.251.023.501.05.75.082M5 14.5l-1.47 1.47a1.75 1.75 0 0 0 1.238 2.989h14.464a1.75 1.75 0 0 0 1.238-2.989L19 14.5"/></svg>
+              {%- endcase -%}
+            </div>
+            <h3 class="bc__card-title">{{ block.settings.title }}</h3>
+            <p class="bc__card-text">{{ block.settings.description }}</p>
           </div>
+          {%- assign check_index = check_index | plus: 1 -%}
         {%- endif -%}
       {%- endfor -%}
     </div>
 
-    <div class="jv-body__timeline">
+    <div class="bc__timeline" style="animation-delay: {{ check_index | times: 0.12 | plus: 0.48 }}s;">
       <h2>{{ section.settings.timeline_heading }}</h2>
-      <div class="jv-body__timeline-steps">
+      <div class="bc__timeline-steps">
+        {%- assign step_index = 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'timeline_step' -%}
-            <div class="jv-body__tl-step" {{ block.shopify_attributes }}>
-              <span class="jv-body__tl-num">{{ block.settings.number }}</span>
-              <h3 class="jv-body__tl-title">{{ block.settings.title }}</h3>
-              <p class="jv-body__tl-text">{{ block.settings.text }}</p>
+            <div class="bc__tl-step" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.6 }}s;" {{ block.shopify_attributes }}>
+              <span class="bc__tl-num">{{ block.settings.number }}</span>
+              <h3 class="bc__tl-title">{{ block.settings.title }}</h3>
+              <p class="bc__tl-text">{{ block.settings.text }}</p>
             </div>
+            {%- assign step_index = step_index | plus: 1 -%}
           {%- endif -%}
         {%- endfor -%}
       </div>
     </div>
 
-    <div class="jv-body__cta">
-      <a href="{{ section.settings.cta_link }}" class="jv-body__cta-btn">
-        {{ section.settings.cta_label }} &rarr;
+    <div class="bc__cta" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.72 }}s;">
+      <a href="{{ section.settings.cta_link }}" class="bc__cta-btn">
+        {{ section.settings.cta_label }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
       </a>
     </div>
 
   </div>
 </section>
-
-{%- endif -%}
 
 {% schema %}
 {
