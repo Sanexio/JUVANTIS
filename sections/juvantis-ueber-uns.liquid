@@ -1,360 +1,403 @@
 {%- comment -%}
   Juvantis Section: Über uns
   Zweck: Team, Mission, Werte — Kernseite für Vertrauen
+  Design: Apple-inspired design system
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
-{%- if template.suffix == 'ueber-uns' -%}
-
 {%- style -%}
-  .jv-about {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-teal-bright: #02C39A;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #UeberUns-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-about__container {
-    max-width: 72rem;
+  #UeberUns-{{ section.id }} .about-container {
+    max-width: 76rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 
   /* ── Hero ── */
-  .jv-about__hero {
+  #UeberUns-{{ section.id }} .about-hero {
     text-align: center;
-    padding: 3rem 0 2.5rem;
+    padding: 4rem 0 3rem;
   }
 
-  .jv-about__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
+  #UeberUns-{{ section.id }} .about-label {
+    display: inline-block;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--jv-teal);
+    color: var(--apple-text-tertiary);
     margin-bottom: 1.2rem;
   }
 
-  .jv-about__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 800;
+  #UeberUns-{{ section.id }} .about-hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1.1;
-    margin: 0 0 1rem;
+    line-height: 1.05;
+    margin: 0 0 1.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__hero p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: var(--jv-text-sec);
-    max-width: 40rem;
+  #UeberUns-{{ section.id }} .about-hero p {
+    font-size: 1.7rem;
+    color: var(--apple-text-secondary);
+    max-width: 52rem;
     margin: 0 auto;
-    line-height: 1.65;
+    line-height: 1.53;
   }
 
   /* ── Mission ── */
-  .jv-about__mission {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin: 0 0 3rem;
+  #UeberUns-{{ section.id }} .about-mission {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 3.6rem 3rem;
+    margin: 0 0 4rem;
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: aboutFadeUp-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-about__mission h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+  #UeberUns-{{ section.id }} .about-mission h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    letter-spacing: -0.03em;
-    margin: 0 0 1rem;
+    letter-spacing: -0.035em;
+    margin: 0 0 1.2rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__mission p {
-    color: var(--jv-text-sec);
-    max-width: 38rem;
+  #UeberUns-{{ section.id }} .about-mission p {
+    color: var(--apple-text-secondary);
+    max-width: 48rem;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.53;
+    font-size: 1.7rem;
   }
 
-  /* ── Team Grid (Bento) ── */
-  .jv-about__team-heading {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  /* ── Team Grid ── */
+  #UeberUns-{{ section.id }} .about-team-heading {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.025em;
     text-align: center;
-    margin: 0 0 2rem;
+    margin: 0 0 2.4rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__team-grid {
+  #UeberUns-{{ section.id }} .about-team-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
   }
 
   @media (min-width: 750px) {
-    .jv-about__team-grid {
-      grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
+    #UeberUns-{{ section.id }} .about-team-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
     }
   }
 
-  .jv-about__team-card {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
+  #UeberUns-{{ section.id }} .about-team-card {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: aboutFadeUp-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-about__team-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  #UeberUns-{{ section.id }} .about-team-card:nth-child(2) { animation-delay: 0.12s; }
+  #UeberUns-{{ section.id }} .about-team-card:nth-child(3) { animation-delay: 0.24s; }
+  #UeberUns-{{ section.id }} .about-team-card:nth-child(4) { animation-delay: 0.36s; }
+
+  #UeberUns-{{ section.id }} .about-team-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
   }
 
-  .jv-about__team-img {
+  #UeberUns-{{ section.id }} .about-team-img {
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
   }
 
-  .jv-about__team-img--placeholder {
+  #UeberUns-{{ section.id }} .about-team-img-placeholder {
     width: 100%;
     aspect-ratio: 4/3;
-    background: var(--jv-bg-subtle);
+    background: var(--apple-bg-white);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: var(--jv-border);
+    color: var(--apple-text-tertiary);
   }
 
-  .jv-about__team-body {
-    padding: 1.5rem;
+  #UeberUns-{{ section.id }} .about-team-img-placeholder svg {
+    width: 4.8rem;
+    height: 4.8rem;
+    stroke: var(--apple-text-tertiary);
   }
 
-  .jv-about__team-name {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.2rem;
+  #UeberUns-{{ section.id }} .about-team-body {
+    padding: 2rem;
+  }
+
+  #UeberUns-{{ section.id }} .about-team-name {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.2rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.3rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__team-role {
-    font-size: 0.85rem;
+  #UeberUns-{{ section.id }} .about-team-role {
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--jv-teal);
-    margin: 0 0 0.8rem;
+    color: var(--apple-link);
+    margin: 0 0 1rem;
+    line-height: 1.53;
   }
 
-  .jv-about__team-qualifications {
+  #UeberUns-{{ section.id }} .about-team-qualifications {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 0.8rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  .jv-about__pill {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
+  #UeberUns-{{ section.id }} .about-pill {
+    background: var(--apple-bg-white);
+    border: none;
     border-radius: 2rem;
-    padding: 0.2rem 0.7rem;
-    font-size: 0.72rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: var(--jv-text-sec);
+    color: var(--apple-text-secondary);
+    letter-spacing: 0.01em;
   }
 
-  .jv-about__team-text {
-    font-size: 0.9rem;
-    line-height: 1.65;
-    color: var(--jv-text-sec);
+  #UeberUns-{{ section.id }} .about-team-text {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin: 0;
   }
 
-  /* ── History / Timeline ── */
-  .jv-about__history {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin: 0 0 3rem;
+  /* ── History ── */
+  #UeberUns-{{ section.id }} .about-history {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 3.6rem 3rem;
+    margin: 0 0 4rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: aboutFadeUp-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s forwards;
   }
 
-  .jv-about__history h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+  #UeberUns-{{ section.id }} .about-history h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    letter-spacing: -0.03em;
-    margin: 0 0 1rem;
+    letter-spacing: -0.035em;
+    margin: 0 0 1.2rem;
     text-align: center;
+    color: var(--apple-text);
   }
 
-  .jv-about__history p {
-    color: var(--jv-text-sec);
-    line-height: 1.7;
-    max-width: 40rem;
+  #UeberUns-{{ section.id }} .about-history p {
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
+    max-width: 48rem;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.7rem;
   }
 
-  /* ── Values (Bento Grid) ── */
-  .jv-about__values-heading {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  /* ── Values Grid ── */
+  #UeberUns-{{ section.id }} .about-values-heading {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.025em;
     text-align: center;
-    margin: 0 0 2rem;
+    margin: 0 0 2.4rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__values-grid {
+  #UeberUns-{{ section.id }} .about-values-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
   }
 
   @media (min-width: 750px) {
-    .jv-about__values-grid {
+    #UeberUns-{{ section.id }} .about-values-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
     }
   }
 
   @media (min-width: 990px) {
-    .jv-about__values-grid {
+    #UeberUns-{{ section.id }} .about-values-grid {
       grid-template-columns: repeat(4, 1fr);
+      gap: 2.4rem;
     }
   }
 
-  .jv-about__value-card {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.8rem 1.5rem;
+  #UeberUns-{{ section.id }} .about-value-card {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 2.4rem 2rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: aboutFadeUp-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-about__value-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  #UeberUns-{{ section.id }} .about-value-card:nth-child(1) { animation-delay: 0s; }
+  #UeberUns-{{ section.id }} .about-value-card:nth-child(2) { animation-delay: 0.12s; }
+  #UeberUns-{{ section.id }} .about-value-card:nth-child(3) { animation-delay: 0.24s; }
+  #UeberUns-{{ section.id }} .about-value-card:nth-child(4) { animation-delay: 0.36s; }
+
+  #UeberUns-{{ section.id }} .about-value-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
   }
 
-  .jv-about__value-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-    display: block;
+  #UeberUns-{{ section.id }} .about-value-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    color: var(--apple-link);
   }
 
-  .jv-about__value-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+  #UeberUns-{{ section.id }} .about-value-icon svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  #UeberUns-{{ section.id }} .about-value-title {
+    font-family: var(--apple-font);
     font-weight: 700;
-    font-size: 1rem;
-    margin: 0 0 0.4rem;
+    font-size: 1.7rem;
+    margin: 0 0 0.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-about__value-text {
-    font-size: 0.85rem;
-    color: var(--jv-text-sec);
-    line-height: 1.5;
+  #UeberUns-{{ section.id }} .about-value-text {
+    font-size: 1.5rem;
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
     margin: 0;
   }
 
   /* ── CTA ── */
-  .jv-about__cta {
+  #UeberUns-{{ section.id }} .about-cta {
     text-align: center;
-    padding: 2.5rem 0 1rem;
+    padding: 2rem 0 1rem;
   }
 
-  .jv-about__cta-btn {
+  #UeberUns-{{ section.id }} .about-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.6rem;
+    background: var(--apple-link);
     color: #fff;
+    font-family: var(--apple-font);
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.8rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-about__cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+  #UeberUns-{{ section.id }} .about-cta-btn:hover {
+    background: #0077ed;
+    transform: scale(1.04);
+    box-shadow: 0 0.8rem 2.4rem rgba(0,113,227,0.3);
     color: #fff;
   }
 
-  /* ── Scroll Animation ── */
-  @supports (animation-timeline: view()) {
-    .jv-about__team-card,
-    .jv-about__value-card,
-    .jv-about__mission,
-    .jv-about__history {
-      animation: jvFadeUp 0.6s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 40%;
-    }
+  /* ── Animation ── */
+  @keyframes aboutFadeUp-{{ section.id }} {
+    from { opacity: 0; transform: translateY(1.6rem); }
+    to { opacity: 1; transform: none; }
   }
 
-  @keyframes jvFadeUp {
-    from { opacity: 0; transform: translateY(2rem); }
-    to { opacity: 1; transform: translateY(0); }
+  /* ── Mobile adjustments ── */
+  @media (max-width: 749px) {
+    #UeberUns-{{ section.id }} .about-container {
+      padding: 0 1.5rem;
+    }
+    #UeberUns-{{ section.id }} .about-mission,
+    #UeberUns-{{ section.id }} .about-history {
+      padding: 2.4rem 2rem;
+    }
+    #UeberUns-{{ section.id }} .about-team-body {
+      padding: 1.6rem;
+    }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-about"
+  id="UeberUns-{{ section.id }}"
   style="
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   "
 >
-  <div class="jv-about__container">
+  <div class="page-width about-container">
 
     <!-- Hero -->
-    <header class="jv-about__hero">
-      <span class="jv-about__badge">Über uns</span>
+    <header class="about-hero">
+      <span class="about-label">Über uns</span>
       <h1>{{ section.settings.heading }}</h1>
       <p>{{ section.settings.description }}</p>
     </header>
 
     <!-- Mission -->
-    <div class="jv-about__mission">
+    <div class="about-mission">
       <h2>{{ section.settings.mission_heading }}</h2>
       <p>{{ section.settings.mission_text }}</p>
     </div>
 
     <!-- Team -->
-    <h2 class="jv-about__team-heading">{{ section.settings.team_heading }}</h2>
-    <div class="jv-about__team-grid">
+    <h2 class="about-team-heading">{{ section.settings.team_heading }}</h2>
+    <div class="about-team-grid">
       {%- for block in section.blocks -%}
         {%- if block.type == 'team_member' -%}
-          <div class="jv-about__team-card" {{ block.shopify_attributes }}>
+          <div class="about-team-card" {{ block.shopify_attributes }}>
             {%- if block.settings.image != blank -%}
               <img
-                class="jv-about__team-img"
+                class="about-team-img"
                 src="{{ block.settings.image | image_url: width: 800 }}"
                 alt="{{ block.settings.name }}"
                 width="800"
@@ -362,21 +405,25 @@
                 loading="lazy"
               >
             {%- else -%}
-              <div class="jv-about__team-img--placeholder">👤</div>
+              <div class="about-team-img-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+                </svg>
+              </div>
             {%- endif -%}
-            <div class="jv-about__team-body">
-              <h3 class="jv-about__team-name">{{ block.settings.name }}</h3>
-              <p class="jv-about__team-role">{{ block.settings.role }}</p>
+            <div class="about-team-body">
+              <h3 class="about-team-name">{{ block.settings.name }}</h3>
+              <p class="about-team-role">{{ block.settings.role }}</p>
               {%- if block.settings.qualifications != blank -%}
-                <div class="jv-about__team-qualifications">
+                <div class="about-team-qualifications">
                   {%- assign quals = block.settings.qualifications | split: ',' -%}
                   {%- for q in quals -%}
-                    <span class="jv-about__pill">{{ q | strip }}</span>
+                    <span class="about-pill">{{ q | strip }}</span>
                   {%- endfor -%}
                 </div>
               {%- endif -%}
               {%- if block.settings.bio != blank -%}
-                <p class="jv-about__team-text">{{ block.settings.bio }}</p>
+                <p class="about-team-text">{{ block.settings.bio }}</p>
               {%- endif -%}
             </div>
           </div>
@@ -386,21 +433,34 @@
 
     <!-- History -->
     {%- if section.settings.history_heading != blank -%}
-      <div class="jv-about__history">
+      <div class="about-history">
         <h2>{{ section.settings.history_heading }}</h2>
         <p>{{ section.settings.history_text }}</p>
       </div>
     {%- endif -%}
 
     <!-- Values -->
-    <h2 class="jv-about__values-heading">{{ section.settings.values_heading }}</h2>
-    <div class="jv-about__values-grid">
+    <h2 class="about-values-heading">{{ section.settings.values_heading }}</h2>
+    <div class="about-values-grid">
       {%- for block in section.blocks -%}
         {%- if block.type == 'value' -%}
-          <div class="jv-about__value-card" {{ block.shopify_attributes }}>
-            <span class="jv-about__value-icon">{{ block.settings.icon }}</span>
-            <h3 class="jv-about__value-title">{{ block.settings.title }}</h3>
-            <p class="jv-about__value-text">{{ block.settings.text }}</p>
+          <div class="about-value-card" {{ block.shopify_attributes }}>
+            <span class="about-value-icon">
+              {%- case block.settings.title -%}
+                {%- when 'Evidenzbasiert' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M5 14.5l-1.43 1.43a2.25 2.25 0 0 0 1.59 3.82h13.68a2.25 2.25 0 0 0 1.59-3.82L19 14.5"/></svg>
+                {%- when 'Transparent' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+                {%- when 'Patientenzentriert' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+                {%- when 'Innovativ' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
+              {%- endcase -%}
+            </span>
+            <h3 class="about-value-title">{{ block.settings.title }}</h3>
+            <p class="about-value-text">{{ block.settings.text }}</p>
           </div>
         {%- endif -%}
       {%- endfor -%}
@@ -408,8 +468,8 @@
 
     <!-- CTA -->
     {%- if section.settings.cta_label != blank -%}
-      <div class="jv-about__cta">
-        <a href="{{ section.settings.cta_link }}" class="jv-about__cta-btn">
+      <div class="about-cta">
+        <a href="{{ section.settings.cta_link }}" class="about-cta-btn">
           {{ section.settings.cta_label }} &rarr;
         </a>
       </div>
@@ -417,8 +477,6 @@
 
   </div>
 </section>
-
-{%- endif -%}
 
 {% schema %}
 {
