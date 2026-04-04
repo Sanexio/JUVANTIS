@@ -1,6 +1,7 @@
 {%- comment -%}
   Juvantis Section: Biomarker Einzelseite (wiederverwendbar)
   Zweck: Eine Section fuer alle individuellen Biomarker-Seiten
+  Design: Apple-inspired Design System
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
@@ -13,242 +14,321 @@
 {%- if is_bio -%}
 
 {%- style -%}
-  .jv-bio {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #BioSingle-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
   .main-page-title.page-title { display: none !important; }
   .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-  .jv-bio__container { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+  #BioSingle-{{ section.id }} .bio-container {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
   /* Breadcrumb */
-  .jv-bio__breadcrumb {
-    font-size: 0.8rem;
-    color: var(--jv-text-sec);
-    padding: 1.5rem 0 0;
+  #BioSingle-{{ section.id }} .bio-breadcrumb {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--apple-text-tertiary);
+    padding: 2rem 0 0;
   }
 
-  .jv-bio__breadcrumb a {
-    color: var(--jv-teal);
+  #BioSingle-{{ section.id }} .bio-breadcrumb a {
+    color: var(--apple-link);
     text-decoration: none;
+    transition: opacity 0.2s;
   }
 
-  .jv-bio__breadcrumb a:hover { text-decoration: underline; }
+  #BioSingle-{{ section.id }} .bio-breadcrumb a:hover {
+    opacity: 0.72;
+  }
+
+  #BioSingle-{{ section.id }} .bio-breadcrumb .bio-breadcrumb-sep {
+    color: var(--apple-text-tertiary);
+    margin: 0 0.4rem;
+  }
 
   /* Hero */
-  .jv-bio__hero { padding: 1.5rem 0 2rem; }
+  #BioSingle-{{ section.id }} .bio-hero {
+    padding: 2rem 0 3rem;
+  }
 
-  .jv-bio__badge {
-    display: inline-flex;
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.3rem 0.9rem;
-    font-size: 0.72rem;
+  #BioSingle-{{ section.id }} .bio-label {
+    display: inline-block;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--jv-teal);
-    margin-bottom: 1rem;
+    color: var(--apple-text-tertiary);
+    margin-bottom: 1.2rem;
   }
 
-  .jv-bio__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.15;
-    margin: 0 0 0.8rem;
+  #BioSingle-{{ section.id }} .bio-hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin: 0 0 1.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-bio__short {
-    font-size: 1.05rem;
-    color: var(--jv-text-sec);
-    line-height: 1.7;
+  #BioSingle-{{ section.id }} .bio-short {
+    font-size: 1.7rem;
+    color: var(--apple-text-secondary);
+    line-height: 1.53;
     margin: 0;
   }
 
   /* Content sections */
-  .jv-bio__section {
-    margin-bottom: 2rem;
+  #BioSingle-{{ section.id }} .bio-section {
+    margin-bottom: 2.4rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bioFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-bio__section h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(1) { animation-delay: 0s; }
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(2) { animation-delay: 0.12s; }
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(3) { animation-delay: 0.24s; }
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(4) { animation-delay: 0.36s; }
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(5) { animation-delay: 0.48s; }
+  #BioSingle-{{ section.id }} .bio-section:nth-of-type(6) { animation-delay: 0.60s; }
+
+  @keyframes bioFadeIn-{{ section.id }} {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  #BioSingle-{{ section.id }} .bio-section h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    letter-spacing: -0.02em;
-    margin: 0 0 0.8rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--jv-border);
+    letter-spacing: -0.035em;
+    line-height: 1.07;
+    margin: 0 0 1.2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    color: var(--apple-text);
   }
 
-  .jv-bio__section:first-of-type h2 { border-top: none; padding-top: 0; }
-
-  .jv-bio__text {
-    font-size: 0.95rem;
-    line-height: 1.75;
-    color: var(--jv-text-sec);
+  #BioSingle-{{ section.id }} .bio-section:first-of-type h2 {
+    border-top: none;
+    padding-top: 0;
   }
 
-  .jv-bio__text p { margin: 0 0 1rem; }
-  .jv-bio__text ul { margin: 0 0 1rem; padding-left: 1.5rem; }
-  .jv-bio__text li { margin-bottom: 0.4rem; }
+  #BioSingle-{{ section.id }} .bio-text {
+    font-size: 1.7rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
+  }
+
+  #BioSingle-{{ section.id }} .bio-text p {
+    margin: 0 0 1.4rem;
+  }
+
+  #BioSingle-{{ section.id }} .bio-text ul {
+    margin: 0 0 1.4rem;
+    padding-left: 2rem;
+  }
+
+  #BioSingle-{{ section.id }} .bio-text li {
+    margin-bottom: 0.6rem;
+  }
+
+  #BioSingle-{{ section.id }} .bio-text a {
+    color: var(--apple-link);
+    text-decoration: none;
+  }
+
+  #BioSingle-{{ section.id }} .bio-text a:hover {
+    text-decoration: underline;
+  }
 
   /* Reference table */
-  .jv-bio__ref-table {
+  #BioSingle-{{ section.id }} .bio-ref-wrap {
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 1.6rem 0 2rem;
+  }
+
+  #BioSingle-{{ section.id }} .bio-ref-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1rem 0 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
-  .jv-bio__ref-table th, .jv-bio__ref-table td {
-    padding: 0.65rem 1rem;
+  #BioSingle-{{ section.id }} .bio-ref-table th,
+  #BioSingle-{{ section.id }} .bio-ref-table td {
+    padding: 1.2rem 1.6rem;
     text-align: left;
-    border-bottom: 1px solid var(--jv-border);
   }
 
-  .jv-bio__ref-table th {
+  #BioSingle-{{ section.id }} .bio-ref-table th {
     font-weight: 600;
-    background: var(--jv-bg-subtle);
-    color: var(--jv-text);
+    background: var(--apple-text);
+    color: #fff;
+    border-bottom: none;
   }
 
-  /* Related links */
-  .jv-bio__related {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 1.5rem 2rem;
-    margin: 2rem 0;
+  #BioSingle-{{ section.id }} .bio-ref-table td {
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    color: var(--apple-text-secondary);
   }
 
-  .jv-bio__related h3 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1rem;
+  #BioSingle-{{ section.id }} .bio-ref-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  #BioSingle-{{ section.id }} .bio-ref-table tbody tr:nth-child(even) {
+    background: var(--apple-bg-gray);
+  }
+
+  /* Related biomarkers */
+  #BioSingle-{{ section.id }} .bio-related {
+    margin: 3rem 0;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: bioFadeIn-{{ section.id }} 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.48s forwards;
+  }
+
+  #BioSingle-{{ section.id }} .bio-related h3 {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.8rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 1.2rem;
+    color: var(--apple-text);
   }
 
-  .jv-bio__related-links {
+  #BioSingle-{{ section.id }} .bio-related-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 
-  .jv-bio__related-pill {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: 2rem;
-    padding: 0.3rem 0.9rem;
-    font-size: 0.82rem;
-    color: var(--jv-teal);
+  #BioSingle-{{ section.id }} .bio-related-pill {
+    background: var(--apple-bg-gray);
+    border: 2px solid transparent;
+    border-radius: 98rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.5rem;
+    font-family: var(--apple-font);
+    color: var(--apple-text-secondary);
     text-decoration: none;
-    transition: background 0.2s, border-color 0.2s;
+    transition: border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-bio__related-pill:hover {
-    background: var(--jv-bg-subtle);
-    border-color: var(--jv-teal);
+  #BioSingle-{{ section.id }} .bio-related-pill:hover {
+    border-color: var(--apple-link);
+    color: var(--apple-link);
   }
 
   /* CTA */
-  .jv-bio__cta {
+  #BioSingle-{{ section.id }} .bio-cta {
     text-align: center;
-    padding: 2rem 0 0;
-    border-top: 1px solid var(--jv-border);
-    margin-top: 2rem;
+    padding: 3rem 0 0;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    margin-top: 2.4rem;
   }
 
-  .jv-bio__cta-btn {
+  #BioSingle-{{ section.id }} .bio-cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.6rem;
+    background: var(--apple-link);
     color: #fff;
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-bio__cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(78,161,217,0.3);
+  #BioSingle-{{ section.id }} .bio-cta-btn:hover {
+    opacity: 0.88;
     color: #fff;
+  }
+
+  /* Mobile */
+  @media (max-width: 749px) {
+    #BioSingle-{{ section.id }} .bio-hero { padding: 1.5rem 0 2rem; }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-bio"
-  style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+  id="BioSingle-{{ section.id }}"
+  class="page-width section-{{ section.id }}-padding"
+  style="padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;"
 >
-  <div class="jv-bio__container">
+  <div class="bio-container">
 
-    <nav class="jv-bio__breadcrumb">
-      <a href="/">Home</a> &rsaquo;
-      <a href="/pages/biomarker">Biomarker-Lexikon</a> &rsaquo;
+    <nav class="bio-breadcrumb">
+      <a href="/">Home</a>
+      <span class="bio-breadcrumb-sep">/</span>
+      <a href="/pages/biomarker">Biomarker-Lexikon</a>
+      <span class="bio-breadcrumb-sep">/</span>
       {{ section.settings.name }}
     </nav>
 
-    <header class="jv-bio__hero">
-      <span class="jv-bio__badge">{{ section.settings.category }}</span>
+    <header class="bio-hero">
+      <span class="bio-label">{{ section.settings.category }}</span>
       <h1>{{ section.settings.heading }}</h1>
-      <p class="jv-bio__short">{{ section.settings.short_description }}</p>
+      <p class="bio-short">{{ section.settings.short_description }}</p>
     </header>
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
 
         {%- when 'content_section' -%}
-          <div class="jv-bio__section" {{ block.shopify_attributes }}>
+          <div class="bio-section" {{ block.shopify_attributes }}>
             <h2>{{ block.settings.title }}</h2>
-            <div class="jv-bio__text">{{ block.settings.content }}</div>
+            <div class="bio-text">{{ block.settings.content }}</div>
           </div>
 
         {%- when 'ref_table' -%}
-          <div class="jv-bio__section" {{ block.shopify_attributes }}>
+          <div class="bio-section" {{ block.shopify_attributes }}>
             <h2>{{ block.settings.title }}</h2>
-            <table class="jv-bio__ref-table">
-              <thead><tr>
-                <th>Gruppe</th><th>Referenzbereich</th>
-              </tr></thead>
-              <tbody>
-                {%- assign rows = block.settings.rows | split: '|' -%}
-                {%- for row in rows -%}
-                  {%- assign cols = row | split: ':' -%}
-                  <tr><td>{{ cols[0] | strip }}</td><td>{{ cols[1] | strip }}</td></tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
+            <div class="bio-ref-wrap">
+              <table class="bio-ref-table">
+                <thead><tr>
+                  <th>Gruppe</th><th>Referenzbereich</th>
+                </tr></thead>
+                <tbody>
+                  {%- assign rows = block.settings.rows | split: '|' -%}
+                  {%- for row in rows -%}
+                    {%- assign cols = row | split: ':' -%}
+                    <tr><td>{{ cols[0] | strip }}</td><td>{{ cols[1] | strip }}</td></tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </div>
           </div>
 
         {%- when 'related' -%}
-          <div class="jv-bio__related" {{ block.shopify_attributes }}>
+          <div class="bio-related" {{ block.shopify_attributes }}>
             <h3>Verwandte Biomarker</h3>
-            <div class="jv-bio__related-links">
+            <div class="bio-related-links">
               {%- assign links = block.settings.links | split: '|' -%}
               {%- for link in links -%}
                 {%- assign parts = link | split: ':' -%}
                 {%- if parts.size > 1 -%}
-                  <a href="{{ parts[1] | strip }}" class="jv-bio__related-pill">{{ parts[0] | strip }}</a>
+                  <a href="{{ parts[1] | strip }}" class="bio-related-pill">{{ parts[0] | strip }}</a>
                 {%- else -%}
-                  <span class="jv-bio__related-pill">{{ parts[0] | strip }}</span>
+                  <span class="bio-related-pill">{{ parts[0] | strip }}</span>
                 {%- endif -%}
               {%- endfor -%}
             </div>
@@ -258,13 +338,20 @@
     {%- endfor -%}
 
     {%- if section.settings.cta_label != blank -%}
-      <div class="jv-bio__cta">
-        <a href="{{ section.settings.cta_link }}" class="jv-bio__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
+      <div class="bio-cta">
+        <a href="{{ section.settings.cta_link }}" class="bio-cta-btn">{{ section.settings.cta_label }} &rarr;</a>
       </div>
     {%- endif -%}
 
   </div>
 </section>
+
+<style media="screen and (min-width: 750px)">
+  #BioSingle-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px !important;
+    padding-bottom: {{ section.settings.padding_bottom }}px !important;
+  }
+</style>
 
 {%- endif -%}
 
