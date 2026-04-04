@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "Testosteron",
+        "heading": "Testosteron — Das maennliche Schluesselhormon",
+        "category": "Hormone",
+        "short_description": "Testosteron ist das wichtigste maennliche Sexualhormon, kommt aber auch bei Frauen vor. Es beeinflusst Muskelmasse, Knochendichte, Libido, Stimmung und Energie. Ab dem 30. Lebensjahr sinkt der Spiegel bei Maennern langsam ab.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist Testosteron?",
+            "content": "<p>Testosteron gehoert zur Gruppe der Androgene und wird bei Maennern hauptsaechlich in den Hoden produziert, bei Frauen in den Eierstoecken und Nebennieren (in deutlich geringerer Menge). Die Produktion wird ueber die Hirnanhansdruese (LH und FSH) gesteuert.</p><p>Es ist verantwortlich fuer die Entwicklung maennlicher Geschlechtsmerkmale, den Aufbau und Erhalt von Muskelmasse, die Knochendichte, die Blutbildung, die Libido und das allgemeine Energielevel. Der Spiegel schwankt im Tagesverlauf — morgens ist er am hoechsten, deshalb sollte die Blutabnahme zwischen 8 und 10 Uhr erfolgen.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Maenner (18-50 Jahre): 2,5-8,4 ng/ml (8,7-29,1 nmol/l) | Maenner (ueber 50): 1,9-7,4 ng/ml | Frauen: 0,06-0,82 ng/ml (0,2-2,9 nmol/l) | Grauzone Maenner: 2,0-3,5 ng/ml (abhaengig von Symptomen)"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Bei Maennern ist ein natuerlich erhoehter Testosteronspiegel selten problematisch. Ursachen fuer deutlich erhoehte Werte koennen sein: Externe Zufuhr (Anabolika, Testosteron-Gele), Nebennieren- oder Hodentumoren (selten) und bestimmte genetische Erkrankungen.</p><p>Bei Frauen kann ein erhoehtes Testosteron hinweisen auf: Polyzystisches Ovarialsyndrom (PCOS — die haeufigste Ursache), Nebennierenerkrankungen (adrenogenitales Syndrom) oder hormonproduzierende Tumoren. Symptome bei Frauen: Akne, verstaerkte Koerper- und Gesichtsbehaarung (Hirsutismus), Haarausfall am Kopf, Zyklusunregelmaessigkeiten.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein Testosteronmangel (Hypogonadismus) bei Maennern wird zunehmend haeufiger erkannt. Ab dem 30. Lebensjahr sinkt der Spiegel um ca. 1-2% pro Jahr. Ursachen fuer einen staerkeren Abfall sind: Uebergewicht (Fettgewebe wandelt Testosteron in Oestrogen um), chronischer Stress (Cortisol hemmt die Testosteron-Produktion), Schlafmangel, bestimmte Medikamente (Opioide, Kortisonpraeparate) und Erkrankungen der Hoden oder Hirnanhansdruese.</p><p>Ein Testosteronmangel bei Frauen (z.B. nach Entfernung der Eierstoecke) kann Libidoverlust, Muedigkeit und Stimmungsprobleme verursachen.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>Symptome eines Testosteronmangels bei Maennern entwickeln sich oft schleichend:</p><p>Verminderte Libido und erektile Dysfunktion. Muedigkeit, Antriebslosigkeit und depressive Verstimmung. Abnahme der Muskelmasse und Zunahme des Koerperfetts (besonders am Bauch). Verminderte Koerperbehaarung und Bartwuchs. Konzentrationsprobleme und Gedaechtnisschwaeche. Hitzewallungen und vermehrtes Schwitzen. Verringerte Knochendichte (Osteoporoserisiko). Schlafprobleme.</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Natuerliche Massnahmen zur Unterstuetzung eines gesunden Testosteronspiegels: Krafttraining — besonders Grunduebungen (Kniebeugen, Kreuzheben) stimulieren die Testosteron-Produktion. Ausreichend Schlaf (7-9 Stunden), da die Hauptproduktion nachts stattfindet. Stressreduktion, da chronischer Stress Cortisol erhoeht und Testosteron senkt. Normalgewicht halten — Bauchfett ist der groesste Feind des Testosterons.</p><p>Ernaehrung: Zink (Austern, Fleisch, Kuerbiskerne), Vitamin D und gesunde Fette (Avocado, Nuesse, Olivenoel) unterstuetzen die Hormonproduktion. Alkohol in Massen halten. Bei nachgewiesenem Mangel mit Symptomen kann eine Testosteronersatztherapie in Frage kommen — immer unter aerztlicher Kontrolle.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "DHEA-S | Cortisol | Vitamin D:/pages/biomarker-vitamin-d"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
