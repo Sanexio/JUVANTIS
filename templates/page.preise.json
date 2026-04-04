@@ -1,0 +1,158 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": { "padding_top": 0, "padding_bottom": 0 }
+    },
+    "pricing": {
+      "type": "juvantis-pricing-page",
+      "settings": {
+        "heading": "Transparent. Fair. Flexibel.",
+        "subtitle": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten.",
+        "singles_heading": "Einzeluntersuchungen",
+        "faq_heading": "Haeufige Fragen zu unseren Preisen",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "plan_free": {
+          "type": "plan",
+          "settings": {
+            "name": "Free",
+            "price": "0 EUR",
+            "period": "fuer immer",
+            "description": "Erste Einblicke in deine Gesundheit",
+            "features": "Basis Digital Health Twin|Vital-Tracking (manuell)|Community-Zugang|1 Laborwert-Erklaerung/Monat",
+            "featured": false,
+            "badge": "",
+            "button_label": "Kostenlos starten",
+            "button_link": ""
+          }
+        },
+        "plan_premium": {
+          "type": "plan",
+          "settings": {
+            "name": "Premium",
+            "price": "14,99 EUR",
+            "period": "/Monat",
+            "description": "Die volle Health-UX Erfahrung",
+            "features": "Alle Free-Features|Voller Digital Health Twin (3D)|80+ Biomarker-Analysen|KI-Empfehlungen & Coaching|Gamification & Challenges|Fortschrittstracking ueber Zeit|Infusionstherapie-Beratung|Prioritaets-Support",
+            "featured": true,
+            "badge": "Beliebt",
+            "button_label": "Premium starten",
+            "button_link": ""
+          }
+        },
+        "plan_biz": {
+          "type": "plan",
+          "settings": {
+            "name": "Business",
+            "price": "Individuell",
+            "period": "",
+            "description": "Fuer Praxen, Kliniken & Versicherer",
+            "features": "Alle Premium-Features|White-Label-Integration|Patienten-Dashboard|Clinical Decision Support|API-Zugang|Dedicated Account Manager",
+            "featured": false,
+            "badge": "",
+            "button_label": "Kontakt aufnehmen",
+            "button_link": ""
+          }
+        },
+        "sp_basis": {
+          "type": "single_price",
+          "settings": {
+            "name": "Basis-Blutbild",
+            "price": "ab 45 EUR"
+          }
+        },
+        "sp_komplett": {
+          "type": "single_price",
+          "settings": {
+            "name": "Komplett-Check (80+ Marker)",
+            "price": "ab 249 EUR"
+          }
+        },
+        "sp_sono": {
+          "type": "single_price",
+          "settings": {
+            "name": "Sonografie Abdomen",
+            "price": "ab 89 EUR"
+          }
+        },
+        "sp_herz": {
+          "type": "single_price",
+          "settings": {
+            "name": "Herz-Check (Echo + EKG)",
+            "price": "ab 149 EUR"
+          }
+        },
+        "sp_body": {
+          "type": "single_price",
+          "settings": {
+            "name": "Komplett Body Check",
+            "price": "ab 449 EUR"
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Kann ich auch ohne Abo einzelne Tests buchen?",
+            "answer": "Ja! Alle Untersuchungen sind auch einzeln buchbar -- ganz ohne Abo-Verpflichtung. Das Abo lohnt sich, wenn du regelmaessig deine Werte tracken und den vollen Digital Health Twin nutzen moechtest."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Uebernimmt meine Krankenkasse die Kosten?",
+            "answer": "Einige Untersuchungen werden von privaten Krankenversicherungen erstattet. Gesetzliche Kassen uebernehmen in der Regel nur den Basis-Check-up ab 35. Wir stellen dir eine Rechnung nach GOAe, die du einreichen kannst."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Was ist im Premium-Abo enthalten?",
+            "answer": "Das Premium-Abo gibt dir Zugang zum vollen 3D Digital Health Twin, KI-basierte Empfehlungen, Gamification mit Quests und Challenges, sowie Prioritaets-Support. Die Laboruntersuchungen selbst werden separat gebucht und bezahlt."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Kann ich mein Abo jederzeit kuendigen?",
+            "answer": "Ja, das Premium-Abo ist monatlich kuendbar. Keine Mindestlaufzeit, keine versteckten Gebuehren. Deine bisherigen Daten bleiben auch nach Kuendigung in deinem Account erhalten."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Gibt es Paketpreise oder Rabatte?",
+            "answer": "Ja! Der Komplett-Check (80+ Marker) ist guenstiger als alle Einzel-Checks zusammen. Premium-Abonnenten erhalten zusaetzlich 10% Rabatt auf alle Laboruntersuchungen."
+          }
+        }
+      },
+      "block_order": [
+        "plan_free",
+        "plan_premium",
+        "plan_biz",
+        "sp_basis",
+        "sp_komplett",
+        "sp_sono",
+        "sp_herz",
+        "sp_body",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ]
+    }
+  },
+  "order": ["main", "pricing"]
+}
