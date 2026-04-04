@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "CRP",
+        "heading": "CRP (C-reaktives Protein) — Dein Entzuendungsmarker",
+        "category": "Entzuendung",
+        "short_description": "CRP ist der wichtigste Laborwert, um Entzuendungen im Koerper zu erkennen. Er steigt innerhalb weniger Stunden an und zeigt, ob dein Immunsystem gerade aktiv gegen eine Infektion oder Gewebeschaedigung kaempft.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist CRP?",
+            "content": "<p>Das C-reaktive Protein (CRP) wird in der Leber produziert und ist ein sogenanntes Akute-Phase-Protein. Sobald irgendwo in deinem Koerper eine Entzuendung entsteht — sei es durch eine Infektion, eine Verletzung oder eine chronische Erkrankung — steigt der CRP-Wert im Blut an.</p><p>Der grosse Vorteil: CRP reagiert sehr schnell. Bereits 6-12 Stunden nach Beginn einer Entzuendung ist der Anstieg messbar. Damit ist CRP einer der zuverlaessigsten Marker, um akute Entzuendungen zu erkennen und den Therapieerfolg zu ueberwachen.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Normal: unter 5 mg/l | Leicht erhoeht: 5-10 mg/l | Maessig erhoeht: 10-50 mg/l | Stark erhoeht: 50-200 mg/l | Sehr stark erhoeht: ueber 200 mg/l"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Ein erhoehtes CRP zeigt, dass dein Immunsystem aktiv ist. Die Hoehe des Wertes gibt Hinweise auf die Ursache:</p><p>Leicht erhoeht (5-50 mg/l): Haeufig bei viralen Infekten, leichten bakteriellen Infektionen, chronisch-entzuendlichen Erkrankungen (z.B. Rheuma) oder nach Operationen. Stark erhoeht (ueber 50 mg/l): Typisch fuer schwere bakterielle Infektionen (Lungenentzuendung, Harnwegsinfekt), Autoimmunerkrankungen in aktiven Schueben oder grosse Gewebeschaedigungen.</p><p>Auch Rauchen, starkes Uebergewicht und Stress koennen das CRP leicht erhoehen. Ein dauerhaft leicht erhoehtes sogenanntes hochsensitives CRP (hs-CRP) gilt als Risikomarker fuer Herz-Kreislauf-Erkrankungen.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein niedriger CRP-Wert ist der Normalzustand und ein gutes Zeichen — er bedeutet, dass aktuell keine relevante Entzuendung in deinem Koerper stattfindet.</p><p>Es gibt keine klinisch relevante Untergrenze fuer CRP. Werte unter 1 mg/l gelten als optimal und sind mit einem niedrigen kardiovaskulaeren Risiko verbunden.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>CRP selbst verursacht keine Symptome — es zeigt die Symptome der zugrunde liegenden Entzuendung an. Typische Begleitsymptome bei erhoehtem CRP sind:</p><p>Fieber und Schuettelfrost. Allgemeines Krankheitsgefuehl und Abgeschlagenheit. Schmerzen an der Entzuendungsstelle (z.B. Hals, Gelenke, Bauch). Roetung und Schwellung. Bei chronischer Erhoehung: anhaltende Muedigkeit, Gewichtsverlust, Nachtschweiss.</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Ein erhoehtes CRP erfordert immer eine aerztliche Abklaerung der Ursache. Die Behandlung richtet sich nach der Grunderkrankung — nicht nach dem CRP-Wert selbst.</p><p>Fuer ein langfristig niedriges CRP (und damit ein geringeres Herz-Kreislauf-Risiko) kannst du selbst einiges tun: Nicht rauchen, Normalgewicht halten, regelmaessig Ausdauersport betreiben, Stress reduzieren und auf eine entzuendungshemmende Ernaehrung achten (Omega-3-Fettsaeuren, Gemuese, Vollkorn, wenig Zucker und verarbeitete Lebensmittel).</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "BSG | Leukozyten | Ferritin:/pages/biomarker-ferritin"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
