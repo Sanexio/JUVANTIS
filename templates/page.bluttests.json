@@ -20,12 +20,12 @@
       "type": "juvantis-bluttests",
       "settings": {
         "heading": "Dein Blut weiss mehr, als du denkst.",
-        "intro": "Ein Bluttest bei Juvantis ist mehr als ein Blutbild beim Hausarzt. Wir analysieren bis zu 80+ Biomarker und visualisieren deine Ergebnisse in deinem persoenlichen Digital Health Twin -- verstaendlich, motivierend und medizinisch fundiert.",
+        "intro": "Ein Bloody Check bei Juvantis ist mehr als ein Blutbild beim Hausarzt. Wir analysieren bis zu 80+ Biomarker und visualisieren deine Ergebnisse in deinem persoenlichen Digital Health Twin -- verstaendlich, motivierend und medizinisch fundiert.",
         "categories_heading": "Unsere Check-up-Kategorien",
-        "process_heading": "So funktioniert dein Bluttest",
+        "process_heading": "So funktioniert dein Bloody Check",
         "price_text": "Ab 45 EUR pro Check-up",
         "price_note": "Einzelne Checks oder als Teil deines Komplett-Pakets",
-        "cta_label": "Jetzt Bluttest buchen",
+        "cta_label": "Jetzt Bloody Check buchen",
         "cta_link": "shopify://collections/laboruntersuchung",
         "padding_top": 0,
         "padding_bottom": 52
