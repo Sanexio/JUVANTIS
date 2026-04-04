@@ -1,0 +1,286 @@
+{%- comment -%}
+  Juvantis Section: Biomarker-Lexikon Hub
+  Zweck: Uebersichtsseite aller Biomarker mit Suche und Kategorien
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- if template.suffix == 'biomarker' -%}
+
+{%- style -%}
+  .jv-bio-hub {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-bio-hub__container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .jv-bio-hub__hero { text-align: center; padding: 3rem 0 2rem; }
+
+  .jv-bio-hub__badge {
+    display: inline-flex;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-bio-hub__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 0.8rem;
+  }
+
+  .jv-bio-hub__hero p {
+    color: var(--jv-text-sec);
+    max-width: 38rem;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* Search */
+  .jv-bio-hub__search {
+    max-width: 32rem;
+    margin: 0 auto 2.5rem;
+    position: relative;
+  }
+
+  .jv-bio-hub__search-input {
+    width: 100%;
+    padding: 0.85rem 1.2rem 0.85rem 3rem;
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background: var(--jv-bg);
+    color: var(--jv-text);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .jv-bio-hub__search-input:focus {
+    border-color: var(--jv-teal);
+  }
+
+  .jv-bio-hub__search-icon {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* Categories */
+  .jv-bio-hub__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-bio-hub__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 990px) {
+    .jv-bio-hub__grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    }
+  }
+
+  .jv-bio-hub__cat {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-bio-hub__cat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  .jv-bio-hub__cat[hidden] { display: none; }
+
+  .jv-bio-hub__cat-icon { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+
+  .jv-bio-hub__cat-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.6rem;
+  }
+
+  .jv-bio-hub__cat-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .jv-bio-hub__cat-links li { padding: 0.3rem 0; }
+
+  .jv-bio-hub__cat-links a {
+    color: var(--jv-teal);
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.2s;
+  }
+
+  .jv-bio-hub__cat-links a:hover {
+    color: var(--jv-teal-light);
+    text-decoration: underline;
+  }
+
+  .jv-bio-hub__no-results {
+    text-align: center;
+    color: var(--jv-text-sec);
+    padding: 2rem 0;
+    display: none;
+  }
+
+  @supports (animation-timeline: view()) {
+    .jv-bio-hub__cat {
+      animation: jvBioFade 0.5s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 35%;
+    }
+  }
+
+  @keyframes jvBioFade {
+    from { opacity: 0; transform: translateY(1.5rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-bio-hub"
+  style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;"
+>
+  <div class="jv-bio-hub__container">
+
+    <header class="jv-bio-hub__hero">
+      <span class="jv-bio-hub__badge">Wissen</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.description }}</p>
+    </header>
+
+    <div class="jv-bio-hub__search">
+      <span class="jv-bio-hub__search-icon">🔍</span>
+      <input
+        type="text"
+        class="jv-bio-hub__search-input"
+        placeholder="Biomarker suchen (z.B. Vitamin D, CRP, TSH...)"
+        id="jv-bio-search"
+      >
+    </div>
+
+    <div class="jv-bio-hub__grid" id="jv-bio-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'category' -%}
+          <div
+            class="jv-bio-hub__cat"
+            data-search="{{ block.settings.title | downcase }} {{ block.settings.markers | downcase }}"
+            {{ block.shopify_attributes }}
+          >
+            <span class="jv-bio-hub__cat-icon">{{ block.settings.icon }}</span>
+            <h2 class="jv-bio-hub__cat-title">{{ block.settings.title }}</h2>
+            {%- if block.settings.markers != blank -%}
+              <ul class="jv-bio-hub__cat-links">
+                {%- assign items = block.settings.markers | split: '|' -%}
+                {%- for item in items -%}
+                  {%- assign parts = item | split: ':' -%}
+                  <li>
+                    {%- if parts.size > 1 -%}
+                      <a href="{{ parts[1] | strip }}">{{ parts[0] | strip }}</a>
+                    {%- else -%}
+                      <span style="font-size:0.88rem;color:var(--jv-text-sec)">{{ parts[0] | strip }}</span>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <p class="jv-bio-hub__no-results" id="jv-bio-noresults">Kein Biomarker gefunden. Versuch einen anderen Suchbegriff.</p>
+
+  </div>
+</section>
+
+<script>
+  (function() {
+    var input = document.getElementById('jv-bio-search');
+    var grid = document.getElementById('jv-bio-grid');
+    var noResults = document.getElementById('jv-bio-noresults');
+    if (!input || !grid) return;
+    var cats = grid.querySelectorAll('.jv-bio-hub__cat');
+
+    input.addEventListener('input', function() {
+      var q = this.value.toLowerCase().trim();
+      var visible = 0;
+      cats.forEach(function(cat) {
+        var data = cat.getAttribute('data-search') || '';
+        var show = !q || data.indexOf(q) !== -1;
+        cat.hidden = !show;
+        if (show) visible++;
+      });
+      if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+    });
+  })();
+</script>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Biomarker Hub",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Ueberschrift", "default": "Biomarker-Lexikon: Deine Laborwerte verstehen" },
+    { "type": "textarea", "id": "description", "label": "Beschreibung", "default": "Alle wichtigen Biomarker und Laborwerte erklaert: Referenzwerte, Bedeutung bei Abweichung und was du tun kannst." },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand oben" },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "default": 52, "label": "Abstand unten" }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Kategorie",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon", "default": "🩸" },
+        { "type": "text", "id": "title", "label": "Kategorie-Name" },
+        { "type": "textarea", "id": "markers", "label": "Biomarker (Name:URL | getrennt)", "info": "Format: Name:/pages/slug | Name2:/pages/slug2" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Juvantis: Biomarker Hub" }]
+}
+{% endschema %}
