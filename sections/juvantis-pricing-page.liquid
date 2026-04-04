@@ -1,0 +1,467 @@
+{%- comment -%}
+  Juvantis Section: Pricing Page (Full)
+  Zweck: Detaillierte Preisseite mit Abo-Plaenen + Einzelpreisen + FAQ
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- if template.suffix == 'preise' -%}
+
+{%- style -%}
+  .jv-price {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-price__container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .jv-price__hero {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .jv-price__badge {
+    display: inline-flex;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-price__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 0.8rem;
+  }
+
+  .jv-price__hero p {
+    color: var(--jv-text-sec);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  /* Plans Grid */
+  .jv-price__plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 990px) {
+    .jv-price__plans {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .jv-price__plan {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-price__plan:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+
+  .jv-price__plan--featured {
+    border-color: var(--jv-teal);
+    position: relative;
+  }
+
+  .jv-price__plan-badge {
+    position: absolute;
+    top: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--jv-gradient);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .jv-price__plan-name {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+
+  .jv-price__plan-price {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+
+  .jv-price__plan-period {
+    font-size: 0.85rem;
+    color: var(--jv-text-sec);
+    font-weight: 400;
+  }
+
+  .jv-price__plan-desc {
+    font-size: 0.88rem;
+    color: var(--jv-text-sec);
+    margin: 0.5rem 0 1.2rem;
+    line-height: 1.5;
+  }
+
+  .jv-price__plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    flex: 1;
+  }
+
+  .jv-price__plan-features li {
+    font-size: 0.88rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--jv-border);
+    color: var(--jv-text-sec);
+  }
+
+  .jv-price__plan-features li::before {
+    content: '✓ ';
+    color: var(--jv-teal);
+    font-weight: 600;
+  }
+
+  .jv-price__plan-btn {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .jv-price__plan-btn--primary {
+    background: var(--jv-gradient);
+    color: #fff;
+  }
+
+  .jv-price__plan-btn--secondary {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    color: var(--jv-text);
+  }
+
+  .jv-price__plan-btn:hover {
+    transform: translateY(-2px);
+    color: inherit;
+  }
+
+  .jv-price__plan-btn--primary:hover { color: #fff; }
+
+  /* Einzelpreise Tabelle */
+  .jv-price__singles-heading {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+
+  .jv-price__table-wrap {
+    overflow-x: auto;
+    margin-bottom: 3rem;
+  }
+
+  .jv-price__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 28rem;
+  }
+
+  .jv-price__table th,
+  .jv-price__table td {
+    padding: 0.8rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--jv-border);
+    font-size: 0.9rem;
+  }
+
+  .jv-price__table th {
+    font-weight: 600;
+    color: var(--jv-text);
+    background: var(--jv-bg-subtle);
+  }
+
+  .jv-price__table td:last-child {
+    font-weight: 600;
+    color: var(--jv-teal);
+    white-space: nowrap;
+  }
+
+  /* FAQ Accordion */
+  .jv-price__faq-heading {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+
+  .jv-price__faq {
+    max-width: 48rem;
+    margin: 0 auto 2rem;
+  }
+
+  .jv-price__faq-item {
+    border-bottom: 1px solid var(--jv-border);
+  }
+
+  .jv-price__faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--jv-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .jv-price__faq-q::after {
+    content: '+';
+    font-size: 1.3rem;
+    color: var(--jv-teal);
+    transition: transform 0.2s ease;
+  }
+
+  .jv-price__faq-item.is-open .jv-price__faq-q::after {
+    transform: rotate(45deg);
+  }
+
+  .jv-price__faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .jv-price__faq-item.is-open .jv-price__faq-a {
+    max-height: 20rem;
+  }
+
+  .jv-price__faq-a p {
+    padding: 0 0 1rem;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--jv-text-sec);
+    line-height: 1.65;
+  }
+
+  @supports (animation-timeline: view()) {
+    .jv-price__plan {
+      animation: jvPriceFadeUp 0.6s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 40%;
+    }
+  }
+
+  @keyframes jvPriceFadeUp {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section
+  class="jv-price"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="jv-price__container">
+
+    <header class="jv-price__hero">
+      <span class="jv-price__badge">Preise</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.subtitle }}</p>
+    </header>
+
+    <!-- Abo-Plaene -->
+    <div class="jv-price__plans">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'plan' -%}
+          <div class="jv-price__plan{% if block.settings.featured %} jv-price__plan--featured{% endif %}">
+            {%- if block.settings.badge != blank -%}
+              <span class="jv-price__plan-badge">{{ block.settings.badge }}</span>
+            {%- endif -%}
+            <h3 class="jv-price__plan-name">{{ block.settings.name }}</h3>
+            <p class="jv-price__plan-price">{{ block.settings.price }}<span class="jv-price__plan-period">{{ block.settings.period }}</span></p>
+            <p class="jv-price__plan-desc">{{ block.settings.description }}</p>
+            {%- if block.settings.features != blank -%}
+              <ul class="jv-price__plan-features">
+                {%- assign feats = block.settings.features | split: '|' -%}
+                {%- for f in feats -%}
+                  <li>{{ f | strip }}</li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+            <a href="{{ block.settings.button_link }}" class="jv-price__plan-btn {% if block.settings.featured %}jv-price__plan-btn--primary{% else %}jv-price__plan-btn--secondary{% endif %}">
+              {{ block.settings.button_label }}
+            </a>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- Einzelpreise -->
+    {%- assign has_singles = false -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'single_price' -%}
+        {%- assign has_singles = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if has_singles -%}
+      <h2 class="jv-price__singles-heading">{{ section.settings.singles_heading }}</h2>
+      <div class="jv-price__table-wrap">
+        <table class="jv-price__table">
+          <thead>
+            <tr>
+              <th>Untersuchung</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'single_price' -%}
+                <tr {{ block.shopify_attributes }}>
+                  <td>{{ block.settings.name }}</td>
+                  <td>{{ block.settings.price }}</td>
+                </tr>
+              {%- endif -%}
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+    {%- endif -%}
+
+    <!-- FAQ -->
+    {%- assign has_faq = false -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'faq' -%}
+        {%- assign has_faq = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if has_faq -%}
+      <h2 class="jv-price__faq-heading">{{ section.settings.faq_heading }}</h2>
+      <div class="jv-price__faq">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'faq' -%}
+            <div class="jv-price__faq-item" {{ block.shopify_attributes }}>
+              <button class="jv-price__faq-q" onclick="this.parentElement.classList.toggle('is-open')">
+                {{ block.settings.question }}
+              </button>
+              <div class="jv-price__faq-a">
+                <p>{{ block.settings.answer }}</p>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Preise",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Ueberschrift", "default": "Transparent. Fair. Flexibel." },
+    { "type": "text", "id": "subtitle", "label": "Unterzeile", "default": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten." },
+    { "type": "text", "id": "singles_heading", "label": "Einzelpreise-Ueberschrift", "default": "Einzeluntersuchungen" },
+    { "type": "text", "id": "faq_heading", "label": "FAQ-Ueberschrift", "default": "Haeufige Fragen zu unseren Preisen" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand oben" },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "default": 52, "label": "Abstand unten" }
+  ],
+  "blocks": [
+    {
+      "type": "plan",
+      "name": "Abo-Plan",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Name", "default": "Premium" },
+        { "type": "text", "id": "price", "label": "Preis", "default": "14,99 EUR" },
+        { "type": "text", "id": "period", "label": "Zeitraum", "default": "/Monat" },
+        { "type": "textarea", "id": "description", "label": "Beschreibung" },
+        { "type": "textarea", "id": "features", "label": "Features (| getrennt)", "default": "Feature 1|Feature 2|Feature 3" },
+        { "type": "checkbox", "id": "featured", "label": "Hervorgehoben", "default": false },
+        { "type": "text", "id": "badge", "label": "Badge-Text" },
+        { "type": "text", "id": "button_label", "label": "Button-Text", "default": "Starten" },
+        { "type": "url", "id": "button_link", "label": "Button-Link" }
+      ]
+    },
+    {
+      "type": "single_price",
+      "name": "Einzelpreis",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Untersuchung" },
+        { "type": "text", "id": "price", "label": "Preis" }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Frage" },
+        { "type": "textarea", "id": "answer", "label": "Antwort" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Juvantis: Preise" }]
+}
+{% endschema %}
