@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "Ferritin",
+        "heading": "Ferritin — Dein Eisenspeicher-Wert",
+        "category": "Vitamine & Mineralstoffe",
+        "short_description": "Ferritin zeigt, wie viel Eisen dein Koerper gespeichert hat. Es ist der empfindlichste Marker fuer Eisenmangel — den haeufigsten Naehrstoffmangel weltweit. Besonders Frauen im gebaerfaehigen Alter sind oft betroffen.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist Ferritin?",
+            "content": "<p>Ferritin ist ein Eiweiss, das Eisen in deinem Koerper speichert — vor allem in der Leber, der Milz und im Knochenmark. Der Ferritin-Wert im Blut spiegelt wider, wie gut deine Eisenreserven gefuellt sind.</p><p>Eisen ist essenziell fuer den Sauerstofftransport (als Bestandteil von Haemoglobin), die Energieproduktion in den Zellen und die Funktion des Immunsystems. Ein Ferritin-Wert unter 30 ng/ml zeigt bereits geleerte Speicher, selbst wenn das Haemoglobin noch normal ist — man spricht dann von einem latenten Eisenmangel.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Frauen (praeemenopausal): 15-150 ng/ml | Frauen (postmenopausal): 30-300 ng/ml | Maenner: 30-400 ng/ml | Optimal (beide): 50-150 ng/ml | Kinder: 7-140 ng/ml"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Ein erhoehtes Ferritin kann verschiedene Ursachen haben. Wichtig zu wissen: Ferritin ist auch ein Akute-Phase-Protein — es steigt bei Entzuendungen, Infektionen und Lebererkrankungen an, ohne dass ein Eisenueberschuss vorliegt.</p><p>Echte Eisenueberladung: Haemochromatose (erbliche Eisenspeicherkrankheit, betrifft ca. 1 von 200 Menschen), haeufige Bluttransfusionen. Andere Ursachen: Leberentzuendung (Hepatitis), Alkoholmissbrauch, chronische Entzuendungen, Stoffwechselsyndrom, bestimmte Tumorerkrankungen. Zur Differenzierung wird oft die Transferrinsaettigung mitbestimmt.</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein niedriges Ferritin ist der eindeutigste Beweis fuer einen Eisenmangel. Haeufige Ursachen sind: Starke Menstruationsblutungen (haeufigste Ursache bei Frauen), chronische Blutungen im Magen-Darm-Trakt (z.B. durch Magengeschwuere oder Polypen), erhoehter Bedarf in der Schwangerschaft und Stillzeit, vegane oder vegetarische Ernaehrung ohne gezielte Eisenzufuhr und Ausdauersport (Laeuferanemie).</p><p>Bei Ferritin unter 15 ng/ml ist die Eisenspeicherung nahezu vollstaendig aufgebraucht. Werte zwischen 15 und 30 ng/ml zeigen bereits relevante Speicherentleerung.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>Eisenmangel-Symptome koennen schon auftreten, bevor eine Anaemie vorliegt. Typische Zeichen sind:</p><p>Chronische Muedigkeit und Erschoepfung, die sich trotz ausreichend Schlaf nicht bessert. Konzentrationsprobleme und verminderte Leistungsfaehigkeit. Blasse Haut und Schleimhaeute. Brueche Naegel und Haarausfall. Mundwinkelrhagaden (eingerissene Mundwinkel). Restless Legs — unruhige Beine, besonders abends. Erhoehte Infektanfaelligkeit. Kopfschmerzen und Schwindel.</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Eisenreiche Ernaehrung: Rotes Fleisch ist die beste Eisenquelle (Haemeisen wird am besten aufgenommen). Pflanzliche Quellen: Linsen, Kichererbsen, Spinat, Kuerbiskerne, Haferflocken. Vitamin C zum Essen verbessert die Eisenaufnahme erheblich — ein Glas Orangensaft zur Mahlzeit kann die Aufnahme verdoppeln.</p><p>Was die Eisenaufnahme hemmt: Kaffee und schwarzer Tee (Tannine), Milchprodukte (Kalzium) und Vollkornprodukte (Phytate) — diese nicht gleichzeitig mit eisenreichen Mahlzeiten konsumieren. Bei nachgewiesenem Mangel kann dein Arzt Eisenpraeparate verschreiben. Eine Kontrolle nach 8-12 Wochen zeigt den Therapieerfolg.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "Vitamin D:/pages/biomarker-vitamin-d | Vitamin B12:/pages/biomarker-vitamin-b12 | CRP:/pages/biomarker-crp"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
