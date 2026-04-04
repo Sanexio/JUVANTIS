@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "biomarker": {
+      "type": "juvantis-biomarker-single",
+      "settings": {
+        "name": "TSH",
+        "heading": "TSH (Thyreoidea-stimulierendes Hormon) — Der Schilddruesen-Regler",
+        "category": "Schilddruese",
+        "short_description": "TSH ist der zentrale Steuerungswert fuer deine Schilddruese. Er zeigt, ob deine Schilddruese zu viel, zu wenig oder genau richtig arbeitet — und ist damit der wichtigste Screening-Wert fuer Schilddruesenerkrankungen.",
+        "cta_label": "Lass diesen Wert bei Juvantis testen",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "was-ist": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was ist TSH?",
+            "content": "<p>TSH (Thyreoidea-stimulierendes Hormon) wird in der Hirnanhansdruese (Hypophyse) gebildet und steuert die Schilddruese. Es funktioniert wie ein Thermostat: Wenn die Schilddruese zu wenig Hormone produziert, steigt TSH an, um sie anzutreiben. Produziert sie zu viel, sinkt TSH, um sie zu bremsen.</p><p>Die Schilddruese beeinflusst nahezu alle Koerperfunktionen — Stoffwechsel, Herzfrequenz, Koerpertemperatur, Energielevel und Stimmung. Deshalb hat ein veraenderter TSH-Wert oft weitreichende Auswirkungen auf dein Wohlbefinden.</p>"
+          }
+        },
+        "referenz": {
+          "type": "ref_table",
+          "settings": {
+            "title": "Referenzwerte",
+            "rows": "Erwachsene: 0,27-4,20 mIU/l | Schwangerschaft 1. Trimester: 0,1-2,5 mIU/l | Schwangerschaft 2. Trimester: 0,2-3,0 mIU/l | Schwangerschaft 3. Trimester: 0,3-3,0 mIU/l | Aeltere Menschen (ueber 70): bis 7,0 mIU/l kann normal sein"
+          }
+        },
+        "hoch": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein erhoehter Wert?",
+            "content": "<p>Ein erhoehtes TSH bedeutet, dass die Hirnanhansdruese die Schilddruese staerker antreiben muss — weil diese zu wenig Hormone produziert. Das nennt man Hypothyreose (Schilddruesenunterfunktion).</p><p>Die haeufigste Ursache ist die Hashimoto-Thyreoiditis, eine Autoimmunerkrankung, bei der das Immunsystem Schilddruesengewebe angreift. Weitere Ursachen sind Jodmangel, Zustand nach Schilddruesen-OP oder Bestrahlung sowie bestimmte Medikamente (z.B. Lithium, Amiodaron).</p>"
+          }
+        },
+        "niedrig": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was bedeutet ein niedriger Wert?",
+            "content": "<p>Ein erniedrigtes TSH zeigt an, dass die Schilddruese zu viele Hormone produziert — die Hypophyse bremst also. Das nennt man Hyperthyreose (Schilddruesenueberfunktion).</p><p>Die haeufigste Ursache ist Morbus Basedow, eine Autoimmunerkrankung mit stimulierenden Antikoerpern. Auch autonome Schilddruesenknoten (heisse Knoten) oder eine Ueberdosierung von Schilddruesenhormonen koennen ein niedriges TSH verursachen.</p>"
+          }
+        },
+        "symptome": {
+          "type": "content_section",
+          "settings": {
+            "title": "Welche Symptome koennen auftreten?",
+            "content": "<p>Bei Unterfunktion (TSH erhoeht): Muedigkeit, Gewichtszunahme trotz normaler Ernaehrung, Kaelteempfindlichkeit, trockene Haut und Haare, Verstopfung, depressive Verstimmung, verlangsamter Puls und Konzentrationsprobleme.</p><p>Bei Ueberfunktion (TSH erniedrigt): Nervositaet, Herzrasen, Gewichtsverlust trotz gutem Appetit, Schwitzen, Durchfall, Schlaflosigkeit, Zittern der Haende und innere Unruhe. In manchen Faellen treten auch hervortretende Augen auf (Morbus Basedow).</p>"
+          }
+        },
+        "tipps": {
+          "type": "content_section",
+          "settings": {
+            "title": "Was du tun kannst",
+            "content": "<p>Ein auffaelliger TSH-Wert sollte immer aerztlich abgeklaert werden. In der Regel werden dann die freien Schilddruesenhormone fT3 und fT4 mitbestimmt, um die Diagnose zu sichern.</p><p>Bei einer Unterfunktion kann L-Thyroxin (ein Schilddruesenhormon als Tablette) die fehlenden Hormone ersetzen. Bei einer Ueberfunktion gibt es verschiedene Therapieoptionen: Medikamente (Thyreostatika), Radiojodtherapie oder Operation. Achte auf eine ausreichende Jodversorgung durch jodiertes Speisesalz, Seefisch und Milchprodukte — Jod ist der Grundbaustein fuer Schilddruesenhormone.</p>"
+          }
+        },
+        "related": {
+          "type": "related",
+          "settings": {
+            "links": "fT3 | fT4 | Cholesterin:/pages/biomarker-cholesterin"
+          }
+        }
+      },
+      "block_order": [
+        "was-ist",
+        "referenz",
+        "hoch",
+        "niedrig",
+        "symptome",
+        "tipps",
+        "related"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "biomarker"
+  ]
+}
