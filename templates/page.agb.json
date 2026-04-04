@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "legal": {
+      "type": "juvantis-legal",
+      "settings": {
+        "badge_text": "Geschäftsbedingungen",
+        "heading": "Allgemeine Geschäftsbedingungen",
+        "subtitle": "AGB der Sanexio GmbH",
+        "show_date": true,
+        "last_updated": "April 2026",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "scope_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 1 Geltungsbereich"
+          }
+        },
+        "scope_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, die zwischen der <strong>Sanexio GmbH</strong>, Grüneburgweg 12, 60322 Frankfurt am Main (nachfolgend &#8222;Juvantis&#8220; oder &#8222;wir&#8220;), und dem Kunden (nachfolgend &#8222;du&#8220;) über die Website sanexio.eu geschlossen werden.</p><p>Maßgeblich ist jeweils die zum Zeitpunkt des Vertragsschlusses gültige Fassung der AGB. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, wir stimmen ihrer Geltung ausdrücklich schriftlich zu.</p>"
+          }
+        },
+        "contract_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 2 Vertragsschluss"
+          }
+        },
+        "contract_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Die Darstellung unserer Leistungen auf der Website stellt kein rechtlich bindendes Angebot dar, sondern eine unverbindliche Einladung, Leistungen zu bestellen.</p><p>Mit der Bestellung über unser Online-Buchungssystem gibst du ein verbindliches Angebot zum Abschluss eines Vertrags ab. Die Bestätigung des Eingangs der Bestellung erfolgt unmittelbar nach dem Absenden per automatisierter E-Mail. Diese Eingangsbestätigung stellt noch keine Annahme des Angebots dar.</p><p>Der Vertrag kommt zustande, wenn wir deine Bestellung durch eine gesonderte Bestätigungsmail oder durch Erbringung der Leistung annehmen.</p>"
+          }
+        },
+        "services_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 3 Leistungsbeschreibung"
+          }
+        },
+        "services_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Juvantis bietet Gesundheitsdienstleistungen an, insbesondere:</p><ul><li>Bluttests und Laboranalysen</li><li>Gesundheitschecks (Ultraschall, EKG, Lungenfunktion)</li><li>Infusionstherapien</li><li>Digital Health Twin (digitale Gesundheitsvisualisierung)</li></ul><p>Die genaue Beschreibung und der Umfang der jeweiligen Leistung ergeben sich aus der Produktbeschreibung auf der Website zum Zeitpunkt der Bestellung.</p><p>Alle medizinischen Leistungen werden von approbierten Ärzten erbracht oder überwacht.</p>"
+          }
+        },
+        "prices_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 4 Preise und Zahlung"
+          }
+        },
+        "prices_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Alle auf der Website angegebenen Preise verstehen sich als Endpreise inklusive der gesetzlichen Umsatzsteuer, sofern nicht anders angegeben. Ärztliche Leistungen sind gemäß § 4 Nr. 14 UStG umsatzsteuerbefreit.</p><p>Die Zahlung erfolgt über die auf der Website angebotenen Zahlungsmethoden. Die Zahlung ist mit Vertragsschluss fällig, sofern nicht anders vereinbart.</p>"
+          }
+        },
+        "booking_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 5 Terminbuchung und Stornierung"
+          }
+        },
+        "booking_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Termine können online über unser Buchungssystem oder telefonisch vereinbart werden.</p><p><strong>Stornierung:</strong> Eine kostenfreie Stornierung oder Umbuchung ist bis zu <strong>24 Stunden vor dem vereinbarten Termin</strong> möglich. Bei späterer Absage oder Nichterscheinen behalten wir uns vor, eine Ausfallgebühr in Höhe von 50 % des vereinbarten Leistungspreises zu erheben.</p><p>Wir behalten uns vor, Termine bei triftigem Grund (z. B. Krankheit des Arztes, höhere Gewalt) abzusagen oder zu verschieben. In diesem Fall werden bereits geleistete Zahlungen vollständig erstattet.</p>"
+          }
+        },
+        "liability_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 6 Haftung"
+          }
+        },
+        "liability_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Wir haften unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für vorsätzlich oder grob fahrlässig verursachte Schäden.</p><p>Bei leichter Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten). In diesem Fall ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt.</p><p>Die Inhalte unserer Website dienen der allgemeinen Information und stellen keine medizinische Beratung dar. Für individuelle Gesundheitsfragen wende dich bitte an unsere Ärzte.</p>"
+          }
+        },
+        "data_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 7 Datenschutz"
+          }
+        },
+        "data_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Informationen zur Verarbeitung deiner personenbezogenen Daten findest du in unserer <a href=\"/pages/datenschutz\">Datenschutzerklärung</a>.</p>"
+          }
+        },
+        "law_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 8 Anwendbares Recht und Gerichtsstand"
+          }
+        },
+        "law_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p><p>Ist der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist Gerichtsstand für alle Streitigkeiten aus dem Vertrag Frankfurt am Main.</p>"
+          }
+        },
+        "severability_heading": {
+          "type": "heading",
+          "settings": {
+            "text": "§ 9 Salvatorische Klausel"
+          }
+        },
+        "severability_text": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "scope_heading",
+        "scope_text",
+        "contract_heading",
+        "contract_text",
+        "services_heading",
+        "services_text",
+        "prices_heading",
+        "prices_text",
+        "booking_heading",
+        "booking_text",
+        "liability_heading",
+        "liability_text",
+        "data_heading",
+        "data_text",
+        "law_heading",
+        "law_text",
+        "severability_heading",
+        "severability_text"
+      ]
+    }
+  },
+  "order": ["main", "legal"]
+}
