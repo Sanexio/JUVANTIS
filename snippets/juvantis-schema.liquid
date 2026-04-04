@@ -1,0 +1,109 @@
+{%- comment -%}
+  Juvantis: Structured Data (Schema.org)
+  Zweck: MedicalBusiness + LocalBusiness Schema fuer SEO
+  Einbindung: In theme.liquid vor </head>: {% render 'juvantis-schema' %}
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["MedicalBusiness", "LocalBusiness"],
+  "name": "Juvantis",
+  "alternateName": "Praxiszentrum Dr. Stracke & Kollegen",
+  "description": "Bluttests, Gesundheitschecks und Digital Health Twin in Frankfurt. 80+ Biomarker, Ultraschall, EKG und persoenliche Gesundheitsvisualisierung.",
+  "url": "https://sanexio.eu",
+  "logo": "{{ 'juvantis-logo.png' | asset_url }}",
+  "telephone": "+49697278190",
+  "email": "praxis@westend-hausarzt.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Grueneburgweg 12",
+    "addressLocality": "Frankfurt am Main",
+    "postalCode": "60322",
+    "addressRegion": "Hessen",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.121046,
+    "longitude": 8.673794
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Thursday"],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Friday"],
+      "opens": "08:00",
+      "closes": "12:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "priceRange": "EUR EUR",
+  "medicalSpecialty": "http://schema.org/InternalMedicine",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Cash, Credit Card, EC Card",
+  "areaServed": {
+    "@type": "City",
+    "name": "Frankfurt am Main"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. med. Siegbert Stracke",
+    "jobTitle": "Geschaeftsfuehrer"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Sanexio GmbH",
+    "url": "https://sanexio.eu"
+  },
+  "sameAs": []
+}
+</script>
+
+{%- comment -%} Seiten-spezifische Schemas {%- endcomment -%}
+
+{%- if template.name == 'index' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Juvantis",
+  "url": "https://sanexio.eu",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://sanexio.eu/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if template.suffix == 'preise' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Juvantis Gesundheitschecks",
+  "description": "Bluttests ab 45 EUR, Body Checks, Digital Health Twin",
+  "brand": { "@type": "Brand", "name": "Juvantis" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "45",
+    "highPrice": "449",
+    "priceCurrency": "EUR",
+    "offerCount": "5"
+  }
+}
+</script>
+{%- endif -%}
