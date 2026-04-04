@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "zielgruppe": {
+      "type": "juvantis-zielgruppe",
+      "blocks": {
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🩺",
+            "title": "Umfassende Check-ups"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📋",
+            "title": "Individuelle Reports"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🤖",
+            "title": "Digital Health Twin"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "📅",
+            "title": "Flexible Durchfuehrung"
+          }
+        },
+        "benefit_5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "🔒",
+            "title": "Anonyme Auswertung"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4",
+        "benefit_5"
+      ],
+      "settings": {
+        "badge": "Fuer Unternehmen",
+        "heading": "Gesunde Mitarbeiter. Starkes Unternehmen.",
+        "intro": "<p>Betriebliches Gesundheitsmanagement, das wirklich etwas bringt. Juvantis bietet Corporate Health Checks, die ueber den Standard hinausgehen.</p>",
+        "usp_heading": "Corporate Health neu gedacht",
+        "usp_text": "<p>Keine 08/15-Gesundheitstage. Wir bieten evidenzbasierte Check-ups mit 80+ Biomarkern, individuelle Gesundheitsberichte und den Digital Health Twin -- fuer nachhaltiges BGM mit messbarem ROI.</p>",
+        "benefits_heading": "Ihre Vorteile als Unternehmen",
+        "cta_label": "Kontakt fuer Unternehmen",
+        "cta_link": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "zielgruppe"
+  ]
+}
