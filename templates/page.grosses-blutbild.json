@@ -1,0 +1,260 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "seo": {
+      "type": "juvantis-seo-page",
+      "settings": {
+        "badge": "Laborwissen",
+        "heading": "Grosses Blutbild: Was es zeigt, was es kostet und warum es nicht reicht",
+        "intro": "Ein grosses Blutbild ist eine der haeufigsten Laboruntersuchungen in Deutschland. Es zeigt die Zusammensetzung deines Blutes -- rote und weisse Blutkoerperchen, Blutplaettchen und ihre Unterformen. Doch was genau wird gemessen, was kostet es und warum liefert es allein kein vollstaendiges Bild deiner Gesundheit?",
+        "table_col1": "Parameter",
+        "table_col2": "Funktion",
+        "table_col3": "Referenzbereich",
+        "cta_label": "Mehr als ein Blutbild -- dein kompletter Gesundheits-Check",
+        "cta_link": "shopify://collections/laboruntersuchung",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "h2_was_ist": {
+          "type": "heading",
+          "settings": {
+            "text": "Was ist ein grosses Blutbild?"
+          }
+        },
+        "rt_was_ist": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Ein grosses Blutbild (auch: Differentialblutbild) erweitert das kleine Blutbild um eine detaillierte Aufschluesselung der weissen Blutkoerperchen (Leukozyten). Waehrend das kleine Blutbild nur die Gesamtzahl der Leukozyten misst, unterscheidet das grosse Blutbild zwischen Neutrophilen, Lymphozyten, Monozyten, Eosinophilen und Basophilen.</p><p>Dein Arzt ordnet ein grosses Blutbild an, wenn Infektionen, Entzuendungen, Allergien oder Erkrankungen des Blutbildungssystems abgeklaert werden sollen. Es ist ein wichtiger Baustein der Basisdiagnostik -- aber eben nur ein Baustein.</p>"
+          }
+        },
+        "h2_parameter": {
+          "type": "heading",
+          "settings": {
+            "text": "Alle Parameter im grossen Blutbild"
+          }
+        },
+        "rt_parameter_intro": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Das grosse Blutbild umfasst die Werte des kleinen Blutbilds plus die Differenzierung der Leukozyten. Hier sind die wichtigsten Parameter im Ueberblick:</p>"
+          }
+        },
+        "row_ery": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Erythrozyten (RBC)",
+            "col2": "Sauerstofftransport im Blut",
+            "col3": "4,1 - 5,9 Mio./\u00b5l"
+          }
+        },
+        "row_leuko": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Leukozyten (WBC)",
+            "col2": "Immunabwehr, Infektbekaempfung",
+            "col3": "4.000 - 10.000 /\u00b5l"
+          }
+        },
+        "row_thrombo": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Thrombozyten (PLT)",
+            "col2": "Blutgerinnung, Wundheilung",
+            "col3": "150.000 - 400.000 /\u00b5l"
+          }
+        },
+        "row_hk": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Haematokrit (HCT)",
+            "col2": "Anteil roter Blutkoerperchen am Blut",
+            "col3": "36 - 48 %"
+          }
+        },
+        "row_mcv": {
+          "type": "table_row",
+          "settings": {
+            "col1": "MCV",
+            "col2": "Mittleres Zellvolumen der Erythrozyten",
+            "col3": "80 - 96 fl"
+          }
+        },
+        "row_mch": {
+          "type": "table_row",
+          "settings": {
+            "col1": "MCH",
+            "col2": "Haemoglobingehalt pro Erythrozyt",
+            "col3": "28 - 33 pg"
+          }
+        },
+        "row_mchc": {
+          "type": "table_row",
+          "settings": {
+            "col1": "MCHC",
+            "col2": "Mittlere Haemoglobinkonzentration",
+            "col3": "33 - 36 g/dl"
+          }
+        },
+        "row_neutro": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Neutrophile",
+            "col2": "Abwehr bakterieller Infektionen",
+            "col3": "50 - 70 %"
+          }
+        },
+        "row_lympho": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Lymphozyten",
+            "col2": "Virusabwehr, Immungedaechtnis",
+            "col3": "25 - 40 %"
+          }
+        },
+        "row_mono": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Monozyten",
+            "col2": "Fresszellen, chronische Entzuendungen",
+            "col3": "2 - 8 %"
+          }
+        },
+        "row_eosino": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Eosinophile",
+            "col2": "Allergien, Parasitenabwehr",
+            "col3": "1 - 4 %"
+          }
+        },
+        "row_baso": {
+          "type": "table_row",
+          "settings": {
+            "col1": "Basophile",
+            "col2": "Allergische Reaktionen, Entzuendungen",
+            "col3": "0 - 1 %"
+          }
+        },
+        "h2_vergleich": {
+          "type": "heading",
+          "settings": {
+            "text": "Grosses vs. kleines Blutbild: Was ist der Unterschied?"
+          }
+        },
+        "rt_vergleich": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Das kleine Blutbild misst die Grundwerte: Erythrozyten, Leukozyten, Thrombozyten, Haemoglobin, Haematokrit und die Erythrozyten-Indizes (MCV, MCH, MCHC). Es gibt einen groben Ueberblick ueber Blutbildung und Sauerstofftransport.</p><p>Das grosse Blutbild ergaenzt diese Werte um die Differenzierung der Leukozyten. Damit lassen sich Infektionen genauer einordnen: Sind es Bakterien (Neutrophile hoch), Viren (Lymphozyten hoch) oder allergische Reaktionen (Eosinophile hoch)?</p><p>Trotzdem erfasst auch das grosse Blutbild nur einen kleinen Ausschnitt deiner Gesundheit. Organfunktionen, Stoffwechsel, Hormone und Vitamine bleiben unsichtbar.</p>"
+          }
+        },
+        "h2_warum_nicht_reicht": {
+          "type": "heading",
+          "settings": {
+            "text": "Warum ein grosses Blutbild allein nicht reicht"
+          }
+        },
+        "rt_warum_nicht_reicht": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Ein grosses Blutbild beantwortet eine einzige Frage: Wie sieht dein Blut aus? Das ist wichtig -- aber es sagt nichts ueber deine Schilddruese, deine Leber, deine Nieren, deinen Vitaminstatus oder dein Hormonsystem aus.</p><p>Bei Juvantis gehen wir weiter: Mit bis zu 80+ Biomarkern erfassen wir nicht nur dein Blutbild, sondern auch Organfunktionen, Stoffwechsel, Hormone, Vitamine und Entzuendungsmarker. Das Ergebnis ist kein einzelner Laborzettel, sondern ein vollstaendiges Gesundheitsprofil -- visualisiert in deinem persoenlichen Digital Health Twin.</p>"
+          }
+        },
+        "highlight_juvantis": {
+          "type": "highlight",
+          "settings": {
+            "title": "80+ Biomarker statt 12 Parameter",
+            "text": "Ein grosses Blutbild zeigt dir 12 Werte. Bei Juvantis analysieren wir ueber 80 Biomarker und visualisieren sie in deinem Digital Health Twin -- damit du nicht nur Zahlen siehst, sondern verstehst, was in deinem Koerper passiert."
+          }
+        },
+        "h2_kosten": {
+          "type": "heading",
+          "settings": {
+            "text": "Was kostet ein grosses Blutbild?"
+          }
+        },
+        "rt_kosten": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Die Kosten fuer ein grosses Blutbild variieren je nach Anbieter und Umfang:</p>"
+          }
+        },
+        "card_hausarzt": {
+          "type": "card",
+          "settings": {
+            "icon": "🏥",
+            "title": "Beim Hausarzt (GKV)",
+            "description": "Kostenlos bei medizinischer Indikation. Ohne konkreten Verdacht zahlt die Kasse in der Regel nicht. Wartezeit auf Ergebnisse: 2-5 Tage."
+          }
+        },
+        "card_privat": {
+          "type": "card",
+          "settings": {
+            "icon": "🧾",
+            "title": "Privat / IGeL-Leistung",
+            "description": "Ca. 5-15 EUR fuer das grosse Blutbild allein (nach GOAe). Erweiterte Laborwerte (Vitamine, Hormone) kosten schnell 100-300 EUR zusaetzlich."
+          }
+        },
+        "card_juvantis": {
+          "type": "card",
+          "settings": {
+            "icon": "🏆",
+            "title": "Juvantis Komplett-Check",
+            "description": "Ab 45 EUR: 80+ Biomarker, aerztliche Auswertung, Ergebnis in 48h und Visualisierung im Digital Health Twin. Kein Vergleich zum einfachen Blutbild."
+          }
+        },
+        "info_tipp": {
+          "type": "info",
+          "settings": {
+            "content": "<p><strong>Gut zu wissen:</strong> Bei Juvantis ist das grosse Blutbild in jedem Check-up enthalten -- zusammen mit Dutzenden weiterer Biomarker. Du bekommst nicht nur Zahlen, sondern verstehst, was sie bedeuten.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "h2_was_ist",
+        "rt_was_ist",
+        "h2_parameter",
+        "rt_parameter_intro",
+        "row_ery",
+        "row_leuko",
+        "row_thrombo",
+        "row_hk",
+        "row_mcv",
+        "row_mch",
+        "row_mchc",
+        "row_neutro",
+        "row_lympho",
+        "row_mono",
+        "row_eosino",
+        "row_baso",
+        "h2_vergleich",
+        "rt_vergleich",
+        "h2_warum_nicht_reicht",
+        "rt_warum_nicht_reicht",
+        "highlight_juvantis",
+        "h2_kosten",
+        "rt_kosten",
+        "card_hausarzt",
+        "card_privat",
+        "card_juvantis",
+        "info_tipp"
+      ]
+    }
+  },
+  "order": ["main", "seo"]
+}
