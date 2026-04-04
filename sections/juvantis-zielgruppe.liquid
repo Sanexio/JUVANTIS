@@ -1,0 +1,318 @@
+{%- comment -%}
+  Juvantis Section: Zielgruppen-Seite (wiederverwendbar)
+  Zweck: Fuer Sportler, Fuer Unternehmen, Fuer Praxen
+  Erstellt: 2026-04-04
+{%- endcomment -%}
+
+{%- assign zg_pages = 'fuer-sportler,fuer-unternehmen,fuer-praxen' | split: ',' -%}
+{%- assign is_zg = false -%}
+{%- for p in zg_pages -%}
+  {%- if template.suffix == p -%}{%- assign is_zg = true -%}{%- endif -%}
+{%- endfor -%}
+
+{%- if is_zg -%}
+
+{%- style -%}
+  .jv-zg {
+    --jv-teal: #028090;
+    --jv-teal-light: #00A896;
+    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
+    --jv-text: #1a1a1a;
+    --jv-text-sec: #555;
+    --jv-bg: #ffffff;
+    --jv-bg-subtle: #f8fafa;
+    --jv-border: #e8ecec;
+    --jv-radius: 1.4rem;
+    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+    -webkit-font-smoothing: antialiased;
+    color: var(--jv-text);
+  }
+
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .jv-zg__container { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .jv-zg__hero { text-align: center; padding: 3rem 0 2.5rem; }
+
+  .jv-zg__badge {
+    display: inline-flex;
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: 2rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--jv-teal);
+    margin-bottom: 1.2rem;
+  }
+
+  .jv-zg__hero h1 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  .jv-zg__hero-text {
+    font-size: clamp(1rem, 2vw, 1.12rem);
+    color: var(--jv-text-sec);
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* USP highlight */
+  .jv-zg__usp {
+    background: var(--jv-gradient);
+    color: #fff;
+    border-radius: var(--jv-radius);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .jv-zg__usp h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: #fff;
+  }
+
+  .jv-zg__usp p { margin: 0; opacity: 0.9; line-height: 1.6; }
+
+  /* Benefits bento */
+  .jv-zg__section-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 0 0 2rem;
+  }
+
+  .jv-zg__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 750px) {
+    .jv-zg__grid {
+      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    }
+  }
+
+  .jv-zg__card {
+    background: var(--jv-bg);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 1.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jv-zg__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  .jv-zg__card-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+
+  .jv-zg__card-title {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+  }
+
+  .jv-zg__card-text {
+    font-size: 0.88rem;
+    color: var(--jv-text-sec);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Testimonial / Social proof */
+  .jv-zg__proof {
+    background: var(--jv-bg-subtle);
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius);
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .jv-zg__proof-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--jv-text);
+    line-height: 1.6;
+    margin: 0 0 0.8rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .jv-zg__proof-author {
+    font-size: 0.85rem;
+    color: var(--jv-text-sec);
+    font-weight: 600;
+  }
+
+  /* Content section */
+  .jv-zg__content {
+    max-width: 48rem;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+    font-size: 0.95rem;
+    color: var(--jv-text-sec);
+  }
+
+  .jv-zg__content h2 {
+    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--jv-text);
+    margin: 2rem 0 0.8rem;
+  }
+
+  /* CTA */
+  .jv-zg__cta { text-align: center; padding: 1rem 0 0; }
+
+  .jv-zg__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--jv-gradient);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .jv-zg__cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(78,161,217,0.3);
+    color: #fff;
+  }
+
+  @supports (animation-timeline: view()) {
+    .jv-zg__card, .jv-zg__usp, .jv-zg__proof {
+      animation: jvZgFade 0.6s ease both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 40%;
+    }
+  }
+
+  @keyframes jvZgFade {
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+{%- endstyle -%}
+
+<section class="jv-zg" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;">
+  <div class="jv-zg__container">
+
+    <header class="jv-zg__hero">
+      <span class="jv-zg__badge">{{ section.settings.badge }}</span>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="jv-zg__hero-text">{{ section.settings.intro }}</p>
+    </header>
+
+    {%- if section.settings.usp_heading != blank -%}
+      <div class="jv-zg__usp">
+        <h2>{{ section.settings.usp_heading }}</h2>
+        <p>{{ section.settings.usp_text }}</p>
+      </div>
+    {%- endif -%}
+
+    {%- assign has_cards = false -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'benefit' -%}{%- assign has_cards = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+
+    {%- if has_cards -%}
+      <h2 class="jv-zg__section-title">{{ section.settings.benefits_heading }}</h2>
+      <div class="jv-zg__grid">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'benefit' -%}
+            <div class="jv-zg__card" {{ block.shopify_attributes }}>
+              <span class="jv-zg__card-icon">{{ block.settings.icon }}</span>
+              <h3 class="jv-zg__card-title">{{ block.settings.title }}</h3>
+              <p class="jv-zg__card-text">{{ block.settings.text }}</p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'testimonial' -%}
+        <div class="jv-zg__proof" {{ block.shopify_attributes }}>
+          <p class="jv-zg__proof-text">{{ block.settings.quote }}</p>
+          <span class="jv-zg__proof-author">{{ block.settings.author }}</span>
+        </div>
+      {%- endif -%}
+      {%- if block.type == 'content' -%}
+        <div class="jv-zg__content" {{ block.shopify_attributes }}>
+          {%- if block.settings.title != blank -%}<h2>{{ block.settings.title }}</h2>{%- endif -%}
+          {{ block.settings.text }}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if section.settings.cta_label != blank -%}
+      <div class="jv-zg__cta">
+        <a href="{{ section.settings.cta_link }}" class="jv-zg__cta-btn">{{ section.settings.cta_label }} &rarr;</a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Zielgruppe",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    { "type": "text", "id": "badge", "label": "Badge" },
+    { "type": "text", "id": "heading", "label": "H1" },
+    { "type": "textarea", "id": "intro", "label": "Einleitung" },
+    { "type": "text", "id": "usp_heading", "label": "USP-Ueberschrift" },
+    { "type": "textarea", "id": "usp_text", "label": "USP-Text" },
+    { "type": "text", "id": "benefits_heading", "label": "Benefits-Ueberschrift", "default": "Deine Vorteile" },
+    { "type": "text", "id": "cta_label", "label": "CTA-Text" },
+    { "type": "url", "id": "cta_link", "label": "CTA-Link" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand oben" },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "default": 52, "label": "Abstand unten" }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Vorteil", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "🏃" },
+      { "type": "text", "id": "title", "label": "Titel" },
+      { "type": "textarea", "id": "text", "label": "Text" }
+    ]},
+    { "type": "testimonial", "name": "Testimonial", "settings": [
+      { "type": "textarea", "id": "quote", "label": "Zitat" },
+      { "type": "text", "id": "author", "label": "Autor" }
+    ]},
+    { "type": "content", "name": "Textabschnitt", "settings": [
+      { "type": "text", "id": "title", "label": "Ueberschrift" },
+      { "type": "richtext", "id": "text", "label": "Inhalt" }
+    ]}
+  ],
+  "presets": [{ "name": "Juvantis: Zielgruppe" }]
+}
+{% endschema %}
