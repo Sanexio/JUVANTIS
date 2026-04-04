@@ -11,54 +11,72 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
+      "settings": { "padding_top": 0, "padding_bottom": 0 }
     },
     "dht": {
       "type": "juvantis-dht-page",
+      "settings": {
+        "heading": "Dein Koerper. Digital. Verstanden.",
+        "hero_sub": "Der weltweit erste Digital Health Twin: Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert -- motivierend statt abstrakt.",
+        "explainer_heading": "Was ist der Digital Health Twin?",
+        "explainer_text": "Stell dir vor, du haettest einen digitalen Zwilling deines Koerpers. Einen 3D-Avatar, der in Echtzeit zeigt, wie es um deine Gesundheit steht. Nicht in abstrakten Zahlen, sondern visuell: Organe, Haut, Vitalwerte -- alles auf einen Blick. Das ist dein Digital Health Twin.",
+        "features_heading": "Was dein DHT kann",
+        "how_heading": "So funktioniert es",
+        "game_heading": "Gesundheit wird zum Spiel",
+        "game_text": "Quests, Challenges und ein Level-System motivieren dich, dranzubleiben. Verbessere deine Werte, steige im Level auf und feiere deine Fortschritte -- Gesundheit darf Spass machen.",
+        "privacy_heading": "Deine Daten gehoeren dir. 100% DSGVO-konform.",
+        "privacy_text": "Alle Daten werden in Deutschland gespeichert und verarbeitet. Du entscheidest, wer Zugriff hat. Keine Weitergabe an Dritte, keine versteckten Datennutzungen. Punkt.",
+        "cta_label": "Starte deinen Digital Health Twin -- kostenlos",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
       "blocks": {
         "f_organs": {
           "type": "feature",
           "settings": {
             "icon": "🫀",
-            "title": "Organe & Systeme"
+            "title": "Organe & Systeme",
+            "text": "Herz, Leber, Nieren -- dein Avatar zeigt den Status jedes Organs basierend auf deinen echten Laborwerten. Gruen heisst gut, Gelb heisst: schau genauer hin."
           }
         },
         "f_skin": {
           "type": "feature",
           "settings": {
             "icon": "🧴",
-            "title": "Haut & Aeusseres"
+            "title": "Haut & Aeusseres",
+            "text": "Dein Avatar spiegelt deine Vitalitaet wider: Hautbild, Energielevel und aeussere Anzeichen von Naehrstoffmaengeln oder Stress."
           }
         },
         "f_vitals": {
           "type": "feature",
           "settings": {
             "icon": "💓",
-            "title": "Vitalwerte"
+            "title": "Vitalwerte",
+            "text": "Blutdruck, Herzfrequenz, Schlafqualitaet -- in Echtzeit synchronisiert mit deiner Apple Watch oder deinem Wearable."
           }
         },
         "f_biomarkers": {
           "type": "feature",
           "settings": {
             "icon": "🔬",
-            "title": "80+ Biomarker"
+            "title": "80+ Biomarker",
+            "text": "Jeder einzelne Laborwert wird visualisiert, erklaert und in Kontext gesetzt. Keine kryptischen Tabellen mehr."
           }
         },
         "f_trends": {
           "type": "feature",
           "settings": {
             "icon": "📊",
-            "title": "Zeitverlaeufe"
+            "title": "Zeitverlaeufe",
+            "text": "Verfolge deine Entwicklung ueber Monate und Jahre. Sieh, wie sich Lebensstilaenderungen auf deine Werte auswirken."
           }
         },
         "f_ai": {
           "type": "feature",
           "settings": {
             "icon": "🤖",
-            "title": "KI-Empfehlungen"
+            "title": "KI-Empfehlungen",
+            "text": "Personalisierte Gesundheitstipps basierend auf deinem Gesamtprofil -- von Ernaehrung ueber Bewegung bis Schlaf."
           }
         },
         "h_1": {
@@ -96,26 +114,8 @@
         "h_1",
         "h_2",
         "h_3"
-      ],
-      "settings": {
-        "heading": "Dein Koerper. Digital. Verstanden.",
-        "hero_sub": "Der weltweit erste Digital Health Twin: Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert -- motivierend statt abstrakt.",
-        "explainer_heading": "Was ist der Digital Health Twin?",
-        "explainer_text": "Stell dir vor, du haettest einen digitalen Zwilling deines Koerpers. Einen 3D-Avatar, der in Echtzeit zeigt, wie es um deine Gesundheit steht. Nicht in abstrakten Zahlen, sondern visuell: Organe, Haut, Vitalwerte -- alles auf einen Blick. Das ist dein Digital Health Twin.",
-        "features_heading": "Was dein DHT kann",
-        "how_heading": "So funktioniert es",
-        "game_heading": "Gesundheit wird zum Spiel",
-        "game_text": "Quests, Challenges und ein Level-System motivieren dich, dranzubleiben. Verbessere deine Werte, steige im Level auf und feiere deine Fortschritte -- Gesundheit darf Spass machen.",
-        "privacy_heading": "Deine Daten gehoeren dir. 100% DSGVO-konform.",
-        "privacy_text": "Alle Daten werden in Deutschland gespeichert und verarbeitet. Du entscheidest, wer Zugriff hat. Keine Weitergabe an Dritte, keine versteckten Datennutzungen. Punkt.",
-        "cta_label": "Starte deinen Digital Health Twin -- kostenlos",
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
+      ]
     }
   },
-  "order": [
-    "main",
-    "dht"
-  ]
+  "order": ["main", "dht"]
 }
