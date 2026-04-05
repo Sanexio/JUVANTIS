@@ -551,7 +551,7 @@ var zoom = d3.zoom()
 svg.call(zoom);
 
 // Set initial transform centered
-svg.call(zoom.transform, d3.zoomIdentity.translate(W / 2, H / 2).scale(0.7));
+svg.call(zoom.transform, d3.zoomIdentity.translate(Math.round(W / 2), Math.round(H / 2)).scale(1));
 
 // =========================================================
 // DRAW LINKS
@@ -670,7 +670,7 @@ function ticked() {
       return d.target.y - (dy / dist) * tr;
     });
 
-  nodeEls.attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+  nodeEls.attr('transform', function(d) { return 'translate(' + Math.round(d.x) + ',' + Math.round(d.y) + ')'; });
 }
 
 // =========================================================
