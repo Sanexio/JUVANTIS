@@ -20,8 +20,8 @@
       "type": "juvantis-seo-page",
       "settings": {
         "badge": "Therapie",
-        "heading": "Infusionstherapie: Naehrstoffe direkt dorthin, wo sie wirken",
-        "intro": "Infusionstherapien umgehen den Magen-Darm-Trakt und bringen Vitamine, Mineralstoffe und Wirkstoffe direkt in deine Blutbahn. Das bedeutet: 100 % Bioverfuegbarkeit, schnellere Wirkung und hoehere Dosierungen als mit Tabletten moeglich waere.",
+        "heading": "Infusionstherapie: Nährstoffe direkt dorthin, wo sie wirken",
+        "intro": "Infusionstherapien umgehen den Magen-Darm-Trakt und bringen Vitamine, Mineralstoffe und Wirkstoffe direkt in deine Blutbahn. Das bedeutet: 100 % Bioverfügbarkeit, schnellere Wirkung und höhere Dosierungen als mit Tabletten möglich waere.",
         "table_col1": "Infusion",
         "table_col2": "Dauer",
         "table_col3": "Preis",
@@ -40,7 +40,7 @@
         "rt_angebote_intro": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Alle Infusionen werden unter aerztlicher Aufsicht in unserer Praxis im Frankfurter Westend verabreicht. Vor jeder Erstbehandlung findet ein Beratungsgespraech statt, um die optimale Therapie fuer dich zu bestimmen.</p>"
+            "content": "<p>Alle Infusionen werden unter ärztlicher Aufsicht in unserer Praxis im Frankfurter Westend verabreicht. Vor jeder Erstbehandlung findet ein Beratungsgespräch statt, um die optimale Therapie für dich zu bestimmen.</p>"
           }
         },
         "card_vitc": {
@@ -48,7 +48,7 @@
           "settings": {
             "icon": "🍊",
             "title": "Vitamin-C-Hochdosis",
-            "description": "7,5 bis 15 g Vitamin C intravenoes. Staerkt das Immunsystem, wirkt antioxidativ und unterstuetzt die Regeneration nach Infekten, Operationen oder bei chronischer Muedigkeit."
+            "description": "7,5 bis 15 g Vitamin C intravenoes. Staerkt das Immunsystem, wirkt antioxidativ und unterstützt die Regeneration nach Infekten, Operationen oder bei chronischer Müdigkeit."
           }
         },
         "card_eisen": {
@@ -56,7 +56,7 @@
           "settings": {
             "icon": "🩸",
             "title": "Eisen-Infusion",
-            "description": "Schnelle Auffuellung der Eisenspeicher bei nachgewiesenem Eisenmangel. Deutlich wirksamer als orale Praeparate -- besonders bei Unvertraeglichkeit von Eisentabletten."
+            "description": "Schnelle Auffuellung der Eisenspeicher bei nachgewiesenem Eisenmangel. Deutlich wirksamer als orale Praeparate — besonders bei Unvertraeglichkeit von Eisentabletten."
           }
         },
         "card_nad": {
@@ -64,7 +64,7 @@
           "settings": {
             "icon": "⚡",
             "title": "NAD+ Infusion",
-            "description": "Nicotinamid-Adenin-Dinukleotid ist ein zentrales Coenzym fuer Zellreparatur und Energiestoffwechsel. NAD+-Infusionen werden in der Longevity-Medizin zur Unterstuetzung der Zellgesundheit eingesetzt."
+            "description": "Nicotinamid-Adenin-Dinukleotid ist ein zentrales Coenzym für Zellreparatur und Energiestoffwechsel. NAD+-Infusionen werden in der Longevity-Medizin zur Unterstützung der Zellgesundheit eingesetzt."
           }
         },
         "card_myers": {
@@ -72,7 +72,7 @@
           "settings": {
             "icon": "💉",
             "title": "Myers' Cocktail",
-            "description": "Der Klassiker der Infusionsmedizin: Ein Mix aus Magnesium, Calcium, B-Vitaminen und Vitamin C. Bewaehrt bei Erschoepfung, Migraene und allgemeinem Naehrstoffmangel."
+            "description": "Der Klassiker der Infusionsmedizin: Ein Mix aus Magnesium, Calcium, B-Vitaminen und Vitamin C. Bewährt bei Erschöpfung, Migraene und allgemeinem Nährstoffmangel."
           }
         },
         "card_immun": {
@@ -80,19 +80,19 @@
           "settings": {
             "icon": "🛡️",
             "title": "Immun-Boost",
-            "description": "Hochdosierter Mix aus Zink, Selen, Vitamin C und B-Vitaminen. Ideal zur Staerkung des Immunsystems in der Erkaeltungszeit oder nach laengerer Belastung."
+            "description": "Hochdosierter Mix aus Zink, Selen, Vitamin C und B-Vitaminen. Ideal zur Staerkung des Immunsystems in der Erkältungszeit oder nach laengerer Belastung."
           }
         },
         "h2_fuer_wen": {
           "type": "heading",
           "settings": {
-            "text": "Fuer wen ist Infusionstherapie geeignet?"
+            "text": "Für wen ist Infusionstherapie geeignet?"
           }
         },
         "rt_fuer_wen": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Infusionstherapien eignen sich fuer verschiedene Situationen und Zielgruppen:</p><p>Chronische Muedigkeit und Erschoepfung -- wenn trotz ausreichend Schlaf die Energie fehlt. Nachgewiesener Naehrstoffmangel, insbesondere Eisen, Vitamin D oder B12. Regeneration nach Infekten, Operationen oder intensivem Sport. Praevention und Longevity -- fuer Menschen, die proaktiv in ihre Gesundheit investieren.</p><p>Wichtig: Jede Infusionstherapie bei Juvantis basiert auf einer vorherigen Laboranalyse. Wir infundieren nicht auf Verdacht, sondern gezielt auf Basis deiner Blutwerte.</p>"
+            "content": "<p>Infusionstherapien eignen sich für verschiedene Situationen und Zielgruppen:</p><p>Chronische Müdigkeit und Erschöpfung — wenn trotz ausreichend Schlaf die Energie fehlt. Nachgewiesener Nährstoffmangel, insbesondere Eisen, Vitamin D oder B12. Regeneration nach Infekten, Operationen oder intensivem Sport. Prävention und Longevity — für Menschen, die proaktiv in ihre Gesundheit investieren.</p><p>Wichtig: Jede Infusionstherapie bei Juvantis basiert auf einer vorherigen Laboranalyse. Wir infundieren nicht auf Verdacht, sondern gezielt auf Basis deiner Blutwerte.</p>"
           }
         },
         "h2_ablauf": {
@@ -104,14 +104,14 @@
         "rt_ablauf": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Deine Infusionstherapie bei Juvantis ist sicher, komfortabel und aerztlich begleitet:</p>"
+            "content": "<p>Deine Infusionstherapie bei Juvantis ist sicher, komfortabel und ärztlich begleitet:</p>"
           }
         },
         "card_beratung": {
           "type": "card",
           "settings": {
             "icon": "🗣️",
-            "title": "Beratungsgespraech",
+            "title": "Beratungsgespräch",
             "description": "Vor der ersten Infusion besprechen wir deine Laborwerte, Vorerkrankungen und Ziele. So stellen wir sicher, dass die Therapie optimal zu dir passt."
           }
         },
@@ -127,8 +127,8 @@
           "type": "card",
           "settings": {
             "icon": "✅",
-            "title": "Aerztliche Ueberwachung",
-            "description": "Waehrend der gesamten Infusion bist du unter aerztlicher Aufsicht. Allergische Reaktionen sind selten, aber wir sind auf alles vorbereitet."
+            "title": "Ärztliche Überwachung",
+            "description": "Während der gesamten Infusion bist du unter ärztlicher Aufsicht. Allergische Reaktionen sind selten, aber wir sind auf alles vorbereitet."
           }
         },
         "info_hinweis": {
@@ -140,7 +140,7 @@
         "h2_preise": {
           "type": "heading",
           "settings": {
-            "text": "Preise im Ueberblick"
+            "text": "Preise im Überblick"
           }
         },
         "row_vitc": {
@@ -217,5 +217,8 @@
       ]
     }
   },
-  "order": ["main", "seo"]
+  "order": [
+    "main",
+    "seo"
+  ]
 }
