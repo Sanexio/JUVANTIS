@@ -184,18 +184,21 @@ const nodes = [];
 const nodeMap = {};
 const edgeIndex = {}; // nodeId -> Set of connected nodeIds
 
-RAW_DATA.organs.forEach(o => {
-  const n = { id: o.id, label: o.label, type: "organ", system: o.system, color: o.color, description: o.description, radius: 38 };
+RAW_DATA.organs.forEach((o, i) => {
+  const angle = (2 * Math.PI * i) / RAW_DATA.organs.length;
+  const n = { id: o.id, label: o.label, type: "organ", system: o.system, color: o.color, description: o.description, radius: 38, x: Math.cos(angle) * 250, y: Math.sin(angle) * 250 };
   nodes.push(n);
   nodeMap[o.id] = n;
 });
-RAW_DATA.labvalues.forEach(l => {
-  const n = { id: l.id, label: l.label, type: "labvalue", unit: l.unit, normalRange: l.normalRange, category: l.category, significance: l.significance, color: "#028090", radius: 18 };
+RAW_DATA.labvalues.forEach((l, i) => {
+  const angle = (2 * Math.PI * i) / RAW_DATA.labvalues.length;
+  const n = { id: l.id, label: l.label, type: "labvalue", unit: l.unit, normalRange: l.normalRange, category: l.category, significance: l.significance, color: "#028090", radius: 18, x: Math.cos(angle) * 380, y: Math.sin(angle) * 380 };
   nodes.push(n);
   nodeMap[l.id] = n;
 });
-RAW_DATA.diseases.forEach(d => {
-  const n = { id: d.id, label: d.label, type: "disease", severity: d.severity, icd10: d.icd10, category: d.category, color: severityColor(d.severity), radius: 20 };
+RAW_DATA.diseases.forEach((d, i) => {
+  const angle = (2 * Math.PI * i) / RAW_DATA.diseases.length;
+  const n = { id: d.id, label: d.label, type: "disease", severity: d.severity, icd10: d.icd10, category: d.category, color: severityColor(d.severity), radius: 20, x: Math.cos(angle) * 500, y: Math.sin(angle) * 500 };
   nodes.push(n);
   nodeMap[d.id] = n;
 });
@@ -218,9 +221,9 @@ links.forEach(l => {
 });
 
 // ===== SVG SETUP =====
-const width = window.innerWidth;
-const height = window.innerHeight;
-const svg = d3.select("#graph").attr("viewBox", [0, 0, width, height]);
+const width = Math.max(window.innerWidth || 1200, 800);
+const height = Math.max(window.innerHeight || 800, 600);
+const svg = d3.select("#graph").attr("viewBox", [-width/2, -height/2, width, height]);
 
 // Defs for arrowheads and glow
 const defs = svg.append("defs");
@@ -260,7 +263,7 @@ const zoomBehavior = d3.zoom()
   });
 svg.call(zoomBehavior);
 // Initial zoom to center
-svg.call(zoomBehavior.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.75));
+svg.call(zoomBehavior.transform, d3.zoomIdentity.scale(0.75));
 
 // ===== LINKS =====
 const linkG = container.append("g").attr("class", "links");
