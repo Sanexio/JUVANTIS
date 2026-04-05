@@ -1,0 +1,720 @@
+{%- comment -%}
+  Juvantis Section: Health Graph (D3.js Knowledge Graph)
+  Zweck: Interaktiver medizinischer Knowledge Graph
+  Erstellt: 2026-04-05
+{%- endcomment -%}
+
+{%- if template.suffix == 'health-graph' -%}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0A0F1A;font-family:'Inter',system-ui,-apple-system,sans-serif;color:#E0E0E0}
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+svg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+
+/* Header */
+#header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;display:flex;align-items:center;gap:16px;
+  background:linear-gradient(180deg,rgba(10,15,26,0.95) 0%,rgba(10,15,26,0.7) 80%,rgba(10,15,26,0) 100%);
+  pointer-events:none}
+#header>*{pointer-events:auto}
+.header-accent{width:4px;height:48px;border-radius:2px;background:linear-gradient(180deg,#028090,#02C39A);flex-shrink:0}
+.header-text h1{font-size:22px;font-weight:700;letter-spacing:-0.5px;
+  background:linear-gradient(135deg,#02C39A,#028090);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.header-text p{font-size:12px;font-weight:400;color:#8899AA;margin-top:2px}
+
+/* Search */
+#search-box{position:fixed;top:16px;left:280px;z-index:100;width:340px}
+@media(max-width:768px){#search-box{left:16px;top:80px;width:calc(100% - 32px)}}
+#search-input{width:100%;padding:10px 14px 10px 38px;border:1px solid rgba(2,192,154,0.25);border-radius:10px;
+  background:rgba(10,15,26,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  color:#E0E0E0;font-size:13px;font-family:'Inter',sans-serif;outline:none;transition:border-color 0.2s}
+#search-input:focus{border-color:rgba(2,192,154,0.6)}
+#search-input::placeholder{color:#556677}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#028090;font-size:14px}
+
+/* Legend */
+#legend{position:fixed;top:16px;right:16px;z-index:100;
+  background:rgba(10,15,26,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;min-width:200px}
+#legend h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#028090;margin-bottom:10px}
+.legend-item{display:flex;align-items:center;gap:8px;padding:4px 0;cursor:pointer;opacity:1;transition:opacity 0.2s;font-size:12px}
+.legend-item.dimmed{opacity:0.3}
+.legend-item:hover{opacity:1}
+.legend-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+.legend-dot.diamond{border-radius:0;transform:rotate(45deg);width:11px;height:11px}
+.legend-line{width:20px;height:0;border-top:2px solid;flex-shrink:0}
+.legend-line.dashed{border-top-style:dashed}
+.legend-line.dotted{border-top-style:dotted;border-top-width:2px}
+.legend-sep{height:1px;background:rgba(255,255,255,0.06);margin:8px 0}
+
+/* Info Panel */
+#info-panel{position:fixed;top:80px;right:16px;z-index:99;width:300px;max-height:calc(100vh - 100px);overflow-y:auto;
+  background:rgba(10,15,26,0.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(2,192,154,0.15);border-radius:14px;padding:20px;
+  transform:translateX(340px);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  scrollbar-width:thin;scrollbar-color:rgba(2,192,154,0.3) transparent}
+#info-panel.visible{transform:translateX(0)}
+@media(max-width:768px){
+  #info-panel{top:auto;bottom:0;left:0;right:0;width:100%;max-height:50vh;border-radius:14px 14px 0 0;
+    transform:translateY(100%)}
+  #info-panel.visible{transform:translateY(0)}
+  #legend{display:none}
+}
+#info-panel::-webkit-scrollbar{width:4px}
+#info-panel::-webkit-scrollbar-thumb{background:rgba(2,192,154,0.3);border-radius:2px}
+.info-close{position:absolute;top:12px;right:12px;background:none;border:none;color:#667;font-size:18px;cursor:pointer;padding:4px;line-height:1}
+.info-close:hover{color:#aaa}
+.info-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.info-color-dot{width:20px;height:20px;border-radius:50%;flex-shrink:0}
+.info-title{font-size:18px;font-weight:600}
+.info-system{font-size:11px;color:#028090;font-weight:500;text-transform:uppercase;letter-spacing:0.5px}
+.info-desc{font-size:12px;color:#8899AA;line-height:1.5;margin-bottom:16px}
+.info-section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#556;margin-bottom:8px}
+.info-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.info-chip{padding:4px 10px;border-radius:6px;font-size:11px;font-weight:500;cursor:pointer;transition:all 0.15s;border:1px solid}
+.info-chip.lab{background:rgba(2,128,144,0.15);border-color:rgba(2,128,144,0.3);color:#02C39A}
+.info-chip.lab:hover{background:rgba(2,128,144,0.3)}
+.info-chip.disease{border-color:rgba(255,255,255,0.1);color:#ddd}
+.info-chip.disease:hover{opacity:0.8}
+.info-chip .arrow{font-size:10px;margin-left:3px;opacity:0.6}
+
+/* Tooltip */
+#tooltip{position:fixed;z-index:200;pointer-events:none;
+  background:rgba(10,15,26,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid rgba(2,192,154,0.25);border-radius:8px;padding:10px 14px;
+  font-size:12px;max-width:260px;opacity:0;transition:opacity 0.15s;line-height:1.5}
+#tooltip.visible{opacity:1}
+#tooltip .tt-label{font-weight:600;font-size:13px;margin-bottom:2px}
+#tooltip .tt-detail{color:#8899AA;font-size:11px}
+#tooltip .tt-range{color:#02C39A;font-size:11px;margin-top:2px}
+
+/* Node stats */
+#stats{position:fixed;bottom:16px;left:16px;z-index:100;font-size:11px;color:#445566}
+</style>
+
+<style>
+  .section-header, .header-wrapper, header.header, .announcement-bar { display: none !important; }
+  footer.footer, .footer, .shopify-section-group-footer-group,
+  .shopify-section-group-header-group { display: none !important; }
+  .main-page-title.page-title { display: none !important; }
+  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  main#MainContent { padding: 0 !important; margin: 0 !important; }
+  body { overflow: hidden !important; }
+</style>
+
+<canvas id="bg-canvas"></canvas>
+
+<div id="header">
+  <div class="header-accent"></div>
+  <div class="header-text">
+    <h1>Juvantis Health Graph</h1>
+    <p>Wie Organe, Laborwerte und Erkrankungen zusammenh&auml;ngen</p>
+  </div>
+</div>
+
+<div id="search-box">
+  <span class="search-icon">&#128269;</span>
+  <input id="search-input" type="text" placeholder="Suche nach Organ, Laborwert oder Erkrankung..." autocomplete="off" spellcheck="false">
+</div>
+
+<div id="legend">
+  <h3>Legende</h3>
+  <div class="legend-item" data-filter="organ"><div class="legend-dot" style="background:#028090"></div><span>Organ</span></div>
+  <div class="legend-item" data-filter="labvalue"><div class="legend-dot" style="background:rgba(2,128,144,0.8);width:10px;height:10px"></div><span>Laborwert</span></div>
+  <div class="legend-item" data-filter="disease"><div class="legend-dot diamond" style="background:#FF6B35"></div><span>Erkrankung</span></div>
+  <div class="legend-sep"></div>
+  <div class="legend-item" data-filter="organ_produces_lab"><div class="legend-line" style="border-color:#02C39A"></div><span>Organ &rarr; Labor</span></div>
+  <div class="legend-item" data-filter="lab_indicates_disease"><div class="legend-line dashed" style="border-color:#FF6B35"></div><span>Labor &rarr; Krankheit</span></div>
+  <div class="legend-item" data-filter="disease_affects_organ"><div class="legend-line dotted" style="border-color:#E63946"></div><span>Krankheit &rarr; Organ</span></div>
+</div>
+
+<div id="info-panel">
+  <button class="info-close" id="info-close">&times;</button>
+  <div id="info-content"></div>
+</div>
+
+<div id="tooltip"></div>
+<div id="stats"></div>
+
+<svg id="graph"></svg>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+"use strict";
+
+// ===== INLINE DATA =====
+const RAW_DATA = {"meta": {"title": "Juvantis Medical Knowledge Graph", "version": "1.0.0", "description": "Verbindung von Organen, Laborwerten und Erkrankungen für den Digital Health Twin", "author": "Praxiszentrum Dr. Stracke & Kollegen / Sanexio GmbH", "created": "2026-04-05", "nodeTypes": ["organ", "labvalue", "disease"], "edgeTypes": ["organ_produces_lab", "lab_indicates_disease", "disease_affects_organ"]}, "organs": [{"id": "heart", "label": "Herz", "system": "Kardiovaskulär", "icon": "heart", "color": "#E63946", "description": "Zentrales Pumporgan des Kreislaufsystems"}, {"id": "liver", "label": "Leber", "system": "Hepatobiliär", "icon": "liver", "color": "#8B4513", "description": "Zentrales Stoffwechsel- und Entgiftungsorgan"}, {"id": "kidney", "label": "Niere", "system": "Urogenital", "icon": "kidney", "color": "#C45BAA", "description": "Filtrations- und Ausscheidungsorgan, Elektrolythaushalt"}, {"id": "lung", "label": "Lunge", "system": "Respiratorisch", "icon": "lung", "color": "#5DADE2", "description": "Gasaustausch (O₂/CO₂)"}, {"id": "thyroid", "label": "Schilddrüse", "system": "Endokrin", "icon": "thyroid", "color": "#9B59B6", "description": "Hormonproduktion (T3, T4), Stoffwechselregulation"}, {"id": "pancreas", "label": "Pankreas", "system": "Endokrin / Gastrointestinal", "icon": "pancreas", "color": "#F4A460", "description": "Insulin-/Glukagonproduktion, Verdauungsenzyme"}, {"id": "bone_marrow", "label": "Knochenmark", "system": "Hämatopoetisch", "icon": "bone", "color": "#F5E6CC", "description": "Blutbildung (Erythrozyten, Leukozyten, Thrombozyten)"}, {"id": "stomach_gut", "label": "Magen-Darm", "system": "Gastrointestinal", "icon": "stomach", "color": "#E67E22", "description": "Verdauung, Nährstoffaufnahme, Immunabwehr"}, {"id": "prostate", "label": "Prostata", "system": "Urogenital", "icon": "prostate", "color": "#2E86C1", "description": "Drüsenorgan, Sekretproduktion"}, {"id": "brain", "label": "Gehirn", "system": "Zentralnervensystem", "icon": "brain", "color": "#FFB6C1", "description": "Steuerung, Kognition, Neurotransmitter-Regulation"}, {"id": "adrenal", "label": "Nebenniere", "system": "Endokrin", "icon": "adrenal", "color": "#FFC300", "description": "Cortisol-, Aldosteron-, Adrenalinproduktion"}, {"id": "skeleton", "label": "Knochen / Skelett", "system": "Muskuloskeletal", "icon": "skeleton", "color": "#F0EAD6", "description": "Stützapparat, Kalziumspeicher"}, {"id": "spleen", "label": "Milz", "system": "Lymphatisch / Immunsystem", "icon": "spleen", "color": "#800020", "description": "Immunüberwachung, Erythrozyten-Abbau"}, {"id": "muscle", "label": "Muskulatur", "system": "Muskuloskeletal", "icon": "muscle", "color": "#C0392B", "description": "Bewegungsapparat, Energiestoffwechsel"}, {"id": "vessels", "label": "Blutgefäße", "system": "Kardiovaskulär", "icon": "vessel", "color": "#E74C3C", "description": "Arterien, Venen, Kapillaren — Nährstofftransport"}], "labvalues": [{"id": "troponin", "label": "Troponin T/I", "unit": "ng/L", "normalRange": "< 14", "category": "Herzmarker", "significance": "Hochspezifisch für Herzmuskelschädigung"}, {"id": "bnp", "label": "BNP / NT-proBNP", "unit": "pg/mL", "normalRange": "< 125 (NT-proBNP)", "category": "Herzmarker", "significance": "Herzinsuffizienz-Marker, Volumenbelastung"}, {"id": "ck_mb", "label": "CK-MB", "unit": "U/L", "normalRange": "< 24", "category": "Herzmarker", "significance": "Herzmuskelenzym, bei Infarkt erhöht"}, {"id": "ldh", "label": "LDH", "unit": "U/L", "normalRange": "120–246", "category": "Allgemeiner Gewebemarker", "significance": "Unspezifisch, bei Zellzerfall erhöht"}, {"id": "got", "label": "GOT (AST)", "unit": "U/L", "normalRange": "< 50", "category": "Leberenzym", "significance": "Leberzell- und Herzmuskelschaden"}, {"id": "gpt", "label": "GPT (ALT)", "unit": "U/L", "normalRange": "< 50", "category": "Leberenzym", "significance": "Leberspezifisch, Hepatozyten-Integrität"}, {"id": "ggt", "label": "Gamma-GT (GGT)", "unit": "U/L", "normalRange": "< 60", "category": "Leberenzym / Cholestase", "significance": "Cholestase, Alkohol, Medikamenten-Induktion"}, {"id": "bilirubin", "label": "Bilirubin (gesamt)", "unit": "mg/dL", "normalRange": "< 1.2", "category": "Lebermarker", "significance": "Hämolyse, Leberfunktion, Gallenabfluss"}, {"id": "albumin", "label": "Albumin", "unit": "g/dL", "normalRange": "3.5–5.5", "category": "Lebersynthese", "significance": "Syntheseleistung der Leber, Ernährungszustand"}, {"id": "ap", "label": "Alkalische Phosphatase (AP)", "unit": "U/L", "normalRange": "40–130", "category": "Knochen / Leber", "significance": "Cholestase, Knochenumbau"}, {"id": "inr", "label": "INR / Quick", "unit": "INR / %", "normalRange": "0.85–1.15 / 70–130%", "category": "Gerinnung", "significance": "Gerinnungsstatus, Lebersynthese (Faktor VII)"}, {"id": "creatinine", "label": "Kreatinin", "unit": "mg/dL", "normalRange": "0.7–1.2", "category": "Nierenfunktion", "significance": "Glomeruläre Filtrationsrate (GFR), Nierenfunktion"}, {"id": "gfr", "label": "eGFR", "unit": "mL/min/1.73m²", "normalRange": "> 90", "category": "Nierenfunktion", "significance": "Geschätzte Filtrationsleistung der Niere"}, {"id": "urea", "label": "Harnstoff (BUN)", "unit": "mg/dL", "normalRange": "17–43", "category": "Nierenfunktion", "significance": "Stickstoffstoffwechsel, Nierenfunktion"}, {"id": "potassium", "label": "Kalium (K⁺)", "unit": "mmol/L", "normalRange": "3.5–5.0", "category": "Elektrolyte", "significance": "Herzrhythmus, Muskelfunktion, Nierenfunktion"}, {"id": "sodium", "label": "Natrium (Na⁺)", "unit": "mmol/L", "normalRange": "136–145", "category": "Elektrolyte", "significance": "Wasserhaushalt, ZNS-Funktion"}, {"id": "calcium", "label": "Kalzium (Ca²⁺)", "unit": "mmol/L", "normalRange": "2.1–2.6", "category": "Elektrolyte / Knochen", "significance": "Knochenstoffwechsel, Gerinnung, Muskel"}, {"id": "phosphate", "label": "Phosphat", "unit": "mmol/L", "normalRange": "0.8–1.5", "category": "Elektrolyte / Knochen", "significance": "Knochenstoffwechsel, Energiestoffwechsel"}, {"id": "tsh", "label": "TSH", "unit": "mU/L", "normalRange": "0.4–4.0", "category": "Schilddrüse", "significance": "Schilddrüsensteuerung via Hypophyse"}, {"id": "ft3", "label": "fT3", "unit": "pmol/L", "normalRange": "3.1–6.8", "category": "Schilddrüse", "significance": "Aktives Schilddrüsenhormon"}, {"id": "ft4", "label": "fT4", "unit": "pmol/L", "normalRange": "12–22", "category": "Schilddrüse", "significance": "Speicherform Schilddrüsenhormon"}, {"id": "hba1c", "label": "HbA1c", "unit": "%", "normalRange": "< 5.7", "category": "Glukosestoffwechsel", "significance": "Langzeit-Blutzucker (8–12 Wochen)"}, {"id": "glucose", "label": "Nüchtern-Glukose", "unit": "mg/dL", "normalRange": "70–100", "category": "Glukosestoffwechsel", "significance": "Aktueller Blutzuckerwert"}, {"id": "insulin", "label": "Insulin (nüchtern)", "unit": "µU/mL", "normalRange": "2.6–24.9", "category": "Glukosestoffwechsel", "significance": "Insulinresistenz, Beta-Zell-Funktion"}, {"id": "lipase", "label": "Lipase", "unit": "U/L", "normalRange": "< 60", "category": "Pankreas", "significance": "Pankreasentzündung, Gewebeschaden"}, {"id": "amylase", "label": "Amylase", "unit": "U/L", "normalRange": "28–100", "category": "Pankreas", "significance": "Pankreas- und Speicheldrüsenfunktion"}, {"id": "hemoglobin", "label": "Hämoglobin (Hb)", "unit": "g/dL", "normalRange": "M: 13.5–17.5 / F: 12.0–16.0", "category": "Blutbild", "significance": "Sauerstofftransport, Anämie-Diagnostik"}, {"id": "erythrocytes", "label": "Erythrozyten (RBC)", "unit": "Mio/µL", "normalRange": "M: 4.5–5.9 / F: 4.0–5.2", "category": "Blutbild", "significance": "Rote Blutkörperchen, Sauerstoffträger"}, {"id": "leukocytes", "label": "Leukozyten (WBC)", "unit": "Tsd/µL", "normalRange": "4.0–10.0", "category": "Blutbild", "significance": "Immunabwehr, Infekt, Entzündung"}, {"id": "thrombocytes", "label": "Thrombozyten", "unit": "Tsd/µL", "normalRange": "150–400", "category": "Blutbild", "significance": "Blutgerinnung, Blutungsneigung"}, {"id": "crp", "label": "CRP", "unit": "mg/L", "normalRange": "< 5", "category": "Entzündung", "significance": "Akute-Phase-Protein, Entzündungsmarker"}, {"id": "ferritin", "label": "Ferritin", "unit": "ng/mL", "normalRange": "M: 30–400 / F: 15–150", "category": "Eisenstoffwechsel", "significance": "Eisenspeicher, Entzündungsmarker"}, {"id": "iron", "label": "Eisen (Fe)", "unit": "µg/dL", "normalRange": "M: 65–175 / F: 50–170", "category": "Eisenstoffwechsel", "significance": "Serumeisen, Transporteisen"}, {"id": "transferrin", "label": "Transferrin / TSAT", "unit": "mg/dL / %", "normalRange": "200–360 / 20–45%", "category": "Eisenstoffwechsel", "significance": "Eisentransportprotein"}, {"id": "vitd", "label": "Vitamin D (25-OH)", "unit": "ng/mL", "normalRange": "30–60", "category": "Vitamine / Knochen", "significance": "Knochenstoffwechsel, Immunfunktion"}, {"id": "vitb12", "label": "Vitamin B12", "unit": "pg/mL", "normalRange": "200–900", "category": "Vitamine / Hämatologie", "significance": "Nervenfunktion, Blutbildung"}, {"id": "folate", "label": "Folsäure", "unit": "ng/mL", "normalRange": "> 5.4", "category": "Vitamine / Hämatologie", "significance": "DNA-Synthese, Blutbildung"}, {"id": "cholesterol_total", "label": "Gesamt-Cholesterin", "unit": "mg/dL", "normalRange": "< 200", "category": "Lipide", "significance": "Atherosklerose-Risiko"}, {"id": "ldl", "label": "LDL-Cholesterin", "unit": "mg/dL", "normalRange": "< 116 (risikoadaptiert)", "category": "Lipide", "significance": "Atherosklerose-Hauptrisikofaktor"}, {"id": "hdl", "label": "HDL-Cholesterin", "unit": "mg/dL", "normalRange": "> 40 (M) / > 50 (F)", "category": "Lipide", "significance": "Protektiver Faktor gegen Atherosklerose"}, {"id": "triglycerides", "label": "Triglyzeride", "unit": "mg/dL", "normalRange": "< 150", "category": "Lipide", "significance": "Fettstoffwechsel, Pankreatitis-Risiko"}, {"id": "uric_acid", "label": "Harnsäure", "unit": "mg/dL", "normalRange": "M: 3.5–7.0 / F: 2.5–5.7", "category": "Stoffwechsel", "significance": "Purinstoffwechsel, Gicht-Risiko"}, {"id": "psa", "label": "PSA", "unit": "ng/mL", "normalRange": "< 4.0 (altersabhängig)", "category": "Tumormarker", "significance": "Prostatamarker (Karzinom, Hyperplasie)"}, {"id": "cortisol", "label": "Cortisol", "unit": "µg/dL", "normalRange": "5–25 (morgens)", "category": "Nebenniere", "significance": "Stresshormon, Immunregulation"}, {"id": "aldosterone", "label": "Aldosteron", "unit": "pg/mL", "normalRange": "30–355 (aufrecht)", "category": "Nebenniere", "significance": "Natrium-/Kaliumhaushalt, Blutdruck"}, {"id": "ddimer", "label": "D-Dimer", "unit": "mg/L", "normalRange": "< 0.5", "category": "Gerinnung", "significance": "Thrombose/Embolie-Ausschluss"}, {"id": "pth", "label": "Parathormon (PTH)", "unit": "pg/mL", "normalRange": "15–65", "category": "Kalziumstoffwechsel", "significance": "Kalzium-/Phosphatregulation"}, {"id": "blood_gas_po2", "label": "pO₂ (arteriell)", "unit": "mmHg", "normalRange": "75–100", "category": "Blutgasanalyse", "significance": "Oxygenierung, Lungenfunktion"}, {"id": "blood_gas_pco2", "label": "pCO₂ (arteriell)", "unit": "mmHg", "normalRange": "35–45", "category": "Blutgasanalyse", "significance": "Ventilation, Säure-Base-Haushalt"}, {"id": "ck", "label": "Kreatinkinase (CK gesamt)", "unit": "U/L", "normalRange": "M: < 190 / F: < 170", "category": "Muskelmarker", "significance": "Muskelzellschaden"}, {"id": "myoglobin", "label": "Myoglobin", "unit": "ng/mL", "normalRange": "< 72", "category": "Muskelmarker", "significance": "Früher Marker für Muskelzellzerfall"}], "diseases": [{"id": "mi", "label": "Myokardinfarkt", "severity": "akut-lebensbedrohlich", "icd10": "I21", "category": "Kardiovaskulär"}, {"id": "heart_failure", "label": "Herzinsuffizienz", "severity": "chronisch-schwer", "icd10": "I50", "category": "Kardiovaskulär"}, {"id": "afib", "label": "Vorhofflimmern", "severity": "chronisch-mittel", "icd10": "I48", "category": "Kardiovaskulär"}, {"id": "atherosclerosis", "label": "Atherosklerose", "severity": "chronisch-progredient", "icd10": "I70", "category": "Kardiovaskulär"}, {"id": "hypertension", "label": "Arterielle Hypertonie", "severity": "chronisch-mittel", "icd10": "I10", "category": "Kardiovaskulär"}, {"id": "hepatitis", "label": "Hepatitis (akut/chronisch)", "severity": "variabel", "icd10": "K75/B15-B19", "category": "Hepatobiliär"}, {"id": "cirrhosis", "label": "Leberzirrhose", "severity": "chronisch-schwer", "icd10": "K74", "category": "Hepatobiliär"}, {"id": "fatty_liver", "label": "Fettleber (MASLD)", "severity": "chronisch-leicht", "icd10": "K76.0", "category": "Hepatobiliär"}, {"id": "cholestasis", "label": "Cholestase / Gallenstau", "severity": "akut-mittel", "icd10": "K83.1", "category": "Hepatobiliär"}, {"id": "ckd", "label": "Chronische Niereninsuffizienz (CKD)", "severity": "chronisch-schwer", "icd10": "N18", "category": "Nephrologie"}, {"id": "aki", "label": "Akutes Nierenversagen (AKI)", "severity": "akut-lebensbedrohlich", "icd10": "N17", "category": "Nephrologie"}, {"id": "nephrotic_syndrome", "label": "Nephrotisches Syndrom", "severity": "chronisch-mittel", "icd10": "N04", "category": "Nephrologie"}, {"id": "hyperthyroidism", "label": "Hyperthyreose", "severity": "chronisch-mittel", "icd10": "E05", "category": "Endokrinologie"}, {"id": "hypothyroidism", "label": "Hypothyreose", "severity": "chronisch-mittel", "icd10": "E03", "category": "Endokrinologie"}, {"id": "hashimoto", "label": "Hashimoto-Thyreoiditis", "severity": "chronisch-mittel", "icd10": "E06.3", "category": "Endokrinologie / Autoimmun"}, {"id": "diabetes_t2", "label": "Diabetes mellitus Typ 2", "severity": "chronisch-schwer", "icd10": "E11", "category": "Stoffwechsel"}, {"id": "diabetes_t1", "label": "Diabetes mellitus Typ 1", "severity": "chronisch-schwer", "icd10": "E10", "category": "Stoffwechsel / Autoimmun"}, {"id": "metabolic_syndrome", "label": "Metabolisches Syndrom", "severity": "chronisch-mittel", "icd10": "E88.81", "category": "Stoffwechsel"}, {"id": "pancreatitis_acute", "label": "Akute Pankreatitis", "severity": "akut-schwer", "icd10": "K85", "category": "Gastrointestinal"}, {"id": "pancreatitis_chronic", "label": "Chronische Pankreatitis", "severity": "chronisch-mittel", "icd10": "K86.1", "category": "Gastrointestinal"}, {"id": "anemia_iron", "label": "Eisenmangelanämie", "severity": "chronisch-leicht", "icd10": "D50", "category": "Hämatologie"}, {"id": "anemia_b12", "label": "Perniziöse Anämie (B12-Mangel)", "severity": "chronisch-mittel", "icd10": "D51", "category": "Hämatologie"}, {"id": "leukemia", "label": "Leukämie", "severity": "akut/chronisch-schwer", "icd10": "C91-C95", "category": "Hämatologie / Onkologie"}, {"id": "thrombocytopenia", "label": "Thrombozytopenie", "severity": "variabel", "icd10": "D69.6", "category": "Hämatologie"}, {"id": "dvt_pe", "label": "Thrombose / Lungenembolie", "severity": "akut-lebensbedrohlich", "icd10": "I26/I80", "category": "Kardiovaskulär"}, {"id": "copd", "label": "COPD", "severity": "chronisch-progredient", "icd10": "J44", "category": "Pulmologie"}, {"id": "pneumonia", "label": "Pneumonie", "severity": "akut-mittel", "icd10": "J18", "category": "Pulmologie"}, {"id": "respiratory_failure", "label": "Respiratorische Insuffizienz", "severity": "akut-schwer", "icd10": "J96", "category": "Pulmologie"}, {"id": "gout", "label": "Gicht", "severity": "chronisch-mittel", "icd10": "M10", "category": "Stoffwechsel / Rheumatologie"}, {"id": "osteoporosis", "label": "Osteoporose", "severity": "chronisch-progredient", "icd10": "M80/M81", "category": "Muskuloskeletal"}, {"id": "prostate_ca", "label": "Prostatakarzinom", "severity": "chronisch-schwer", "icd10": "C61", "category": "Onkologie"}, {"id": "bph", "label": "Benigne Prostatahyperplasie", "severity": "chronisch-leicht", "icd10": "N40", "category": "Urologie"}, {"id": "cushing", "label": "Cushing-Syndrom", "severity": "chronisch-schwer", "icd10": "E24", "category": "Endokrinologie"}, {"id": "addison", "label": "Morbus Addison", "severity": "chronisch-schwer", "icd10": "E27.1", "category": "Endokrinologie"}, {"id": "conn_syndrome", "label": "Conn-Syndrom (prim. Hyperaldosteronismus)", "severity": "chronisch-mittel", "icd10": "E26.0", "category": "Endokrinologie"}, {"id": "hyperparathyroidism", "label": "Hyperparathyreoidismus", "severity": "chronisch-mittel", "icd10": "E21", "category": "Endokrinologie"}, {"id": "rhabdomyolysis", "label": "Rhabdomyolyse", "severity": "akut-schwer", "icd10": "M62.82", "category": "Muskuloskeletal / Akut"}, {"id": "sepsis", "label": "Sepsis", "severity": "akut-lebensbedrohlich", "icd10": "A41", "category": "Infektiologie"}, {"id": "dic", "label": "Disseminierte intravasale Koagulopathie (DIC)", "severity": "akut-lebensbedrohlich", "icd10": "D65", "category": "Hämatologie"}, {"id": "hemolytic_anemia", "label": "Hämolytische Anämie", "severity": "variabel", "icd10": "D59", "category": "Hämatologie"}], "edges": [{"from": "heart", "to": "troponin", "type": "organ_produces_lab", "detail": "Bei Myokardschaden freigesetzt"}, {"from": "heart", "to": "bnp", "type": "organ_produces_lab", "detail": "Bei Wanddehnung sezerniert"}, {"from": "heart", "to": "ck_mb", "type": "organ_produces_lab", "detail": "Herzmuskel-spezifisches Isoenzym"}, {"from": "heart", "to": "got", "type": "organ_produces_lab", "detail": "Bei Herzmuskelschaden erhöht"}, {"from": "heart", "to": "ldh", "type": "organ_produces_lab", "detail": "Unspezifisch bei Zelluntergang"}, {"from": "heart", "to": "potassium", "type": "organ_produces_lab", "detail": "Kalium beeinflusst Herzrhythmus direkt"}, {"from": "liver", "to": "got", "type": "organ_produces_lab", "detail": "Hepatozyten-Enzym (auch Herz/Muskel)"}, {"from": "liver", "to": "gpt", "type": "organ_produces_lab", "detail": "Leberspezifisches Enzym"}, {"from": "liver", "to": "ggt", "type": "organ_produces_lab", "detail": "Cholestase- und Induktionsmarker"}, {"from": "liver", "to": "bilirubin", "type": "organ_produces_lab", "detail": "Abbauprodukt von Hämoglobin"}, {"from": "liver", "to": "albumin", "type": "organ_produces_lab", "detail": "Syntheseleistung der Leber"}, {"from": "liver", "to": "inr", "type": "organ_produces_lab", "detail": "Gerinnungsfaktoren aus der Leber"}, {"from": "liver", "to": "ap", "type": "organ_produces_lab", "detail": "Cholestase-Marker"}, {"from": "liver", "to": "cholesterol_total", "type": "organ_produces_lab", "detail": "Cholesterin-Synthese in der Leber"}, {"from": "kidney", "to": "creatinine", "type": "organ_produces_lab", "detail": "Filtrationsmarker"}, {"from": "kidney", "to": "gfr", "type": "organ_produces_lab", "detail": "Berechnet aus Kreatinin"}, {"from": "kidney", "to": "urea", "type": "organ_produces_lab", "detail": "Harnstoff-Ausscheidung"}, {"from": "kidney", "to": "potassium", "type": "organ_produces_lab", "detail": "Renale Kaliumregulation"}, {"from": "kidney", "to": "sodium", "type": "organ_produces_lab", "detail": "Renale Natriumregulation"}, {"from": "kidney", "to": "phosphate", "type": "organ_produces_lab", "detail": "Phosphat-Rückresorption"}, {"from": "kidney", "to": "albumin", "type": "organ_produces_lab", "detail": "Albuminverlust bei Nierenschaden"}, {"from": "thyroid", "to": "tsh", "type": "organ_produces_lab", "detail": "Steuerhormon (Hypophyse → Schilddrüse)"}, {"from": "thyroid", "to": "ft3", "type": "organ_produces_lab", "detail": "Aktives Schilddrüsenhormon"}, {"from": "thyroid", "to": "ft4", "type": "organ_produces_lab", "detail": "Speicher-/Transportform"}, {"from": "thyroid", "to": "calcium", "type": "organ_produces_lab", "detail": "Calcitonin reguliert Kalzium"}, {"from": "pancreas", "to": "glucose", "type": "organ_produces_lab", "detail": "Insulin senkt Blutzucker"}, {"from": "pancreas", "to": "hba1c", "type": "organ_produces_lab", "detail": "Langzeit-Blutzucker"}, {"from": "pancreas", "to": "insulin", "type": "organ_produces_lab", "detail": "Beta-Zellen produzieren Insulin"}, {"from": "pancreas", "to": "lipase", "type": "organ_produces_lab", "detail": "Pankreatisches Verdauungsenzym"}, {"from": "pancreas", "to": "amylase", "type": "organ_produces_lab", "detail": "Pankreatisches Verdauungsenzym"}, {"from": "bone_marrow", "to": "hemoglobin", "type": "organ_produces_lab", "detail": "Erythropoese"}, {"from": "bone_marrow", "to": "erythrocytes", "type": "organ_produces_lab", "detail": "Rote Blutkörperchen-Bildung"}, {"from": "bone_marrow", "to": "leukocytes", "type": "organ_produces_lab", "detail": "Weiße Blutkörperchen-Bildung"}, {"from": "bone_marrow", "to": "thrombocytes", "type": "organ_produces_lab", "detail": "Thrombozyten-Bildung"}, {"from": "bone_marrow", "to": "ferritin", "type": "organ_produces_lab", "detail": "Eisenspeicher für Blutbildung"}, {"from": "bone_marrow", "to": "iron", "type": "organ_produces_lab", "detail": "Eisen für Hämoglobinsynthese"}, {"from": "bone_marrow", "to": "vitb12", "type": "organ_produces_lab", "detail": "B12 nötig für Erythropoese"}, {"from": "bone_marrow", "to": "folate", "type": "organ_produces_lab", "detail": "Folsäure für DNA-Synthese"}, {"from": "lung", "to": "blood_gas_po2", "type": "organ_produces_lab", "detail": "Oxygenierung"}, {"from": "lung", "to": "blood_gas_pco2", "type": "organ_produces_lab", "detail": "CO₂-Elimination"}, {"from": "lung", "to": "ldh", "type": "organ_produces_lab", "detail": "Bei Lungengewebeschaden erhöht"}, {"from": "prostate", "to": "psa", "type": "organ_produces_lab", "detail": "Prostata-spezifisches Antigen"}, {"from": "adrenal", "to": "cortisol", "type": "organ_produces_lab", "detail": "Zona fasciculata → Cortisol"}, {"from": "adrenal", "to": "aldosterone", "type": "organ_produces_lab", "detail": "Zona glomerulosa → Aldosteron"}, {"from": "adrenal", "to": "potassium", "type": "organ_produces_lab", "detail": "Aldosteron reguliert K⁺"}, {"from": "adrenal", "to": "sodium", "type": "organ_produces_lab", "detail": "Aldosteron reguliert Na⁺"}, {"from": "skeleton", "to": "calcium", "type": "organ_produces_lab", "detail": "Kalziumspeicher"}, {"from": "skeleton", "to": "phosphate", "type": "organ_produces_lab", "detail": "Phosphat im Knochen"}, {"from": "skeleton", "to": "ap", "type": "organ_produces_lab", "detail": "Knochen-AP bei Umbau erhöht"}, {"from": "skeleton", "to": "vitd", "type": "organ_produces_lab", "detail": "Vitamin D für Mineralisation"}, {"from": "skeleton", "to": "pth", "type": "organ_produces_lab", "detail": "PTH mobilisiert Kalzium aus Knochen"}, {"from": "stomach_gut", "to": "vitb12", "type": "organ_produces_lab", "detail": "Intrinsic Factor für B12-Absorption"}, {"from": "stomach_gut", "to": "iron", "type": "organ_produces_lab", "detail": "Eisenresorption im Duodenum"}, {"from": "stomach_gut", "to": "folate", "type": "organ_produces_lab", "detail": "Folsäure-Resorption im Jejunum"}, {"from": "stomach_gut", "to": "albumin", "type": "organ_produces_lab", "detail": "Eiweißverlust bei Enteropathie"}, {"from": "stomach_gut", "to": "crp", "type": "organ_produces_lab", "detail": "CRP bei Darmentzündung"}, {"from": "muscle", "to": "ck", "type": "organ_produces_lab", "detail": "Muskelenzym bei Zellzerfall"}, {"from": "muscle", "to": "myoglobin", "type": "organ_produces_lab", "detail": "Muskelprotein"}, {"from": "muscle", "to": "ldh", "type": "organ_produces_lab", "detail": "Muskel-LDH"}, {"from": "muscle", "to": "got", "type": "organ_produces_lab", "detail": "AST auch in Muskelzellen"}, {"from": "muscle", "to": "creatinine", "type": "organ_produces_lab", "detail": "Kreatinin als Muskelabbauprodukt"}, {"from": "vessels", "to": "ldl", "type": "organ_produces_lab", "detail": "LDL lagert sich in Gefäßwänden ab"}, {"from": "vessels", "to": "hdl", "type": "organ_produces_lab", "detail": "HDL transportiert Cholesterin ab"}, {"from": "vessels", "to": "triglycerides", "type": "organ_produces_lab", "detail": "Triglyzeride beeinflussen Gefäßgesundheit"}, {"from": "vessels", "to": "ddimer", "type": "organ_produces_lab", "detail": "D-Dimer bei Gefäßthromben"}, {"from": "vessels", "to": "crp", "type": "organ_produces_lab", "detail": "CRP als Marker für Gefäßentzündung"}, {"from": "spleen", "to": "bilirubin", "type": "organ_produces_lab", "detail": "Erythrozyten-Abbau → Bilirubin"}, {"from": "spleen", "to": "thrombocytes", "type": "organ_produces_lab", "detail": "Thrombozyten-Pooling in der Milz"}, {"from": "spleen", "to": "leukocytes", "type": "organ_produces_lab", "detail": "Immunzellen-Aktivierung"}, {"from": "troponin", "to": "mi", "type": "lab_indicates_disease", "direction": "↑", "detail": "Troponin-Anstieg = Myokardnekrose"}, {"from": "bnp", "to": "heart_failure", "type": "lab_indicates_disease", "direction": "↑", "detail": "BNP korreliert mit Schweregrad"}, {"from": "ck_mb", "to": "mi", "type": "lab_indicates_disease", "direction": "↑", "detail": "CK-MB-Anstieg 3–12h nach Infarkt"}, {"from": "troponin", "to": "heart_failure", "type": "lab_indicates_disease", "direction": "↑", "detail": "Chronische Myokardschädigung"}, {"from": "potassium", "to": "afib", "type": "lab_indicates_disease", "direction": "↑↓", "detail": "Hypo-/Hyperkaliämie → Arrhythmie"}, {"from": "ldl", "to": "atherosclerosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "LDL ist Haupttreiber"}, {"from": "hdl", "to": "atherosclerosis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Niedriges HDL = höheres Risiko"}, {"from": "cholesterol_total", "to": "atherosclerosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Gesamtcholesterin-Risiko"}, {"from": "triglycerides", "to": "atherosclerosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Triglyzeride als Co-Faktor"}, {"from": "crp", "to": "atherosclerosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Vaskuläre Inflammation"}, {"from": "aldosterone", "to": "hypertension", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperaldosteronismus → Hypertonie"}, {"from": "sodium", "to": "hypertension", "type": "lab_indicates_disease", "direction": "↑", "detail": "Natriumretention → Volumen → RR↑"}, {"from": "gpt", "to": "hepatitis", "type": "lab_indicates_disease", "direction": "↑", "detail": "GPT > GOT = hepatozellulärer Schaden"}, {"from": "got", "to": "hepatitis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Transaminasenerhöhung"}, {"from": "gpt", "to": "fatty_liver", "type": "lab_indicates_disease", "direction": "↑", "detail": "Leichtgradig erhöht bei MASLD"}, {"from": "ggt", "to": "fatty_liver", "type": "lab_indicates_disease", "direction": "↑", "detail": "GGT oft erster Hinweis"}, {"from": "ggt", "to": "cholestasis", "type": "lab_indicates_disease", "direction": "↑", "detail": "GGT + AP = Cholestase-Muster"}, {"from": "ap", "to": "cholestasis", "type": "lab_indicates_disease", "direction": "↑", "detail": "AP bei Gallenabflussstörung"}, {"from": "bilirubin", "to": "cholestasis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Ikterus bei Gallenstau"}, {"from": "albumin", "to": "cirrhosis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Syntheseversagen"}, {"from": "inr", "to": "cirrhosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Gerinnungsstörung bei Zirrhose"}, {"from": "bilirubin", "to": "cirrhosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Ikterus bei fortgeschrittener Zirrhose"}, {"from": "thrombocytes", "to": "cirrhosis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Splenomegalie → Pooling"}, {"from": "got", "to": "cirrhosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "De-Ritis-Quotient > 1"}, {"from": "creatinine", "to": "ckd", "type": "lab_indicates_disease", "direction": "↑", "detail": "GFR sinkt, Kreatinin steigt"}, {"from": "gfr", "to": "ckd", "type": "lab_indicates_disease", "direction": "↓", "detail": "eGFR < 60 = Stadium ≥ 3"}, {"from": "urea", "to": "ckd", "type": "lab_indicates_disease", "direction": "↑", "detail": "Harnstoffretention"}, {"from": "potassium", "to": "ckd", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperkaliämie bei Nierenversagen"}, {"from": "phosphate", "to": "ckd", "type": "lab_indicates_disease", "direction": "↑", "detail": "Phosphatretention"}, {"from": "creatinine", "to": "aki", "type": "lab_indicates_disease", "direction": "↑", "detail": "Schneller Kreatininanstieg"}, {"from": "potassium", "to": "aki", "type": "lab_indicates_disease", "direction": "↑", "detail": "Lebensbedrohliche Hyperkaliämie"}, {"from": "albumin", "to": "nephrotic_syndrome", "type": "lab_indicates_disease", "direction": "↓", "detail": "Massiver Albuminverlust im Urin"}, {"from": "tsh", "to": "hyperthyroidism", "type": "lab_indicates_disease", "direction": "↓", "detail": "TSH supprimiert"}, {"from": "ft3", "to": "hyperthyroidism", "type": "lab_indicates_disease", "direction": "↑", "detail": "Freies T3 erhöht"}, {"from": "ft4", "to": "hyperthyroidism", "type": "lab_indicates_disease", "direction": "↑", "detail": "Freies T4 erhöht"}, {"from": "tsh", "to": "hypothyroidism", "type": "lab_indicates_disease", "direction": "↑", "detail": "TSH kompensatorisch erhöht"}, {"from": "ft4", "to": "hypothyroidism", "type": "lab_indicates_disease", "direction": "↓", "detail": "fT4 erniedrigt"}, {"from": "tsh", "to": "hashimoto", "type": "lab_indicates_disease", "direction": "↑", "detail": "TSH steigt bei Drüsenzerstörung"}, {"from": "hba1c", "to": "diabetes_t2", "type": "lab_indicates_disease", "direction": "↑", "detail": "HbA1c ≥ 6.5% = Diagnosekriterium"}, {"from": "glucose", "to": "diabetes_t2", "type": "lab_indicates_disease", "direction": "↑", "detail": "Nüchternglukose ≥ 126 mg/dL"}, {"from": "insulin", "to": "diabetes_t2", "type": "lab_indicates_disease", "direction": "↑", "detail": "Insulinresistenz"}, {"from": "triglycerides", "to": "diabetes_t2", "type": "lab_indicates_disease", "direction": "↑", "detail": "Oft begleitende Hypertriglyzeridämie"}, {"from": "hba1c", "to": "diabetes_t1", "type": "lab_indicates_disease", "direction": "↑", "detail": "HbA1c ≥ 6.5%"}, {"from": "glucose", "to": "diabetes_t1", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperglykämie durch Insulinmangel"}, {"from": "insulin", "to": "diabetes_t1", "type": "lab_indicates_disease", "direction": "↓", "detail": "Absoluter Insulinmangel"}, {"from": "triglycerides", "to": "metabolic_syndrome", "type": "lab_indicates_disease", "direction": "↑", "detail": "Kriterium: > 150 mg/dL"}, {"from": "hdl", "to": "metabolic_syndrome", "type": "lab_indicates_disease", "direction": "↓", "detail": "Kriterium: < 40/50 mg/dL"}, {"from": "glucose", "to": "metabolic_syndrome", "type": "lab_indicates_disease", "direction": "↑", "detail": "Nüchternglukose ≥ 100"}, {"from": "lipase", "to": "pancreatitis_acute", "type": "lab_indicates_disease", "direction": "↑", "detail": "Lipase > 3× oberer Grenzwert"}, {"from": "amylase", "to": "pancreatitis_acute", "type": "lab_indicates_disease", "direction": "↑", "detail": "Amylase-Anstieg (weniger spezifisch)"}, {"from": "crp", "to": "pancreatitis_acute", "type": "lab_indicates_disease", "direction": "↑", "detail": "CRP als Schweregradmarker"}, {"from": "lipase", "to": "pancreatitis_chronic", "type": "lab_indicates_disease", "direction": "↑", "detail": "Intermittierend erhöht"}, {"from": "hba1c", "to": "pancreatitis_chronic", "type": "lab_indicates_disease", "direction": "↑", "detail": "Pankreatogener Diabetes"}, {"from": "hemoglobin", "to": "anemia_iron", "type": "lab_indicates_disease", "direction": "↓", "detail": "Hb erniedrigt"}, {"from": "ferritin", "to": "anemia_iron", "type": "lab_indicates_disease", "direction": "↓", "detail": "Ferritin < 30 ng/mL"}, {"from": "iron", "to": "anemia_iron", "type": "lab_indicates_disease", "direction": "↓", "detail": "Serumeisen erniedrigt"}, {"from": "transferrin", "to": "anemia_iron", "type": "lab_indicates_disease", "direction": "↑", "detail": "Transferrin kompensatorisch erhöht"}, {"from": "hemoglobin", "to": "anemia_b12", "type": "lab_indicates_disease", "direction": "↓", "detail": "Makrozytäre Anämie"}, {"from": "vitb12", "to": "anemia_b12", "type": "lab_indicates_disease", "direction": "↓", "detail": "B12-Spiegel erniedrigt"}, {"from": "leukocytes", "to": "leukemia", "type": "lab_indicates_disease", "direction": "↑↓", "detail": "Leukozytose oder Leukopenie"}, {"from": "thrombocytes", "to": "leukemia", "type": "lab_indicates_disease", "direction": "↓", "detail": "Knochenmarkverdrängung"}, {"from": "hemoglobin", "to": "leukemia", "type": "lab_indicates_disease", "direction": "↓", "detail": "Anämie durch Verdrängung"}, {"from": "thrombocytes", "to": "thrombocytopenia", "type": "lab_indicates_disease", "direction": "↓", "detail": "< 150.000/µL"}, {"from": "ddimer", "to": "dvt_pe", "type": "lab_indicates_disease", "direction": "↑", "detail": "D-Dimer erhöht bei Thrombose"}, {"from": "blood_gas_po2", "to": "dvt_pe", "type": "lab_indicates_disease", "direction": "↓", "detail": "Hypoxämie bei Lungenembolie"}, {"from": "inr", "to": "dic", "type": "lab_indicates_disease", "direction": "↑", "detail": "Verbrauchskoagulopathie"}, {"from": "thrombocytes", "to": "dic", "type": "lab_indicates_disease", "direction": "↓", "detail": "Thrombozytenverbrauch"}, {"from": "ddimer", "to": "dic", "type": "lab_indicates_disease", "direction": "↑", "detail": "Massiv erhöht"}, {"from": "blood_gas_po2", "to": "copd", "type": "lab_indicates_disease", "direction": "↓", "detail": "Chronische Hypoxämie"}, {"from": "blood_gas_pco2", "to": "copd", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperkapnie bei schwerer COPD"}, {"from": "hemoglobin", "to": "copd", "type": "lab_indicates_disease", "direction": "↑", "detail": "Sekundäre Polyglobulie"}, {"from": "crp", "to": "pneumonia", "type": "lab_indicates_disease", "direction": "↑", "detail": "CRP als Infektionsmarker"}, {"from": "leukocytes", "to": "pneumonia", "type": "lab_indicates_disease", "direction": "↑", "detail": "Leukozytose bei bakterieller Pneumonie"}, {"from": "blood_gas_po2", "to": "respiratory_failure", "type": "lab_indicates_disease", "direction": "↓", "detail": "pO₂ < 60 mmHg"}, {"from": "blood_gas_pco2", "to": "respiratory_failure", "type": "lab_indicates_disease", "direction": "↑", "detail": "pCO₂ > 50 mmHg (Typ II)"}, {"from": "uric_acid", "to": "gout", "type": "lab_indicates_disease", "direction": "↑", "detail": "Harnsäure > 6.8 → Kristallbildung"}, {"from": "creatinine", "to": "gout", "type": "lab_indicates_disease", "direction": "↑", "detail": "Nierenfunktion beeinflusst Ausscheidung"}, {"from": "calcium", "to": "osteoporosis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Kalziummangel beschleunigt Abbau"}, {"from": "vitd", "to": "osteoporosis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Vitamin-D-Mangel → Mineralisierungsstörung"}, {"from": "ap", "to": "osteoporosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Knochen-AP bei erhöhtem Umbau"}, {"from": "pth", "to": "osteoporosis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Sekundärer Hyperparathyreoidismus"}, {"from": "psa", "to": "prostate_ca", "type": "lab_indicates_disease", "direction": "↑", "detail": "PSA > 4 ng/mL verdächtig"}, {"from": "psa", "to": "bph", "type": "lab_indicates_disease", "direction": "↑", "detail": "PSA leicht erhöht bei BPH"}, {"from": "cortisol", "to": "cushing", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hypercortisolismus"}, {"from": "glucose", "to": "cushing", "type": "lab_indicates_disease", "direction": "↑", "detail": "Steroid-Diabetes"}, {"from": "cortisol", "to": "addison", "type": "lab_indicates_disease", "direction": "↓", "detail": "Nebennierenrindeninsuffizienz"}, {"from": "sodium", "to": "addison", "type": "lab_indicates_disease", "direction": "↓", "detail": "Hyponatriämie"}, {"from": "potassium", "to": "addison", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperkaliämie durch Aldosteronmangel"}, {"from": "aldosterone", "to": "conn_syndrome", "type": "lab_indicates_disease", "direction": "↑", "detail": "Autonome Aldosteronproduktion"}, {"from": "potassium", "to": "conn_syndrome", "type": "lab_indicates_disease", "direction": "↓", "detail": "Hypokaliämie"}, {"from": "sodium", "to": "conn_syndrome", "type": "lab_indicates_disease", "direction": "↑", "detail": "Natriumretention"}, {"from": "pth", "to": "hyperparathyroidism", "type": "lab_indicates_disease", "direction": "↑", "detail": "PTH erhöht"}, {"from": "calcium", "to": "hyperparathyroidism", "type": "lab_indicates_disease", "direction": "↑", "detail": "Hyperkalzämie"}, {"from": "phosphate", "to": "hyperparathyroidism", "type": "lab_indicates_disease", "direction": "↓", "detail": "Phosphat erniedrigt (primär)"}, {"from": "ck", "to": "rhabdomyolysis", "type": "lab_indicates_disease", "direction": "↑", "detail": "CK massiv erhöht (>10.000 U/L)"}, {"from": "myoglobin", "to": "rhabdomyolysis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Myoglobin → Nierenversagen"}, {"from": "creatinine", "to": "rhabdomyolysis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Sekundäres Nierenversagen"}, {"from": "potassium", "to": "rhabdomyolysis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Kaliumfreisetzung aus Muskelzellen"}, {"from": "crp", "to": "sepsis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Massive Entzündungsreaktion"}, {"from": "leukocytes", "to": "sepsis", "type": "lab_indicates_disease", "direction": "↑↓", "detail": "Leukozytose oder Leukopenie"}, {"from": "thrombocytes", "to": "sepsis", "type": "lab_indicates_disease", "direction": "↓", "detail": "Verbrauch bei DIC-Entwicklung"}, {"from": "creatinine", "to": "sepsis", "type": "lab_indicates_disease", "direction": "↑", "detail": "Septisches Nierenversagen"}, {"from": "bilirubin", "to": "hemolytic_anemia", "type": "lab_indicates_disease", "direction": "↑", "detail": "Indirektes Bilirubin erhöht"}, {"from": "ldh", "to": "hemolytic_anemia", "type": "lab_indicates_disease", "direction": "↑", "detail": "LDH bei Hämolyse stark erhöht"}, {"from": "hemoglobin", "to": "hemolytic_anemia", "type": "lab_indicates_disease", "direction": "↓", "detail": "Anämie durch Erythrozytenzerfall"}, {"from": "mi", "to": "heart", "type": "disease_affects_organ"}, {"from": "heart_failure", "to": "heart", "type": "disease_affects_organ"}, {"from": "afib", "to": "heart", "type": "disease_affects_organ"}, {"from": "atherosclerosis", "to": "heart", "type": "disease_affects_organ"}, {"from": "atherosclerosis", "to": "vessels", "type": "disease_affects_organ"}, {"from": "atherosclerosis", "to": "brain", "type": "disease_affects_organ"}, {"from": "hypertension", "to": "heart", "type": "disease_affects_organ"}, {"from": "hypertension", "to": "vessels", "type": "disease_affects_organ"}, {"from": "hypertension", "to": "kidney", "type": "disease_affects_organ"}, {"from": "hepatitis", "to": "liver", "type": "disease_affects_organ"}, {"from": "cirrhosis", "to": "liver", "type": "disease_affects_organ"}, {"from": "cirrhosis", "to": "spleen", "type": "disease_affects_organ"}, {"from": "fatty_liver", "to": "liver", "type": "disease_affects_organ"}, {"from": "cholestasis", "to": "liver", "type": "disease_affects_organ"}, {"from": "ckd", "to": "kidney", "type": "disease_affects_organ"}, {"from": "ckd", "to": "skeleton", "type": "disease_affects_organ"}, {"from": "ckd", "to": "heart", "type": "disease_affects_organ"}, {"from": "aki", "to": "kidney", "type": "disease_affects_organ"}, {"from": "nephrotic_syndrome", "to": "kidney", "type": "disease_affects_organ"}, {"from": "hyperthyroidism", "to": "thyroid", "type": "disease_affects_organ"}, {"from": "hyperthyroidism", "to": "heart", "type": "disease_affects_organ"}, {"from": "hypothyroidism", "to": "thyroid", "type": "disease_affects_organ"}, {"from": "hashimoto", "to": "thyroid", "type": "disease_affects_organ"}, {"from": "diabetes_t2", "to": "pancreas", "type": "disease_affects_organ"}, {"from": "diabetes_t2", "to": "kidney", "type": "disease_affects_organ"}, {"from": "diabetes_t2", "to": "vessels", "type": "disease_affects_organ"}, {"from": "diabetes_t2", "to": "brain", "type": "disease_affects_organ"}, {"from": "diabetes_t1", "to": "pancreas", "type": "disease_affects_organ"}, {"from": "metabolic_syndrome", "to": "pancreas", "type": "disease_affects_organ"}, {"from": "metabolic_syndrome", "to": "liver", "type": "disease_affects_organ"}, {"from": "metabolic_syndrome", "to": "vessels", "type": "disease_affects_organ"}, {"from": "pancreatitis_acute", "to": "pancreas", "type": "disease_affects_organ"}, {"from": "pancreatitis_chronic", "to": "pancreas", "type": "disease_affects_organ"}, {"from": "anemia_iron", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "anemia_b12", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "anemia_b12", "to": "brain", "type": "disease_affects_organ"}, {"from": "leukemia", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "leukemia", "to": "spleen", "type": "disease_affects_organ"}, {"from": "thrombocytopenia", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "thrombocytopenia", "to": "spleen", "type": "disease_affects_organ"}, {"from": "dvt_pe", "to": "vessels", "type": "disease_affects_organ"}, {"from": "dvt_pe", "to": "lung", "type": "disease_affects_organ"}, {"from": "copd", "to": "lung", "type": "disease_affects_organ"}, {"from": "pneumonia", "to": "lung", "type": "disease_affects_organ"}, {"from": "respiratory_failure", "to": "lung", "type": "disease_affects_organ"}, {"from": "gout", "to": "skeleton", "type": "disease_affects_organ"}, {"from": "gout", "to": "kidney", "type": "disease_affects_organ"}, {"from": "osteoporosis", "to": "skeleton", "type": "disease_affects_organ"}, {"from": "prostate_ca", "to": "prostate", "type": "disease_affects_organ"}, {"from": "bph", "to": "prostate", "type": "disease_affects_organ"}, {"from": "cushing", "to": "adrenal", "type": "disease_affects_organ"}, {"from": "cushing", "to": "skeleton", "type": "disease_affects_organ"}, {"from": "addison", "to": "adrenal", "type": "disease_affects_organ"}, {"from": "conn_syndrome", "to": "adrenal", "type": "disease_affects_organ"}, {"from": "conn_syndrome", "to": "kidney", "type": "disease_affects_organ"}, {"from": "hyperparathyroidism", "to": "skeleton", "type": "disease_affects_organ"}, {"from": "hyperparathyroidism", "to": "kidney", "type": "disease_affects_organ"}, {"from": "rhabdomyolysis", "to": "muscle", "type": "disease_affects_organ"}, {"from": "rhabdomyolysis", "to": "kidney", "type": "disease_affects_organ"}, {"from": "sepsis", "to": "lung", "type": "disease_affects_organ"}, {"from": "sepsis", "to": "kidney", "type": "disease_affects_organ"}, {"from": "sepsis", "to": "liver", "type": "disease_affects_organ"}, {"from": "dic", "to": "vessels", "type": "disease_affects_organ"}, {"from": "dic", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "hemolytic_anemia", "to": "bone_marrow", "type": "disease_affects_organ"}, {"from": "hemolytic_anemia", "to": "spleen", "type": "disease_affects_organ"}]};
+
+// ===== SEVERITY COLOR MAP =====
+const SEVERITY_COLORS = {
+  "akut-lebensbedrohlich": "#E63946",
+  "akut-schwer": "#FF6B35",
+  "chronisch-schwer": "#FF6B35",
+  "akut/chronisch-schwer": "#FF6B35",
+  "chronisch-mittel": "#FFB400",
+  "akut-mittel": "#FFB400",
+  "chronisch-leicht": "#7DCE82",
+  "chronisch-progredient": "#FF6B35",
+  "variabel": "#A8A8A8"
+};
+function severityColor(s) { return SEVERITY_COLORS[s] || "#A8A8A8"; }
+
+// ===== BACKGROUND CANVAS =====
+(function drawBg() {
+  const c = document.getElementById("bg-canvas");
+  const ctx = c.getContext("2d");
+  function resize() { c.width = window.innerWidth; c.height = window.innerHeight; draw(); }
+  function draw() {
+    const w = c.width, h = c.height;
+    ctx.fillStyle = "#0A0F1A";
+    ctx.fillRect(0, 0, w, h);
+    const circles = [
+      { x: w * 0.2, y: h * 0.3, r: 350, color: "rgba(2,128,144,0.04)" },
+      { x: w * 0.75, y: h * 0.6, r: 400, color: "rgba(2,195,154,0.03)" },
+      { x: w * 0.5, y: h * 0.15, r: 280, color: "rgba(156,89,182,0.025)" },
+      { x: w * 0.85, y: h * 0.2, r: 200, color: "rgba(230,57,70,0.02)" },
+      { x: w * 0.1, y: h * 0.8, r: 300, color: "rgba(2,128,144,0.03)" },
+    ];
+    circles.forEach(ci => {
+      const g = ctx.createRadialGradient(ci.x, ci.y, 0, ci.x, ci.y, ci.r);
+      g.addColorStop(0, ci.color);
+      g.addColorStop(1, "transparent");
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, w, h);
+    });
+  }
+  window.addEventListener("resize", resize);
+  resize();
+})();
+
+// ===== BUILD GRAPH DATA =====
+const nodes = [];
+const nodeMap = {};
+const edgeIndex = {}; // nodeId -> Set of connected nodeIds
+
+RAW_DATA.organs.forEach(o => {
+  const n = { id: o.id, label: o.label, type: "organ", system: o.system, color: o.color, description: o.description, radius: 38 };
+  nodes.push(n);
+  nodeMap[o.id] = n;
+});
+RAW_DATA.labvalues.forEach(l => {
+  const n = { id: l.id, label: l.label, type: "labvalue", unit: l.unit, normalRange: l.normalRange, category: l.category, significance: l.significance, color: "#028090", radius: 18 };
+  nodes.push(n);
+  nodeMap[l.id] = n;
+});
+RAW_DATA.diseases.forEach(d => {
+  const n = { id: d.id, label: d.label, type: "disease", severity: d.severity, icd10: d.icd10, category: d.category, color: severityColor(d.severity), radius: 20 };
+  nodes.push(n);
+  nodeMap[d.id] = n;
+});
+
+const links = RAW_DATA.edges.map(e => ({
+  source: e.from,
+  target: e.to,
+  type: e.type,
+  detail: e.detail || "",
+  direction: e.direction || ""
+}));
+
+// Build adjacency index
+nodes.forEach(n => { edgeIndex[n.id] = new Set(); });
+links.forEach(l => {
+  const sid = typeof l.source === "object" ? l.source.id : l.source;
+  const tid = typeof l.target === "object" ? l.target.id : l.target;
+  edgeIndex[sid].add(tid);
+  edgeIndex[tid].add(sid);
+});
+
+// ===== SVG SETUP =====
+const width = window.innerWidth;
+const height = window.innerHeight;
+const svg = d3.select("#graph").attr("viewBox", [0, 0, width, height]);
+
+// Defs for arrowheads and glow
+const defs = svg.append("defs");
+
+// Arrow markers
+["#02C39A", "#FF6B35", "#E63946"].forEach((c, i) => {
+  defs.append("marker")
+    .attr("id", "arrow-" + i)
+    .attr("viewBox", "0 0 10 10")
+    .attr("refX", 10).attr("refY", 5)
+    .attr("markerWidth", 6).attr("markerHeight", 6)
+    .attr("orient", "auto-start-reverse")
+    .append("path").attr("d", "M0,1 L10,5 L0,9 Z").attr("fill", c).attr("opacity", 0.7);
+});
+
+// Glow filter
+const glow = defs.append("filter").attr("id", "glow").attr("x", "-50%").attr("y", "-50%").attr("width", "200%").attr("height", "200%");
+glow.append("feGaussianBlur").attr("stdDeviation", "4").attr("result", "blur");
+const glowMerge = glow.append("feMerge");
+glowMerge.append("feMergeNode").attr("in", "blur");
+glowMerge.append("feMergeNode").attr("in", "SourceGraphic");
+
+// Drop shadow
+const shadow = defs.append("filter").attr("id", "shadow").attr("x", "-30%").attr("y", "-30%").attr("width", "160%").attr("height", "160%");
+shadow.append("feDropShadow").attr("dx", 0).attr("dy", 2).attr("stdDeviation", 4).attr("flood-color", "rgba(0,0,0,0.5)");
+
+const container = svg.append("g").attr("id", "zoom-container");
+
+// ===== ZOOM =====
+let currentTransform = d3.zoomIdentity;
+const zoomBehavior = d3.zoom()
+  .scaleExtent([0.15, 4])
+  .on("zoom", (event) => {
+    currentTransform = event.transform;
+    container.attr("transform", event.transform);
+    updateLabelVisibility();
+  });
+svg.call(zoomBehavior);
+// Initial zoom to center
+svg.call(zoomBehavior.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.75));
+
+// ===== LINKS =====
+const linkG = container.append("g").attr("class", "links");
+const linkElements = linkG.selectAll("line").data(links).join("line")
+  .attr("stroke", d => d.type === "organ_produces_lab" ? "#02C39A" : d.type === "lab_indicates_disease" ? "#FF6B35" : "#E63946")
+  .attr("stroke-width", d => d.type === "organ_produces_lab" ? 1.8 : d.type === "lab_indicates_disease" ? 1.3 : 0.9)
+  .attr("stroke-opacity", d => d.type === "organ_produces_lab" ? 0.5 : d.type === "lab_indicates_disease" ? 0.4 : 0.35)
+  .attr("stroke-dasharray", d => d.type === "lab_indicates_disease" ? "6,4" : d.type === "disease_affects_organ" ? "2,3" : "none")
+  .attr("marker-end", d => d.type === "organ_produces_lab" ? "url(#arrow-0)" : d.type === "lab_indicates_disease" ? "url(#arrow-1)" : "url(#arrow-2)");
+
+// ===== NODES =====
+const nodeG = container.append("g").attr("class", "nodes");
+const nodeElements = nodeG.selectAll("g").data(nodes).join("g")
+  .attr("class", d => "node node-" + d.type)
+  .style("cursor", "pointer")
+  .call(d3.drag()
+    .on("start", dragStart)
+    .on("drag", dragging)
+    .on("end", dragEnd)
+  );
+
+// Organ circles
+nodeElements.filter(d => d.type === "organ")
+  .append("circle")
+  .attr("r", d => d.radius)
+  .attr("fill", d => d.color)
+  .attr("fill-opacity", 0.85)
+  .attr("stroke", d => d.color)
+  .attr("stroke-width", 2)
+  .attr("stroke-opacity", 0.4)
+  .attr("filter", "url(#shadow)");
+
+// Lab circles
+nodeElements.filter(d => d.type === "labvalue")
+  .append("circle")
+  .attr("r", d => d.radius)
+  .attr("fill", "#028090")
+  .attr("fill-opacity", 0.7)
+  .attr("stroke", "#02C39A")
+  .attr("stroke-width", 1)
+  .attr("stroke-opacity", 0.3);
+
+// Disease diamonds
+nodeElements.filter(d => d.type === "disease")
+  .append("rect")
+  .attr("width", d => d.radius * 1.4)
+  .attr("height", d => d.radius * 1.4)
+  .attr("x", d => -d.radius * 0.7)
+  .attr("y", d => -d.radius * 0.7)
+  .attr("rx", 3)
+  .attr("transform", "rotate(45)")
+  .attr("fill", d => d.color)
+  .attr("fill-opacity", 0.75)
+  .attr("stroke", d => d.color)
+  .attr("stroke-width", 1)
+  .attr("stroke-opacity", 0.4);
+
+// Labels
+const labels = nodeElements.append("text")
+  .attr("text-anchor", "middle")
+  .attr("dy", d => d.type === "organ" ? (d.radius + 14) : d.type === "labvalue" ? (d.radius + 11) : (d.radius + 12))
+  .attr("font-size", d => d.type === "organ" ? "11px" : "9px")
+  .attr("font-weight", d => d.type === "organ" ? "600" : "400")
+  .attr("fill", d => d.type === "organ" ? "#E0E0E0" : d.type === "labvalue" ? "#8899AA" : "#998877")
+  .attr("pointer-events", "none")
+  .text(d => d.label);
+
+function updateLabelVisibility() {
+  const k = currentTransform.k;
+  labels.attr("display", d => {
+    if (d.type === "organ") return k > 0.35 ? null : "none";
+    if (d.type === "labvalue") return k > 0.6 ? null : "none";
+    return k > 0.55 ? null : "none";
+  });
+}
+
+// ===== FORCE SIMULATION =====
+const simulation = d3.forceSimulation(nodes)
+  .alpha(0.8)
+  .alphaDecay(0.01)
+  .force("charge", d3.forceManyBody().strength(d => d.type === "organ" ? -500 : d.type === "labvalue" ? -200 : -150))
+  .force("link", d3.forceLink(links).id(d => d.id)
+    .distance(d => d.type === "organ_produces_lab" ? 120 : d.type === "lab_indicates_disease" ? 90 : 150)
+    .strength(d => d.type === "organ_produces_lab" ? 0.4 : d.type === "lab_indicates_disease" ? 0.3 : 0.15)
+  )
+  .force("radialOrgan", d3.forceRadial(250, 0, 0).strength(d => d.type === "organ" ? 0.3 : 0))
+  .force("radialLab", d3.forceRadial(380, 0, 0).strength(d => d.type === "labvalue" ? 0.08 : 0))
+  .force("radialDisease", d3.forceRadial(500, 0, 0).strength(d => d.type === "disease" ? 0.05 : 0))
+  .force("collide", d3.forceCollide().radius(d => d.radius + 12).strength(0.7))
+  .on("tick", ticked);
+
+function ticked() {
+  linkElements
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => {
+      const dx = d.target.x - d.source.x;
+      const dy = d.target.y - d.source.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist === 0) return d.target.x;
+      const r = (d.target.type === "disease" ? d.target.radius * 1.0 : d.target.radius) + 4;
+      return d.target.x - (dx / dist) * r;
+    })
+    .attr("y2", d => {
+      const dx = d.target.x - d.source.x;
+      const dy = d.target.y - d.source.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist === 0) return d.target.y;
+      const r = (d.target.type === "disease" ? d.target.radius * 1.0 : d.target.radius) + 4;
+      return d.target.y - (dy / dist) * r;
+    });
+
+  nodeElements.attr("transform", d => `translate(${d.x},${d.y})`);
+}
+
+// ===== DRAG =====
+function dragStart(event, d) {
+  if (!event.active) simulation.alphaTarget(0.15).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(event, d) {
+  d.fx = event.x; d.fy = event.y;
+}
+function dragEnd(event, d) {
+  if (!event.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// ===== TOOLTIP =====
+const tooltip = document.getElementById("tooltip");
+
+nodeElements.on("mouseenter", function(event, d) {
+  let html = '<div class="tt-label">' + d.label + '</div>';
+  if (d.type === "organ") {
+    html += '<div class="tt-detail">' + d.system + '</div>';
+    html += '<div class="tt-detail">' + d.description + '</div>';
+  } else if (d.type === "labvalue") {
+    html += '<div class="tt-detail">' + d.category + ' (' + d.unit + ')</div>';
+    html += '<div class="tt-range">Normbereich: ' + d.normalRange + '</div>';
+    html += '<div class="tt-detail">' + d.significance + '</div>';
+  } else {
+    html += '<div class="tt-detail">' + d.category + '</div>';
+    if (d.icd10) html += '<div class="tt-range">ICD-10: ' + d.icd10 + '</div>';
+    html += '<div class="tt-detail">Schweregrad: ' + d.severity + '</div>';
+  }
+  tooltip.innerHTML = html;
+  tooltip.classList.add("visible");
+
+  // Glow effect on hover
+  d3.select(this).select("circle, rect").attr("filter", "url(#glow)");
+})
+.on("mousemove", function(event) {
+  const x = event.clientX + 14;
+  const y = event.clientY - 10;
+  tooltip.style.left = Math.min(x, window.innerWidth - 280) + "px";
+  tooltip.style.top = Math.min(y, window.innerHeight - 120) + "px";
+})
+.on("mouseleave", function(event, d) {
+  tooltip.classList.remove("visible");
+  d3.select(this).select("circle").attr("filter", d.type === "organ" ? "url(#shadow)" : null);
+  d3.select(this).select("rect").attr("filter", null);
+});
+
+// ===== CLICK TO HIGHLIGHT =====
+let selectedNode = null;
+
+function resetHighlight() {
+  selectedNode = null;
+  nodeElements.transition().duration(200).attr("opacity", 1);
+  linkElements.transition().duration(200).attr("opacity", d =>
+    d.type === "organ_produces_lab" ? 0.5 : d.type === "lab_indicates_disease" ? 0.4 : 0.35
+  );
+  labels.transition().duration(200).attr("opacity", 1);
+  document.getElementById("info-panel").classList.remove("visible");
+}
+
+nodeElements.on("click", function(event, d) {
+  event.stopPropagation();
+  if (selectedNode === d.id) { resetHighlight(); return; }
+  selectedNode = d.id;
+
+  const neighbors = edgeIndex[d.id];
+  const connected = new Set([d.id, ...neighbors]);
+
+  nodeElements.transition().duration(250)
+    .attr("opacity", n => connected.has(n.id) ? 1 : 0.08);
+  labels.transition().duration(250)
+    .attr("opacity", n => connected.has(n.id) ? 1 : 0.05);
+  linkElements.transition().duration(250)
+    .attr("opacity", l => {
+      const sid = l.source.id || l.source;
+      const tid = l.target.id || l.target;
+      return (sid === d.id || tid === d.id) ? 0.85 : 0.03;
+    });
+
+  showInfoPanel(d);
+});
+
+svg.on("click", function() { resetHighlight(); });
+
+// ===== INFO PANEL =====
+function showInfoPanel(d) {
+  const panel = document.getElementById("info-panel");
+  const content = document.getElementById("info-content");
+  let html = "";
+
+  if (d.type === "organ") {
+    html += '<div class="info-header"><div class="info-color-dot" style="background:' + d.color + '"></div><div><div class="info-title">' + d.label + '</div><div class="info-system">' + d.system + '</div></div></div>';
+    html += '<div class="info-desc">' + d.description + '</div>';
+
+    // Connected lab values
+    const connectedLabs = [];
+    const connectedDiseases = [];
+    links.forEach(l => {
+      const sid = l.source.id || l.source;
+      const tid = l.target.id || l.target;
+      if (l.type === "organ_produces_lab" && sid === d.id) {
+        const lab = nodeMap[tid];
+        if (lab) connectedLabs.push(lab);
+      }
+      if (l.type === "disease_affects_organ" && tid === d.id) {
+        const dis = nodeMap[sid];
+        if (dis) connectedDiseases.push(dis);
+      }
+    });
+
+    if (connectedLabs.length) {
+      html += '<div class="info-section-title">Laborwerte (' + connectedLabs.length + ')</div><div class="info-chips">';
+      connectedLabs.forEach(lab => {
+        html += '<span class="info-chip lab" data-node="' + lab.id + '">' + lab.label + '</span>';
+      });
+      html += '</div>';
+    }
+    if (connectedDiseases.length) {
+      html += '<div class="info-section-title">Erkrankungen (' + connectedDiseases.length + ')</div><div class="info-chips">';
+      connectedDiseases.forEach(dis => {
+        html += '<span class="info-chip disease" style="background:' + severityColor(dis.severity) + '22;border-color:' + severityColor(dis.severity) + '55;color:' + severityColor(dis.severity) + '" data-node="' + dis.id + '">' + dis.label + '</span>';
+      });
+      html += '</div>';
+    }
+  } else if (d.type === "labvalue") {
+    html += '<div class="info-header"><div class="info-color-dot" style="background:#028090"></div><div><div class="info-title">' + d.label + '</div><div class="info-system">' + d.category + '</div></div></div>';
+    html += '<div class="info-desc">' + d.significance + '<br><strong style="color:#02C39A">Normbereich:</strong> ' + d.normalRange + ' ' + d.unit + '</div>';
+
+    const fromOrgans = [];
+    const toDiseases = [];
+    links.forEach(l => {
+      const sid = l.source.id || l.source;
+      const tid = l.target.id || l.target;
+      if (l.type === "organ_produces_lab" && tid === d.id) {
+        const org = nodeMap[sid];
+        if (org) fromOrgans.push(org);
+      }
+      if (l.type === "lab_indicates_disease" && sid === d.id) {
+        const dis = nodeMap[tid];
+        if (dis) toDiseases.push({ ...dis, direction: l.direction });
+      }
+    });
+    if (fromOrgans.length) {
+      html += '<div class="info-section-title">Produziert von</div><div class="info-chips">';
+      fromOrgans.forEach(o => {
+        html += '<span class="info-chip lab" style="background:' + o.color + '22;border-color:' + o.color + '55;color:' + o.color + '" data-node="' + o.id + '">' + o.label + '</span>';
+      });
+      html += '</div>';
+    }
+    if (toDiseases.length) {
+      html += '<div class="info-section-title">Hinweis auf</div><div class="info-chips">';
+      toDiseases.forEach(dis => {
+        const arrow = dis.direction ? ' <span class="arrow">' + dis.direction + '</span>' : '';
+        html += '<span class="info-chip disease" style="background:' + severityColor(dis.severity) + '22;border-color:' + severityColor(dis.severity) + '55;color:' + severityColor(dis.severity) + '" data-node="' + dis.id + '">' + dis.label + arrow + '</span>';
+      });
+      html += '</div>';
+    }
+  } else {
+    html += '<div class="info-header"><div class="info-color-dot" style="background:' + d.color + ';border-radius:2px;transform:rotate(45deg)"></div><div><div class="info-title">' + d.label + '</div><div class="info-system">' + d.category + ' &bull; ICD-10: ' + (d.icd10 || '-') + '</div></div></div>';
+    html += '<div class="info-desc">Schweregrad: <strong style="color:' + d.color + '">' + d.severity + '</strong></div>';
+
+    const indicatingLabs = [];
+    const affectedOrgans = [];
+    links.forEach(l => {
+      const sid = l.source.id || l.source;
+      const tid = l.target.id || l.target;
+      if (l.type === "lab_indicates_disease" && tid === d.id) {
+        const lab = nodeMap[sid];
+        if (lab) indicatingLabs.push({ ...lab, direction: l.direction });
+      }
+      if (l.type === "disease_affects_organ" && sid === d.id) {
+        const org = nodeMap[tid];
+        if (org) affectedOrgans.push(org);
+      }
+    });
+    if (indicatingLabs.length) {
+      html += '<div class="info-section-title">Laborwerte</div><div class="info-chips">';
+      indicatingLabs.forEach(lab => {
+        const arrow = lab.direction ? ' <span class="arrow">' + lab.direction + '</span>' : '';
+        html += '<span class="info-chip lab" data-node="' + lab.id + '">' + lab.label + arrow + '</span>';
+      });
+      html += '</div>';
+    }
+    if (affectedOrgans.length) {
+      html += '<div class="info-section-title">Betroffene Organe</div><div class="info-chips">';
+      affectedOrgans.forEach(o => {
+        html += '<span class="info-chip lab" style="background:' + o.color + '22;border-color:' + o.color + '55;color:' + o.color + '" data-node="' + o.id + '">' + o.label + '</span>';
+      });
+      html += '</div>';
+    }
+  }
+
+  content.innerHTML = html;
+  panel.classList.add("visible");
+
+  // Make chips clickable
+  content.querySelectorAll(".info-chip[data-node]").forEach(chip => {
+    chip.addEventListener("click", function(e) {
+      e.stopPropagation();
+      const targetId = this.getAttribute("data-node");
+      const targetNode = nodes.find(n => n.id === targetId);
+      if (targetNode) {
+        selectedNode = targetNode.id;
+        const neighbors = edgeIndex[targetNode.id];
+        const connected = new Set([targetNode.id, ...neighbors]);
+        nodeElements.transition().duration(250).attr("opacity", n => connected.has(n.id) ? 1 : 0.08);
+        labels.transition().duration(250).attr("opacity", n => connected.has(n.id) ? 1 : 0.05);
+        linkElements.transition().duration(250).attr("opacity", l => {
+          const sid = l.source.id || l.source;
+          const tid = l.target.id || l.target;
+          return (sid === targetNode.id || tid === targetNode.id) ? 0.85 : 0.03;
+        });
+        showInfoPanel(targetNode);
+      }
+    });
+  });
+}
+
+document.getElementById("info-close").addEventListener("click", function(e) {
+  e.stopPropagation();
+  resetHighlight();
+});
+
+// ===== SEARCH =====
+const searchInput = document.getElementById("search-input");
+searchInput.addEventListener("input", function() {
+  const q = this.value.trim().toLowerCase();
+  if (!q) {
+    nodeElements.transition().duration(200).attr("opacity", 1);
+    labels.transition().duration(200).attr("opacity", 1);
+    linkElements.transition().duration(200).attr("opacity", d =>
+      d.type === "organ_produces_lab" ? 0.5 : d.type === "lab_indicates_disease" ? 0.4 : 0.35
+    );
+    return;
+  }
+
+  const matched = new Set();
+  nodes.forEach(n => {
+    const searchable = (n.label + " " + (n.system || "") + " " + (n.category || "") + " " + (n.icd10 || "") + " " + (n.significance || "")).toLowerCase();
+    if (searchable.includes(q)) {
+      matched.add(n.id);
+      edgeIndex[n.id].forEach(nid => matched.add(nid));
+    }
+  });
+
+  nodeElements.transition().duration(200).attr("opacity", n => matched.has(n.id) ? 1 : 0.06);
+  labels.transition().duration(200).attr("opacity", n => matched.has(n.id) ? 1 : 0.04);
+  linkElements.transition().duration(200).attr("opacity", l => {
+    const sid = l.source.id || l.source;
+    const tid = l.target.id || l.target;
+    return (matched.has(sid) && matched.has(tid)) ? 0.7 : 0.02;
+  });
+});
+
+// ===== LEGEND FILTER =====
+const activeFilters = new Set();
+
+document.querySelectorAll(".legend-item[data-filter]").forEach(item => {
+  item.addEventListener("click", function() {
+    const f = this.getAttribute("data-filter");
+    if (activeFilters.has(f)) {
+      activeFilters.delete(f);
+      this.classList.remove("dimmed");
+    } else {
+      activeFilters.add(f);
+      this.classList.add("dimmed");
+    }
+    applyLegendFilter();
+  });
+});
+
+function applyLegendFilter() {
+  if (activeFilters.size === 0) {
+    nodeElements.transition().duration(200).attr("opacity", 1);
+    labels.transition().duration(200).attr("opacity", 1);
+    linkElements.transition().duration(200).attr("opacity", d =>
+      d.type === "organ_produces_lab" ? 0.5 : d.type === "lab_indicates_disease" ? 0.4 : 0.35
+    );
+    return;
+  }
+
+  nodeElements.transition().duration(200)
+    .attr("opacity", d => activeFilters.has(d.type) ? 0.08 : 1);
+  labels.transition().duration(200)
+    .attr("opacity", d => activeFilters.has(d.type) ? 0.04 : 1);
+  linkElements.transition().duration(200)
+    .attr("opacity", d => activeFilters.has(d.type) ? 0.03 :
+      (d.type === "organ_produces_lab" ? 0.5 : d.type === "lab_indicates_disease" ? 0.4 : 0.35));
+}
+
+// ===== STATS =====
+document.getElementById("stats").textContent =
+  nodes.length + " Knoten \u00b7 " + links.length + " Verbindungen \u00b7 " +
+  RAW_DATA.organs.length + " Organe \u00b7 " + RAW_DATA.labvalues.length + " Laborwerte \u00b7 " + RAW_DATA.diseases.length + " Erkrankungen";
+
+// ===== INITIAL LABEL VISIBILITY =====
+updateLabelVisibility();
+
+// ===== PULSATING GLOW FOR ORGANS =====
+(function pulseOrgans() {
+  const organCircles = nodeElements.filter(d => d.type === "organ").select("circle");
+  function pulse() {
+    organCircles.transition().duration(2000).ease(d3.easeSinInOut)
+      .attr("stroke-opacity", 0.7)
+      .attr("stroke-width", 4)
+      .transition().duration(2000).ease(d3.easeSinInOut)
+      .attr("stroke-opacity", 0.3)
+      .attr("stroke-width", 2)
+      .on("end", pulse);
+  }
+  pulse();
+})();
+
+</script>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Juvantis: Health Graph",
+  "tag": "section",
+  "class": "jv-section",
+  "settings": [
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand oben" },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "default": 0, "label": "Abstand unten" }
+  ],
+  "presets": [{ "name": "Juvantis: Health Graph" }]
+}
+{% endschema %}
