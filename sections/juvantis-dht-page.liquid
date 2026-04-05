@@ -1,400 +1,480 @@
 {%- comment -%}
   Juvantis Section: Digital Health Twin (Full Page)
-  Zweck: Ausfuehrliche Showcase-Seite fuer das Alleinstellungsmerkmal
+  Apple-inspired design system rewrite
   Erstellt: 2026-04-04
 {%- endcomment -%}
 
-{%- if template.suffix == 'digital-health-twin' -%}
-
 {%- style -%}
-  .jv-dht {
-    --jv-teal: #028090;
-    --jv-teal-light: #00A896;
-    --jv-teal-bright: #02C39A;
-    --jv-gradient: linear-gradient(135deg, #4ea1d9, #73c25e);
-    --jv-text: #1a1a1a;
-    --jv-text-sec: #555;
-    --jv-bg: #ffffff;
-    --jv-bg-subtle: #f8fafa;
-    --jv-bg-dark: #0a1a1e;
-    --jv-border: #e8ecec;
-    --jv-radius: 1.4rem;
-    font-family: var(--font-body-family, 'Anonymous Pro', monospace);
+  #DhtPage-{{ section.id }} {
+    --apple-text: #1d1d1f;
+    --apple-text-secondary: #6e6e73;
+    --apple-text-tertiary: #86868b;
+    --apple-link: #0071e3;
+    --apple-bg-gray: #f5f5f7;
+    --apple-bg-white: #fff;
+    --apple-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--apple-font);
     -webkit-font-smoothing: antialiased;
-    color: var(--jv-text);
+    color: var(--apple-text);
   }
 
-  .main-page-title.page-title { display: none !important; }
-  .page-width--narrow { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  #DhtPage-{{ section.id }} .main-page-title.page-title { display: none !important; }
 
-  .jv-dht__container {
-    max-width: 72rem;
+  #DhtPage-{{ section.id }} .dht__container {
+    max-width: 100rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2.4rem;
   }
 
-  /* Hero — dark theme */
-  .jv-dht__hero {
-    background: var(--jv-bg-dark);
+  /* Hero — dark */
+  #DhtPage-{{ section.id }} .dht__hero {
+    background: var(--apple-text);
     color: #fff;
-    border-radius: var(--jv-radius);
-    padding: 4rem 2.5rem;
+    border-radius: 2rem;
+    padding: 6.4rem 3.2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 30% 50%, rgba(2,128,144,0.15) 0%, transparent 70%),
-                radial-gradient(ellipse at 70% 50%, rgba(2,195,154,0.1) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .jv-dht__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 2rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
+  #DhtPage-{{ section.id }} .dht__label {
+    display: inline-block;
+    font-size: 1.1rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--jv-teal-bright);
-    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 2rem;
     position: relative;
   }
 
-  .jv-dht__hero h1 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    font-weight: 800;
+  #DhtPage-{{ section.id }} .dht__hero h1 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.6rem, 6vw, 7rem);
+    font-weight: 700;
     letter-spacing: -0.04em;
     line-height: 1.08;
-    margin: 0 0 1.2rem;
+    margin: 0 0 2rem;
+    color: #fff;
     position: relative;
   }
 
-  .jv-dht__hero-sub {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    opacity: 0.8;
-    max-width: 36rem;
+  #DhtPage-{{ section.id }} .dht__hero-sub {
+    font-size: 1.7rem;
+    line-height: 1.53;
+    opacity: 0.7;
+    max-width: 50rem;
     margin: 0 auto;
-    line-height: 1.65;
     position: relative;
   }
 
   /* Explainer */
-  .jv-dht__explainer {
+  #DhtPage-{{ section.id }} .dht__explainer {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.12s forwards;
   }
 
-  .jv-dht__explainer h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  #DhtPage-{{ section.id }} .dht__explainer h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    letter-spacing: -0.03em;
-    margin: 0 0 1rem;
+    letter-spacing: -0.035em;
+    margin: 0 0 2rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__explainer p {
-    color: var(--jv-text-sec);
-    max-width: 40rem;
+  #DhtPage-{{ section.id }} .dht__explainer p {
+    color: var(--apple-text-secondary);
+    max-width: 56rem;
     margin: 0 auto;
-    line-height: 1.7;
-    font-size: 1rem;
+    line-height: 1.53;
+    font-size: 1.7rem;
+  }
+
+  /* Features title */
+  #DhtPage-{{ section.id }} .dht__features-title {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    text-align: center;
+    margin: 0 0 4rem;
+    color: var(--apple-text);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.24s forwards;
   }
 
   /* Feature Bento */
-  .jv-dht__features-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-align: center;
-    margin: 0 0 2rem;
-  }
-
-  .jv-dht__bento {
+  #DhtPage-{{ section.id }} .dht__bento {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 1.6rem;
+    margin-bottom: 6rem;
   }
 
   @media (min-width: 750px) {
-    .jv-dht__bento {
+    #DhtPage-{{ section.id }} .dht__bento {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 990px) {
-    .jv-dht__bento {
+    #DhtPage-{{ section.id }} .dht__bento {
       grid-template-columns: repeat(3, 1fr);
     }
-    .jv-dht__bento .jv-dht__feat:nth-child(1) { grid-column: 1 / 3; }
+    #DhtPage-{{ section.id }} .dht__bento .dht__feat:first-child {
+      grid-column: 1 / 3;
+    }
   }
 
-  .jv-dht__feat {
-    background: var(--jv-bg);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  #DhtPage-{{ section.id }} .dht__feat {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 2.8rem;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__feat:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  #DhtPage-{{ section.id }} .dht__feat:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,0,0,0.08);
   }
 
-  .jv-dht__feat-icon {
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem;
-    display: block;
+  #DhtPage-{{ section.id }} .dht__feat-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__feat-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.15rem;
+  #DhtPage-{{ section.id }} .dht__feat-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  #DhtPage-{{ section.id }} .dht__feat-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.5rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.8rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__feat-text {
-    font-size: 0.9rem;
-    color: var(--jv-text-sec);
-    line-height: 1.6;
+  #DhtPage-{{ section.id }} .dht__feat-text {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin: 0;
   }
 
   /* How it works */
-  .jv-dht__how {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin-bottom: 3rem;
+  #DhtPage-{{ section.id }} .dht__how {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 4.8rem 3.2rem;
+    margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__how h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+  #DhtPage-{{ section.id }} .dht__how h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
+    letter-spacing: -0.035em;
     text-align: center;
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__how-steps {
+  #DhtPage-{{ section.id }} .dht__how-steps {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.4rem;
   }
 
   @media (min-width: 750px) {
-    .jv-dht__how-steps {
+    #DhtPage-{{ section.id }} .dht__how-steps {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  .jv-dht__how-step {
+  #DhtPage-{{ section.id }} .dht__how-step {
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__how-num {
+  #DhtPage-{{ section.id }} .dht__how-num {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 50%;
-    background: var(--jv-gradient);
+    background: var(--apple-text);
     color: #fff;
+    font-family: var(--apple-font);
     font-weight: 700;
-    margin-bottom: 0.6rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
   }
 
-  .jv-dht__how-title {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
+  #DhtPage-{{ section.id }} .dht__how-title {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    font-size: 1rem;
-    margin: 0 0 0.3rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.6rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__how-text {
-    font-size: 0.88rem;
-    color: var(--jv-text-sec);
+  #DhtPage-{{ section.id }} .dht__how-text {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    color: var(--apple-text-secondary);
     margin: 0;
-    line-height: 1.55;
   }
 
-  /* Gamification */
-  .jv-dht__gamification {
-    background: var(--jv-gradient);
+  /* Gamification — dark */
+  #DhtPage-{{ section.id }} .dht__gamification {
+    background: var(--apple-text);
     color: #fff;
-    border-radius: var(--jv-radius);
-    padding: 2.5rem;
-    margin-bottom: 3rem;
+    border-radius: 2rem;
+    padding: 4.8rem 3.2rem;
+    margin-bottom: 3.2rem;
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__gamification h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: clamp(1.4rem, 3vw, 2rem);
+  #DhtPage-{{ section.id }} .dht__gamification h2 {
+    font-family: var(--apple-font);
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
     font-weight: 700;
-    margin: 0 0 0.8rem;
+    letter-spacing: -0.035em;
+    margin: 0 0 1.6rem;
+    color: #fff;
   }
 
-  .jv-dht__gamification p {
-    opacity: 0.9;
-    max-width: 36rem;
+  #DhtPage-{{ section.id }} .dht__gamification p {
+    opacity: 0.7;
+    max-width: 50rem;
     margin: 0 auto;
-    line-height: 1.65;
+    line-height: 1.53;
+    font-size: 1.7rem;
   }
 
-  /* Privacy */
-  .jv-dht__privacy {
-    background: var(--jv-bg-subtle);
-    border: 1px solid var(--jv-border);
-    border-radius: var(--jv-radius);
-    padding: 2rem 2.5rem;
-    margin-bottom: 3rem;
+  /* Privacy — gray */
+  #DhtPage-{{ section.id }} .dht__privacy {
+    background: var(--apple-bg-gray);
+    border: none;
+    border-radius: 2rem;
+    padding: 4rem 3.2rem;
+    margin-bottom: 6rem;
     text-align: center;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__privacy h2 {
-    font-family: var(--font-heading-family, 'Avenir Next', sans-serif);
-    font-size: 1.3rem;
+  #DhtPage-{{ section.id }} .dht__privacy-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.6rem;
+    color: var(--apple-text);
+  }
+
+  #DhtPage-{{ section.id }} .dht__privacy-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  #DhtPage-{{ section.id }} .dht__privacy h2 {
+    font-family: var(--apple-font);
+    font-size: 2.4rem;
     font-weight: 700;
-    margin: 0 0 0.5rem;
+    letter-spacing: -0.025em;
+    margin: 0 0 1.2rem;
+    color: var(--apple-text);
   }
 
-  .jv-dht__privacy p {
-    color: var(--jv-text-sec);
+  #DhtPage-{{ section.id }} .dht__privacy p {
+    color: var(--apple-text-secondary);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.53;
+    font-size: 1.5rem;
+    max-width: 50rem;
+    margin: 0 auto;
   }
 
   /* CTA */
-  .jv-dht__cta {
+  #DhtPage-{{ section.id }} .dht__cta {
     text-align: center;
-    padding: 1rem 0 0;
+    padding: 2rem 0 0;
+    opacity: 0;
+    transform: translateY(1.6rem);
+    animation: dhtReveal 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
 
-  .jv-dht__cta-btn {
+  #DhtPage-{{ section.id }} .dht__cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--jv-gradient);
+    gap: 0.8rem;
+    background: var(--apple-link);
     color: #fff;
+    font-family: var(--apple-font);
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.9rem 2rem;
-    border-radius: 2rem;
+    font-size: 1.7rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 98rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .jv-dht__cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(78, 161, 217, 0.3);
+  #DhtPage-{{ section.id }} .dht__cta-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1.2rem 4rem rgba(0,113,227,0.2);
     color: #fff;
   }
 
-  @supports (animation-timeline: view()) {
-    .jv-dht__feat,
-    .jv-dht__how,
-    .jv-dht__gamification,
-    .jv-dht__privacy {
-      animation: jvDhtFadeUp 0.6s ease both;
-      animation-timeline: view();
-      animation-range: entry 10% entry 40%;
-    }
+  /* Mobile padding multiplier 0.75x */
+  @media (max-width: 749px) {
+    #DhtPage-{{ section.id }} .dht__hero { padding: 4.8rem 2.4rem; margin-bottom: 4.5rem; }
+    #DhtPage-{{ section.id }} .dht__explainer { margin-bottom: 4.5rem; }
+    #DhtPage-{{ section.id }} .dht__features-title { margin-bottom: 3rem; }
+    #DhtPage-{{ section.id }} .dht__bento { margin-bottom: 4.5rem; }
+    #DhtPage-{{ section.id }} .dht__how { padding: 3.6rem 2.4rem; margin-bottom: 4.5rem; }
+    #DhtPage-{{ section.id }} .dht__gamification { padding: 3.6rem 2.4rem; }
+    #DhtPage-{{ section.id }} .dht__privacy { padding: 3rem 2.4rem; margin-bottom: 4.5rem; }
   }
 
-  @keyframes jvDhtFadeUp {
-    from { opacity: 0; transform: translateY(2rem); }
-    to { opacity: 1; transform: translateY(0); }
+  @keyframes dhtReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 {%- endstyle -%}
 
 <section
-  class="jv-dht"
+  id="DhtPage-{{ section.id }}"
+  class="section-{{ section.id }}-padding"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="jv-dht__container">
+  <div class="page-width dht__container">
 
-    <div class="jv-dht__hero">
-      <span class="jv-dht__badge">Digital Health Twin</span>
+    <div class="dht__hero">
+      <span class="dht__label">Digital Health Twin</span>
       <h1>{{ section.settings.heading }}</h1>
-      <p class="jv-dht__hero-sub">{{ section.settings.hero_sub }}</p>
+      <p class="dht__hero-sub">{{ section.settings.hero_sub }}</p>
     </div>
 
-    <div class="jv-dht__explainer">
+    <div class="dht__explainer">
       <h2>{{ section.settings.explainer_heading }}</h2>
       <p>{{ section.settings.explainer_text }}</p>
     </div>
 
-    <h2 class="jv-dht__features-title">{{ section.settings.features_heading }}</h2>
-    <div class="jv-dht__bento">
+    <h2 class="dht__features-title">{{ section.settings.features_heading }}</h2>
+    <div class="dht__bento">
+      {%- assign feat_index = 0 -%}
       {%- for block in section.blocks -%}
         {%- if block.type == 'feature' -%}
-          <div class="jv-dht__feat" {{ block.shopify_attributes }}>
-            <span class="jv-dht__feat-icon">{{ block.settings.icon }}</span>
-            <h3 class="jv-dht__feat-title">{{ block.settings.title }}</h3>
-            <p class="jv-dht__feat-text">{{ block.settings.text }}</p>
+          <div class="dht__feat" style="animation-delay: {{ feat_index | times: 0.12 | plus: 0.36 }}s;" {{ block.shopify_attributes }}>
+            <div class="dht__feat-icon">
+              {%- case block.settings.icon -%}
+                {%- when 'organs' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M240,102c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,228.66,16,172,16,102A62.07,62.07,0,0,1,78,40c20.65,0,38.73,8.88,50,23.89C139.27,48.88,157.35,40,178,40A62.07,62.07,0,0,1,240,102Z"/></svg>
+                {%- when 'skin' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z"/></svg>
+                {%- when 'vitals' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm-8,88H187.31l-18.64-24.84a8,8,0,0,0-13.16.46L128.31,144H112a8,8,0,0,0-6.4,3.2L91.2,168H48a8,8,0,0,0,0,16H96a8,8,0,0,0,6.4-3.2L116.8,160h17.51a8,8,0,0,0,6.69-3.6l22.1-33.83L178.65,144h29.35a8,8,0,0,0,0-16Z"/></svg>
+                {%- when 'biomarkers' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M221.69,199.77,160,96.92V40h8a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h8V96.92L34.31,199.77A16,16,0,0,0,48,224H208a16,16,0,0,0,13.72-24.23Zm-90.08-42.91c-15.91-8.05-31.05-12.32-45.22-12.81l24.47-40.8A7.93,7.93,0,0,0,112,99.14V40h32V99.14a7.93,7.93,0,0,0,1.14,4.11L183.36,167C171.4,169.34,154.29,168.34,131.61,156.86Z"/></svg>
+                {%- when 'trends' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm-8,88H187.31l-18.64-24.84a8,8,0,0,0-13.16.46L128.31,144H112a8,8,0,0,0-6.4,3.2L91.2,168H48a8,8,0,0,0,0,16H96a8,8,0,0,0,6.4-3.2L116.8,160h17.51a8,8,0,0,0,6.69-3.6l22.1-33.83L178.65,144h29.35a8,8,0,0,0,0-16Z"/></svg>
+                {%- when 'ai' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M197.58,129.06l-51.61-19-19-51.65a15.92,15.92,0,0,0-29.88,0L78.07,110l-51.65,19a15.92,15.92,0,0,0,0,29.88L78,178l19.03,51.69a15.92,15.92,0,0,0,29.88,0l19-51.61,51.65-19.03a15.92,15.92,0,0,0,0-29.88ZM140.39,163a15.87,15.87,0,0,0-9.43,9.43l-19,51.46L93,172.39A15.87,15.87,0,0,0,83.61,163l-51.46-19,51.46-19A15.87,15.87,0,0,0,93,115.61l19-51.46,19,51.46a15.87,15.87,0,0,0,9.43,9.43l51.46,19ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></svg>
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M197.58,129.06l-51.61-19-19-51.65a15.92,15.92,0,0,0-29.88,0L78.07,110l-51.65,19a15.92,15.92,0,0,0,0,29.88L78,178l19.03,51.69a15.92,15.92,0,0,0,29.88,0l19-51.61,51.65-19.03a15.92,15.92,0,0,0,0-29.88ZM140.39,163a15.87,15.87,0,0,0-9.43,9.43l-19,51.46L93,172.39A15.87,15.87,0,0,0,83.61,163l-51.46-19,51.46-19A15.87,15.87,0,0,0,93,115.61l19-51.46,19,51.46a15.87,15.87,0,0,0,9.43,9.43l51.46,19ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"/></svg>
+              {%- endcase -%}
+            </div>
+            <h3 class="dht__feat-title">{{ block.settings.title }}</h3>
+            <p class="dht__feat-text">{{ block.settings.text }}</p>
           </div>
+          {%- assign feat_index = feat_index | plus: 1 -%}
         {%- endif -%}
       {%- endfor -%}
     </div>
 
-    <div class="jv-dht__how">
+    <div class="dht__how" style="animation-delay: {{ feat_index | times: 0.12 | plus: 0.48 }}s;">
       <h2>{{ section.settings.how_heading }}</h2>
-      <div class="jv-dht__how-steps">
+      <div class="dht__how-steps">
+        {%- assign step_index = 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'how_step' -%}
-            <div class="jv-dht__how-step" {{ block.shopify_attributes }}>
-              <span class="jv-dht__how-num">{{ block.settings.number }}</span>
-              <h3 class="jv-dht__how-title">{{ block.settings.title }}</h3>
-              <p class="jv-dht__how-text">{{ block.settings.text }}</p>
+            <div class="dht__how-step" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.6 }}s;" {{ block.shopify_attributes }}>
+              <span class="dht__how-num">{{ block.settings.number }}</span>
+              <h3 class="dht__how-title">{{ block.settings.title }}</h3>
+              <p class="dht__how-text">{{ block.settings.text }}</p>
             </div>
+            {%- assign step_index = step_index | plus: 1 -%}
           {%- endif -%}
         {%- endfor -%}
       </div>
     </div>
 
-    <div class="jv-dht__gamification">
+    <div class="dht__gamification" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.72 }}s;">
       <h2>{{ section.settings.game_heading }}</h2>
       <p>{{ section.settings.game_text }}</p>
     </div>
 
-    <div class="jv-dht__privacy">
+    <div class="dht__privacy" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.84 }}s;">
+      <div class="dht__privacy-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+      </div>
       <h2>{{ section.settings.privacy_heading }}</h2>
       <p>{{ section.settings.privacy_text }}</p>
     </div>
 
-    <div class="jv-dht__cta">
-      <a href="{{ section.settings.cta_link }}" class="jv-dht__cta-btn">
-        {{ section.settings.cta_label }} &rarr;
+    <div class="dht__cta" style="animation-delay: {{ step_index | times: 0.12 | plus: 0.96 }}s;">
+      <a href="{{ section.settings.cta_link }}" class="dht__cta-btn">
+        {{ section.settings.cta_label }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
       </a>
     </div>
 
   </div>
 </section>
-
-{%- endif -%}
 
 {% schema %}
 {
