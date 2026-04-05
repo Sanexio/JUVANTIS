@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "about": {
+      "type": "juvantis-ueber-uns",
+      "settings": {
+        "heading": "Die Menschen hinter Juvantis",
+        "description": "Ärzte und Health-Tech-Experten aus Frankfurt mit einer Mission: Gesundheit verständlich und zugänglich machen — für jeden.",
+        "mission_heading": "Unsere Mission",
+        "mission_text": "Wir glauben, dass jeder Mensch das Recht hat, seine eigene Gesundheit zu verstehen. Nicht in abstrakten Laborwerten, sondern visuell, motivierend und auf Augenhöhe. Juvantis verbindet ärztliche Expertise mit modernster Technologie — für eine Gesundheitsversorgung, die informiert statt verunsichert.",
+        "team_heading": "Unser Ärzteteam",
+        "history_heading": "Von der Hausarztpraxis zum Digital Health Pioneer",
+        "history_text": "Was als internistische Schwerpunktpraxis im Frankfurter Westend begann, hat sich zu einem Vorreiter für digitale Gesundheitsvorsorge entwickelt. Mit der Gründung der Sanexio GmbH und dem Juvantis-Projekt verbinden wir über 15 Jahre klinische Erfahrung mit der Vision eines Digital Health Twins — einem 3D-Avatar, der deine Gesundheit sichtbar macht.",
+        "values_heading": "Unsere Werte",
+        "cta_label": "Lerne uns kennen — buche deinen ersten Check-up",
+        "cta_link": "shopify://collections/alle-untersuchungen",
+        "padding_top": 0,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "dr_stracke": {
+          "type": "team_member",
+          "settings": {
+            "asset_image": "dr-stracke.jpg",
+            "name": "Dr. med. Siegbert Stracke, MBA",
+            "role": "Gründer & Geschäftsführer",
+            "qualifications": "Innere Medizin, MBA Health Care Management, Notfallmedizin, CEO Sanexio GmbH",
+            "bio": "Nach dem Studium der Humanmedizin beginnt Dr. Stracke 2005 seine klinische Weiterbildung am Universitätsklinikum Gießen. Nach Facharztbezeichnung Innere Medizin und Zusatzbezeichnung Notfallmedizin liegt sein Schwerpunkt in der kardiologischen Intensivmedizin. 2012 ergänzt er seine medizinische Expertise um einen MBA Health Care Management an der EBS. In der Überzeugung, dass das Gesundheitswesen neue Wege der Informationsorganisation braucht, gründet er die Sanexio GmbH."
+          }
+        },
+        "dr_saul": {
+          "type": "team_member",
+          "settings": {
+            "asset_image": "dr-saul.jpg",
+            "name": "Docteur en méd. Sonja Saul",
+            "role": "Fachärztin für Allgemeinmedizin",
+            "qualifications": "Allgemeinmedizin, Ultraschalldiagnostik, Sprachen: DE/EN/FR/ES",
+            "bio": "Nach einer Kindheit zwischen Deutschland, Frankreich und Belgien, Abitur an der Europaschule in Brüssel mit anschließendem Medizinstudium an der Université Catholique de Louvain ist für Frau Docteur en méd. Saul eine Anamnese in Deutsch, Englisch, Französisch und Spanisch kein Problem. Zuletzt war sie als leitende Oberärztin in Spanien tätig."
+          }
+        },
+        "val_evidence": {
+          "type": "value",
+          "settings": {
+            "icon": "lab",
+            "title": "Evidenzbasiert",
+            "text": "Jede Empfehlung basiert auf medizinischer Evidenz und deinen individuellen Daten."
+          }
+        },
+        "val_transparent": {
+          "type": "value",
+          "settings": {
+            "icon": "eye",
+            "title": "Transparent",
+            "text": "Keine versteckten Kosten, keine Überraschungen. Du siehst genau, was wir tun und warum."
+          }
+        },
+        "val_patient": {
+          "type": "value",
+          "settings": {
+            "icon": "users",
+            "title": "Patientenzentriert",
+            "text": "Deine Gesundheit, deine Daten, deine Entscheidungen. Wir beraten — du entscheidest."
+          }
+        },
+        "val_innovative": {
+          "type": "value",
+          "settings": {
+            "icon": "rocket",
+            "title": "Innovativ",
+            "text": "Vom Digital Health Twin bis zur KI-Empfehlung: Wir nutzen Technologie, die einen echten Unterschied macht."
+          }
+        }
+      },
+      "block_order": [
+        "dr_stracke",
+        "dr_saul",
+        "val_evidence",
+        "val_transparent",
+        "val_patient",
+        "val_innovative"
+      ]
+    }
+  },
+  "order": ["main", "about"]
+}
