@@ -10,6 +10,8 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;height:100%;overflow:hidden;background:#0A0F1A;font-family:'Inter',sans-serif;color:#E0E0E0}
 svg{display:block;width:100%;height:100vh}
+text{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+circle,line,polygon{shape-rendering:geometricPrecision}
 
 #header{position:absolute;top:24px;left:28px;z-index:100;pointer-events:none}
 #header h1{font-size:26px;font-weight:700;background:linear-gradient(135deg,#028090,#02C39A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.5px}
@@ -516,8 +518,10 @@ var W = Math.max(document.documentElement.clientWidth || 1200, 1200);
 var H = Math.max(document.documentElement.clientHeight || 800, 800);
 
 var svg = d3.select('#graph')
-  .attr('width', W)
-  .attr('height', H);
+  .attr('viewBox', '0 0 ' + W + ' ' + H)
+  .attr('preserveAspectRatio', 'xMidYMid meet')
+  .style('width', '100%')
+  .style('height', '100vh');
 
 // Defs for arrowheads
 var defs = svg.append('defs');
