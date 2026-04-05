@@ -33,42 +33,42 @@
           "type": "content_section",
           "settings": {
             "title": "Was sind Leberwerte?",
-            "content": "<p>Die drei wichtigsten Leberenzyme im Ueberblick: GPT (ALT, Alanin-Aminotransferase) kommt fast ausschliesslich in der Leber vor und ist der spezifischste Leberwert. GOT (AST, Aspartat-Aminotransferase) findet sich in Leber, Herz und Muskulatur. GGT (Gamma-Glutamyltransferase) reagiert besonders empfindlich auf Alkohol und Gallenwegserkrankungen.</p><p>Wenn Leberzellen geschaedigt werden — durch Alkohol, Medikamente, Fettleber, Viren oder andere Ursachen — setzen sie diese Enzyme ins Blut frei. Die Hoehe der Werte und das Verhaeltnis zueinander geben Hinweise auf die Art der Schaedigung.</p>"
+            "content": "<p>Die drei wichtigsten Leberenzyme im Überblick: GPT (ALT, Alanin-Aminotransferase) kommt fast ausschliesslich in der Leber vor und ist der spezifischste Leberwert. GOT (AST, Aspartat-Aminotransferase) findet sich in Leber, Herz und Muskulatur. GGT (Gamma-Glutamyltransferase) reagiert besonders empfindlich auf Alkohol und Gallenwegserkrankungen.</p><p>Wenn Leberzellen geschaedigt werden — durch Alkohol, Medikamente, Fettleber, Viren oder andere Ursachen — setzen sie diese Enzyme ins Blut frei. Die Höhe der Werte und das Verhaeltnis zueinander geben Hinweise auf die Art der Schaedigung.</p>"
           }
         },
         "referenz": {
           "type": "ref_table",
           "settings": {
             "title": "Referenzwerte",
-            "rows": "GPT (ALT) Maenner: bis 50 U/l | GPT (ALT) Frauen: bis 35 U/l | GOT (AST) Maenner: bis 50 U/l | GOT (AST) Frauen: bis 35 U/l | GGT Maenner: bis 60 U/l | GGT Frauen: bis 40 U/l | De-Ritis-Quotient (GOT/GPT): unter 1 = Lebererkrankung, ueber 1 = schwere Schaedigung"
+            "rows": "GPT (ALT) Maenner: bis 50 U/l | GPT (ALT) Frauen: bis 35 U/l | GOT (AST) Maenner: bis 50 U/l | GOT (AST) Frauen: bis 35 U/l | GGT Maenner: bis 60 U/l | GGT Frauen: bis 40 U/l | De-Ritis-Quotient (GOT/GPT): unter 1 = Lebererkrankung, über 1 = schwere Schaedigung"
           }
         },
         "hoch": {
           "type": "content_section",
           "settings": {
-            "title": "Was bedeutet ein erhoehter Wert?",
-            "content": "<p>Leicht erhoehte Leberwerte (bis 2-fach): Haeufigste Ursache ist die nichtalkoholische Fettleber (NAFLD), die ca. 25-30% der Bevoelkerung betrifft. Weitere Ursachen: Medikamente (Paracetamol, Statine, Antibiotika), leichter Alkoholkonsum, Uebergewicht und Diabetes.</p><p>Maessig erhoehte Werte (2-10-fach): Chronische Hepatitis B oder C, alkoholische Lebererkrankung, Autoimmunhepatitis. Hier ist die GGT oft ueberproportional erhoeht bei alkoholbedingter Schaedigung.</p><p>Stark erhoehte Werte (ueber 10-fach): Akute Virushepatitis, toxische Leberschaedigung (z.B. Paracetamol-Ueberdosis, Knollenblaetterpilz), akuter Gallengangsverschluss.</p>"
+            "title": "Was bedeutet ein erhöhter Wert?",
+            "content": "<p>Leicht erhöhte Leberwerte (bis 2-fach): Häufigste Ursache ist die nichtalkoholische Fettleber (NAFLD), die ca. 25-30% der Bevoelkerung betrifft. Weitere Ursachen: Medikamente (Paracetamol, Statine, Antibiotika), leichter Alkoholkonsum, Übergewicht und Diabetes.</p><p>Maessig erhöhte Werte (2-10-fach): Chronische Hepatitis B oder C, alkoholische Lebererkrankung, Autoimmunhepatitis. Hier ist die GGT oft überproportional erhöht bei alkoholbedingter Schaedigung.</p><p>Stark erhöhte Werte (über 10-fach): Akute Virushepatitis, toxische Leberschaedigung (z.B. Paracetamol-Überdosis, Knollenblaetterpilz), akuter Gallengangsverschluss.</p>"
           }
         },
         "niedrig": {
           "type": "content_section",
           "settings": {
             "title": "Was bedeutet ein niedriger Wert?",
-            "content": "<p>Niedrige Leberwerte sind in der Regel unbedenklich und zeigen eine gesunde Leber. Es gibt keine klinisch relevante Untergrenze fuer GOT, GPT oder GGT.</p><p>In seltenen Faellen koennen sehr niedrige Werte bei einem gleichzeitig schwer geschaedigten Lebergewebe auftreten — wenn kaum noch funktionsfaehige Leberzellen vorhanden sind (sogenanntes burned-out Endstadium). Dies ist aber eine Ausnahmesituation und geht mit deutlichen anderen Labveraenderungen und Symptomen einher.</p>"
+            "content": "<p>Niedrige Leberwerte sind in der Regel unbedenklich und zeigen eine gesunde Leber. Es gibt keine klinisch relevante Untergrenze für GOT, GPT oder GGT.</p><p>In seltenen Faellen koennen sehr niedrige Werte bei einem gleichzeitig schwer geschaedigten Lebergewebe auftreten — wenn kaum noch funktionsfaehige Leberzellen vorhanden sind (sogenanntes burned-out Endstadium). Dies ist aber eine Ausnahmesituation und geht mit deutlichen anderen Labveränderungen und Symptomen einher.</p>"
           }
         },
         "symptome": {
           "type": "content_section",
           "settings": {
             "title": "Welche Symptome koennen auftreten?",
-            "content": "<p>Die Leber hat keine Schmerzrezeptoren — deshalb verlaufen Lebererkrankungen oft lange symptomlos. Erst bei fortgeschrittener Schaedigung treten Beschwerden auf:</p><p>Muedigkeit und Abgeschlagenheit (haeufiges Fruehsymptom). Druckgefuehl im rechten Oberbauch. Appetitlosigkeit und Uebelkeit. Gelbfaerbung von Haut und Augen (Ikterus). Dunkler Urin und heller Stuhl. Juckreiz am ganzen Koerper. Wassereinlagerungen im Bauch (Aszites) bei fortgeschrittener Erkrankung. Kleine rote Gefaesszeichnungen auf der Haut (Spider-Naevi).</p>"
+            "content": "<p>Die Leber hat keine Schmerzrezeptoren — deshalb verlaufen Lebererkrankungen oft lange symptomlos. Erst bei fortgeschrittener Schaedigung treten Beschwerden auf:</p><p>Müdigkeit und Abgeschlagenheit (häufiges Fruehsymptom). Druckgefuehl im rechten Oberbauch. Appetitlosigkeit und Übelkeit. Gelbfaerbung von Haut und Augen (Ikterus). Dunkler Urin und heller Stuhl. Juckreiz am ganzen Körper. Wassereinlagerungen im Bauch (Aszites) bei fortgeschrittener Erkrankung. Kleine rote Gefäßzeichnungen auf der Haut (Spider-Naevi).</p>"
           }
         },
         "tipps": {
           "type": "content_section",
           "settings": {
             "title": "Was du tun kannst",
-            "content": "<p>Die Leber ist ein regenerationsfaehiges Organ — bei rechtzeitiger Behandlung koennen sich viele Schaeden zurueckbilden. Alkohol reduzieren oder meiden ist die wichtigste Massnahme bei erhoehter GGT. Gewichtsreduktion kann eine Fettleber rueckgaengig machen: Schon 5-10% Gewichtsverlust verbessern die Leberwerte deutlich.</p><p>Medikamente kritisch pruefen: Paracetamol, bestimmte Nahrungsergaenzungsmittel und pflanzliche Praeparate koennen die Leber belasten. Hepatitis-Impfung (A und B) schuetzt vor viraler Leberentzuendung. Bei erhoehten Werten sollte ein Ultraschall der Leber durchgefuehrt werden, um eine Fettleber oder andere Veraenderungen zu erkennen. Kontrolluntersuchung nach 4-8 Wochen zeigt, ob die Werte sich bessern.</p>"
+            "content": "<p>Die Leber ist ein regenerationsfaehiges Organ — bei rechtzeitiger Behandlung koennen sich viele Schaeden zurückbilden. Alkohol reduzieren oder meiden ist die wichtigste Maßnahme bei erhöhter GGT. Gewichtsreduktion kann eine Fettleber rueckgaengig machen: Schon 5-10% Gewichtsverlust verbessern die Leberwerte deutlich.</p><p>Medikamente kritisch prüfen: Paracetamol, bestimmte Nahrungsergaenzungsmittel und pflanzliche Praeparate koennen die Leber belasten. Hepatitis-Impfung (A und B) schuetzt vor viraler Leberentzündung. Bei erhöhten Werten sollte ein Ultraschall der Leber durchgefuehrt werden, um eine Fettleber oder andere Veränderungen zu erkennen. Kontrolluntersuchung nach 4-8 Wochen zeigt, ob die Werte sich bessern.</p>"
           }
         },
         "related": {

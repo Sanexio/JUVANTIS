@@ -22,7 +22,7 @@
         "name": "HbA1c",
         "heading": "HbA1c — Dein Langzeitblutzucker",
         "category": "Stoffwechsel",
-        "short_description": "Der HbA1c zeigt deinen durchschnittlichen Blutzuckerspiegel der letzten 8-12 Wochen. Er ist der wichtigste Wert zur Diagnose und Ueberwachung von Diabetes — und veraendert sich nicht durch einzelne Mahlzeiten.",
+        "short_description": "Der HbA1c zeigt deinen durchschnittlichen Blutzuckerspiegel der letzten 8-12 Wochen. Er ist der wichtigste Wert zur Diagnose und Überwachung von Diabetes — und veraendert sich nicht durch einzelne Mahlzeiten.",
         "cta_label": "Lass diesen Wert bei Juvantis testen",
         "cta_link": "shopify://collections/laboruntersuchung",
         "padding_top": 0,
@@ -33,7 +33,7 @@
           "type": "content_section",
           "settings": {
             "title": "Was ist HbA1c?",
-            "content": "<p>HbA1c (glykosiliertes Haemoglobin) misst, wie viel Zucker sich an den roten Blutfarbstoff Haemoglobin angelagert hat. Da rote Blutkoerperchen etwa 120 Tage leben, spiegelt der HbA1c den durchschnittlichen Blutzucker der letzten 2-3 Monate wider.</p><p>Der grosse Vorteil gegenueber einer normalen Blutzuckermessung: Der HbA1c wird nicht durch aktuelle Mahlzeiten, Stress oder Tageszeit beeinflusst. Du musst fuer die Blutabnahme nicht nuechtern sein. Er gibt das zuverlaessigste Bild deiner Blutzuckereinstellung.</p>"
+            "content": "<p>HbA1c (glykosiliertes Haemoglobin) misst, wie viel Zucker sich an den roten Blutfarbstoff Haemoglobin angelagert hat. Da rote Blutkörperchen etwa 120 Tage leben, spiegelt der HbA1c den durchschnittlichen Blutzucker der letzten 2-3 Monate wider.</p><p>Der große Vorteil gegenüber einer normalen Blutzuckermessung: Der HbA1c wird nicht durch aktuelle Mahlzeiten, Stress oder Tageszeit beeinflusst. Du musst für die Blutabnahme nicht nuechtern sein. Er gibt das zuverlässsigste Bild deiner Blutzuckereinstellung.</p>"
           }
         },
         "referenz": {
@@ -46,29 +46,29 @@
         "hoch": {
           "type": "content_section",
           "settings": {
-            "title": "Was bedeutet ein erhoehter Wert?",
-            "content": "<p>Ein HbA1c zwischen 5,7% und 6,4% zeigt ein Praediabetes an — dein Koerper hat bereits Schwierigkeiten, den Blutzucker zu regulieren, aber es ist noch kein Diabetes. In diesem Stadium kann durch Lebensstilaenderungen oft eine Normalisierung erreicht werden.</p><p>Ab 6,5% liegt definitionsgemaess ein Diabetes mellitus vor. Die haeufigste Form ist Typ-2-Diabetes, bei dem die Koerperzellen nicht mehr richtig auf Insulin ansprechen (Insulinresistenz). Risikofaktoren sind Uebergewicht (besonders Bauchfett), Bewegungsmangel, familiaere Belastung und Alter ueber 45 Jahre.</p>"
+            "title": "Was bedeutet ein erhöhter Wert?",
+            "content": "<p>Ein HbA1c zwischen 5,7% und 6,4% zeigt ein Praediabetes an — dein Körper hat bereits Schwierigkeiten, den Blutzucker zu regulieren, aber es ist noch kein Diabetes. In diesem Stadium kann durch Lebensstiländerungen oft eine Normalisierung erreicht werden.</p><p>Ab 6,5% liegt definitionsgemaess ein Diabetes mellitus vor. Die häufigste Form ist Typ-2-Diabetes, bei dem die Körperzellen nicht mehr richtig auf Insulin ansprechen (Insulinresistenz). Risikofaktoren sind Übergewicht (besonders Bauchfett), Bewegungsmangel, familiaere Belastung und Alter über 45 Jahre.</p>"
           }
         },
         "niedrig": {
           "type": "content_section",
           "settings": {
             "title": "Was bedeutet ein niedriger Wert?",
-            "content": "<p>Ein HbA1c unter 4,0% ist selten und kann auf folgende Ursachen hinweisen: Haemolytische Anaemie (verstaerkter Abbau roter Blutkoerperchen, wodurch die Anlagerungszeit verkuerzt wird), starker Blutverlust, bestimmte Haemoglobin-Varianten oder eine Schwangerschaft.</p><p>Bei Diabetikern unter Therapie kann ein zu niedriger HbA1c auf haeufige Unterzuckerungen (Hypoglykaemien) hinweisen — das ist gefaehrlich und sollte mit dem Arzt besprochen werden. Ein HbA1c zwischen 4,0% und 5,6% ist vollkommen normal und zeigt einen gesunden Zuckerstoffwechsel.</p>"
+            "content": "<p>Ein HbA1c unter 4,0% ist selten und kann auf folgende Ursachen hinweisen: Haemolytische Anaemie (verstaerkter Abbau roter Blutkörperchen, wodurch die Anlagerungszeit verkuerzt wird), starker Blutverlust, bestimmte Haemoglobin-Varianten oder eine Schwangerschaft.</p><p>Bei Diabetikern unter Therapie kann ein zu niedriger HbA1c auf häufige Unterzuckerungen (Hypoglykaemien) hinweisen — das ist gefaehrlich und sollte mit dem Arzt besprochen werden. Ein HbA1c zwischen 4,0% und 5,6% ist vollkommen normal und zeigt einen gesunden Zuckerstoffwechsel.</p>"
           }
         },
         "symptome": {
           "type": "content_section",
           "settings": {
             "title": "Welche Symptome koennen auftreten?",
-            "content": "<p>Ein erhoehter HbA1c bzw. Praediabetes verlaeuft oft lange symptomlos. Erst bei deutlich erhoehten Blutzuckerwerten koennen Symptome auftreten:</p><p>Verstaerkter Durst und haeufiges Wasserlassen. Muedigkeit und Leistungsknick. Verschwommenes Sehen. Schlecht heilende Wunden. Haeufige Infektionen (besonders Harnwegs- und Pilzinfektionen). Kribbeln oder Taubheit in Haenden und Fuessen. Unerklraerlicher Gewichtsverlust (eher bei Typ-1-Diabetes).</p>"
+            "content": "<p>Ein erhöhter HbA1c bzw. Praediabetes verläuft oft lange symptomlos. Erst bei deutlich erhöhten Blutzuckerwerten koennen Symptome auftreten:</p><p>Verstaerkter Durst und häufiges Wasserlassen. Müdigkeit und Leistungsknick. Verschwommenes Sehen. Schlecht heilende Wunden. Häufige Infektionen (besonders Harnwegs- und Pilzinfektionen). Kribbeln oder Taubheit in Haenden und Fuessen. Unerklraerlicher Gewichtsverlust (eher bei Typ-1-Diabetes).</p>"
           }
         },
         "tipps": {
           "type": "content_section",
           "settings": {
             "title": "Was du tun kannst",
-            "content": "<p>Bei Praediabetes kannst du oft eine Normalisierung erreichen: Gewichtsreduktion um 5-7% senkt das Diabetes-Risiko um 58%. Regelmaessige Bewegung (mind. 150 Minuten pro Woche) verbessert die Insulinempfindlichkeit. Ernaehrungsumstellung: Weniger einfache Kohlenhydrate (Weissbrot, Zucker, Softdrinks), mehr Ballaststoffe, Gemuese und Proteine.</p><p>Bei Diabetes: Der HbA1c sollte alle 3 Monate kontrolliert werden. Jede Senkung um 1% reduziert das Risiko fuer Komplikationen erheblich — mikrovaskulaere Schaeden (Augen, Nieren, Nerven) sinken um ca. 37%. Besprich dein individuelles Therapieziel mit deinem Arzt.</p>"
+            "content": "<p>Bei Praediabetes kannst du oft eine Normalisierung erreichen: Gewichtsreduktion um 5-7% senkt das Diabetes-Risiko um 58%. Regelmäßige Bewegung (mind. 150 Minuten pro Woche) verbessert die Insulinempfindlichkeit. Ernährungsumstellung: Weniger einfache Kohlenhydrate (Weissbrot, Zucker, Softdrinks), mehr Ballaststoffe, Gemuese und Proteine.</p><p>Bei Diabetes: Der HbA1c sollte alle 3 Monate kontrolliert werden. Jede Senkung um 1% reduziert das Risiko für Komplikationen erheblich — mikrovaskulaere Schaeden (Augen, Nieren, Nerven) sinken um ca. 37%. Besprich dein individuelles Therapieziel mit deinem Arzt.</p>"
           }
         },
         "related": {

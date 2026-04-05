@@ -20,11 +20,11 @@
       "type": "juvantis-body-checks",
       "settings": {
         "heading": "Du bist mehr als die Summe deiner Teile.",
-        "intro": "Ein Bluttest allein zeigt nicht alles. Unsere Body Checks kombinieren Ultraschall, EKG und Lungenfunktion mit deinen Laborwerten -- fuer ein Gesamtbild deiner Gesundheit, das kein reiner Bluttest-Anbieter liefern kann.",
+        "intro": "Ein Bluttest allein zeigt nicht alles. Unsere Body Checks kombinieren Ultraschall, EKG und Lungenfunktion mit deinen Laborwerten — für ein Gesamtbild deiner Gesundheit, das kein reiner Bluttest-Anbieter liefern kann.",
         "usp_heading": "Was uns unterscheidet",
-        "usp_text": "Wir schauen nicht nur ins Blut, sondern in deinen Koerper. Ultraschall, EKG, Lungenfunktion -- apparative Diagnostik und Labormedizin unter einem Dach. Das bieten reine Bluttest-Startups nicht.",
+        "usp_text": "Wir schauen nicht nur ins Blut, sondern in deinen Körper. Ultraschall, EKG, Lungenfunktion — apparative Diagnostik und Labormedizin unter einem Dach. Das bieten reine Bluttest-Startups nicht.",
         "checks_heading": "Unsere Untersuchungen",
-        "timeline_heading": "So laeuft dein Body Check ab",
+        "timeline_heading": "So läuft dein Body Check ab",
         "cta_label": "Jetzt Body Check buchen",
         "cta_link": "shopify://collections/ultraschalluntersuchungen",
         "padding_top": 0,
@@ -43,8 +43,8 @@
           "type": "check",
           "settings": {
             "icon": "🦋",
-            "title": "Sonografie Schilddruese",
-            "description": "Groesse, Struktur und Knoten der Schilddruese -- wichtig bei auffaelligen TSH-Werten."
+            "title": "Sonografie Schilddrüse",
+            "description": "Größe, Struktur und Knoten der Schilddrüse — wichtig bei auffälligen TSH-Werten."
           }
         },
         "echo": {
@@ -60,7 +60,7 @@
           "settings": {
             "icon": "🩺",
             "title": "Duplex Carotiden",
-            "description": "Ultraschall der Halsschlagadern -- Verkalkungen erkennen, Schlaganfallrisiko senken."
+            "description": "Ultraschall der Halsschlagadern — Verkalkungen erkennen, Schlaganfallrisiko senken."
           }
         },
         "ekg": {
@@ -68,7 +68,7 @@
           "settings": {
             "icon": "📈",
             "title": "Ruhe-EKG",
-            "description": "Herzrhythmus und elektrische Aktivitaet im Ruhezustand -- schnell, schmerzfrei, aussagekraeftig."
+            "description": "Herzrhythmus und elektrische Aktivität im Ruhezustand — schnell, schmerzfrei, aussagekräftig."
           }
         },
         "ergo": {
@@ -76,7 +76,7 @@
           "settings": {
             "icon": "🚴",
             "title": "Belastungs-EKG",
-            "description": "Ergometrie unter Belastung: Zeigt Durchblutungsstoerungen, die im Ruhe-EKG verborgen bleiben."
+            "description": "Ergometrie unter Belastung: Zeigt Durchblutungsstörungen, die im Ruhe-EKG verborgen bleiben."
           }
         },
         "lufu": {
@@ -84,7 +84,7 @@
           "settings": {
             "icon": "💨",
             "title": "Lungenfunktion",
-            "description": "Spirometrie misst Lungenvolumen und Atemfluss -- wichtig fuer Sportler und Raucher."
+            "description": "Spirometrie misst Lungenvolumen und Atemfluss — wichtig für Sportler und Raucher."
           }
         },
         "diving": {
@@ -92,7 +92,7 @@
           "settings": {
             "icon": "🤿",
             "title": "Fit for Diving",
-            "description": "Tauchtauglichkeitsuntersuchung nach GTUE-Standard. Pflicht fuer jeden Taucher."
+            "description": "Tauchtauglichkeitsuntersuchung nach GTUE-Standard. Pflicht für jeden Taucher."
           }
         },
         "tl_1": {
@@ -100,7 +100,7 @@
           "settings": {
             "number": "1",
             "title": "Termin buchen",
-            "text": "Online oder telefonisch -- waehle deinen Wunschtermin."
+            "text": "Online oder telefonisch — wähle deinen Wunschtermin."
           }
         },
         "tl_2": {
@@ -108,7 +108,7 @@
           "settings": {
             "number": "2",
             "title": "Anamnese",
-            "text": "Ausfuehrliches Gespraech ueber deine Krankengeschichte und Ziele."
+            "text": "Ausführliches Gespräch über deine Krankengeschichte und Ziele."
           }
         },
         "tl_3": {
@@ -116,7 +116,7 @@
           "settings": {
             "number": "3",
             "title": "Untersuchungen",
-            "text": "Du durchlaeufst die gebuchten Stationen -- in 2-3 Stunden."
+            "text": "Du durchläufst die gebuchten Stationen — in 2-3 Stunden."
           }
         },
         "tl_4": {
@@ -124,7 +124,7 @@
           "settings": {
             "number": "4",
             "title": "Befundbesprechung",
-            "text": "Aerztliche Auswertung und Visualisierung in deinem Digital Health Twin."
+            "text": "Ärztliche Auswertung und Visualisierung in deinem Digital Health Twin."
           }
         }
       },

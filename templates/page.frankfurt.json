@@ -21,7 +21,7 @@
       "settings": {
         "badge": "Standort",
         "heading": "Juvantis Frankfurt: Dein Gesundheitscheck im Westend",
-        "intro": "Juvantis ist dein Partner fuer praezise Labordiagnostik und praventive Medizin in Frankfurt am Main. Im Frankfurter Westend verbinden wir moderne Blutanalysen mit digitaler Gesundheitsvisualisierung -- fuer Menschen, die mehr ueber ihren Koerper wissen wollen.",
+        "intro": "Juvantis ist dein Partner für praezise Labordiagnostik und praventive Medizin in Frankfurt am Main. Im Frankfurter Westend verbinden wir moderne Blutanalysen mit digitaler Gesundheitsvisualisierung — für Menschen, die mehr über ihren Körper wissen wollen.",
         "table_col1": "Parameter",
         "table_col2": "Wert",
         "table_col3": "",
@@ -40,7 +40,7 @@
         "rt_standort": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Juvantis befindet sich im Praxiszentrum Dr. Stracke & Kollegen im Herzen des Frankfurter Westends -- einem der gefragtesten Viertel der Stadt. Die Praxis liegt zentral und ist sowohl mit oeffentlichen Verkehrsmitteln als auch mit dem Auto bestens erreichbar.</p><p>In ruhiger, moderner Praxisatmosphaere nehmen wir uns Zeit fuer deine Gesundheit. Kein Massenabfertigung, keine Wartezeiten-Odyssee -- sondern individuelle Betreuung auf hoechstem medizinischem Niveau.</p>"
+            "content": "<p>Juvantis befindet sich im Praxiszentrum Dr. Stracke & Kollegen im Herzen des Frankfurter Westends — einem der gefragtesten Viertel der Stadt. Die Praxis liegt zentral und ist sowohl mit oeffentlichen Verkehrsmitteln als auch mit dem Auto bestens erreichbar.</p><p>In ruhiger, moderner Praxisatmosphaere nehmen wir uns Zeit für deine Gesundheit. Kein Massenabfertigung, keine Wartezeiten-Odyssee — sondern individuelle Betreuung auf hoechstem medizinischem Niveau.</p>"
           }
         },
         "h2_anfahrt": {
@@ -54,7 +54,7 @@
           "settings": {
             "icon": "🚇",
             "title": "Mit der U-Bahn",
-            "description": "U-Bahn-Station Holzhausenstrasse (U1, U2, U3, U8) -- nur wenige Gehminuten entfernt. Alternativ: Station Gruenteburgweg."
+            "description": "U-Bahn-Station Holzhausenstrasse (U1, U2, U3, U8) — nur wenige Gehminuten entfernt. Alternativ: Station Grünteburgweg."
           }
         },
         "card_auto": {
@@ -62,7 +62,7 @@
           "settings": {
             "icon": "🚗",
             "title": "Mit dem Auto",
-            "description": "Parkhaeuser in unmittelbarer Naehe: Parkhaus Gruenteburgweg und weitere Optionen im Westend. Anfahrt ueber die A66 oder den Alleenring."
+            "description": "Parkhaeuser in unmittelbarer Naehe: Parkhaus Grünteburgweg und weitere Optionen im Westend. Anfahrt über die A66 oder den Alleenring."
           }
         },
         "card_bus": {
@@ -76,7 +76,7 @@
         "h2_zeiten": {
           "type": "heading",
           "settings": {
-            "text": "Oeffnungszeiten"
+            "text": "Öffnungszeiten"
           }
         },
         "card_mo_di_do": {
@@ -106,7 +106,7 @@
         "info_termin": {
           "type": "info",
           "settings": {
-            "content": "<p><strong>Tipp:</strong> Buche deinen Termin online und sichere dir deinen Wunschtermin. Fuer Blutentnahmen empfehlen wir einen Morgen-Termin -- nuechtern, damit alle Werte optimal bestimmt werden koennen.</p>"
+            "content": "<p><strong>Tipp:</strong> Buche deinen Termin online und sichere dir deinen Wunschtermin. Für Blutentnahmen empfehlen wir einen Morgen-Termin — nuechtern, damit alle Werte optimal bestimmt werden koennen.</p>"
           }
         },
         "h2_was_erwartet": {
@@ -118,7 +118,7 @@
         "rt_was_erwartet": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Dein Besuch bei Juvantis ist unkompliziert und effizient. So laeuft dein Gesundheitscheck in Frankfurt ab:</p>"
+            "content": "<p>Dein Besuch bei Juvantis ist unkompliziert und effizient. So läuft dein Gesundheitscheck in Frankfurt ab:</p>"
           }
         },
         "card_step1": {
@@ -126,7 +126,7 @@
           "settings": {
             "icon": "1️⃣",
             "title": "Online buchen",
-            "description": "Waehle deinen Check-up und buche deinen Wunschtermin in wenigen Klicks ueber unsere Website."
+            "description": "Wähle deinen Check-up und buche deinen Wunschtermin in wenigen Klicks über unsere Website."
           }
         },
         "card_step2": {
@@ -134,7 +134,7 @@
           "settings": {
             "icon": "2️⃣",
             "title": "Blutentnahme vor Ort",
-            "description": "Komm nuechtern in unsere Praxis im Westend. Die Blutentnahme dauert nur wenige Minuten -- professionell und schmerzarm."
+            "description": "Komm nuechtern in unsere Praxis im Westend. Die Blutentnahme dauert nur wenige Minuten — professionell und schmerzarm."
           }
         },
         "card_step3": {
@@ -142,7 +142,7 @@
           "settings": {
             "icon": "3️⃣",
             "title": "Ergebnisse in 48 Stunden",
-            "description": "Innerhalb von zwei Werktagen sind deine Laborergebnisse da -- aerztlich ausgewertet und verstaendlich aufbereitet."
+            "description": "Innerhalb von zwei Werktagen sind deine Laborergebnisse da — ärztlich ausgewertet und verständlich aufbereitet."
           }
         },
         "card_step4": {
@@ -150,14 +150,14 @@
           "settings": {
             "icon": "4️⃣",
             "title": "Digital Health Twin",
-            "description": "Deine Ergebnisse werden in deinem persoenlichen Digital Health Twin visualisiert -- intuitiv, motivierend und jederzeit abrufbar."
+            "description": "Deine Ergebnisse werden in deinem persönlichen Digital Health Twin visualisiert — intuitiv, motivierend und jederzeit abrufbar."
           }
         },
         "highlight_frankfurt": {
           "type": "highlight",
           "settings": {
             "title": "Praezisionsmedizin im Frankfurter Westend",
-            "text": "Juvantis verbindet modernste Labordiagnostik mit digitaler Innovation. Kein Standard-Blutbild, sondern 80+ Biomarker, aerztliche Expertise und ein Digital Health Twin, der deine Gesundheit sichtbar macht."
+            "text": "Juvantis verbindet modernste Labordiagnostik mit digitaler Innovation. Kein Standard-Blutbild, sondern 80+ Biomarker, ärztliche Expertise und ein Digital Health Twin, der deine Gesundheit sichtbar macht."
           }
         }
       },

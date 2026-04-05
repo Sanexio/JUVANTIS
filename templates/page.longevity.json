@@ -21,7 +21,7 @@
       "settings": {
         "badge": "Longevity",
         "heading": "Longevity: Die Wissenschaft des gesunden Alterns",
-        "intro": "Longevity ist kein Trend und kein Lifestyle-Hack. Es ist ein evidenzbasierter medizinischer Ansatz, der darauf abzielt, die gesunde Lebensspanne zu verlaengern -- nicht nur laenger zu leben, sondern laenger gesund zu leben. Bei Juvantis verbinden wir Longevity-Medizin mit moderner Labordiagnostik und deinem persoenlichen Digital Health Twin.",
+        "intro": "Longevity ist kein Trend und kein Lifestyle-Hack. Es ist ein evidenzbasierter medizinischer Ansatz, der darauf abzielt, die gesunde Lebensspanne zu verlaengern — nicht nur laenger zu leben, sondern laenger gesund zu leben. Bei Juvantis verbinden wir Longevity-Medizin mit moderner Labordiagnostik und deinem persönlichen Digital Health Twin.",
         "table_col1": "Parameter",
         "table_col2": "Wert",
         "table_col3": "",
@@ -40,7 +40,7 @@
         "rt_was_ist": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Longevity-Medizin beschaeftigt sich mit den biologischen Mechanismen des Alterns und den Strategien, diese zu verlangsamen. Im Kern geht es um die Frage: Wie koennen wir die Jahre, die wir leben, in bestmoeglicher Gesundheit verbringen?</p><p>Die Forschung zeigt, dass biologisches Alter und chronologisches Alter auseinanderklaffen koennen. Ein 50-Jaehriger kann biologisch 40 sein -- oder 60. Der Unterschied liegt in Lebensstil, Ernaehrung, Bewegung, Schlaf und gezielter medizinischer Praevention.</p><p>Bei Juvantis setzen wir auf datengetriebene Longevity: Wir messen, was zaehlt, und leiten daraus individuelle Handlungsempfehlungen ab.</p>"
+            "content": "<p>Longevity-Medizin beschaeftigt sich mit den biologischen Mechanismen des Alterns und den Strategien, diese zu verlangsamen. Im Kern geht es um die Frage: Wie koennen wir die Jahre, die wir leben, in bestmöglicher Gesundheit verbringen?</p><p>Die Forschung zeigt, dass biologisches Alter und chronologisches Alter auseinanderklaffen koennen. Ein 50-Jaehriger kann biologisch 40 sein — oder 60. Der Unterschied liegt in Lebensstil, Ernährung, Bewegung, Schlaf und gezielter medizinischer Prävention.</p><p>Bei Juvantis setzen wir auf datengetriebene Longevity: Wir messen, was zaehlt, und leiten daraus individuelle Handlungsempfehlungen ab.</p>"
           }
         },
         "h2_protokoll": {
@@ -52,7 +52,7 @@
         "rt_protokoll_intro": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Unser Longevity-Protokoll basiert auf vier Saeulen, die zusammen ein umfassendes System fuer gesundes Altern bilden:</p>"
+            "content": "<p>Unser Longevity-Protokoll basiert auf vier Saeulen, die zusammen ein umfassendes System für gesundes Altern bilden:</p>"
           }
         },
         "card_biomarker": {
@@ -60,7 +60,7 @@
           "settings": {
             "icon": "🔬",
             "title": "Biomarker-Monitoring",
-            "description": "Regelmaessige Analyse von ueber 80 Biomarkern: Entzuendungsmarker (CRP, IL-6), metabolische Marker (HbA1c, Insulin), Hormonprofil, Vitamine und Spurenelemente. Veraenderungen frueh erkennen, bevor Symptome entstehen."
+            "description": "Regelmäßige Analyse von über 80 Biomarkern: Entzündungsmarker (CRP, IL-6), metabolische Marker (HbA1c, Insulin), Hormonprofil, Vitamine und Spurenelemente. Veränderungen frueh erkennen, bevor Symptome entstehen."
           }
         },
         "card_lifestyle": {
@@ -68,7 +68,7 @@
           "settings": {
             "icon": "🏃",
             "title": "Lifestyle-Optimierung",
-            "description": "Evidenzbasierte Empfehlungen fuer Ernaehrung, Bewegung, Schlaf und Stressmanagement -- abgeleitet aus deinen individuellen Laborwerten und aktueller Longevity-Forschung."
+            "description": "Evidenzbasierte Empfehlungen für Ernährung, Bewegung, Schlaf und Stressmanagement — abgeleitet aus deinen individuellen Laborwerten und aktueller Longevity-Forschung."
           }
         },
         "card_nad": {
@@ -76,7 +76,7 @@
           "settings": {
             "icon": "⚡",
             "title": "NAD+ & Supplements",
-            "description": "Gezielte Supplementierung auf Basis deiner Blutwerte. NAD+-Infusionen zur Unterstuetzung der Zellreparatur, Vitamin D, Omega-3 und weitere Mikro\u00adnaehrstoffe -- nur was dein Koerper tatsaechlich braucht."
+            "description": "Gezielte Supplementierung auf Basis deiner Blutwerte. NAD+-Infusionen zur Unterstützung der Zellreparatur, Vitamin D, Omega-3 und weitere Mikro\u00adnährstoffe — nur was dein Körper tatsaechlich braucht."
           }
         },
         "card_dht": {
@@ -84,26 +84,26 @@
           "settings": {
             "icon": "🧬",
             "title": "Digital Health Twin Tracking",
-            "description": "Dein Digital Health Twin visualisiert deine Gesundheitsdaten ueber die Zeit. Sieh, wie sich deine Biomarker entwickeln, erkenne Trends und verfolge deinen Fortschritt -- alles in einer intuitiven 3D-Visualisierung."
+            "description": "Dein Digital Health Twin visualisiert deine Gesundheitsdaten über die Zeit. Sieh, wie sich deine Biomarker entwickeln, erkenne Trends und verfolge deinen Fortschritt — alles in einer intuitiven 3D-Visualisierung."
           }
         },
         "h2_biomarker_detail": {
           "type": "heading",
           "settings": {
-            "text": "Welche Biomarker sind fuer Longevity relevant?"
+            "text": "Welche Biomarker sind für Longevity relevant?"
           }
         },
         "rt_biomarker_detail": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Nicht alle Blutwerte sind gleich relevant fuer Longevity. Wir fokussieren auf die Marker, die die Forschung als Schluesselfaktoren fuer gesundes Altern identifiziert hat:</p><p>Entzuendung: CRP, Homocystein und IL-6 zeigen chronische Entzuendungen, die als Treiber des Alterns gelten (\"Inflammaging\"). Stoffwechsel: HbA1c, Nuechtern-Insulin und Triglyceride geben Aufschluss ueber die metabolische Gesundheit. Hormone: Testosteron, DHEA-S, Cortisol und Schilddruesenwerte beeinflussen Energie, Schlaf und Regeneration. Zellgesundheit: Vitamin D, B12, Folsaeure, Zink und Selen sind essenziell fuer Zellreparatur und DNA-Schutz.</p>"
+            "content": "<p>Nicht alle Blutwerte sind gleich relevant für Longevity. Wir fokussieren auf die Marker, die die Forschung als Schluesselfaktoren für gesundes Altern identifiziert hat:</p><p>Entzündung: CRP, Homocystein und IL-6 zeigen chronische Entzündungen, die als Treiber des Alterns gelten (\"Inflammaging\"). Stoffwechsel: HbA1c, Nuechtern-Insulin und Triglyceride geben Aufschluss über die metabolische Gesundheit. Hormone: Testosteron, DHEA-S, Cortisol und Schilddrüsenwerte beeinflussen Energie, Schlaf und Regeneration. Zellgesundheit: Vitamin D, B12, Folsäure, Zink und Selen sind essenziell für Zellreparatur und DNA-Schutz.</p>"
           }
         },
         "highlight_medizin": {
           "type": "highlight",
           "settings": {
-            "title": "Longevity ist kein Trend -- es ist Medizin",
-            "text": "Was frueher als Anti-Aging-Marketing abgetan wurde, ist heute Gegenstand ernsthafter Forschung an Universitaeten weltweit. Longevity-Medizin basiert auf Daten, nicht auf Versprechen. Bei Juvantis verbinden wir diese Wissenschaft mit praktischer, aerztlich begleiteter Umsetzung."
+            "title": "Longevity ist kein Trend — es ist Medizin",
+            "text": "Was frueher als Anti-Aging-Marketing abgetan wurde, ist heute Gegenstand ernsthafter Forschung an Universitäten weltweit. Longevity-Medizin basiert auf Daten, nicht auf Versprechen. Bei Juvantis verbinden wir diese Wissenschaft mit praktischer, ärztlich begleiteter Umsetzung."
           }
         },
         "h2_unterschied": {
@@ -123,7 +123,7 @@
           "settings": {
             "icon": "📊",
             "title": "Datenbasiert, nicht meinungsbasiert",
-            "description": "Jede Empfehlung basiert auf deinen echten Laborwerten. Keine pauschalen Ratschlaege, sondern individuelle, aerztlich fundierte Handlungsempfehlungen."
+            "description": "Jede Empfehlung basiert auf deinen echten Laborwerten. Keine pauschalen Ratschlaege, sondern individuelle, ärztlich fundierte Handlungsempfehlungen."
           }
         },
         "card_diff_tracking": {
@@ -131,21 +131,21 @@
           "settings": {
             "icon": "📈",
             "title": "Langzeit-Tracking",
-            "description": "Longevity ist kein einmaliger Check. Dein Digital Health Twin speichert deine Daten ueber die Zeit und macht Trends sichtbar -- damit du siehst, ob deine Massnahmen wirken."
+            "description": "Longevity ist kein einmaliger Check. Dein Digital Health Twin speichert deine Daten über die Zeit und macht Trends sichtbar — damit du siehst, ob deine Maßnahmen wirken."
           }
         },
         "card_diff_arzt": {
           "type": "card",
           "settings": {
             "icon": "👨‍⚕️",
-            "title": "Aerztliche Begleitung",
-            "description": "Hinter Juvantis steht ein aerztliches Team mit Erfahrung in Praevention und Labormedizin. Keine App ersetzt den Arzt -- aber ein guter Arzt braucht gute Daten."
+            "title": "Ärztliche Begleitung",
+            "description": "Hinter Juvantis steht ein ärztliches Team mit Erfahrung in Prävention und Labormedizin. Keine App ersetzt den Arzt — aber ein guter Arzt braucht gute Daten."
           }
         },
         "info_einstieg": {
           "type": "info",
           "settings": {
-            "content": "<p><strong>Dein Einstieg:</strong> Starte mit einem Juvantis Komplett-Check (80+ Biomarker). Auf Basis deiner Ergebnisse erstellen wir gemeinsam dein persoenliches Longevity-Protokoll -- Schritt fuer Schritt, aerztlich begleitet.</p>"
+            "content": "<p><strong>Dein Einstieg:</strong> Starte mit einem Juvantis Komplett-Check (80+ Biomarker). Auf Basis deiner Ergebnisse erstellen wir gemeinsam dein persönliches Longevity-Protokoll — Schritt für Schritt, ärztlich begleitet.</p>"
           }
         }
       },

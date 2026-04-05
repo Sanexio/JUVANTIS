@@ -23,14 +23,14 @@
           "type": "benefit",
           "settings": {
             "icon": "💊",
-            "title": "Naehrstoffstatus"
+            "title": "Nährstoffstatus"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
             "icon": "⚠️",
-            "title": "Uebertraining erkennen"
+            "title": "Übertraining erkennen"
           }
         },
         "benefit_3": {
@@ -44,7 +44,7 @@
           "type": "benefit",
           "settings": {
             "icon": "📈",
-            "title": "Leistungsfaehigkeit steigern"
+            "title": "Leistungsfähigkeit steigern"
           }
         },
         "benefit_5": {
@@ -63,11 +63,11 @@
         "benefit_5"
       ],
       "settings": {
-        "badge": "Fuer Sportler",
+        "badge": "Für Sportler",
         "heading": "Deine Performance beginnt im Blut.",
-        "intro": "<p>Ob Marathon, CrossFit oder Hobby-Sport -- ohne die richtigen Naehrstoffe laeuft nichts. Juvantis zeigt dir, was dein Koerper wirklich braucht.</p>",
+        "intro": "<p>Ob Marathon, CrossFit oder Hobby-Sport — ohne die richtigen Nährstoffe läuft nichts. Juvantis zeigt dir, was dein Körper wirklich braucht.</p>",
         "usp_heading": "Warum Sportler zu uns kommen",
-        "usp_text": "<p>Wir messen nicht nur Laktat. Unser Sport-Check analysiert 80+ Biomarker -- von Eisen und Ferritin ueber Vitamin D bis zu Entzuendungsmarkern. So erkennst du Uebertraining, bevor es dich ausbremst.</p>",
+        "usp_text": "<p>Wir messen nicht nur Laktat. Unser Sport-Check analysiert 80+ Biomarker — von Eisen und Ferritin über Vitamin D bis zu Entzündungsmarkern. So erkennst du Übertraining, bevor es dich ausbremst.</p>",
         "benefits_heading": "Deine Vorteile als Sportler",
         "cta_label": "Jetzt Sport-Check buchen",
         "cta_link": "",

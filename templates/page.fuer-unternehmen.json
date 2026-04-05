@@ -44,7 +44,7 @@
           "type": "benefit",
           "settings": {
             "icon": "📅",
-            "title": "Flexible Durchfuehrung"
+            "title": "Flexible Durchführung"
           }
         },
         "benefit_5": {
@@ -63,13 +63,13 @@
         "benefit_5"
       ],
       "settings": {
-        "badge": "Fuer Unternehmen",
+        "badge": "Für Unternehmen",
         "heading": "Gesunde Mitarbeiter. Starkes Unternehmen.",
-        "intro": "<p>Betriebliches Gesundheitsmanagement, das wirklich etwas bringt. Juvantis bietet Corporate Health Checks, die ueber den Standard hinausgehen.</p>",
+        "intro": "<p>Betriebliches Gesundheitsmanagement, das wirklich etwas bringt. Juvantis bietet Corporate Health Checks, die über den Standard hinausgehen.</p>",
         "usp_heading": "Corporate Health neu gedacht",
-        "usp_text": "<p>Keine 08/15-Gesundheitstage. Wir bieten evidenzbasierte Check-ups mit 80+ Biomarkern, individuelle Gesundheitsberichte und den Digital Health Twin -- fuer nachhaltiges BGM mit messbarem ROI.</p>",
+        "usp_text": "<p>Keine 08/15-Gesundheitstage. Wir bieten evidenzbasierte Check-ups mit 80+ Biomarkern, individuelle Gesundheitsberichte und den Digital Health Twin — für nachhaltiges BGM mit messbarem ROI.</p>",
         "benefits_heading": "Ihre Vorteile als Unternehmen",
-        "cta_label": "Kontakt fuer Unternehmen",
+        "cta_label": "Kontakt für Unternehmen",
         "cta_link": "",
         "padding_top": 0,
         "padding_bottom": 52

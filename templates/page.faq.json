@@ -16,8 +16,8 @@
     "faq": {
       "type": "juvantis-faq",
       "settings": {
-        "heading": "Haeufig gestellte Fragen",
-        "subtitle": "Alles, was du ueber Juvantis wissen musst.",
+        "heading": "Häufig gestellte Fragen",
+        "subtitle": "Alles, was du über Juvantis wissen musst.",
         "cta_text": "Deine Frage war nicht dabei?",
         "cta_label": "Kontaktiere uns",
         "cta_link": "",
@@ -35,21 +35,21 @@
           "type": "question",
           "settings": {
             "question": "Was ist Juvantis?",
-            "answer": "<p>Juvantis ist ein modernes Gesundheitszentrum in Frankfurt, das praeventive Medizin mit digitaler Innovation verbindet. Wir bieten umfassende Check-ups mit 80+ Biomarkern und visualisieren deine Ergebnisse im Digital Health Twin -- einem 3D-Avatar deines Koerpers.</p>"
+            "answer": "<p>Juvantis ist ein modernes Gesundheitszentrum in Frankfurt, das praeventive Medizin mit digitaler Innovation verbindet. Wir bieten umfassende Check-ups mit 80+ Biomarkern und visualisieren deine Ergebnisse im Digital Health Twin — einem 3D-Avatar deines Körpers.</p>"
           }
         },
         "q_allgemein_2": {
           "type": "question",
           "settings": {
-            "question": "Brauche ich eine Ueberweisung?",
-            "answer": "<p>Nein, du brauchst keine Ueberweisung. Du kannst jederzeit direkt online einen Termin buchen. Unsere Leistungen sind Selbstzahler-Angebote, die du ohne Hausarzt-Ueberweisung in Anspruch nehmen kannst.</p>"
+            "question": "Brauche ich eine Überweisung?",
+            "answer": "<p>Nein, du brauchst keine Überweisung. Du kannst jederzeit direkt online einen Termin buchen. Unsere Leistungen sind Selbstzahler-Angebote, die du ohne Hausarzt-Überweisung in Anspruch nehmen kannst.</p>"
           }
         },
         "q_allgemein_3": {
           "type": "question",
           "settings": {
             "question": "Wer fuehrt die Untersuchungen durch?",
-            "answer": "<p>Alle Untersuchungen werden von approbierten Aerzten und medizinischem Fachpersonal durchgefuehrt. Die Auswertung deiner Laborwerte erfolgt durch erfahrene Mediziner, die auch deine individuellen Empfehlungen erstellen.</p>"
+            "answer": "<p>Alle Untersuchungen werden von approbierten Ärzten und medizinischem Fachpersonal durchgefuehrt. Die Auswertung deiner Laborwerte erfolgt durch erfahrene Mediziner, die auch deine individuellen Empfehlungen erstellen.</p>"
           }
         },
         "q_allgemein_4": {
@@ -62,8 +62,8 @@
         "q_allgemein_5": {
           "type": "question",
           "settings": {
-            "question": "Ist Juvantis fuer alle Altersgruppen geeignet?",
-            "answer": "<p>Ja, unsere Check-ups sind fuer Erwachsene ab 18 Jahren geeignet. Ob du 25 bist und praeventiv vorsorgen moechtest oder 60 und deine Gesundheit im Blick behalten willst -- wir passen unsere Analyse an deine individuelle Situation an.</p>"
+            "question": "Ist Juvantis für alle Altersgruppen geeignet?",
+            "answer": "<p>Ja, unsere Check-ups sind für Erwachsene ab 18 Jahren geeignet. Ob du 25 bist und praeventiv vorsorgen möchtest oder 60 und deine Gesundheit im Blick behalten willst — wir passen unsere Analyse an deine individuelle Situation an.</p>"
           }
         },
         "cat_bloody": {
@@ -75,8 +75,8 @@
         "q_bloody_1": {
           "type": "question",
           "settings": {
-            "question": "Muss ich fuer den Bluttest nuechtern sein?",
-            "answer": "<p>Ja, fuer die meisten unserer Bloody Checks empfehlen wir, nuechtern zu kommen. Das bedeutet: 8-12 Stunden vorher nichts essen, Wasser trinken ist erlaubt. So erhalten wir die genauesten Ergebnisse, besonders bei Blutzucker und Blutfetten.</p>"
+            "question": "Muss ich für den Bluttest nuechtern sein?",
+            "answer": "<p>Ja, für die meisten unserer Bloody Checks empfehlen wir, nuechtern zu kommen. Das bedeutet: 8-12 Stunden vorher nichts essen, Wasser trinken ist erlaubt. So erhalten wir die genauesten Ergebnisse, besonders bei Blutzucker und Blutfetten.</p>"
           }
         },
         "q_bloody_2": {
@@ -90,21 +90,21 @@
           "type": "question",
           "settings": {
             "question": "Was unterscheidet einen Juvantis Bloody Check vom Hausarzt?",
-            "answer": "<p>Beim Hausarzt werden meist nur wenige Basiswerte gemessen. Unser Komplett-Check umfasst 80+ Biomarker inklusive Vitamine, Hormone und Entzuendungsmarker. Dazu bekommst du eine visuelle Aufbereitung im Digital Health Twin statt einer nichtssagenden Labortabelle.</p>"
+            "answer": "<p>Beim Hausarzt werden meist nur wenige Basiswerte gemessen. Unser Komplett-Check umfasst 80+ Biomarker inklusive Vitamine, Hormone und Entzündungsmarker. Dazu bekommst du eine visuelle Aufbereitung im Digital Health Twin statt einer nichtssagenden Labortabelle.</p>"
           }
         },
         "q_bloody_4": {
           "type": "question",
           "settings": {
             "question": "Tut die Blutentnahme weh?",
-            "answer": "<p>Die meisten beschreiben es als kurzes Pieken -- aehnlich wie ein kleiner Mückenstich. Unser Team ist erfahren und nimmt sich Zeit, damit du dich wohlfuehlst. Die Entnahme selbst dauert nur wenige Minuten.</p>"
+            "answer": "<p>Die meisten beschreiben es als kurzes Pieken — aehnlich wie ein kleiner Mückenstich. Unser Team ist erfahren und nimmt sich Zeit, damit du dich wohlfuehlst. Die Entnahme selbst dauert nur wenige Minuten.</p>"
           }
         },
         "q_bloody_5": {
           "type": "question",
           "settings": {
             "question": "Wie oft sollte ich einen Bluttest machen?",
-            "answer": "<p>Wir empfehlen einen umfassenden Check mindestens einmal pro Jahr. Wenn du aktiv an deiner Gesundheit arbeitest oder bestimmte Werte optimierst, kann ein Intervall von 3-6 Monaten sinnvoll sein, um Veraenderungen sichtbar zu machen.</p>"
+            "answer": "<p>Wir empfehlen einen umfassenden Check mindestens einmal pro Jahr. Wenn du aktiv an deiner Gesundheit arbeitest oder bestimmte Werte optimierst, kann ein Intervall von 3-6 Monaten sinnvoll sein, um Veränderungen sichtbar zu machen.</p>"
           }
         },
         "cat_dht": {
@@ -117,28 +117,28 @@
           "type": "question",
           "settings": {
             "question": "Was ist der Digital Health Twin?",
-            "answer": "<p>Der Digital Health Twin ist ein 3D-Avatar deines Koerpers, der deine echten Gesundheitsdaten visualisiert. Statt abstrakter Laborwerte siehst du auf einen Blick, wie es um deine Organe, Vitamine und Hormone steht -- intuitiv und motivierend.</p>"
+            "answer": "<p>Der Digital Health Twin ist ein 3D-Avatar deines Körpers, der deine echten Gesundheitsdaten visualisiert. Statt abstrakter Laborwerte siehst du auf einen Blick, wie es um deine Organe, Vitamine und Hormone steht — intuitiv und motivierend.</p>"
           }
         },
         "q_dht_2": {
           "type": "question",
           "settings": {
             "question": "Sind meine Gesundheitsdaten sicher?",
-            "answer": "<p>Absolut. Alle Daten werden DSGVO-konform in Deutschland gespeichert und verschluesselt uebertragen. Du allein entscheidest, wer Zugriff hat. Es findet keine Weitergabe an Dritte statt -- auch nicht anonymisiert.</p>"
+            "answer": "<p>Absolut. Alle Daten werden DSGVO-konform in Deutschland gespeichert und verschluesselt übertragen. Du allein entscheidest, wer Zugriff hat. Es findet keine Weitergabe an Dritte statt — auch nicht anonymisiert.</p>"
           }
         },
         "q_dht_3": {
           "type": "question",
           "settings": {
-            "question": "Brauche ich ein Smartphone fuer den DHT?",
-            "answer": "<p>Den Digital Health Twin kannst du ueber unsere iOS-App nutzen. Eine Android-Version ist in Planung. Alternativ kannst du deine Ergebnisse auch ueber das Web-Dashboard einsehen -- ein Smartphone ist also nicht zwingend erforderlich.</p>"
+            "question": "Brauche ich ein Smartphone für den DHT?",
+            "answer": "<p>Den Digital Health Twin kannst du über unsere iOS-App nutzen. Eine Android-Version ist in Planung. Alternativ kannst du deine Ergebnisse auch über das Web-Dashboard einsehen — ein Smartphone ist also nicht zwingend erforderlich.</p>"
           }
         },
         "q_dht_4": {
           "type": "question",
           "settings": {
             "question": "Kann ich den DHT auch ohne Bluttest nutzen?",
-            "answer": "<p>Du kannst den DHT in der Basisversion kostenlos nutzen und manuell Vitalwerte eintragen. Fuer die volle Erfahrung mit 80+ Biomarkern und Organ-Visualisierung brauchst du mindestens einen Bloody Check bei uns.</p>"
+            "answer": "<p>Du kannst den DHT in der Basisversion kostenlos nutzen und manuell Vitalwerte eintragen. Für die volle Erfahrung mit 80+ Biomarkern und Organ-Visualisierung brauchst du mindestens einen Bloody Check bei uns.</p>"
           }
         },
         "cat_preise": {
@@ -151,14 +151,14 @@
           "type": "question",
           "settings": {
             "question": "Kann ich auch ohne Abo einzelne Tests buchen?",
-            "answer": "<p>Ja, alle Untersuchungen sind auch einzeln buchbar -- ganz ohne Abo-Verpflichtung. Das Premium-Abo lohnt sich, wenn du regelmaessig deine Werte tracken und den vollen Digital Health Twin nutzen moechtest.</p>"
+            "answer": "<p>Ja, alle Untersuchungen sind auch einzeln buchbar — ganz ohne Abo-Verpflichtung. Das Premium-Abo lohnt sich, wenn du regelmäßig deine Werte tracken und den vollen Digital Health Twin nutzen möchtest.</p>"
           }
         },
         "q_preise_2": {
           "type": "question",
           "settings": {
-            "question": "Uebernimmt meine Krankenkasse die Kosten?",
-            "answer": "<p>Private Krankenversicherungen erstatten haeufig einen Teil der Kosten. Gesetzliche Kassen uebernehmen in der Regel nur den Basis-Check-up ab 35. Wir stellen dir eine Rechnung nach GOAe, die du bei deiner Versicherung einreichen kannst.</p>"
+            "question": "Übernimmt meine Krankenkasse die Kosten?",
+            "answer": "<p>Private Krankenversicherungen erstatten häufig einen Teil der Kosten. Gesetzliche Kassen übernehmen in der Regel nur den Basis-Check-up ab 35. Wir stellen dir eine Rechnung nach GOAe, die du bei deiner Versicherung einreichen kannst.</p>"
           }
         },
         "q_preise_3": {
@@ -172,7 +172,7 @@
           "type": "question",
           "settings": {
             "question": "Gibt es Rabatte oder Paketpreise?",
-            "answer": "<p>Ja, der Komplett-Check mit 80+ Biomarkern ist deutlich guenstiger als alle Einzeltests zusammen. Premium-Abonnenten erhalten zusaetzlich 10% Rabatt auf alle Laboruntersuchungen. Fuer Unternehmen bieten wir individuelle Paketpreise an.</p>"
+            "answer": "<p>Ja, der Komplett-Check mit 80+ Biomarkern ist deutlich günstiger als alle Einzeltests zusammen. Premium-Abonnenten erhalten zusätzlich 10% Rabatt auf alle Laboruntersuchungen. Für Unternehmen bieten wir individuelle Paketpreise an.</p>"
           }
         },
         "cat_termine": {
@@ -185,21 +185,21 @@
           "type": "question",
           "settings": {
             "question": "Wie buche ich einen Termin?",
-            "answer": "<p>Du kannst deinen Termin ganz einfach online ueber unsere Website buchen. Waehle deinen gewuenschten Check-up, ein passendes Datum und eine Uhrzeit. Du erhaeltst sofort eine Bestaetigungs-E-Mail mit allen Details.</p>"
+            "answer": "<p>Du kannst deinen Termin ganz einfach online über unsere Website buchen. Wähle deinen gewuenschten Check-up, ein passendes Datum und eine Uhrzeit. Du erhaeltst sofort eine Bestaetigungs-E-Mail mit allen Details.</p>"
           }
         },
         "q_termine_2": {
           "type": "question",
           "settings": {
             "question": "Kann ich meinen Termin stornieren?",
-            "answer": "<p>Ja, du kannst deinen Termin bis 24 Stunden vorher kostenlos stornieren oder verschieben. Nutze dazu den Link in deiner Bestaetigungs-E-Mail oder kontaktiere uns direkt. Bei kurzfristigen Absagen kann eine Ausfallgebuehr anfallen.</p>"
+            "answer": "<p>Ja, du kannst deinen Termin bis 24 Stunden vorher kostenlos stornieren oder verschieben. Nutze dazu den Link in deiner Bestaetigungs-E-Mail oder kontaktiere uns direkt. Bei kurzfristigen Absagen kann eine Ausfallgebühr anfallen.</p>"
           }
         },
         "q_termine_3": {
           "type": "question",
           "settings": {
             "question": "Wie lange dauert ein Check-up?",
-            "answer": "<p>Ein Basis-Bluttest dauert etwa 15 Minuten. Der Komplett-Check mit 80+ Biomarkern braucht ca. 30 Minuten. Fuer einen vollen Body Check mit Ultraschall und EKG solltest du etwa 60-90 Minuten einplanen.</p>"
+            "answer": "<p>Ein Basis-Bluttest dauert etwa 15 Minuten. Der Komplett-Check mit 80+ Biomarkern braucht ca. 30 Minuten. Für einen vollen Body Check mit Ultraschall und EKG solltest du etwa 60-90 Minuten einplanen.</p>"
           }
         }
       },

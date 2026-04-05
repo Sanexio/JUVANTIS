@@ -20,12 +20,12 @@
       "type": "juvantis-seo-page",
       "settings": {
         "badge": "Laborwissen",
-        "heading": "Grosses Blutbild: Was es zeigt, was es kostet und warum es nicht reicht",
-        "intro": "Ein grosses Blutbild ist eine der haeufigsten Laboruntersuchungen in Deutschland. Es zeigt die Zusammensetzung deines Blutes -- rote und weisse Blutkoerperchen, Blutplaettchen und ihre Unterformen. Doch was genau wird gemessen, was kostet es und warum liefert es allein kein vollstaendiges Bild deiner Gesundheit?",
+        "heading": "Großes Blutbild: Was es zeigt, was es kostet und warum es nicht reicht",
+        "intro": "Ein großes Blutbild ist eine der häufigsten Laboruntersuchungen in Deutschland. Es zeigt die Zusammensetzung deines Blutes — rote und weisse Blutkörperchen, Blutplaettchen und ihre Unterformen. Doch was genau wird gemessen, was kostet es und warum liefert es allein kein vollständiges Bild deiner Gesundheit?",
         "table_col1": "Parameter",
         "table_col2": "Funktion",
         "table_col3": "Referenzbereich",
-        "cta_label": "Mehr als ein Blutbild -- dein kompletter Gesundheits-Check",
+        "cta_label": "Mehr als ein Blutbild — dein kompletter Gesundheits-Check",
         "cta_link": "shopify://collections/laboruntersuchung",
         "padding_top": 0,
         "padding_bottom": 52
@@ -34,25 +34,25 @@
         "h2_was_ist": {
           "type": "heading",
           "settings": {
-            "text": "Was ist ein grosses Blutbild?"
+            "text": "Was ist ein großes Blutbild?"
           }
         },
         "rt_was_ist": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Ein grosses Blutbild (auch: Differentialblutbild) erweitert das kleine Blutbild um eine detaillierte Aufschluesselung der weissen Blutkoerperchen (Leukozyten). Waehrend das kleine Blutbild nur die Gesamtzahl der Leukozyten misst, unterscheidet das grosse Blutbild zwischen Neutrophilen, Lymphozyten, Monozyten, Eosinophilen und Basophilen.</p><p>Dein Arzt ordnet ein grosses Blutbild an, wenn Infektionen, Entzuendungen, Allergien oder Erkrankungen des Blutbildungssystems abgeklaert werden sollen. Es ist ein wichtiger Baustein der Basisdiagnostik -- aber eben nur ein Baustein.</p>"
+            "content": "<p>Ein großes Blutbild (auch: Differentialblutbild) erweitert das kleine Blutbild um eine detaillierte Aufschluesselung der weissen Blutkörperchen (Leukozyten). Während das kleine Blutbild nur die Gesamtzahl der Leukozyten misst, unterscheidet das große Blutbild zwischen Neutrophilen, Lymphozyten, Monozyten, Eosinophilen und Basophilen.</p><p>Dein Arzt ordnet ein großes Blutbild an, wenn Infektionen, Entzündungen, Allergien oder Erkrankungen des Blutbildungssystems abgeklaert werden sollen. Es ist ein wichtiger Baustein der Basisdiagnostik — aber eben nur ein Baustein.</p>"
           }
         },
         "h2_parameter": {
           "type": "heading",
           "settings": {
-            "text": "Alle Parameter im grossen Blutbild"
+            "text": "Alle Parameter im großen Blutbild"
           }
         },
         "rt_parameter_intro": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Das grosse Blutbild umfasst die Werte des kleinen Blutbilds plus die Differenzierung der Leukozyten. Hier sind die wichtigsten Parameter im Ueberblick:</p>"
+            "content": "<p>Das große Blutbild umfasst die Werte des kleinen Blutbilds plus die Differenzierung der Leukozyten. Hier sind die wichtigsten Parameter im Überblick:</p>"
           }
         },
         "row_ery": {
@@ -83,7 +83,7 @@
           "type": "table_row",
           "settings": {
             "col1": "Haematokrit (HCT)",
-            "col2": "Anteil roter Blutkoerperchen am Blut",
+            "col2": "Anteil roter Blutkörperchen am Blut",
             "col3": "36 - 48 %"
           }
         },
@@ -131,7 +131,7 @@
           "type": "table_row",
           "settings": {
             "col1": "Monozyten",
-            "col2": "Fresszellen, chronische Entzuendungen",
+            "col2": "Fresszellen, chronische Entzündungen",
             "col3": "2 - 8 %"
           }
         },
@@ -147,51 +147,51 @@
           "type": "table_row",
           "settings": {
             "col1": "Basophile",
-            "col2": "Allergische Reaktionen, Entzuendungen",
+            "col2": "Allergische Reaktionen, Entzündungen",
             "col3": "0 - 1 %"
           }
         },
         "h2_vergleich": {
           "type": "heading",
           "settings": {
-            "text": "Grosses vs. kleines Blutbild: Was ist der Unterschied?"
+            "text": "Großes vs. kleines Blutbild: Was ist der Unterschied?"
           }
         },
         "rt_vergleich": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Das kleine Blutbild misst die Grundwerte: Erythrozyten, Leukozyten, Thrombozyten, Haemoglobin, Haematokrit und die Erythrozyten-Indizes (MCV, MCH, MCHC). Es gibt einen groben Ueberblick ueber Blutbildung und Sauerstofftransport.</p><p>Das grosse Blutbild ergaenzt diese Werte um die Differenzierung der Leukozyten. Damit lassen sich Infektionen genauer einordnen: Sind es Bakterien (Neutrophile hoch), Viren (Lymphozyten hoch) oder allergische Reaktionen (Eosinophile hoch)?</p><p>Trotzdem erfasst auch das grosse Blutbild nur einen kleinen Ausschnitt deiner Gesundheit. Organfunktionen, Stoffwechsel, Hormone und Vitamine bleiben unsichtbar.</p>"
+            "content": "<p>Das kleine Blutbild misst die Grundwerte: Erythrozyten, Leukozyten, Thrombozyten, Haemoglobin, Haematokrit und die Erythrozyten-Indizes (MCV, MCH, MCHC). Es gibt einen groben Überblick über Blutbildung und Sauerstofftransport.</p><p>Das große Blutbild ergaenzt diese Werte um die Differenzierung der Leukozyten. Damit lassen sich Infektionen genauer einordnen: Sind es Bakterien (Neutrophile hoch), Viren (Lymphozyten hoch) oder allergische Reaktionen (Eosinophile hoch)?</p><p>Trotzdem erfasst auch das große Blutbild nur einen kleinen Ausschnitt deiner Gesundheit. Organfunktionen, Stoffwechsel, Hormone und Vitamine bleiben unsichtbar.</p>"
           }
         },
         "h2_warum_nicht_reicht": {
           "type": "heading",
           "settings": {
-            "text": "Warum ein grosses Blutbild allein nicht reicht"
+            "text": "Warum ein großes Blutbild allein nicht reicht"
           }
         },
         "rt_warum_nicht_reicht": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Ein grosses Blutbild beantwortet eine einzige Frage: Wie sieht dein Blut aus? Das ist wichtig -- aber es sagt nichts ueber deine Schilddruese, deine Leber, deine Nieren, deinen Vitaminstatus oder dein Hormonsystem aus.</p><p>Bei Juvantis gehen wir weiter: Mit bis zu 80+ Biomarkern erfassen wir nicht nur dein Blutbild, sondern auch Organfunktionen, Stoffwechsel, Hormone, Vitamine und Entzuendungsmarker. Das Ergebnis ist kein einzelner Laborzettel, sondern ein vollstaendiges Gesundheitsprofil -- visualisiert in deinem persoenlichen Digital Health Twin.</p>"
+            "content": "<p>Ein großes Blutbild beantwortet eine einzige Frage: Wie sieht dein Blut aus? Das ist wichtig — aber es sagt nichts über deine Schilddrüse, deine Leber, deine Nieren, deinen Vitaminstatus oder dein Hormonsystem aus.</p><p>Bei Juvantis gehen wir weiter: Mit bis zu 80+ Biomarkern erfassen wir nicht nur dein Blutbild, sondern auch Organfunktionen, Stoffwechsel, Hormone, Vitamine und Entzündungsmarker. Das Ergebnis ist kein einzelner Laborzettel, sondern ein vollständiges Gesundheitsprofil — visualisiert in deinem persönlichen Digital Health Twin.</p>"
           }
         },
         "highlight_juvantis": {
           "type": "highlight",
           "settings": {
             "title": "80+ Biomarker statt 12 Parameter",
-            "text": "Ein grosses Blutbild zeigt dir 12 Werte. Bei Juvantis analysieren wir ueber 80 Biomarker und visualisieren sie in deinem Digital Health Twin -- damit du nicht nur Zahlen siehst, sondern verstehst, was in deinem Koerper passiert."
+            "text": "Ein großes Blutbild zeigt dir 12 Werte. Bei Juvantis analysieren wir über 80 Biomarker und visualisieren sie in deinem Digital Health Twin — damit du nicht nur Zahlen siehst, sondern verstehst, was in deinem Körper passiert."
           }
         },
         "h2_kosten": {
           "type": "heading",
           "settings": {
-            "text": "Was kostet ein grosses Blutbild?"
+            "text": "Was kostet ein großes Blutbild?"
           }
         },
         "rt_kosten": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Die Kosten fuer ein grosses Blutbild variieren je nach Anbieter und Umfang:</p>"
+            "content": "<p>Die Kosten für ein großes Blutbild variieren je nach Anbieter und Umfang:</p>"
           }
         },
         "card_hausarzt": {
@@ -207,7 +207,7 @@
           "settings": {
             "icon": "🧾",
             "title": "Privat / IGeL-Leistung",
-            "description": "Ca. 5-15 EUR fuer das grosse Blutbild allein (nach GOAe). Erweiterte Laborwerte (Vitamine, Hormone) kosten schnell 100-300 EUR zusaetzlich."
+            "description": "Ca. 5-15 EUR für das große Blutbild allein (nach GOAe). Erweiterte Laborwerte (Vitamine, Hormone) kosten schnell 100-300 EUR zusätzlich."
           }
         },
         "card_juvantis": {
@@ -215,13 +215,13 @@
           "settings": {
             "icon": "🏆",
             "title": "Juvantis Komplett-Check",
-            "description": "Ab 45 EUR: 80+ Biomarker, aerztliche Auswertung, Ergebnis in 48h und Visualisierung im Digital Health Twin. Kein Vergleich zum einfachen Blutbild."
+            "description": "Ab 45 EUR: 80+ Biomarker, ärztliche Auswertung, Ergebnis in 48h und Visualisierung im Digital Health Twin. Kein Vergleich zum einfachen Blutbild."
           }
         },
         "info_tipp": {
           "type": "info",
           "settings": {
-            "content": "<p><strong>Gut zu wissen:</strong> Bei Juvantis ist das grosse Blutbild in jedem Check-up enthalten -- zusammen mit Dutzenden weiterer Biomarker. Du bekommst nicht nur Zahlen, sondern verstehst, was sie bedeuten.</p>"
+            "content": "<p><strong>Gut zu wissen:</strong> Bei Juvantis ist das große Blutbild in jedem Check-up enthalten — zusammen mit Dutzenden weiterer Biomarker. Du bekommst nicht nur Zahlen, sondern verstehst, was sie bedeuten.</p>"
           }
         }
       },

@@ -16,17 +16,17 @@
     "dht": {
       "type": "juvantis-dht-page",
       "settings": {
-        "heading": "Dein Koerper. Digital. Verstanden.",
-        "hero_sub": "Der weltweit erste Digital Health Twin: Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert -- motivierend statt abstrakt.",
+        "heading": "Dein Körper. Digital. Verstanden.",
+        "hero_sub": "Der weltweit erste Digital Health Twin: Ein 3D-Avatar, der deine echten Gesundheitsdaten visualisiert — motivierend statt abstrakt.",
         "explainer_heading": "Was ist der Digital Health Twin?",
-        "explainer_text": "Stell dir vor, du haettest einen digitalen Zwilling deines Koerpers. Einen 3D-Avatar, der in Echtzeit zeigt, wie es um deine Gesundheit steht. Nicht in abstrakten Zahlen, sondern visuell: Organe, Haut, Vitalwerte -- alles auf einen Blick. Das ist dein Digital Health Twin.",
+        "explainer_text": "Stell dir vor, du hättest einen digitalen Zwilling deines Körpers. Einen 3D-Avatar, der in Echtzeit zeigt, wie es um deine Gesundheit steht. Nicht in abstrakten Zahlen, sondern visuell: Organe, Haut, Vitalwerte — alles auf einen Blick. Das ist dein Digital Health Twin.",
         "features_heading": "Was dein DHT kann",
         "how_heading": "So funktioniert es",
         "game_heading": "Gesundheit wird zum Spiel",
-        "game_text": "Quests, Challenges und ein Level-System motivieren dich, dranzubleiben. Verbessere deine Werte, steige im Level auf und feiere deine Fortschritte -- Gesundheit darf Spass machen.",
-        "privacy_heading": "Deine Daten gehoeren dir. 100% DSGVO-konform.",
+        "game_text": "Quests, Challenges und ein Level-System motivieren dich, dranzubleiben. Verbessere deine Werte, steige im Level auf und feiere deine Fortschritte — Gesundheit darf Spaß machen.",
+        "privacy_heading": "Deine Daten gehören dir. 100% DSGVO-konform.",
         "privacy_text": "Alle Daten werden in Deutschland gespeichert und verarbeitet. Du entscheidest, wer Zugriff hat. Keine Weitergabe an Dritte, keine versteckten Datennutzungen. Punkt.",
-        "cta_label": "Starte deinen Digital Health Twin -- kostenlos",
+        "cta_label": "Starte deinen Digital Health Twin — kostenlos",
         "padding_top": 0,
         "padding_bottom": 52
       },
@@ -36,15 +36,15 @@
           "settings": {
             "icon": "🫀",
             "title": "Organe & Systeme",
-            "text": "Herz, Leber, Nieren -- dein Avatar zeigt den Status jedes Organs basierend auf deinen echten Laborwerten. Gruen heisst gut, Gelb heisst: schau genauer hin."
+            "text": "Herz, Leber, Nieren — dein Avatar zeigt den Status jedes Organs basierend auf deinen echten Laborwerten. Grün heißt gut, Gelb heißt: schau genauer hin."
           }
         },
         "f_skin": {
           "type": "feature",
           "settings": {
             "icon": "🧴",
-            "title": "Haut & Aeusseres",
-            "text": "Dein Avatar spiegelt deine Vitalitaet wider: Hautbild, Energielevel und aeussere Anzeichen von Naehrstoffmaengeln oder Stress."
+            "title": "Haut & Äußeres",
+            "text": "Dein Avatar spiegelt deine Vitalität wider: Hautbild, Energielevel und äußere Anzeichen von Nährstoffmängeln oder Stress."
           }
         },
         "f_vitals": {
@@ -52,7 +52,7 @@
           "settings": {
             "icon": "💓",
             "title": "Vitalwerte",
-            "text": "Blutdruck, Herzfrequenz, Schlafqualitaet -- in Echtzeit synchronisiert mit deiner Apple Watch oder deinem Wearable."
+            "text": "Blutdruck, Herzfrequenz, Schlafqualität — in Echtzeit synchronisiert mit deiner Apple Watch oder deinem Wearable."
           }
         },
         "f_biomarkers": {
@@ -60,15 +60,15 @@
           "settings": {
             "icon": "🔬",
             "title": "80+ Biomarker",
-            "text": "Jeder einzelne Laborwert wird visualisiert, erklaert und in Kontext gesetzt. Keine kryptischen Tabellen mehr."
+            "text": "Jeder einzelne Laborwert wird visualisiert, erklärt und in Kontext gesetzt. Keine kryptischen Tabellen mehr."
           }
         },
         "f_trends": {
           "type": "feature",
           "settings": {
             "icon": "📊",
-            "title": "Zeitverlaeufe",
-            "text": "Verfolge deine Entwicklung ueber Monate und Jahre. Sieh, wie sich Lebensstilaenderungen auf deine Werte auswirken."
+            "title": "Zeitverläufe",
+            "text": "Verfolge deine Entwicklung über Monate und Jahre. Sieh, wie sich Lebensstiländerungen auf deine Werte auswirken."
           }
         },
         "f_ai": {
@@ -76,7 +76,7 @@
           "settings": {
             "icon": "🤖",
             "title": "KI-Empfehlungen",
-            "text": "Personalisierte Gesundheitstipps basierend auf deinem Gesamtprofil -- von Ernaehrung ueber Bewegung bis Schlaf."
+            "text": "Personalisierte Gesundheitstipps basierend auf deinem Gesamtprofil — von Ernährung über Bewegung bis Schlaf."
           }
         },
         "h_1": {
@@ -84,7 +84,7 @@
           "settings": {
             "number": "1",
             "title": "Check-up machen",
-            "text": "Komm zum Bluttest oder Body Check. Deine Ergebnisse fliessen automatisch in deinen DHT."
+            "text": "Komm zum Bluttest oder Body Check. Deine Ergebnisse fließen automatisch in deinen DHT."
           }
         },
         "h_2": {

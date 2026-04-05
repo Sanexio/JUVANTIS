@@ -22,7 +22,7 @@
         "name": "Vitamin D",
         "heading": "Vitamin D (25-OH-Vitamin D) — Das Sonnenhormon",
         "category": "Vitamine",
-        "short_description": "Vitamin D ist streng genommen kein Vitamin, sondern ein Hormon. Es steuert den Kalziumstoffwechsel, staerkt Knochen und Immunsystem und beeinflusst deine Stimmung. Ein Mangel ist in Deutschland extrem haeufig — besonders im Winter.",
+        "short_description": "Vitamin D ist streng genommen kein Vitamin, sondern ein Hormon. Es steuert den Kalziumstoffwechsel, staerkt Knochen und Immunsystem und beeinflusst deine Stimmung. Ein Mangel ist in Deutschland extrem häufig — besonders im Winter.",
         "cta_label": "Lass diesen Wert bei Juvantis testen",
         "cta_link": "shopify://collections/laboruntersuchung",
         "padding_top": 0,
@@ -33,42 +33,42 @@
           "type": "content_section",
           "settings": {
             "title": "Was ist Vitamin D?",
-            "content": "<p>Vitamin D (25-Hydroxy-Vitamin D) ist ein fettloesliches Hormon, das dein Koerper in der Haut bildet — vorausgesetzt, du bekommst genug Sonnenlicht. Es spielt eine zentrale Rolle beim Einbau von Kalzium in die Knochen, bei der Regulation deines Immunsystems und bei der Muskelgesundheit.</p><p>Etwa 80-90% des Vitamin D wird ueber die Haut produziert, nur ein kleiner Teil stammt aus der Nahrung (fetter Fisch, Eier, Pilze). In unseren Breitengraden reicht die Sonnenstrahlung von Oktober bis Maerz nicht aus, um ausreichend Vitamin D zu bilden — deshalb ist ein Mangel weit verbreitet.</p>"
+            "content": "<p>Vitamin D (25-Hydroxy-Vitamin D) ist ein fettlösliches Hormon, das dein Körper in der Haut bildet — vorausgesetzt, du bekommst genug Sonnenlicht. Es spielt eine zentrale Rolle beim Einbau von Kalzium in die Knochen, bei der Regulation deines Immunsystems und bei der Muskelgesundheit.</p><p>Etwa 80-90% des Vitamin D wird über die Haut produziert, nur ein kleiner Teil stammt aus der Nahrung (fetter Fisch, Eier, Pilze). In unseren Breitengraden reicht die Sonnenstrahlung von Oktober bis Maerz nicht aus, um ausreichend Vitamin D zu bilden — deshalb ist ein Mangel weit verbreitet.</p>"
           }
         },
         "referenz": {
           "type": "ref_table",
           "settings": {
             "title": "Referenzwerte",
-            "rows": "Schwerer Mangel: unter 10 ng/ml | Mangel: 10-20 ng/ml | Suboptimal: 20-30 ng/ml | Optimal: 30-60 ng/ml | Erhoehter Bereich: 60-100 ng/ml | Toxisch: ueber 150 ng/ml"
+            "rows": "Schwerer Mangel: unter 10 ng/ml | Mangel: 10-20 ng/ml | Suboptimal: 20-30 ng/ml | Optimal: 30-60 ng/ml | Erhöhter Bereich: 60-100 ng/ml | Toxisch: über 150 ng/ml"
           }
         },
         "hoch": {
           "type": "content_section",
           "settings": {
-            "title": "Was bedeutet ein erhoehter Wert?",
-            "content": "<p>Zu hohe Vitamin-D-Spiegel (ueber 100 ng/ml) kommen fast ausschliesslich durch Ueberdosierung von Nahrungsergaenzungsmitteln vor — nicht durch Sonnenlicht. Eine Ueberdosierung kann zu einer sogenannten Hyperkalzaemie fuehren: zu viel Kalzium im Blut.</p><p>Moegliche Folgen sind Uebelkeit, Erbrechen, Nierensteine und in schweren Faellen Nierenschaeden. Deshalb sollte eine hochdosierte Einnahme immer aerztlich begleitet werden.</p>"
+            "title": "Was bedeutet ein erhöhter Wert?",
+            "content": "<p>Zu hohe Vitamin-D-Spiegel (über 100 ng/ml) kommen fast ausschliesslich durch Überdosierung von Nahrungsergaenzungsmitteln vor — nicht durch Sonnenlicht. Eine Überdosierung kann zu einer sogenannten Hyperkalzaemie fuehren: zu viel Kalzium im Blut.</p><p>Mögliche Folgen sind Übelkeit, Erbrechen, Nierensteine und in schweren Faellen Nierenschaeden. Deshalb sollte eine hochdosierte Einnahme immer ärztlich begleitet werden.</p>"
           }
         },
         "niedrig": {
           "type": "content_section",
           "settings": {
             "title": "Was bedeutet ein niedriger Wert?",
-            "content": "<p>Ein Vitamin-D-Mangel ist in Deutschland bei ca. 60% der Bevoelkerung zu finden. Ursachen sind vor allem zu wenig Sonnenlicht, dunkler Hauttyp, hohes Alter, Uebergewicht und bestimmte Erkrankungen (z.B. Niereninsuffizienz, Malabsorption).</p><p>Langfristig kann ein Mangel zu Osteoporose, Muskelschwaeche und einer erhoehten Infektanfaelligkeit fuehren. Studien zeigen auch Zusammenhaenge mit depressiven Verstimmungen und chronischer Muedigkeit.</p>"
+            "content": "<p>Ein Vitamin-D-Mangel ist in Deutschland bei ca. 60% der Bevoelkerung zu finden. Ursachen sind vor allem zu wenig Sonnenlicht, dunkler Hauttyp, hohes Alter, Übergewicht und bestimmte Erkrankungen (z.B. Niereninsuffizienz, Malabsorption).</p><p>Langfristig kann ein Mangel zu Osteoporose, Muskelschwaeche und einer erhöhten Infektanfaelligkeit fuehren. Studien zeigen auch Zusammenhaenge mit depressiven Verstimmungen und chronischer Müdigkeit.</p>"
           }
         },
         "symptome": {
           "type": "content_section",
           "settings": {
             "title": "Welche Symptome koennen auftreten?",
-            "content": "<p>Ein Vitamin-D-Mangel zeigt sich oft schleichend. Typische Anzeichen sind:</p><p>Muedigkeit und Abgeschlagenheit, die sich nicht durch Schlaf bessern. Haeufige Infekte, besonders in der kalten Jahreszeit. Muskelschmerzen und -krampfe, vor allem in den Beinen. Knochenschmerzen und ein Gefuehl der Schwaeche. Stimmungsschwankungen bis hin zu depressiven Verstimmungen. Haarausfall in manchen Faellen.</p>"
+            "content": "<p>Ein Vitamin-D-Mangel zeigt sich oft schleichend. Typische Anzeichen sind:</p><p>Müdigkeit und Abgeschlagenheit, die sich nicht durch Schlaf bessern. Häufige Infekte, besonders in der kalten Jahreszeit. Muskelschmerzen und -krampfe, vor allem in den Beinen. Knochenschmerzen und ein Gefuehl der Schwaeche. Stimmungsschwankungen bis hin zu depressiven Verstimmungen. Haarausfall in manchen Faellen.</p>"
           }
         },
         "tipps": {
           "type": "content_section",
           "settings": {
             "title": "Was du tun kannst",
-            "content": "<p>Von April bis September taeglich 15-20 Minuten Sonne auf Gesicht und Unterarme — ohne Sonnencreme, aber ohne Sonnenbrand. Im Winterhalbjahr kann eine Supplementierung mit 1.000-2.000 IE taeglich sinnvoll sein.</p><p>Vitamin-D-reiche Lebensmittel wie fetter Seefisch (Lachs, Hering, Makrele), Eigelb und Pilze koennen unterstuetzen, decken aber allein selten den Bedarf. Bei nachgewiesenem Mangel kann dein Arzt eine hoehere Dosis verordnen — eine Kontrolle nach 8-12 Wochen zeigt, ob die Therapie wirkt.</p>"
+            "content": "<p>Von April bis September taeglich 15-20 Minuten Sonne auf Gesicht und Unterarme — ohne Sonnencreme, aber ohne Sonnenbrand. Im Winterhalbjahr kann eine Supplementierung mit 1.000-2.000 IE taeglich sinnvoll sein.</p><p>Vitamin-D-reiche Lebensmittel wie fetter Seefisch (Lachs, Hering, Makrele), Eigelb und Pilze koennen unterstützen, decken aber allein selten den Bedarf. Bei nachgewiesenem Mangel kann dein Arzt eine höhere Dosis verordnen — eine Kontrolle nach 8-12 Wochen zeigt, ob die Therapie wirkt.</p>"
           }
         },
         "related": {

@@ -19,7 +19,7 @@
         "heading": "Transparent. Fair. Flexibel.",
         "subtitle": "Starte kostenlos und upgrade, wenn du bereit bist. Keine versteckten Kosten.",
         "singles_heading": "Einzeluntersuchungen",
-        "faq_heading": "Haeufige Fragen zu unseren Preisen",
+        "faq_heading": "Häufige Fragen zu unseren Preisen",
         "padding_top": 0,
         "padding_bottom": 52
       },
@@ -29,9 +29,9 @@
           "settings": {
             "name": "Free",
             "price": "0 EUR",
-            "period": "fuer immer",
+            "period": "für immer",
             "description": "Erste Einblicke in deine Gesundheit",
-            "features": "Basis Digital Health Twin|Vital-Tracking (manuell)|Community-Zugang|1 Laborwert-Erklaerung/Monat",
+            "features": "Basis Digital Health Twin|Vital-Tracking (manuell)|Community-Zugang|1 Laborwert-Erklärung/Monat",
             "featured": false,
             "badge": "",
             "button_label": "Kostenlos starten",
@@ -45,7 +45,7 @@
             "price": "14,99 EUR",
             "period": "/Monat",
             "description": "Die volle Health-UX Erfahrung",
-            "features": "Alle Free-Features|Voller Digital Health Twin (3D)|80+ Biomarker-Analysen|KI-Empfehlungen & Coaching|Gamification & Challenges|Fortschrittstracking ueber Zeit|Infusionstherapie-Beratung|Prioritaets-Support",
+            "features": "Alle Free-Features|Voller Digital Health Twin (3D)|80+ Biomarker-Analysen|KI-Empfehlungen & Coaching|Gamification & Challenges|Fortschrittstracking über Zeit|Infusionstherapie-Beratung|Prioritäts-Support",
             "featured": true,
             "badge": "Beliebt",
             "button_label": "Premium starten",
@@ -58,7 +58,7 @@
             "name": "Business",
             "price": "Individuell",
             "period": "",
-            "description": "Fuer Praxen, Kliniken & Versicherer",
+            "description": "Für Praxen, Kliniken & Versicherer",
             "features": "Alle Premium-Features|White-Label-Integration|Patienten-Dashboard|Clinical Decision Support|API-Zugang|Dedicated Account Manager",
             "featured": false,
             "badge": "",
@@ -105,35 +105,35 @@
           "type": "faq",
           "settings": {
             "question": "Kann ich auch ohne Abo einzelne Tests buchen?",
-            "answer": "Ja! Alle Untersuchungen sind auch einzeln buchbar -- ganz ohne Abo-Verpflichtung. Das Abo lohnt sich, wenn du regelmaessig deine Werte tracken und den vollen Digital Health Twin nutzen moechtest."
+            "answer": "Ja! Alle Untersuchungen sind auch einzeln buchbar — ganz ohne Abo-Verpflichtung. Das Abo lohnt sich, wenn du regelmäßig deine Werte tracken und den vollen Digital Health Twin nutzen möchtest."
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "Uebernimmt meine Krankenkasse die Kosten?",
-            "answer": "Einige Untersuchungen werden von privaten Krankenversicherungen erstattet. Gesetzliche Kassen uebernehmen in der Regel nur den Basis-Check-up ab 35. Wir stellen dir eine Rechnung nach GOAe, die du einreichen kannst."
+            "question": "Übernimmt meine Krankenkasse die Kosten?",
+            "answer": "Einige Untersuchungen werden von privaten Krankenversicherungen erstattet. Gesetzliche Kassen übernehmen in der Regel nur den Basis-Check-up ab 35. Wir stellen dir eine Rechnung nach GOAe, die du einreichen kannst."
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
             "question": "Was ist im Premium-Abo enthalten?",
-            "answer": "Das Premium-Abo gibt dir Zugang zum vollen 3D Digital Health Twin, KI-basierte Empfehlungen, Gamification mit Quests und Challenges, sowie Prioritaets-Support. Die Laboruntersuchungen selbst werden separat gebucht und bezahlt."
+            "answer": "Das Premium-Abo gibt dir Zugang zum vollen 3D Digital Health Twin, KI-basierte Empfehlungen, Gamification mit Quests und Challenges, sowie Prioritäts-Support. Die Laboruntersuchungen selbst werden separat gebucht und bezahlt."
           }
         },
         "faq_4": {
           "type": "faq",
           "settings": {
-            "question": "Kann ich mein Abo jederzeit kuendigen?",
-            "answer": "Ja, das Premium-Abo ist monatlich kuendbar. Keine Mindestlaufzeit, keine versteckten Gebuehren. Deine bisherigen Daten bleiben auch nach Kuendigung in deinem Account erhalten."
+            "question": "Kann ich mein Abo jederzeit kündigen?",
+            "answer": "Ja, das Premium-Abo ist monatlich kuendbar. Keine Mindestlaufzeit, keine versteckten Gebühren. Deine bisherigen Daten bleiben auch nach Kündigung in deinem Account erhalten."
           }
         },
         "faq_5": {
           "type": "faq",
           "settings": {
             "question": "Gibt es Paketpreise oder Rabatte?",
-            "answer": "Ja! Der Komplett-Check (80+ Marker) ist guenstiger als alle Einzel-Checks zusammen. Premium-Abonnenten erhalten zusaetzlich 10% Rabatt auf alle Laboruntersuchungen."
+            "answer": "Ja! Der Komplett-Check (80+ Marker) ist günstiger als alle Einzel-Checks zusammen. Premium-Abonnenten erhalten zusätzlich 10% Rabatt auf alle Laboruntersuchungen."
           }
         }
       },

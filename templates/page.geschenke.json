@@ -25,7 +25,7 @@
             "icon": "🩸",
             "title": "Basis-Check",
             "price": "45 EUR",
-            "description": "Blutbild Grundlagen -- der perfekte Einstieg in die eigene Gesundheit.",
+            "description": "Blutbild Grundlagen — der perfekte Einstieg in die eigene Gesundheit.",
             "featured": false
           }
         },
@@ -35,7 +35,7 @@
             "icon": "🏆",
             "title": "Komplett-Check",
             "price": "249 EUR",
-            "description": "80+ Biomarker -- das volle Programm fuer maximale Klarheit ueber den eigenen Koerper.",
+            "description": "80+ Biomarker — das volle Programm für maximale Klarheit über den eigenen Körper.",
             "featured": true
           }
         },
@@ -45,7 +45,7 @@
             "icon": "🫀",
             "title": "Body Check",
             "price": "449 EUR",
-            "description": "Ultraschall, EKG und umfassendes Labor -- der Premium-Check fuer alle, die es genau wissen wollen.",
+            "description": "Ultraschall, EKG und umfassendes Labor — der Premium-Check für alle, die es genau wissen wollen.",
             "featured": false
           }
         },
@@ -55,7 +55,7 @@
             "icon": "🎁",
             "title": "Wunschbetrag",
             "price": "Flexibel",
-            "description": "Freier Betrag als Gutschein -- der Beschenkte entscheidet selbst, was er buchen moechte.",
+            "description": "Freier Betrag als Gutschein — der Beschenkte entscheidet selbst, was er buchen moechte.",
             "featured": false
           }
         },
@@ -63,8 +63,8 @@
           "type": "step",
           "settings": {
             "number": "1",
-            "title": "Gutschein waehlen & kaufen",
-            "text": "Waehle den passenden Gutschein und schliesse den Kauf online ab."
+            "title": "Gutschein wählen & kaufen",
+            "text": "Wähle den passenden Gutschein und schliesse den Kauf online ab."
           }
         },
         "step_2": {
@@ -95,7 +95,7 @@
       ],
       "settings": {
         "heading": "Schenke Gesundheit.",
-        "intro": "<p>Das wertvollste Geschenk? Wissen ueber den eigenen Koerper. Mit einem Juvantis-Gutschein schenkst du mehr als einen Check-up -- du schenkst Klarheit.</p>",
+        "intro": "<p>Das wertvollste Geschenk? Wissen über den eigenen Körper. Mit einem Juvantis-Gutschein schenkst du mehr als einen Check-up — du schenkst Klarheit.</p>",
         "occasions_heading": "Der perfekte Anlass",
         "padding_top": 0,
         "padding_bottom": 52
